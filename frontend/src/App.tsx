@@ -1,9 +1,17 @@
-import { MantineProvider, Text } from '@mantine/core';
+import { MantineProvider } from '@mantine/core';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import HomePage from './pages/HomePage';
+
 
 export default function App() {
-  return (
-    <MantineProvider withGlobalStyles withNormalizeCSS>
-      <Text>Welcome to jeli.pl!</Text>
-    </MantineProvider>
-  );
+    return (
+        <MantineProvider withGlobalStyles withNormalizeCSS>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<HomePage />} />
+                </Routes>
+            </BrowserRouter>
+        </MantineProvider>
+    );
 }
