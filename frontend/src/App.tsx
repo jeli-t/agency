@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HeaderMenu } from './components/HeaderMenu';
 
 import HomePage from './pages/HomePage';
+import NotFoundPage from './pages/NotFoundPage';
 
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
                 <BrowserRouter>
                     <Routes>
                         <Route path='/' element={<HomePage />} />
+                        <Route path='*' element={<NotFoundPage />} />
                     </Routes>
                 </BrowserRouter>
             </AppShell>
