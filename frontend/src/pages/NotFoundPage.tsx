@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { createStyles, Title, Text, Button, Container, Group, rem, MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
+import { createStyles, Title, Text, Button, Container, Group, rem, MantineProvider, useMantineTheme } from '@mantine/core';
 
 
 const useStyles = createStyles((theme) => ({
@@ -42,29 +41,25 @@ const useStyles = createStyles((theme) => ({
 
 export default function NotFoundPage() {
   const { classes } = useStyles();
-  const [colorScheme, setColorScheme] = useState<ColorScheme>('dark');
-  const toggleColorScheme = (value?: ColorScheme) =>
-    setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
+  const mainTheme = useMantineTheme();
 
   return (
-    <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
-      <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
-        <Container className={classes.root}>
-          <div className={classes.label}>404</div>
-          <Title className={classes.title}>You have found a secret place.</Title>
-          <Text color="dimmed" size="lg" align="center" className={classes.description}>
-            Unfortunately, this is only a 404 page. You may have mistyped the address, or the page has
-            been moved to another URL.
-          </Text>
-          <Group position="center">
-            <a href='/'>
-              <Button color='orange' variant="light" size="md">
-                Take me back to home page
-              </Button>
-            </a>
-          </Group>
-        </Container>
-      </MantineProvider>
-    </ColorSchemeProvider>
+    <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
+      <Container className={classes.root}>
+        <div className={classes.label}>404</div>
+        <Title className={classes.title}>You have found a secret place.</Title>
+        <Text color="dimmed" size="lg" align="center" className={classes.description}>
+          Unfortunately, this is only a 404 page. You may have mistyped the address, or the page has
+          been moved to another URL.
+        </Text>
+        <Group position="center">
+          <a href='/'>
+            <Button color='orange' variant="light" size="md">
+              Take me back to home page
+            </Button>
+          </a>
+        </Group>
+      </Container>
+    </MantineProvider>
   );
 }
