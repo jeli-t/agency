@@ -1,5 +1,6 @@
-import { createStyles, useMantineTheme, Header, Menu, Group, Center, Burger, Container, rem, Title, getStylesRef } from '@mantine/core';
+import { createStyles, useMantineTheme, Header, Menu, Group, Center, Burger, Container, rem, Title, getStylesRef, useMantineColorScheme, Switch } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import { IconMoonStars, IconSun } from '@tabler/icons-react';
 
 
 const useStyles = createStyles((theme) => ({
@@ -21,6 +22,12 @@ const useStyles = createStyles((theme) => ({
   },
 
   links: {
+    [theme.fn.smallerThan('sm')]: {
+      display: 'none',
+    },
+  },
+
+  buttons: {
     [theme.fn.smallerThan('sm')]: {
       display: 'none',
     },
@@ -54,6 +61,24 @@ const useStyles = createStyles((theme) => ({
     marginRight: rem(5),
   },
 }));
+
+export function SwitchToggle() {
+  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const theme = useMantineTheme();
+
+  return (
+    <Group position="center" my={30}>
+      <Switch
+        checked={colorScheme === 'dark'}
+        onChange={() => toggleColorScheme()}
+        size="lg"
+        color='gray'
+        onLabel={<IconSun color={theme.white} size="1.25rem" stroke={1.5} />}
+        offLabel={<IconMoonStars color={theme.colors.gray[6]} size="1.25rem" stroke={1.5} />}
+      />
+    </Group>
+  );
+}
 
 const mockdata = [
     {
@@ -101,6 +126,9 @@ export function HeaderMenu() {
           </Title>
           <Group spacing={5} className={classes.links}>
             {items}
+          </Group>
+          <Group className={classes.buttons}>
+            <SwitchToggle />
           </Group>
           <Burger
             opened={opened}
