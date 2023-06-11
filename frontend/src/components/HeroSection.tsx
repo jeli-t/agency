@@ -1,11 +1,11 @@
-import { createStyles, useMantineTheme, Title, rem, Text } from '@mantine/core';
+import { createStyles, useMantineTheme, Title, rem, Text, MantineProvider } from '@mantine/core';
 import { TypeAnimation } from 'react-type-animation';
 import { IconSearch } from '@tabler/icons-react';
 
 
 const useStyles = createStyles((theme) => ({
     container: {
-        height: '100vh',
+        height: '100%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -37,7 +37,6 @@ const useStyles = createStyles((theme) => ({
     search_bar: {
         display: 'block',
         position: 'relative',
-        // height: 60,
         marginTop: 50,
         width: 700,
         maxWidth: '90%',
@@ -46,10 +45,18 @@ const useStyles = createStyles((theme) => ({
         border: '2px solid',
         borderRadius: theme.radius.xl,
         borderColor: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
 
         [theme.fn.smallerThan('xs')]: {
             paddingLeft: 10,
         },
+    },
+
+    highlight: {
+        position: 'relative',
+        backgroundColor: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).background,
+        borderRadius: theme.radius.sm,
+        padding: `${rem(4)} ${rem(12)}`,
     },
 
     icon: {
@@ -65,7 +72,6 @@ const useStyles = createStyles((theme) => ({
 
     type_animation: {
         display: 'inline-block',
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(30),
         lineHeight: 1,
@@ -84,18 +90,18 @@ export function HeroSection() {
     return (
         <div  className={classes.container}>
             <Title className={classes.title}>
-                Stay noticeable online
+                Make yourself <span className={classes.highlight}>visible</span>
             </Title>
             <Text className={classes.text}>
-                We will take care of your:
+                I will take care of your online presence
             </Text>
             <div className={classes.search_bar}>
                 <TypeAnimation
                     sequence={[
                         2000,
-                        'Search Engine Optimization',
-                        2000,
                         'Web development',
+                        2000,
+                        'Search Engine Optimization',
                         2000,
                         'Social media management',
                     ]}
