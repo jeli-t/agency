@@ -19,6 +19,7 @@ const useStyles = createStyles((theme) => ({
   title: {
     color: theme.white,
     fontFamily: `Roboto, ${theme.fontFamily}`,
+    textDecoration: 'none',
   },
 
   links: {
@@ -110,7 +111,6 @@ export function HeaderMenu() {
         key={link.label}
         href={link.link}
         className={classes.link}
-        onClick={(event) => event.preventDefault()}
       >
         {link.label}
       </a>
@@ -121,9 +121,11 @@ export function HeaderMenu() {
     <Header height={56} className={classes.header} mb={120}>
       <Container>
         <div className={classes.inner}>
-          <Title className={classes.title}>
-            jeli.pl
-          </Title>
+          <a href='/' style={{textDecoration: 'none'}}>
+            <Title className={classes.title}>
+              jeli.pl
+            </Title>
+          </a>
           <Group spacing={5} className={classes.links}>
             {items}
           </Group>
