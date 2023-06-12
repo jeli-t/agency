@@ -1,4 +1,5 @@
-import { createStyles, useMantineTheme, Title, rem, Text, MantineProvider, Overlay } from '@mantine/core';
+import React, { useState } from 'react';
+import { createStyles, useMantineTheme, Title, rem, Text} from '@mantine/core';
 import { TypeAnimation } from 'react-type-animation';
 import { IconSearch } from '@tabler/icons-react';
 import web_development from './../assets/web_development.svg'
@@ -31,7 +32,6 @@ const useStyles = createStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundImage: `url(${web_development})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
@@ -113,9 +113,10 @@ export function HeroSection() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
 
+    const [activeIlustration, setActiveIlustration] = useState(web_development);
+
     return (
         <div  className={classes.container}>
-            {/* <Overlay color="#000" opacity={0.2} zIndex={0} /> */}
             <div className={classes.content}>
                 <Title className={classes.title}>
                     Make yourself <span className={classes.highlight}>visible</span>
@@ -126,12 +127,25 @@ export function HeroSection() {
                 <div className={classes.search_bar}>
                     <TypeAnimation
                         sequence={[
-                            2000,
+                            1000,
+                            '',
+                            () => {
+                                setActiveIlustration(web_development)
+                            },
                             'Web development',
                             2000,
+                            '',
+                            () => {
+                                setActiveIlustration(seo)
+                            },
                             'Search Engine Optimization',
                             2000,
+                            '',
+                            () => {
+                                setActiveIlustration(social_media)
+                            },
                             'Social media management',
+                            1000,
                         ]}
                         wrapper="span"
                         className={classes.type_animation}
@@ -140,7 +154,7 @@ export function HeroSection() {
                     <IconSearch className={classes.icon} size="2rem" stroke={3} />
                 </div>
             </div>
-            <div className={classes.ilustration}></div>
+            <div className={classes.ilustration} style={{backgroundImage: `url(${activeIlustration})`}}></div>
         </div>
     )
 }
