@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { createStyles, useMantineTheme, Title, rem, Text} from '@mantine/core';
+import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import { TypeAnimation } from 'react-type-animation';
 import { IconSearch } from '@tabler/icons-react';
 import web_development from './../assets/web_development.svg'
@@ -123,7 +123,20 @@ const useStyles = createStyles((theme) => ({
         [theme.fn.smallerThan('xs')]: {
           fontSize: rem(20),
         },
-    }
+    },
+
+    button: {
+        marginTop: 20,
+        color: theme.white,
+        fontFamily: `Roboto, ${theme.fontFamily}`,
+        fontSize: rem(24),
+        fontWeight: 600,
+    
+        [theme.fn.smallerThan('xs')]: {
+          fontSize: rem(16),
+          marginTop: 10,
+        },
+    },
 }))
 
 export function HeroSection() {
@@ -170,6 +183,11 @@ export function HeroSection() {
                     />
                     <IconSearch className={classes.icon} size="2rem" stroke={3} />
                 </div>
+                <a href='/contact'>
+                    <Button className={classes.button} size='lg' radius='md'>
+                        Contact me
+                    </Button>
+                </a>
             </div>
             <div className={classes.ilustration} style={{backgroundImage: `url(${activeIlustration})`}}></div>
         </div>
