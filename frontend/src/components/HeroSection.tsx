@@ -4,23 +4,19 @@ import { IconSearch } from '@tabler/icons-react';
 import web_development from './../assets/web_development.svg'
 import seo from './../assets/seo.svg'
 import social_media from './../assets/social_media.svg'
-import copy_writing from './../assets/copy_writing.svg'
 
 
 const useStyles = createStyles((theme) => ({
     container: {
         height: '100%',
         display: 'flex',
-        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundImage: `url(${seo})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
     },
 
     content: {
+        height: '100%',
+        width: '50%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -28,8 +24,21 @@ const useStyles = createStyles((theme) => ({
         opacity: 'unset',
     },
 
+    ilustration: {
+        height: '100%',
+        width: '50%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundImage: `url(${web_development})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+    },
+
     title: {
-        color: theme.black,
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(60),
         fontWeight: 700,
@@ -40,7 +49,7 @@ const useStyles = createStyles((theme) => ({
     },
 
     text: {
-        color: theme.black,
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
         fontWeight: 600,
@@ -55,6 +64,7 @@ const useStyles = createStyles((theme) => ({
         position: 'relative',
         marginTop: 50,
         width: 700,
+        maxWidth: '90%',
         padding: 10,
         paddingLeft: 30,
         border: '4px solid',
@@ -62,8 +72,6 @@ const useStyles = createStyles((theme) => ({
         borderColor: theme.black,
         backgroundColor: theme.white,
         color: theme.black,
-        boxShadow: '15px 15px 20px black',
-        maxWidth: '90%',
 
         [theme.fn.smallerThan('xs')]: {
             paddingLeft: 10,
@@ -107,29 +115,32 @@ export function HeroSection() {
 
     return (
         <div  className={classes.container}>
-            <Overlay color="#000" opacity={0.2} zIndex={0} />
-            <Title className={classes.title}>
-                Make yourself <span className={classes.highlight}>visible</span>
-            </Title>
-            <Text className={classes.text}>
-                We will take care of your online image
-            </Text>
-            <div className={classes.search_bar}>
-                <TypeAnimation
-                    sequence={[
-                        2000,
-                        'Web development',
-                        2000,
-                        'Search Engine Optimization',
-                        2000,
-                        'Social media management',
-                    ]}
-                    wrapper="span"
-                    className={classes.type_animation}
-                    repeat={Infinity}
-                />
-                <IconSearch className={classes.icon} size="2rem" stroke={3} />
+            {/* <Overlay color="#000" opacity={0.2} zIndex={0} /> */}
+            <div className={classes.content}>
+                <Title className={classes.title}>
+                    Make yourself <span className={classes.highlight}>visible</span>
+                </Title>
+                <Text className={classes.text}>
+                    We will take care of your online image
+                </Text>
+                <div className={classes.search_bar}>
+                    <TypeAnimation
+                        sequence={[
+                            2000,
+                            'Web development',
+                            2000,
+                            'Search Engine Optimization',
+                            2000,
+                            'Social media management',
+                        ]}
+                        wrapper="span"
+                        className={classes.type_animation}
+                        repeat={Infinity}
+                    />
+                    <IconSearch className={classes.icon} size="2rem" stroke={3} />
+                </div>
             </div>
+            <div className={classes.ilustration}></div>
         </div>
     )
 }
