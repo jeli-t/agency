@@ -1,6 +1,9 @@
-import { createStyles, useMantineTheme, Title, rem, Text, MantineProvider } from '@mantine/core';
+import { createStyles, useMantineTheme, Title, rem, Text, MantineProvider, Overlay } from '@mantine/core';
 import { TypeAnimation } from 'react-type-animation';
 import { IconSearch } from '@tabler/icons-react';
+import web_development from './../assets/web_development.svg'
+import seo from './../assets/seo.svg'
+import social_media from './../assets/social_media.svg'
 
 
 const useStyles = createStyles((theme) => ({
@@ -10,6 +13,9 @@ const useStyles = createStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundImage: `url(${web_development})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
     },
 
     title: {
