@@ -13,6 +13,10 @@ const useStyles = createStyles((theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+
+        [theme.fn.smallerThan('xs')]: {
+            flexDirection: 'column',
+        },
     },
 
     content: {
@@ -23,6 +27,12 @@ const useStyles = createStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         opacity: 'unset',
+
+        [theme.fn.smallerThan('xs')]: {
+            width: '100%',
+            height: 'auto',
+            marginTop: 50,
+        },
     },
 
     ilustration: {
@@ -35,6 +45,11 @@ const useStyles = createStyles((theme) => ({
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
+
+        [theme.fn.smallerThan('xs')]: {
+            width: '100%',
+            height: '200',
+        },
     },
 
     title: {
@@ -75,6 +90,8 @@ const useStyles = createStyles((theme) => ({
 
         [theme.fn.smallerThan('xs')]: {
             paddingLeft: 10,
+            marginTop: 30,
+            border: '2px solid',
         },
     },
 
