@@ -4,6 +4,7 @@ import { IconSearch } from '@tabler/icons-react';
 import web_development from './../assets/web_development.svg'
 import seo from './../assets/seo.svg'
 import social_media from './../assets/social_media.svg'
+import copy_writing from './../assets/copy_writing.svg'
 
 
 const useStyles = createStyles((theme) => ({
@@ -13,15 +14,24 @@ const useStyles = createStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundImage: `url(${web_development})`,
+        backgroundImage: `url(${seo})`,
         backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
     },
 
+    content: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        opacity: 'unset',
+    },
+
     title: {
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        color: theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(50),
+        fontSize: rem(60),
         fontWeight: 700,
     
         [theme.fn.smallerThan('xs')]: {
@@ -30,10 +40,10 @@ const useStyles = createStyles((theme) => ({
     },
 
     text: {
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        color: theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(20),
-        fontWeight: 300,
+        fontSize: rem(24),
+        fontWeight: 600,
     
         [theme.fn.smallerThan('xs')]: {
           fontSize: rem(16),
@@ -45,13 +55,15 @@ const useStyles = createStyles((theme) => ({
         position: 'relative',
         marginTop: 50,
         width: 700,
-        maxWidth: '90%',
         padding: 10,
         paddingLeft: 30,
-        border: '2px solid',
+        border: '4px solid',
         borderRadius: theme.radius.xl,
-        borderColor: theme.colorScheme === 'dark' ? theme.white : theme.black,
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        borderColor: theme.black,
+        backgroundColor: theme.white,
+        color: theme.black,
+        boxShadow: '15px 15px 20px black',
+        maxWidth: '90%',
 
         [theme.fn.smallerThan('xs')]: {
             paddingLeft: 10,
@@ -60,7 +72,7 @@ const useStyles = createStyles((theme) => ({
 
     highlight: {
         position: 'relative',
-        backgroundColor: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).background,
+        backgroundColor: theme.primaryColor,
         borderRadius: theme.radius.sm,
         padding: `${rem(4)} ${rem(12)}`,
     },
@@ -68,7 +80,7 @@ const useStyles = createStyles((theme) => ({
     icon: {
         position: 'absolute',
         right: 30,
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        color: theme.black,
 
         [theme.fn.smallerThan('xs')]: {
             top: 5,
@@ -95,11 +107,12 @@ export function HeroSection() {
 
     return (
         <div  className={classes.container}>
+            <Overlay color="#000" opacity={0.2} zIndex={0} />
             <Title className={classes.title}>
                 Make yourself <span className={classes.highlight}>visible</span>
             </Title>
             <Text className={classes.text}>
-                I will take care of your online presence
+                We will take care of your online image
             </Text>
             <div className={classes.search_bar}>
                 <TypeAnimation
@@ -115,7 +128,7 @@ export function HeroSection() {
                     className={classes.type_animation}
                     repeat={Infinity}
                 />
-                <IconSearch className={classes.icon} size="2rem" stroke={2} />
+                <IconSearch className={classes.icon} size="2rem" stroke={3} />
             </div>
         </div>
     )
