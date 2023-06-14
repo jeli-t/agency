@@ -1,4 +1,4 @@
-import { createStyles, useMantineTheme, Header, Group, Burger, Container, rem, Title, useMantineColorScheme, Switch, Drawer } from '@mantine/core';
+import { createStyles, useMantineTheme, Header, Group, Burger, Container, rem, Title, useMantineColorScheme, Switch, Drawer, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { Link } from 'react-router-dom';
 import { IconMoonStars, IconSun } from '@tabler/icons-react';
@@ -35,6 +35,15 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
+  responsive_buttons: {
+    [theme.fn.smallerThan('sm')]: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'column',
+    },
+  },
+
   burger: {
     [theme.fn.largerThan('sm')]: {
       display: 'none',
@@ -59,7 +68,7 @@ const useStyles = createStyles((theme) => ({
     },
 
     [theme.fn.smallerThan('sm')]: {
-      color: theme.black,
+      color: theme.colorScheme === 'dark' ? theme.white : theme.black,
       fontSize: rem(25),
       marginTop: 25,
     },
@@ -182,6 +191,9 @@ export function HeaderMenu() {
           <div className={classes.responsive_menu}>
             {items}
           </div>
+          <Group className={classes.responsive_buttons}>
+            <SwitchToggle />
+          </Group>
         </Drawer>
       </Container>
     </Header>
