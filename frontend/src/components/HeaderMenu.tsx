@@ -1,5 +1,6 @@
 import { createStyles, useMantineTheme, Header, Group, Burger, Container, rem, Title, useMantineColorScheme, Switch, Drawer } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import { Link } from 'react-router-dom';
 import { IconMoonStars, IconSun } from '@tabler/icons-react';
 
 
@@ -126,13 +127,13 @@ export function HeaderMenu() {
 
   const items = mockdata.map((link) => {
     return (
-      <a
+      <Link
         key={link.label}
-        href={link.link}
+        to={link.link}
         className={classes.link}
       >
         {link.label}
-      </a>
+      </Link>
     );
   });
 
@@ -140,11 +141,11 @@ export function HeaderMenu() {
     <Header height={56} className={classes.header} mb={120}>
       <Container>
         <div className={classes.inner}>
-          <a href='/' style={{textDecoration: 'none'}}>
+          <Link to='/' style={{textDecoration: 'none'}}>
             <Title className={classes.title}>
               jeli.pl
             </Title>
-          </a>
+          </Link>
           <Group spacing={5} className={classes.links}>
             {items}
           </Group>
@@ -163,11 +164,11 @@ export function HeaderMenu() {
           <Header height={56} className={classes.header} mb={120}>
             <Container>
               <div className={classes.inner}>
-                <a href='/' style={{textDecoration: 'none'}}>
+                <Link to='/' style={{textDecoration: 'none'}}>
                   <Title className={classes.title}>
                     jeli.pl
                   </Title>
-                </a>
+                </Link>
                 <Burger
                   opened={opened}
                   onClick={close}

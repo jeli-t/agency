@@ -22,8 +22,8 @@ export default function App() {
     return (
         <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
             <MantineProvider withGlobalStyles withNormalizeCSS theme={{primaryColor: 'orange', colorScheme}}>
-                <AppShell header={<HeaderMenu />}>
-                    <BrowserRouter>
+                <BrowserRouter>
+                    <AppShell header={<HeaderMenu />}>
                         <Routes>
                             <Route path='/' element={<HomePage />} />
                             <Route path='/portfolio' element={<UnderConstructionPage />} />
@@ -32,8 +32,8 @@ export default function App() {
                             <Route path='/contact' element={<UnderConstructionPage />} />
                             <Route path='*' element={<NotFoundPage />} />
                         </Routes>
-                    </BrowserRouter>
-                </AppShell>
+                    </AppShell>
+                </BrowserRouter>
             </MantineProvider>
         </ColorSchemeProvider>
     );
