@@ -1,4 +1,4 @@
-import { createStyles, useMantineTheme, Header, Menu, Group, Center, Burger, Container, rem, Title, getStylesRef, useMantineColorScheme, Switch } from '@mantine/core';
+import { createStyles, useMantineTheme, Header, Group, Burger, Container, rem, Title, useMantineColorScheme, Switch, Drawer } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconMoonStars, IconSun } from '@tabler/icons-react';
 
@@ -56,10 +56,29 @@ const useStyles = createStyles((theme) => ({
         0.1
       ),
     },
+
+    [theme.fn.smallerThan('sm')]: {
+      color: theme.black,
+      fontSize: rem(25),
+      marginTop: 25,
+    },
   },
 
   linkLabel: {
     marginRight: rem(5),
+
+    [theme.fn.smallerThan('sm')]: {
+      marginRight: rem(0),
+    },
+  },
+
+  responsive_menu: {
+    marginTop: 56,
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
   },
 }));
 
@@ -102,7 +121,7 @@ const mockdata = [
 
 export function HeaderMenu() {
   const theme = useMantineTheme();
-  const [opened, { toggle }] = useDisclosure(false);
+  const [opened, { open, close }] = useDisclosure(false);
   const { classes } = useStyles();
 
   const items = mockdata.map((link) => {
@@ -134,12 +153,35 @@ export function HeaderMenu() {
           </Group>
           <Burger
             opened={opened}
-            onClick={toggle}
+            onClick={open}
             className={classes.burger}
             size="sm"
             color="#fff"
           />
         </div>
+        <Drawer opened={opened} onClose={close} size="100%" position='top' withCloseButton={false} transitionProps={{ transition: 'fade', duration: 150, timingFunction: 'easy' }}>
+          <Header height={56} className={classes.header} mb={120}>
+            <Container>
+              <div className={classes.inner}>
+                <a href='/' style={{textDecoration: 'none'}}>
+                  <Title className={classes.title}>
+                    jeli.pl
+                  </Title>
+                </a>
+                <Burger
+                  opened={opened}
+                  onClick={close}
+                  className={classes.burger}
+                  size="sm"
+                  color="#fff"
+                />
+              </div>
+            </Container>
+          </Header>
+          <div className={classes.responsive_menu}>
+            {items}
+          </div>
+        </Drawer>
       </Container>
     </Header>
   );
