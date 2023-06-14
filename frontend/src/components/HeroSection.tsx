@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import { TypeAnimation } from 'react-type-animation';
 import { IconSearch } from '@tabler/icons-react';
@@ -183,11 +184,11 @@ export function HeroSection() {
                     />
                     <IconSearch className={classes.icon} size="2rem" stroke={3} />
                 </div>
-                <a href='/contact'>
+                <Link to='/contact'>
                     <Button className={classes.button} size='lg' radius='md'>
                         Contact me
                     </Button>
-                </a>
+                </Link>
             </div>
             <div className={classes.ilustration} style={{backgroundImage: `url(${activeIlustration})`}}></div>
         </div>

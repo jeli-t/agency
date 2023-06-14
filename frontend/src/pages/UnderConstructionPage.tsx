@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { createStyles, Title, Text, Button, rem, MantineProvider, useMantineTheme, Image } from '@mantine/core';
 import construction from './../assets/construction.svg'
 
@@ -40,11 +41,11 @@ export default function UnderConstructionPage() {
           This site is still under construction. Good things take time. Come back later!
         </Text>
         <Image src={construction} height={'500px'} width='auto' />
-        <a href='/'>
+        <Link to='/'>
           <Button color='orange' variant="light" size="md">
             Take me back to home page
           </Button>
-        </a>
+        </Link>
       </div>
     </MantineProvider>
   );
