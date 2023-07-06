@@ -12,7 +12,8 @@ const useStyles = createStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        opacity: 'unset',
+        backgroundImage: theme.colorScheme === 'dark' ? 'radial-gradient(#ff8700 1.7px, #000000 1.7px)' : 'radial-gradient(#ff8700 1.7px, #ffffff 1.7px)',
+        backgroundSize: '40px 40px',
 
         [theme.fn.smallerThan('xs')]: {
             height: 'auto',
