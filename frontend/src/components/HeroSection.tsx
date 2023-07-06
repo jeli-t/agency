@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import { TypeAnimation } from 'react-type-animation';
 import { IconSearch } from '@tabler/icons-react';
-import { IconArrowBigDownLinesFilled } from '@tabler/icons-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import { useWindowScroll } from '@mantine/hooks';
 
 const useStyles = createStyles((theme) => ({
@@ -69,9 +70,11 @@ const useStyles = createStyles((theme) => ({
     },
 
     scroll_icon: {
+        height: 60,
         position: 'absolute',
         bottom: 40,
         color: theme.primaryColor,
+        cursor: 'pointer',
 
         [theme.fn.smallerThan('xs')]: {
             display: 'none',
@@ -142,7 +145,7 @@ export function HeroSection() {
                     Contact me
                 </Button>
             </Link>
-            <IconArrowBigDownLinesFilled className={classes.scroll_icon} size="4rem" stroke={3} onClick={()=> scrollTo({ y: 1000 })} />
+            <FontAwesomeIcon icon={faAnglesDown} beat className={classes.scroll_icon} onClick={()=> scrollTo({ y: 1000 })} />
         </div>
     )
 }
