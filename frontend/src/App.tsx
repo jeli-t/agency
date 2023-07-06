@@ -23,7 +23,7 @@ export default function App() {
         <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
             <MantineProvider withGlobalStyles withNormalizeCSS theme={{primaryColor: 'orange', colorScheme}}>
                 <BrowserRouter>
-                    <AppShell header={<HeaderMenu />}>
+                    <AppShell header={<HeaderMenu />} padding={0}>
                         <Routes>
                             <Route path='/' element={<HomePage />} />
                             <Route path='/portfolio' element={<UnderConstructionPage />} />
