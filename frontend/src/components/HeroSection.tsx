@@ -7,21 +7,24 @@ import { IconSearch } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
     container: {
-        height: '100%',
+        height: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         backgroundImage: theme.colorScheme === 'dark' ? 'radial-gradient(#ff8700 1.7px, #000000 1.7px)' : 'radial-gradient(#ff8700 1.7px, #ffffff 1.7px)',
         backgroundSize: '40px 40px',
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center center',
 
         [theme.fn.smallerThan('xs')]: {
             height: 'auto',
             marginTop: 50,
+            backgroundImage: 'none',
         },
     },
 
-    title: {
+    hero_title: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(70),
@@ -29,7 +32,7 @@ const useStyles = createStyles((theme) => ({
         margin: 10,
     
         [theme.fn.smallerThan('xs')]: {
-          fontSize: rem(60),
+          fontSize: rem(50),
         },
     },
 
@@ -95,7 +98,7 @@ export function HeroSection() {
 
     return (
         <div className={classes.container}>
-            <Title className={classes.title}>
+            <Title className={classes.hero_title}>
                 jeli.pl
             </Title>
             <div className={classes.search_bar}>
