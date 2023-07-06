@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import { TypeAnimation } from 'react-type-animation';
 import { IconSearch } from '@tabler/icons-react';
-
+import { IconArrowBigDownLinesFilled } from '@tabler/icons-react';
+import { useWindowScroll } from '@mantine/hooks';
 
 const useStyles = createStyles((theme) => ({
     container: {
@@ -56,7 +57,7 @@ const useStyles = createStyles((theme) => ({
         },
     },
 
-    icon: {
+    search_icon: {
         position: 'absolute',
         right: 30,
         color: theme.black,
@@ -64,6 +65,16 @@ const useStyles = createStyles((theme) => ({
         [theme.fn.smallerThan('xs')]: {
             top: 5,
             right: 10,
+        },
+    },
+
+    scroll_icon: {
+        position: 'absolute',
+        bottom: 40,
+        color: theme.primaryColor,
+
+        [theme.fn.smallerThan('xs')]: {
+            display: 'none',
         },
     },
 
@@ -96,6 +107,8 @@ export function HeroSection() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
 
+    const [scroll, scrollTo] = useWindowScroll();
+
     return (
         <div className={classes.container}>
             <Title className={classes.hero_title}>
@@ -122,13 +135,14 @@ export function HeroSection() {
                     className={classes.type_animation}
                     repeat={Infinity}
                 />
-                <IconSearch className={classes.icon} size="2rem" stroke={3} />
+                <IconSearch className={classes.search_icon} size="2rem" stroke={3} />
             </div>
             <Link to='/contact'>
                 <Button className={classes.button} size='lg' radius='md'>
                     Contact me
                 </Button>
             </Link>
+            <IconArrowBigDownLinesFilled className={classes.scroll_icon} size="4rem" stroke={3} onClick={()=> scrollTo({ y: 1000 })} />
         </div>
     )
 }
