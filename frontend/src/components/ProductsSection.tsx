@@ -21,16 +21,21 @@ const useStyles = createStyles((theme) => ({
     },
 
     product: {
-        height: '500px',
+        height: '600px',
         width: '80%',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         margin: 80,
 
+        [theme.fn.smallerThan('lg')]: {
+            width: '100%',
+        },
+
         [theme.fn.smallerThan('xs')]: {
             flexDirection: 'column',
             width: '100%',
+            height: '500px',
             margin: 40,
         },
     },
@@ -43,6 +48,10 @@ const useStyles = createStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         margin: 80,
+
+        [theme.fn.smallerThan('lg')]: {
+            width: '100%',
+        },
 
         [theme.fn.smallerThan('xs')]: {
             flexDirection: 'column',
@@ -89,9 +98,13 @@ const useStyles = createStyles((theme) => ({
         fontSize: rem(40),
         fontWeight: 600,
         margin: 10,
+
+        [theme.fn.smallerThan('lg')]: {
+            fontSize: rem(30),
+        },
     
         [theme.fn.smallerThan('xs')]: {
-          fontSize: rem(24),
+            fontSize: rem(24),
         },
     },
 
@@ -100,9 +113,14 @@ const useStyles = createStyles((theme) => ({
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
         fontWeight: 600,
-    
+        padding: 5,
+
+        [theme.fn.smallerThan('lg')]: {
+            fontSize: rem(20),
+        },
+
         [theme.fn.smallerThan('xs')]: {
-          fontSize: rem(16),
+            fontSize: rem(16),
         },
     },
 
