@@ -21,8 +21,8 @@ const useStyles = createStyles((theme) => ({
 
         [theme.fn.smallerThan('xs')]: {
             height: 'auto',
-            marginTop: 50,
-            backgroundImage: 'none',
+            paddingTop: 50,
+            paddingBottom: 50,
         },
     },
 
@@ -35,6 +35,23 @@ const useStyles = createStyles((theme) => ({
     
         [theme.fn.smallerThan('xs')]: {
           fontSize: rem(50),
+        },
+    },
+
+    hero_text: {
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        fontFamily: `Roboto, ${theme.fontFamily}`,
+        fontSize: rem(24),
+        fontWeight: 600,
+        padding: 5,
+        backgroundColor: theme.colorScheme === 'dark' ? theme.black : theme.white,
+
+        [theme.fn.smallerThan('lg')]: {
+            fontSize: rem(20),
+        },
+
+        [theme.fn.smallerThan('xs')]: {
+            fontSize: rem(16),
         },
     },
 
@@ -122,16 +139,13 @@ export function HeroSection() {
                     sequence={[
                         1000,
                         '',
-                        'Web development',
-                        2000,
-                        '',
-                        'Search Engine Optimization',
-                        2000,
-                        '',
-                        'Software as a Service',
+                        'Web design',
                         2000,
                         '',
                         'Social media management',
+                        2000,
+                        '',
+                        'Search Engine Optimization',
                         1000,
                     ]}
                     wrapper="span"
@@ -140,9 +154,12 @@ export function HeroSection() {
                 />
                 <IconSearch className={classes.search_icon} size="2rem" stroke={3} />
             </div>
+            <Text className={classes.hero_text}>
+                We will take care of your digital image
+            </Text>
             <Link to='/contact'>
                 <Button className={classes.button} size='lg' radius='md'>
-                    Contact me
+                    Contact
                 </Button>
             </Link>
             <FontAwesomeIcon icon={faAnglesDown} beat className={classes.scroll_icon} onClick={()=> scrollTo({ y: 1000 })} />
