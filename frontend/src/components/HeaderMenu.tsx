@@ -1,7 +1,8 @@
 import { createStyles, useMantineTheme, Header, Group, Burger, Container, rem, Title, useMantineColorScheme, Switch, Drawer, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { IconMoonStars, IconSun } from '@tabler/icons-react';
+import { useEffect } from 'react';
 
 
 const useStyles = createStyles((theme) => ({
@@ -131,8 +132,13 @@ const mockdata = [
 
 export function HeaderMenu() {
   const theme = useMantineTheme();
-  const [opened, { open, close }] = useDisclosure(false);
   const { classes } = useStyles();
+  const [opened, { open, close }] = useDisclosure(false);
+
+  const location = useLocation();
+  useEffect(() => {
+    close();
+  }, [location])
 
   const items = mockdata.map((link) => {
     return (
