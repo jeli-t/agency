@@ -23,6 +23,7 @@ const useStyles = createStyles((theme) => ({
     grid: {
         width: '70%',
         margin: 100,
+        padding: 0,
 
         [theme.fn.smallerThan('md')]: {
             width: '100%',
@@ -115,7 +116,7 @@ const items = features.map((feature) => (
 
 return (
     <div className={classes.wrapper}>
-        <Grid gutter={80} className={classes.grid}>
+        <Grid gutter={40} className={classes.grid}>
             <Col span={12} md={5}>
             <Title className={classes.title}>
                 Make yourself <span className={classes.highlight}>visible</span>
