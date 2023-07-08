@@ -3,13 +3,12 @@ import {
     Title,
     SimpleGrid,
     Text,
-    Button,
     ThemeIcon,
     Grid,
     Col,
     rem,
 } from '@mantine/core';
-import { IconReceiptOff, IconFlame, IconCircleDotted, IconFileCode } from '@tabler/icons-react';
+import { IconWorldWww, IconSearch, IconAd, IconBrandInstagram } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
     wrapper: {
@@ -45,6 +44,13 @@ const useStyles = createStyles((theme) => ({
         },
     },
 
+    highlight: {
+        position: 'relative',
+        backgroundColor: theme.primaryColor,
+        borderRadius: theme.radius.sm,
+        padding: `${rem(4)} ${rem(12)}`,
+    },
+
     text: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
@@ -64,26 +70,24 @@ const useStyles = createStyles((theme) => ({
 
 const features = [
 {
-    icon: IconReceiptOff,
-    title: 'Free and open source',
-    description: 'All packages are published under MIT license, you can use Mantine in any project',
+    icon: IconWorldWww,
+    title: 'Websites',
+    description: 'Design, UI/UX, development, hosting, domains',
 },
 {
-    icon: IconFileCode,
-    title: 'TypeScript based',
-    description: 'Build type safe applications, all components and hooks export types',
+    icon: IconSearch,
+    title: 'Search Engine Optimization',
+    description: 'SEO, SEM, Local SEO',
 },
 {
-    icon: IconCircleDotted,
-    title: 'No annoying focus ring',
-    description:
-    'With new :focus-visible selector focus ring will appear only when user navigates with keyboard',
+    icon: IconBrandInstagram,
+    title: 'Social media',
+    description: 'Management, content creating, blogs',
 },
 {
-    icon: IconFlame,
-    title: 'Flexible',
-    description:
-    'Customize colors, spacing, shadows, fonts and many other settings with global theme object',
+    icon: IconAd,
+    title: 'Marketing',
+    description: 'Google Ads, Facebook Ads, complex campaigns',
 },
 ];
 
@@ -92,20 +96,20 @@ const { classes } = useStyles();
 
 const items = features.map((feature) => (
     <div key={feature.title}>
-    <ThemeIcon
-        size={44}
-        radius="md"
-        variant="gradient"
-        gradient={{ deg: 133, from: 'orange', to: 'red' }}
-    >
-        <feature.icon size={rem(26)} stroke={1.5} />
-    </ThemeIcon>
-    <Text fz="lg" mt="sm" fw={500}>
-        {feature.title}
-    </Text>
-    <Text fz="sm">
-        {feature.description}
-    </Text>
+        <ThemeIcon
+            size={50}
+            radius="md"
+            variant="gradient"
+            gradient={{ deg: 133, from: 'orange', to: 'red' }}
+        >
+            <feature.icon size={rem(26)} stroke={1.5} />
+        </ThemeIcon>
+        <Text fz={22} mt="sm" fw={600}>
+            {feature.title}
+        </Text>
+        <Text>
+            {feature.description}
+        </Text>
     </div>
 ));
 
@@ -113,12 +117,11 @@ return (
     <div className={classes.wrapper}>
         <Grid gutter={80} className={classes.grid}>
             <Col span={12} md={5}>
-            <Title className={classes.title} order={2}>
-                jeli.pl digital agency
+            <Title className={classes.title}>
+                Make yourself <span className={classes.highlight}>visible</span>
             </Title>
             <Text className={classes.text}>
-                Build fully functional accessible web applications faster than ever - Mantine includes
-                more than 120 customizable components and hooks to cover you in any situation
+                If you are not on the Internet, you do not exist. At jeli.pl, we will help you become visible online. From the website to social media. We provide comprehensive and tailored solutions for small and medium-sized businesses.
             </Text>
 
             </Col>
