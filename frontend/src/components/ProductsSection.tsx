@@ -4,6 +4,7 @@ import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantin
 import web_development from './../assets/web_development.svg'
 import seo from './../assets/seo.svg'
 import social_media from './../assets/social_media.svg'
+import marketing from './../assets/marketing.svg'
 
 
 const useStyles = createStyles((theme) => ({
@@ -147,7 +148,7 @@ export function ProductsSection() {
                 <div className={classes.ilustration} style={{backgroundImage: `url(${web_development})`}}></div>
                 <div className={classes.description}>
                     <Title className={classes.service_title}>
-                        Web development
+                        Websites
                     </Title>
                     <Text className={classes.text}>
                         We will take care of your online image
@@ -181,7 +182,24 @@ export function ProductsSection() {
                 <div className={classes.ilustration} style={{backgroundImage: `url(${social_media})`}}></div>
                 <div className={classes.description}>
                     <Title className={classes.service_title}>
-                        Social media management
+                        Social media
+                    </Title>
+                    <Text className={classes.text}>
+                        We will take care of your online image
+                    </Text>
+                    <Link to='/contact'>
+                        <Button className={classes.button} size='lg' radius='md'>
+                            Contact me
+                        </Button>
+                    </Link>
+                </div>
+            </div>
+
+            <div className={classes.product2}>
+                <div className={classes.ilustration} style={{backgroundImage: `url(${marketing})`}}></div>
+                <div className={classes.description}>
+                    <Title className={classes.service_title}>
+                        Digital marketing
                     </Title>
                     <Text className={classes.text}>
                         We will take care of your online image
