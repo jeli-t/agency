@@ -86,7 +86,7 @@ const features = [
 },
 {
     icon: IconAd,
-    title: 'Marketing',
+    title: 'Digital marketing',
     description: 'Google Ads, Facebook Ads, complex campaigns',
 },
 ];

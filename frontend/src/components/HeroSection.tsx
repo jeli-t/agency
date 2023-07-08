@@ -90,7 +90,7 @@ const useStyles = createStyles((theme) => ({
         height: 50,
         position: 'absolute',
         bottom: 40,
-        color: theme.primaryColor,
+        color: theme.colors.orange[8],
         cursor: 'pointer',
 
         [theme.fn.smallerThan('xs')]: {
@@ -139,13 +139,16 @@ export function HeroSection() {
                     sequence={[
                         1000,
                         '',
-                        'Web design',
-                        2000,
-                        '',
-                        'Social media management',
+                        'Websites',
                         2000,
                         '',
                         'Search Engine Optimization',
+                        2000,
+                        '',
+                        'Social media',
+                        2000,
+                        '',
+                        'Digital marketing',
                         1000,
                     ]}
                     wrapper="span"
