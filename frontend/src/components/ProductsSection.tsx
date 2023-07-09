@@ -151,11 +151,11 @@ export function ProductsSection() {
                         Websites
                     </Title>
                     <Text className={classes.text}>
-                        We will take care of your online image
+                        The websites we design are not only supposed to look nice, but most importantly operate well and grow your business. We develop landing pages, business websites and small online stores. All tailored to your business needs. We deliver full service from design to hosting.
                     </Text>
-                    <Link to='/contact'>
+                    <Link to='/blog'>
                         <Button className={classes.button} size='lg' radius='md'>
-                            Contact me
+                            Read more
                         </Button>
                     </Link>
                 </div>
@@ -168,11 +168,11 @@ export function ProductsSection() {
                         Search Engine Optimization
                     </Title>
                     <Text className={classes.text}>
-                        We will take care of your online image
+                        Already have a website? Good, now it's important to make sure it shows up when someone tries to google your business. We will help you optimize your site's position in search engines and gain a competitive edge in the digital world.
                     </Text>
-                    <Link to='/contact'>
+                    <Link to='/blog'>
                         <Button className={classes.button} size='lg' radius='md'>
-                            Contact me
+                            Read more
                         </Button>
                     </Link>
                 </div>
@@ -185,11 +185,11 @@ export function ProductsSection() {
                         Social media
                     </Title>
                     <Text className={classes.text}>
-                        We will take care of your online image
+                        Social media is one of the most important elements of building a brand nowadays. We can help you manage your Facebook page, Instagram and Twitter. We offer creating and scheduling content for posts and building a community around the brand.
                     </Text>
-                    <Link to='/contact'>
+                    <Link to='/blog'>
                         <Button className={classes.button} size='lg' radius='md'>
-                            Contact me
+                            Read more
                         </Button>
                     </Link>
                 </div>
@@ -202,11 +202,11 @@ export function ProductsSection() {
                         Digital marketing
                     </Title>
                     <Text className={classes.text}>
-                        We will take care of your online image
+                        Do you want to reach new customers on the Internet? We will prepare marketing campaigns for you using Google Ads and Facebook Ads. We can also create and run mailing lists for your company.
                     </Text>
-                    <Link to='/contact'>
+                    <Link to='/blog'>
                         <Button className={classes.button} size='lg' radius='md'>
-                            Contact me
+                            Read more
                         </Button>
                     </Link>
                 </div>
