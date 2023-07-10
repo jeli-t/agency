@@ -3,6 +3,7 @@ import { HeroSection } from '../components/HeroSection';
 import { ProductsSection } from '../components/ProductsSection';
 import { AboutSection } from '../components/AboutSection';
 import { CallToAction } from '../components/CallToAction';
+import { FaqSection } from '../components/FaqSection';
 import { Footer } from '../components/Footer';
 
 
@@ -15,6 +16,7 @@ export default function HomePage() {
             <AboutSection></AboutSection>
             <ProductsSection></ProductsSection>
             <CallToAction></CallToAction>
+            <FaqSection></FaqSection>
             <Footer></Footer>
         </MantineProvider>
     )
