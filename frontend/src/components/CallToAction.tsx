@@ -21,7 +21,6 @@ const useStyles = createStyles((theme) => ({
         },
     },
 
-
     title: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
@@ -30,7 +29,7 @@ const useStyles = createStyles((theme) => ({
         margin: 10,
     
         [theme.fn.smallerThan('xs')]: {
-          fontSize: rem(50),
+            fontSize: rem(50),
         },
     },
 
@@ -39,9 +38,10 @@ const useStyles = createStyles((theme) => ({
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(34),
         fontWeight: 500,
+        textAlign: 'center',
 
         [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(16),
+            fontSize: rem(24),
         },
     },
 
@@ -64,14 +64,10 @@ const useStyles = createStyles((theme) => ({
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
 
-        [theme.fn.smallerThan('lg')]: {
-            width: '50%',
-            margin: 10,
-        },
-
         [theme.fn.smallerThan('xs')]: {
+            height: '400px',
             width: '100%',
-            marginBottom: -10,
+            backgroundSize: '220%',
         },
     },
 
@@ -90,7 +86,8 @@ const useStyles = createStyles((theme) => ({
         },
     
         [theme.fn.smallerThan('xs')]: {
-          fontSize: rem(16),
+          fontSize: rem(24),
+          margin: 10,
         },
     },
 }))
@@ -104,10 +101,10 @@ export function CallToAction() {
             <Title className={classes.title}>
                 Make yourself <span className={classes.highlight}>visible</span>
             </Title>
+            <div className={classes.ilustration} style={{backgroundImage: `url(${report})`}}></div>
             <Text className={classes.text}>
                 Get a <span style={{fontWeight: '700'}}>free</span> personalized report and suggestions
             </Text>
-            <div className={classes.ilustration} style={{backgroundImage: `url(${report})`}}></div>
             <Link to='/get_started'>
                 <Button className={classes.button} size='xl' radius='md'>
                     Get started
