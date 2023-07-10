@@ -11,6 +11,7 @@ const useStyles = createStyles((theme) => ({
     wrapper: {
         height: 'auto',
         width: '100%',
+        marginBottom: 100,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -18,6 +19,7 @@ const useStyles = createStyles((theme) => ({
 
         [theme.fn.smallerThan('xs')]: {
             marginTop: 30,
+            marginBottom: 50,
         },
     },
 
@@ -35,14 +37,13 @@ const useStyles = createStyles((theme) => ({
 
         [theme.fn.smallerThan('xs')]: {
             flexDirection: 'column',
-            width: '100%',
-            height: '500px',
+            width: '90%',
             margin: 40,
         },
     },
 
     product2: {
-        height: '500px',
+        height: '600px',
         width: '80%',
         display: 'flex',
         flexDirection: 'row-reverse',
@@ -56,7 +57,7 @@ const useStyles = createStyles((theme) => ({
 
         [theme.fn.smallerThan('xs')]: {
             flexDirection: 'column',
-            width: '100%',
+            width: '90%',
             margin: 40,
         },
     },
@@ -68,6 +69,11 @@ const useStyles = createStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+
+        [theme.fn.smallerThan('lg')]: {
+            width: '50%',
+            margin: 10,
+        },
 
         [theme.fn.smallerThan('xs')]: {
             width: '100%',
@@ -87,9 +93,14 @@ const useStyles = createStyles((theme) => ({
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
 
+        [theme.fn.smallerThan('lg')]: {
+            width: '50%',
+            margin: 10,
+        },
+
         [theme.fn.smallerThan('xs')]: {
             width: '100%',
-            marginBottom: -20,
+            marginBottom: -10,
         },
     },
 
