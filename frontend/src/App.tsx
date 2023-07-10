@@ -30,6 +30,7 @@ export default function App() {
                             <Route path='/blog' element={<UnderConstructionPage />} />
                             <Route path='/about' element={<UnderConstructionPage />} />
                             <Route path='/contact' element={<UnderConstructionPage />} />
+                            <Route path='/get_started' element={<UnderConstructionPage />} />
                             <Route path='*' element={<NotFoundPage />} />
                         </Routes>
                     </AppShell>

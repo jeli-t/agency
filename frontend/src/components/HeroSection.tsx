@@ -160,9 +160,9 @@ export function HeroSection() {
             <Text className={classes.hero_text}>
                 We will take care of your digital image
             </Text>
-            <Link to='/contact'>
+            <Link to='/get_started'>
                 <Button className={classes.button} size='lg' radius='md'>
-                    Contact
+                    Get started
                 </Button>
             </Link>
             <FontAwesomeIcon icon={faAnglesDown} beat className={classes.scroll_icon} onClick={()=> scrollTo({ y: 1000 })} />
