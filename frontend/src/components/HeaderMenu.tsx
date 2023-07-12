@@ -112,22 +112,26 @@ export function SwitchToggle() {
 }
 
 const mockdata = [
-    {
-        "link": "/portfolio",
-        "label": "Portfolio",
-    },
-    {
-        "link": "/blog",
-        "label": "Blog",
-    },
-    {
-        "link": "/about",
-        "label": "About",
-    },
-    {
-        "link": "/contact",
-        "label": "Contact",
-    }
+  {
+    "link": "/get_started",
+    "label": "Get started",
+  },
+  {
+    "link": "/solutions",
+    "label": "Solutions",
+  },
+  {
+    "link": "/portfolio",
+    "label": "Portfolio",
+  },
+  {
+    "link": "/about",
+    "label": "About",
+  },
+  {
+    "link": "/contact",
+    "label": "Contact",
+  }
 ];
 
 export function HeaderMenu() {
@@ -161,7 +165,7 @@ export function HeaderMenu() {
               jeli.pl
             </Title>
           </Link>
-          <Group spacing={5} className={classes.links}>
+          <Group spacing={10} className={classes.links}>
             {items}
           </Group>
           <Group className={classes.buttons}>

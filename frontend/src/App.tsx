@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { MantineProvider, ColorSchemeProvider, ColorScheme, AppShell } from '@mantine/core';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useLocalStorage } from '@mantine/hooks';
@@ -32,7 +31,7 @@ export default function App() {
                         <Routes>
                             <Route path='/' element={<HomePage />} />
                             <Route path='/portfolio' element={<UnderConstructionPage />} />
-                            <Route path='/blog' element={<UnderConstructionPage />} />
+                            <Route path='/solutions' element={<UnderConstructionPage />} />
                             <Route path='/about' element={<About />} />
                             <Route path='/contact' element={<Contact />} />
                             <Route path='/get_started' element={<UnderConstructionPage />} />
