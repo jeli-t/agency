@@ -1,5 +1,6 @@
 import { createStyles, Text, Container, ActionIcon, Group, rem } from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
+import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram, IconMail } from '@tabler/icons-react';
+import { Link } from 'react-router-dom';
 
 
 const useStyles = createStyles((theme) => ({
@@ -15,7 +16,7 @@ const useStyles = createStyles((theme) => ({
 
   logo: {
     maxWidth: rem(200),
-
+    textDecoration: 'none',
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
     fontFamily: `Roboto, ${theme.fontFamily}`,
     fontSize: rem(40),
@@ -102,11 +103,51 @@ export function Footer() {
   return (
     <footer className={classes.footer}>
       <Container className={classes.inner}>
-        <div className={classes.logo}>
-          jeli.pl
-        </div>
+        <Link to='/' style={{textDecoration: 'none'}}>
+          <div className={classes.logo}>
+            jeli.pl
+          </div>
+        </Link>
         <div className={classes.groups}>
-            {/* links here */}
+          <div className={classes.wrapper}>
+            <Text className={classes.title}>{'Navigation'}</Text>
+            <Link to='/' className={classes.link}>
+              Main page
+            </Link>
+            <Link to='/get_started' className={classes.link}>
+              Get started
+            </Link>
+            <Link to='/portfolio' className={classes.link}>
+              Portfolio
+            </Link>
+            <Link to='/about' className={classes.link}>
+              About
+            </Link>
+            <Link to='/contact' className={classes.link}>
+              Contact
+            </Link>
+          </div>
+          <div className={classes.wrapper}>
+            <Text className={classes.title}>{'Solutions'}</Text>
+            <Link to='/solutions' className={classes.link}>
+              Websites
+            </Link>
+            <Link to='/solutions' className={classes.link}>
+              SEO
+            </Link>
+            <Link to='/solutions' className={classes.link}>
+              Social media
+            </Link>
+            <Link to='/solutions' className={classes.link}>
+              Digital marketing
+            </Link>
+          </div>
+          <div className={classes.wrapper}>
+            <Text className={classes.title}>{'Other'}</Text>
+            <Link to='/privacy' className={classes.link}>
+              Privacy
+            </Link>
+          </div>
         </div>
       </Container>
       <Container className={classes.afterFooter}>
@@ -115,6 +156,11 @@ export function Footer() {
         </Text>
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
+          <Link to='/contact'>
+            <ActionIcon size="lg">
+              <IconMail size="1.05rem" stroke={1.5} />
+            </ActionIcon>
+          </Link>
           <ActionIcon size="lg">
             <IconBrandTwitter size="1.05rem" stroke={1.5} />
           </ActionIcon>
