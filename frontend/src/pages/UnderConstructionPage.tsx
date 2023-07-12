@@ -42,8 +42,13 @@ export default function UnderConstructionPage() {
         </Text>
         <Image src={construction} height={'500px'} width='auto' />
         <Link to='/'>
-          <Button color='orange' variant="light" size="md">
+          <Button color='orange' variant="filled" size="md">
             Take me back to home page
+          </Button>
+        </Link>
+        <Link to='/contact'>
+          <Button color='orange' variant="filled" size="md" style={{marginTop: '20px'}}>
+            Or contact me now
           </Button>
         </Link>
       </div>
