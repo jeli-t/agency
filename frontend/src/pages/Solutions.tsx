@@ -1,5 +1,5 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
-import { ProductsSection } from '../components/ProductsSection';
+import { SolutionCategories } from '../components/SolutionCategories';
 
 
 export default function Solutions() {
@@ -7,7 +7,7 @@ export default function Solutions() {
 
     return (
         <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
-            <ProductsSection></ProductsSection>
+            <SolutionCategories></SolutionCategories>
         </MantineProvider>
     )
 }
