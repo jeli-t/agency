@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
+import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon } from '@mantine/core';
 import contact from './../assets/contact.svg'
+import { IconMail } from '@tabler/icons-react';
 
 
 const useStyles = createStyles((theme) => ({
@@ -109,6 +110,23 @@ const useStyles = createStyles((theme) => ({
         },
     },
 
+    contact_info: {
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        fontFamily: `Roboto, ${theme.fontFamily}`,
+        fontSize: rem(30),
+        fontWeight: 500,
+        display: 'inline-flex',
+        marginLeft: 10,
+
+        [theme.fn.smallerThan('lg')]: {
+            fontSize: rem(30),
+        },
+    
+        [theme.fn.smallerThan('xs')]: {
+            fontSize: rem(24),
+        },
+    },
+
     button: {
         marginTop: 20,
         color: theme.white,
@@ -135,8 +153,21 @@ export function ContactSection() {
                         We work remotely
                     </Title>
                     <Text className={classes.text}>
-                        Please contact us via email or social media. For more complex projects, we can set up a video conference. Check FAQ section below.
+                        Please contact us via email or social media. For more complex projects, we can arrange a video conference to discuss the details. Please check FAQ section below.
                     </Text>
+                    <div style={{marginTop: '40px'}}>
+                        <ThemeIcon
+                            size={50}
+                            radius="md"
+                            variant="gradient"
+                            gradient={{ deg: 133, from: 'orange', to: 'red' }}
+                        >
+                            <IconMail size={rem(36)} stroke={1.5} />
+                        </ThemeIcon>
+                        <Text className={classes.contact_info}>
+                            contact@jeli.pl
+                        </Text>
+                    </div>
                 </div>
             </div>
         </div>
