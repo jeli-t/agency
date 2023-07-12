@@ -1,5 +1,6 @@
 import { MantineProvider, ColorSchemeProvider, ColorScheme, AppShell } from '@mantine/core';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CookieConsent from "react-cookie-consent";
 import { useLocalStorage } from '@mantine/hooks';
 import ScrollToTop from './components/ScrollToTop';
 import { HeaderMenu } from './components/HeaderMenu';
@@ -26,6 +27,7 @@ export default function App() {
     return (
         <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
             <MantineProvider withGlobalStyles withNormalizeCSS theme={{primaryColor: 'orange', colorScheme}}>
+                <CookieConsent style={{paddingLeft: 20, paddingRight: 20}}>This website uses cookies. By staying on the site, you accept the cookies and <a href='/privacy'>privacy policy </a> of this website.</CookieConsent>
                 <BrowserRouter>
                     <ScrollToTop></ScrollToTop>
                     <AppShell header={<HeaderMenu />} footer={<Footer />} padding={0}>

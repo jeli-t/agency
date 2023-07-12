@@ -89,7 +89,7 @@ const useStyles = createStyles((theme) => ({
     scroll_icon: {
         height: 50,
         position: 'absolute',
-        bottom: 40,
+        bottom: 70,
         color: theme.colors.orange[8],
         cursor: 'pointer',
 
