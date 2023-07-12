@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { MantineProvider, ColorSchemeProvider, ColorScheme, AppShell } from '@mantine/core';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useLocalStorage } from '@mantine/hooks';
+import ScrollToTop from './components/ScrollToTop';
 import { HeaderMenu } from './components/HeaderMenu';
 
 import HomePage from './pages/HomePage';
@@ -25,6 +26,7 @@ export default function App() {
         <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
             <MantineProvider withGlobalStyles withNormalizeCSS theme={{primaryColor: 'orange', colorScheme}}>
                 <BrowserRouter>
+                    <ScrollToTop></ScrollToTop>
                     <AppShell header={<HeaderMenu />} padding={0}>
                         <Routes>
                             <Route path='/' element={<HomePage />} />
