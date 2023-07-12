@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useLocalStorage } from '@mantine/hooks';
 import ScrollToTop from './components/ScrollToTop';
 import { HeaderMenu } from './components/HeaderMenu';
+import { Footer } from './components/Footer';
 
 import HomePage from './pages/HomePage';
 import About from './pages/About';
@@ -27,7 +28,7 @@ export default function App() {
             <MantineProvider withGlobalStyles withNormalizeCSS theme={{primaryColor: 'orange', colorScheme}}>
                 <BrowserRouter>
                     <ScrollToTop></ScrollToTop>
-                    <AppShell header={<HeaderMenu />} padding={0}>
+                    <AppShell header={<HeaderMenu />} footer={<Footer />} padding={0}>
                         <Routes>
                             <Route path='/' element={<HomePage />} />
                             <Route path='/portfolio' element={<UnderConstructionPage />} />
