@@ -130,7 +130,6 @@ export function MyStory() {
     return (
         <div className={classes.wrapper}>
             <div className={classes.hero_section}>
-                <div className={classes.ilustration} style={{backgroundImage: `url(${about_me})`}}></div>
                 <div className={classes.description}>
                     <Title className={classes.title}>
                         Hi, my name is Tomek
@@ -144,6 +143,7 @@ export function MyStory() {
                         </Button>
                     </Link>
                 </div>
+                <div className={classes.ilustration} style={{backgroundImage: `url(${about_me})`}}></div>
             </div>
         </div>
     )
