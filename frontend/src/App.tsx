@@ -6,6 +6,7 @@ import { HeaderMenu } from './components/HeaderMenu';
 
 import HomePage from './pages/HomePage';
 import About from './pages/About';
+import Contact from './pages/Contact';
 import UnderConstructionPage from './pages/UnderConstructionPage';
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -30,7 +31,7 @@ export default function App() {
                             <Route path='/portfolio' element={<UnderConstructionPage />} />
                             <Route path='/blog' element={<UnderConstructionPage />} />
                             <Route path='/about' element={<About />} />
-                            <Route path='/contact' element={<UnderConstructionPage />} />
+                            <Route path='/contact' element={<Contact />} />
                             <Route path='/get_started' element={<UnderConstructionPage />} />
                             <Route path='*' element={<NotFoundPage />} />
                         </Routes>
