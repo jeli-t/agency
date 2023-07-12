@@ -5,6 +5,7 @@ import { useLocalStorage } from '@mantine/hooks';
 import { HeaderMenu } from './components/HeaderMenu';
 
 import HomePage from './pages/HomePage';
+import About from './pages/About';
 import UnderConstructionPage from './pages/UnderConstructionPage';
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -28,7 +29,7 @@ export default function App() {
                             <Route path='/' element={<HomePage />} />
                             <Route path='/portfolio' element={<UnderConstructionPage />} />
                             <Route path='/blog' element={<UnderConstructionPage />} />
-                            <Route path='/about' element={<UnderConstructionPage />} />
+                            <Route path='/about' element={<About />} />
                             <Route path='/contact' element={<UnderConstructionPage />} />
                             <Route path='/get_started' element={<UnderConstructionPage />} />
                             <Route path='*' element={<NotFoundPage />} />
