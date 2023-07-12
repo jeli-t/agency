@@ -164,7 +164,7 @@ export function ProductsSection() {
                     <Text className={classes.text}>
                         The websites we design are not only supposed to look nice, but most importantly operate well and grow your business. We develop landing pages, business websites and small online stores. All tailored to your business needs. We deliver full service from design to hosting.
                     </Text>
-                    <Link to='/blog'>
+                    <Link to='/solutions/websites'>
                         <Button className={classes.button} size='lg' radius='md'>
                             Read more
                         </Button>
@@ -181,7 +181,7 @@ export function ProductsSection() {
                     <Text className={classes.text}>
                         Already have a website? Good, now it's important to make sure it shows up when someone tries to google your business. We will help you optimize your site's position in search engines and gain a competitive edge in the digital world.
                     </Text>
-                    <Link to='/blog'>
+                    <Link to='/solutions/seo'>
                         <Button className={classes.button} size='lg' radius='md'>
                             Read more
                         </Button>
@@ -198,7 +198,7 @@ export function ProductsSection() {
                     <Text className={classes.text}>
                         Social media is one of the most important elements of building a brand nowadays. We can help you manage your Facebook page, Instagram and Twitter. We offer creating and scheduling content for posts and building a community around the brand.
                     </Text>
-                    <Link to='/blog'>
+                    <Link to='/solutions/social_media'>
                         <Button className={classes.button} size='lg' radius='md'>
                             Read more
                         </Button>
@@ -215,7 +215,7 @@ export function ProductsSection() {
                     <Text className={classes.text}>
                         Do you want to reach new customers on the Internet? We will prepare marketing campaigns for you using Google Ads and Facebook Ads. We can also create and run mailing lists for your company.
                     </Text>
-                    <Link to='/blog'>
+                    <Link to='/solutions/digital_marketing'>
                         <Button className={classes.button} size='lg' radius='md'>
                             Read more
                         </Button>

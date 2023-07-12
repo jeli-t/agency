@@ -9,6 +9,11 @@ import { Footer } from './components/Footer';
 import HomePage from './pages/HomePage';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Solutions from './pages/Solutions';
+import Websites from './pages/Solutions/Websites';
+import DigitalMarketing from './pages/Solutions/DigitalMarketing';
+import SocialMedia from './pages/Solutions/SocialMedia';
+import Seo from './pages/Solutions/Seo';
 import Privacy from './pages/Privacy';
 import UnderConstructionPage from './pages/UnderConstructionPage';
 import NotFoundPage from './pages/NotFoundPage';
@@ -34,7 +39,11 @@ export default function App() {
                         <Routes>
                             <Route path='/' element={<HomePage />} />
                             <Route path='/portfolio' element={<UnderConstructionPage />} />
-                            <Route path='/solutions' element={<UnderConstructionPage />} />
+                            <Route path='/solutions' element={<Solutions />} />
+                            <Route path='/solutions/websites' element={<Websites />} />
+                            <Route path='/solutions/seo' element={<Seo />} />
+                            <Route path='/solutions/social_media' element={<SocialMedia />} />
+                            <Route path='/solutions/digital_marketing' element={<DigitalMarketing />} />
                             <Route path='/about' element={<About />} />
                             <Route path='/contact' element={<Contact />} />
                             <Route path='/get_started' element={<UnderConstructionPage />} />
