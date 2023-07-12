@@ -129,16 +129,16 @@ export function Footer() {
           </div>
           <div className={classes.wrapper}>
             <Text className={classes.title}>{'Solutions'}</Text>
-            <Link to='/solutions' className={classes.link}>
+            <Link to='/solutions/websites' className={classes.link}>
               Websites
             </Link>
-            <Link to='/solutions' className={classes.link}>
+            <Link to='/solutions/seo' className={classes.link}>
               SEO
             </Link>
-            <Link to='/solutions' className={classes.link}>
+            <Link to='/solutions/social_media' className={classes.link}>
               Social media
             </Link>
-            <Link to='/solutions' className={classes.link}>
+            <Link to='/solutions/digital_marketing' className={classes.link}>
               Digital marketing
             </Link>
           </div>
