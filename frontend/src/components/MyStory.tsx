@@ -31,7 +31,7 @@ const useStyles = createStyles((theme) => ({
         },
 
         [theme.fn.smallerThan('xs')]: {
-            flexDirection: 'column',
+            flexDirection: 'column-reverse',
             width: '90%',
             margin: 0,
         },
