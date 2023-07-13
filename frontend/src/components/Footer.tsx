@@ -1,5 +1,5 @@
 import { createStyles, Text, Container, ActionIcon, Group, rem } from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram, IconMail } from '@tabler/icons-react';
+import { IconBrandInstagram, IconMail, IconBrandFacebook } from '@tabler/icons-react';
 import { Link } from 'react-router-dom';
 
 
@@ -156,20 +156,21 @@ export function Footer() {
         </Text>
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
-          <Link to='/contact'>
+          <a href='mailto: agency@jeli.pl'>
             <ActionIcon size="lg">
               <IconMail size="1.05rem" stroke={1.5} />
             </ActionIcon>
-          </Link>
-          <ActionIcon size="lg">
-            <IconBrandTwitter size="1.05rem" stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg">
-            <IconBrandYoutube size="1.05rem" stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg">
-            <IconBrandInstagram size="1.05rem" stroke={1.5} />
-          </ActionIcon>
+          </a>
+          <a href='https://www.facebook.com/profile.php?id=100095023350168'>
+            <ActionIcon size="lg">
+              <IconBrandFacebook size="1.05rem" stroke={1.5} />
+            </ActionIcon>
+          </a>
+          <a href='https://www.instagram.com/jeli_agency/'>
+            <ActionIcon size="lg">
+              <IconBrandInstagram size="1.05rem" stroke={1.5} />
+            </ActionIcon>
+          </a>
         </Group>
       </Container>
     </footer>
