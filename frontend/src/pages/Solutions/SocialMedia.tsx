@@ -1,4 +1,5 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
+import { SocialMediaBanner } from '../../components/SocialMediaBanner';
 
 
 export default function SocialMedia() {
@@ -6,7 +7,7 @@ export default function SocialMedia() {
 
     return (
         <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
-            <h1>Social media</h1>
+            <SocialMediaBanner></SocialMediaBanner>
         </MantineProvider>
     )
 }
