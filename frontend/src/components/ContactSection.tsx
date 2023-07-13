@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
-import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon } from '@mantine/core';
+import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon, ActionIcon } from '@mantine/core';
 import contact from './../assets/contact.svg'
-import { IconMail } from '@tabler/icons-react';
+import { IconBrandInstagram, IconMail, IconBrandFacebook } from '@tabler/icons-react';
+
 
 
 const useStyles = createStyles((theme) => ({
@@ -156,17 +157,49 @@ export function ContactSection() {
                         Please contact us via email or social media. For more complex projects, we can arrange a video conference to discuss the details. Please check FAQ section below.
                     </Text>
                     <div style={{marginTop: '40px'}}>
-                        <ThemeIcon
-                            size={50}
-                            radius="md"
-                            variant="gradient"
-                            gradient={{ deg: 133, from: 'orange', to: 'red' }}
-                        >
-                            <IconMail size={rem(36)} stroke={1.5} />
-                        </ThemeIcon>
-                        <Text className={classes.contact_info}>
-                            contact@jeli.pl
-                        </Text>
+                        <a href='mailto: agency@jeli.pl'>
+                            <ThemeIcon
+                                size={50}
+                                radius="md"
+                                variant="gradient"
+                                gradient={{ deg: 133, from: 'orange', to: 'red' }}
+                            >
+                                <IconMail size="2rem" stroke={2} />
+                            </ThemeIcon>
+                            <Text className={classes.contact_info}>
+                                agency@jeli.pl
+                            </Text>
+                        </a>
+                    </div>
+                    <div style={{marginTop: '40px'}}>
+                        <a href='https://www.instagram.com/jeli_agency/'>
+                            <ThemeIcon
+                                size={50}
+                                radius="md"
+                                variant="gradient"
+                                gradient={{ deg: 133, from: 'orange', to: 'red' }}
+                            >
+                                <IconBrandInstagram size="2rem" stroke={2} />
+                            </ThemeIcon>
+                            <Text className={classes.contact_info}>
+                                jeli_agency
+                            </Text>
+                        </a>
+                    </div>
+                    <div style={{marginTop: '40px'}}>
+                        <a href='https://www.facebook.com/profile.php?id=100095023350168'>
+                            <ThemeIcon
+                                size={50}
+                                radius="md"
+                                variant="gradient"
+                                gradient={{ deg: 133, from: 'orange', to: 'red' }}
+                            >
+                                <IconBrandFacebook size="2rem" stroke={2} />
+                            </ThemeIcon>
+                            <Text className={classes.contact_info}>
+                                Jeli Agency
+                            </Text>
+                        </a>
                     </div>
                 </div>
             </div>
