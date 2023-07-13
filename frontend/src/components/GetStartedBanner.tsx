@@ -79,15 +79,15 @@ export function GetStartedBanner() {
 
       <div className={classes.inner}>
         <Title className={classes.title}>
-          Getting started
+          Not sure where to start?
         </Title>
 
-        <Container p={0} size={700}>
+        <Container p={0} size={800}>
           <Text className={classes.description}>
-            Answer the questions below to get personalized tips and suggestions on how you can become more visible online.
+            Answer a few questions below for personalized suggestions on how you can become more visible online and how we can help you with that.
           </Text>
           <Text className={classes.description}>
-            The survey is <span style={{fontWeight: '700'}}>free</span> and should take no more than 3 minutes.
+            It is <span style={{fontWeight: '700'}}>free</span> and should take no more than 2 minutes.
           </Text>
         </Container>
       </div>
