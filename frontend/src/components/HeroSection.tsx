@@ -21,8 +21,9 @@ const useStyles = createStyles((theme) => ({
 
         [theme.fn.smallerThan('xs')]: {
             height: 'auto',
-            paddingTop: 50,
+            paddingTop: 20,
             paddingBottom: 50,
+            backgroundSize: '20px 20px',
         },
     },
 
@@ -34,7 +35,7 @@ const useStyles = createStyles((theme) => ({
         margin: 10,
     
         [theme.fn.smallerThan('xs')]: {
-          fontSize: rem(50),
+          display: 'none',
         },
     },
 
@@ -51,7 +52,7 @@ const useStyles = createStyles((theme) => ({
         },
 
         [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(16),
+            display: 'none',
         },
     },
 
