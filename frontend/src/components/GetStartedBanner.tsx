@@ -1,107 +1,89 @@
-import { Link } from 'react-router-dom';
-import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
-import report from './../assets/report.svg';
-
+import { createStyles, Title, Text, Button, Container, rem } from '@mantine/core';
+import { Dots } from '../assets/Dots';
 
 const useStyles = createStyles((theme) => ({
-    container: {
-        height: 'fit',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[8] : '#f0f0f0',
-        padding: 100,
+  wrapper: {
+    position: 'relative',
+    paddingTop: rem(120),
+    paddingBottom: rem(80),
 
-        [theme.fn.smallerThan('xs')]: {
-            height: 'auto',
-            padding: 20,
-            paddingTop: 50,
-            paddingBottom: 50,
-        },
+    [theme.fn.smallerThan('sm')]: {
+      paddingTop: rem(80),
+      paddingBottom: rem(60),
     },
+  },
 
-    title: {
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-        fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(70),
-        fontWeight: 700,
-        margin: 10,
-    
-        [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(50),
-        },
+  inner: {
+    position: 'relative',
+    zIndex: 1,
+  },
+
+  dots: {
+    position: 'absolute',
+    color: theme.colorScheme === 'dark' ? theme.colors.gray[6] : theme.colors.gray[3],
+
+    [theme.fn.smallerThan('sm')]: {
+      display: 'none',
     },
+  },
 
-    text: {
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-        fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(34),
-        fontWeight: 500,
-        textAlign: 'center',
+  dotsLeft: {
+    left: 0,
+    top: 0,
+  },
 
-        [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(24),
-        },
+  title: {
+    textAlign: 'center',
+    fontWeight: 800,
+    fontSize: rem(40),
+    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+    marginBottom: theme.spacing.xs,
+    fontFamily: `Roboto, ${theme.fontFamily}`,
+
+    [theme.fn.smallerThan('xs')]: {
+      fontSize: rem(28),
+      textAlign: 'left',
     },
+  },
 
-    highlight: {
-        position: 'relative',
-        backgroundColor: theme.primaryColor,
-        borderRadius: theme.radius.sm,
-        padding: `${rem(4)} ${rem(12)}`,
+  description: {
+    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+    fontFamily: `Roboto, ${theme.fontFamily}`,
+    fontSize: rem(24),
+    fontWeight: 500,
+    textAlign: 'center',
+
+    [theme.fn.smallerThan('xs')]: {
+      fontSize: rem(20),
+      textAlign: 'left',
     },
-
-    ilustration: {
-        margin: 10,
-        height: '500px',
-        width: '70%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-
-        [theme.fn.smallerThan('xs')]: {
-            height: '400px',
-            width: '100%',
-            backgroundSize: '220%',
-        },
-    },
-
-    button: {
-        margin: 20,
-        color: theme.white,
-        fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(40),
-        fontWeight: 600,
-        backgroundImage: 'linear-gradient(133deg, #fd7e14 0%, #fa5252 100%)',
-        transition: '0.2s',
-        opacity: 1,
-
-        '&:hover': {
-            opacity: 0.7,
-        },
-    
-        [theme.fn.smallerThan('xs')]: {
-          fontSize: rem(24),
-          margin: 10,
-        },
-    },
-}))
+  },
+}));
 
 export function GetStartedBanner() {
-    const theme = useMantineTheme();
-    const { classes } = useStyles();
+  const { classes } = useStyles();
 
-    return (
-        <div className={classes.container}>
-            <Title className={classes.title}>
-                Make yourself <span className={classes.highlight}>visible</span>
-            </Title>
-            <div className={classes.ilustration} style={{backgroundImage: `url(${report})`}}></div>
-        </div>
-    )
+  return (
+    <Container className={classes.wrapper} size={1400}>
+      <Dots className={classes.dots} style={{ left: 0, top: 0 }} />
+      <Dots className={classes.dots} style={{ left: 60, top: 0 }} />
+      <Dots className={classes.dots} style={{ left: 0, top: 140 }} />
+      <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
+
+      <div className={classes.inner}>
+        <Title className={classes.title}>
+          Getting started
+        </Title>
+
+        <Container p={0} size={700}>
+          <Text className={classes.description}>
+            Answer the questions below to get personalized tips and suggestions on what you can do to become visible online.
+          </Text>
+          <Text className={classes.description}>
+            The survey is <span style={{fontWeight: '700'}}>free</span> and should take no more than 5 minutes.
+          </Text>
+        </Container>
+      </div>
+    </Container>
+  );
 }
