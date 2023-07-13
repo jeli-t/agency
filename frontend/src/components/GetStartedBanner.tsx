@@ -58,6 +58,13 @@ const useStyles = createStyles((theme) => ({
       textAlign: 'left',
     },
   },
+
+  highlight: {
+    position: 'relative',
+    backgroundColor: theme.primaryColor,
+    borderRadius: theme.radius.sm,
+    padding: `${rem(4)} ${rem(12)}`,
+  },
 }));
 
 export function GetStartedBanner() {
@@ -77,10 +84,10 @@ export function GetStartedBanner() {
 
         <Container p={0} size={700}>
           <Text className={classes.description}>
-            Answer the questions below to get personalized tips and suggestions on what you can do to become visible online.
+            Answer the questions below to get personalized tips and suggestions on how you can become more visible online.
           </Text>
           <Text className={classes.description}>
-            The survey is <span style={{fontWeight: '700'}}>free</span> and should take no more than 5 minutes.
+            The survey is <span style={{fontWeight: '700'}}>free</span> and should take no more than 3 minutes.
           </Text>
         </Container>
       </div>
