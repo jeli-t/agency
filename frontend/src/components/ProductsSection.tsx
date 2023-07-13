@@ -213,7 +213,7 @@ export function ProductsSection() {
                         Digital marketing
                     </Title>
                     <Text className={classes.text}>
-                        Do you want to reach new customers on the Internet? We will prepare marketing campaigns for you using Google Ads and Facebook Ads. We can also create and run mailing lists for your company.
+                        Do you want to reach new customers online? We will prepare Google Ads and Facebook Ads marketing campaigns for your company, as well as run a mailing and newsletter campaign.
                     </Text>
                     <Link to='/solutions/digital_marketing'>
                         <Button className={classes.button} size='lg' radius='md'>

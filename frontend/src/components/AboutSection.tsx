@@ -78,7 +78,7 @@ const features = [
 {
     icon: IconSearch,
     title: 'Search Engine Optimization',
-    description: 'SEO, SEM, Local SEO',
+    description: 'SEO, SEM, Google Business Profil',
 },
 {
     icon: IconBrandInstagram,
@@ -88,7 +88,7 @@ const features = [
 {
     icon: IconAd,
     title: 'Digital marketing',
-    description: 'Google Ads, Facebook Ads, complex campaigns',
+    description: 'Google Ads, Facebook Ads, mailing and newsletter',
 },
 ];
 
