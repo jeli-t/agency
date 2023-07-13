@@ -1,4 +1,5 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
+import { DigitalMarketingBanner } from '../../components/DigitalMarketingBanner';
 
 
 export default function DigitalMarketing() {
@@ -6,7 +7,7 @@ export default function DigitalMarketing() {
 
     return (
         <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
-            <h1>Digital marketing</h1>
+            <DigitalMarketingBanner></DigitalMarketingBanner>
         </MantineProvider>
     )
 }
