@@ -1,4 +1,5 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
+import { WebsitesBanner } from '../../components/WebsitesBanner';
 
 
 export default function Websites() {
@@ -6,7 +7,7 @@ export default function Websites() {
 
     return (
         <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
-            <h1>Websites</h1>
+            <WebsitesBanner></WebsitesBanner>
         </MantineProvider>
     )
 }
