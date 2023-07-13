@@ -7,6 +7,7 @@ import { HeaderMenu } from './components/HeaderMenu';
 import { Footer } from './components/Footer';
 
 import HomePage from './pages/HomePage';
+import GetStarted from './pages/GetStarted';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Solutions from './pages/Solutions';
@@ -46,7 +47,7 @@ export default function App() {
                             <Route path='/solutions/digital_marketing' element={<DigitalMarketing />} />
                             <Route path='/about' element={<About />} />
                             <Route path='/contact' element={<Contact />} />
-                            <Route path='/get_started' element={<UnderConstructionPage />} />
+                            <Route path='/get_started' element={<GetStarted />} />
                             <Route path='/privacy' element={<Privacy />} />
                             <Route path='*' element={<NotFoundPage />} />
                         </Routes>
