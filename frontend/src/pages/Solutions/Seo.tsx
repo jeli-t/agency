@@ -1,4 +1,5 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
+import { SeoBanner } from '../../components/SeoBanner';
 
 
 export default function Seo() {
@@ -6,7 +7,7 @@ export default function Seo() {
 
     return (
         <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
-            <h1>Seo</h1>
+            <SeoBanner></SeoBanner>
         </MantineProvider>
     )
 }
