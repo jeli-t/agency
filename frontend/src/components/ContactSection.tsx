@@ -1,7 +1,6 @@
 import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon } from '@mantine/core';
 import contact from './../assets/contact.svg'
 import { IconBrandInstagram, IconMail, IconBrandFacebook } from '@tabler/icons-react';
-import { useWindowScroll } from '@mantine/hooks';
 
 
 const useStyles = createStyles((theme) => ({
@@ -19,6 +18,7 @@ const useStyles = createStyles((theme) => ({
     },
 
     hero_section: {
+        position: 'relative',
         height: '800px',
         width: '80%',
         display: 'flex',
@@ -144,7 +144,6 @@ const useStyles = createStyles((theme) => ({
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(16),
         bottom: 30,
-        cursor: 'pointer',
 
         [theme.fn.smallerThan('xs')]: {
             display: 'none',
@@ -155,8 +154,6 @@ const useStyles = createStyles((theme) => ({
 export function ContactSection() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
-
-    const [scroll, scrollTo] = useWindowScroll();
 
     return (
         <div className={classes.wrapper}>
@@ -218,10 +215,10 @@ export function ContactSection() {
                         </a>
                     </div>
                 </div>
+                <Text className={classes.faq}>
+                    Please check the FAQ section below.
+                </Text>
             </div>
-            <Text className={classes.faq} onClick={()=> scrollTo({ y: 1000 })}>
-                Please check the FAQ section below.
-            </Text>
         </div>
     )
 }
