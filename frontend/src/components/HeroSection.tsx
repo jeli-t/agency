@@ -20,10 +20,8 @@ const useStyles = createStyles((theme) => ({
         backgroundPosition: 'center center',
 
         [theme.fn.smallerThan('xs')]: {
-            height: 'auto',
-            paddingTop: 20,
-            paddingBottom: 50,
-            backgroundSize: '20px 20px',
+            backgroundImage: 'none',
+            backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[8] : theme.colors.gray[1],
         },
     },
 
@@ -33,10 +31,6 @@ const useStyles = createStyles((theme) => ({
         fontSize: rem(70),
         fontWeight: 700,
         margin: 10,
-    
-        [theme.fn.smallerThan('xs')]: {
-          display: 'none',
-        },
     },
 
     hero_text: {
@@ -52,7 +46,8 @@ const useStyles = createStyles((theme) => ({
         },
 
         [theme.fn.smallerThan('xs')]: {
-            display: 'none',
+            fontSize: rem(16),
+            backgroundColor: 'transparent',
         },
     },
 
@@ -87,7 +82,7 @@ const useStyles = createStyles((theme) => ({
         },
     },
 
-    scroll_icon: {
+    scroll_icon_desktop: {
         height: 50,
         position: 'absolute',
         bottom: 70,
@@ -96,6 +91,19 @@ const useStyles = createStyles((theme) => ({
 
         [theme.fn.smallerThan('xs')]: {
             display: 'none',
+        },
+    },
+
+    scroll_icon_mobile: {
+        display: 'none',
+
+        [theme.fn.smallerThan('xs')]: {
+            display: 'block',
+            height: 50,
+            position: 'absolute',
+            bottom: 70,
+            color: theme.colors.orange[8],
+            cursor: 'pointer',
         },
     },
 
@@ -166,7 +174,8 @@ export function HeroSection() {
                     Contact
                 </Button>
             </Link>
-            <FontAwesomeIcon icon={faAnglesDown} beat className={classes.scroll_icon} onClick={()=> scrollTo({ y: 1000 })} />
+            <FontAwesomeIcon icon={faAnglesDown} beat className={classes.scroll_icon_desktop} onClick={()=> scrollTo({ y: 1000 })} />
+            <FontAwesomeIcon icon={faAnglesDown} beat className={classes.scroll_icon_mobile} onClick={()=> scrollTo({ y: 800 })} />
         </div>
     )
 }
