@@ -1,4 +1,5 @@
 import { Button, Container, createStyles, rem, useMantineTheme, Divider, Radio, Flex } from '@mantine/core';
+import { useNavigate } from 'react-router-dom';
 
 
 const useStyles = createStyles((theme) => ({
@@ -46,8 +47,11 @@ export function Survey() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
 
+    const navigate = useNavigate()
+
     const handleSubmit = async () => {
-        console.log('submit')
+        console.log('survey sent')
+        navigate('/report')
       };
 
     return (

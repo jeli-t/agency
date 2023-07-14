@@ -48,6 +48,7 @@ export default function App() {
                             <Route path='/about' element={<About />} />
                             <Route path='/contact' element={<Contact />} />
                             <Route path='/get_started' element={<GetStarted />} />
+                            <Route path='/report' element={<UnderConstructionPage />} />
                             <Route path='/privacy' element={<Privacy />} />
                             <Route path='*' element={<NotFoundPage />} />
                         </Routes>
