@@ -1,8 +1,7 @@
-import { Link } from 'react-router-dom';
-import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon, ActionIcon } from '@mantine/core';
+import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon } from '@mantine/core';
 import contact from './../assets/contact.svg'
 import { IconBrandInstagram, IconMail, IconBrandFacebook } from '@tabler/icons-react';
-
+import { useWindowScroll } from '@mantine/hooks';
 
 
 const useStyles = createStyles((theme) => ({
@@ -139,11 +138,25 @@ const useStyles = createStyles((theme) => ({
           fontSize: rem(16),
         },
     },
+
+    faq: {
+        position: 'absolute',
+        fontFamily: `Roboto, ${theme.fontFamily}`,
+        fontSize: rem(16),
+        bottom: 30,
+        cursor: 'pointer',
+
+        [theme.fn.smallerThan('xs')]: {
+            display: 'none',
+        },
+    },
 }))
 
 export function ContactSection() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+
+    const [scroll, scrollTo] = useWindowScroll();
 
     return (
         <div className={classes.wrapper}>
@@ -151,10 +164,13 @@ export function ContactSection() {
                 <div className={classes.ilustration} style={{backgroundImage: `url(${contact})`}}></div>
                 <div className={classes.description}>
                     <Title className={classes.title}>
-                        We work remotely
+                        Stay in touch
                     </Title>
                     <Text className={classes.text}>
-                        Please contact us via email or social media. For more complex projects, we can arrange a video conference to discuss the details. Please check FAQ section below.
+                        Write us what you need. We will answer all your questions.
+                    </Text>
+                    <Text className={classes.text}>
+                        If you want to use our services, we can arrange a video conference to discuss the details.
                     </Text>
                     <div style={{marginTop: '40px'}}>
                         <a href='mailto: agency@jeli.pl'>
@@ -203,6 +219,9 @@ export function ContactSection() {
                     </div>
                 </div>
             </div>
+            <Text className={classes.faq} onClick={()=> scrollTo({ y: 1000 })}>
+                Please check the FAQ section below.
+            </Text>
         </div>
     )
 }
