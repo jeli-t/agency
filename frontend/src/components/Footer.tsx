@@ -1,6 +1,8 @@
-import { createStyles, Text, Container, ActionIcon, Group, rem } from '@mantine/core';
+import { createStyles, Text, Container, ActionIcon, Group, rem, useMantineTheme } from '@mantine/core';
 import { IconBrandInstagram, IconMail, IconBrandFacebook } from '@tabler/icons-react';
 import { Link } from 'react-router-dom';
+import logoDark from './../assets/logoDark.png';
+import logoLight from './../assets/logoLight.png';
 
 
 const useStyles = createStyles((theme) => ({
@@ -99,14 +101,17 @@ const useStyles = createStyles((theme) => ({
 
 export function Footer() {
   const { classes } = useStyles();
+  const theme = useMantineTheme();
+
 
   return (
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <Link to='/' style={{textDecoration: 'none'}}>
-          <div className={classes.logo}>
+          {/* <div className={classes.logo}>
             jeli.pl
-          </div>
+          </div> */}
+          {theme.colorScheme === 'light' ? <img src={logoDark} className={classes.logo} /> : <img src={logoLight} className={classes.logo} />}
         </Link>
         <div className={classes.groups}>
           <div className={classes.wrapper}>
