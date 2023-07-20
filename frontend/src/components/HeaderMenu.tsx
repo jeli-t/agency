@@ -3,6 +3,7 @@ import { useDisclosure } from '@mantine/hooks';
 import { Link, useLocation } from 'react-router-dom';
 import { IconMoonStars, IconSun } from '@tabler/icons-react';
 import { useEffect } from 'react';
+import logoLight from './../assets/logoLight.png';
 
 
 const useStyles = createStyles((theme) => ({
@@ -22,6 +23,10 @@ const useStyles = createStyles((theme) => ({
     color: theme.white,
     fontFamily: `Roboto, ${theme.fontFamily}`,
     textDecoration: 'none',
+  },
+
+  logo: {
+    width: '5rem',
   },
 
   links: {
@@ -161,9 +166,7 @@ export function HeaderMenu() {
       <Container>
         <div className={classes.inner}>
           <Link to='/' style={{textDecoration: 'none'}}>
-            <Title className={classes.title}>
-              jeli.pl
-            </Title>
+            <img src={logoLight} className={classes.logo} />
           </Link>
           <Group spacing={10} className={classes.links}>
             {items}
@@ -184,9 +187,7 @@ export function HeaderMenu() {
             <Container>
               <div className={classes.inner}>
                 <Link to='/' style={{textDecoration: 'none'}}>
-                  <Title className={classes.title}>
-                    jeli.pl
-                  </Title>
+                  <img src={logoLight} className={classes.logo} />
                 </Link>
                 <Burger
                   opened={opened}
