@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import { TypeAnimation } from 'react-type-animation';
@@ -6,10 +5,14 @@ import { IconSearch } from '@tabler/icons-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import { useWindowScroll } from '@mantine/hooks';
+import logoDark from './../assets/logoDark.png';
+import logoLight from './../assets/logoLight.png';
+
 
 const useStyles = createStyles((theme) => ({
     container: {
         height: '100vh',
+        paddingBottom: '5vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -25,13 +28,14 @@ const useStyles = createStyles((theme) => ({
         },
     },
 
-    hero_title: {
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-        fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(70),
-        fontWeight: 700,
-        margin: 10,
-    },
+    logo: {
+        width: '20rem',
+        marginBottom: theme.spacing.lg,
+
+        [theme.fn.smallerThan('xs')]: {
+            width: '15rem',
+        },
+      },
 
     hero_text: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
@@ -140,9 +144,7 @@ export function HeroSection() {
 
     return (
         <div className={classes.container}>
-            <Title className={classes.hero_title}>
-                jeli.pl
-            </Title>
+            {theme.colorScheme === 'light' ? <img src={logoDark} className={classes.logo} /> : <img src={logoLight} className={classes.logo} />}
             <div className={classes.search_bar}>
                 <TypeAnimation
                     sequence={[
