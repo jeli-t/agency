@@ -84,10 +84,13 @@ export function GetStartedBanner() {
 
         <Container p={0} size={800}>
           <Text className={classes.description}>
-            Answer a few questions below for personalized suggestions on how you can become more visible online and how we can help you with that.
+            Answer a few questions below for personalized expertise.
           </Text>
           <Text className={classes.description}>
-            It is <span style={{fontWeight: '700'}}>free</span> and should take no more than 2 minutes.
+            The report is <span style={{fontWeight: '700'}}>100% free</span>, and we will prepare it within 24 hours.
+          </Text>
+          <Text className={classes.description}>
+            The survey should take no more than 5 minutes.
           </Text>
         </Container>
       </div>
