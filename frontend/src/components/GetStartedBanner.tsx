@@ -84,7 +84,7 @@ export function GetStartedBanner() {
 
         <Container p={0} size={800}>
           <Text className={classes.description}>
-            Answer a few questions below for personalized expertise.
+            Answer a few questions below for personalized suggestions.
           </Text>
           <Text className={classes.description}>
             The report is <span style={{fontWeight: '700'}}>100% free</span>, and we will prepare it within 24 hours.

@@ -128,7 +128,7 @@ export function Survey() {
             </Radio.Group>
 
             <Button onClick={handleSubmit} size='lg' className={classes.button}>
-                Request FREE expertise
+                Request FREE report
             </Button>
         </Container>
     )
