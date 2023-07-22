@@ -51,7 +51,7 @@ export function Survey() {
 
     const handleSubmit = async () => {
         console.log('survey sent')
-        navigate('/report')
+        navigate('/results')
       };
 
     return (
