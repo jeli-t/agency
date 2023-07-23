@@ -9,4 +9,10 @@ from .serializers import SurveySerializer
 @api_view(['POST'])
 @parser_classes([JSONParser])
 def submitSurvey(request):
-    return Response('Submited')
+    data = request.data
+    serializer = SurveySerializer(data = data)
+    if serializer.is_valid():
+        serializer.save()
+        return Response('Submited', status=201)
+    else:
+        return Response('Error', status=400)
