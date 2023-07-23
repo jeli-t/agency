@@ -50,6 +50,7 @@ export function Survey() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
 
+    const [serverError, setServerError] = useState<string | null>(null);
     const navigate = useNavigate()
 
     const [businessType, setBusinessType] = useInputState('');
@@ -68,7 +69,31 @@ export function Survey() {
         console.log(socialMedia)
         console.log(advertising)
         console.log(email)
-        navigate('/results')
+
+        try {
+            let response = await fetch('http://localhost:8000/get_started/submit', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                credentials: 'include',
+                body: JSON.stringify({
+                    'businessType': businessType,
+                    'industry': industry,
+                    'mainGoal': mainGoal,
+                    'website': website,
+                    'socialMedia': socialMedia,
+                    'advertising': advertising,
+                    'email': email,
+                })
+            });
+
+            if (response.status === 201) {
+                navigate('/results')
+            } else if (response.status === 400) {
+                console.log(response.status)
+            }
+        } catch (err) {
+            setServerError(err as string);
+        }
     }
 
 
