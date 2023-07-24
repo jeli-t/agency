@@ -20,12 +20,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-vso0ux$w9w(8sk8hh9!i=aug4c8d37g20y&^xf$shuqvminyfb'
+SECRET_KEY = 'yM#btRyEyaCpCQJQTebVqoNT&9jk7jmgC`eYrFawH@~omNY2cATm5RPHLn4Af9%W#L'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'www.jeli.pl',
+    'jeli.pl',
+]
 
 
 # Application definition
@@ -50,6 +53,10 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'https://localhost:8000',
     'https://localhost:3000',
+    'https://www.jeli.pl:8000',
+    'https://www.jeli.pl:3000',
+    'https://jeli.pl:8000',
+    'https://jeli.pl:3000',
 ]
 CORS_ALLOW_HEADERS = [
     "accept",
@@ -66,6 +73,9 @@ CORS_ALLOW_HEADERS = [
     "Access-Control-Allow-Origin",
 ]
 CORS_ALLOW_CREDENTIALS = True
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
 
 MIDDLEWARE = [
@@ -151,6 +161,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Admin config
+ADMINS = [('Admin', 'admin@jeli.pl'),]
 
 
 # Email system config
