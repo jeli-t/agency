@@ -92,7 +92,7 @@ export function Survey() {
 
     const handleSubmit = async () => {
         try {
-            let response = await fetch('http://localhost:8000/get_started/submit', {
+            let response = await fetch('https://api.jeli.pl/get_started/submit', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 credentials: 'include',

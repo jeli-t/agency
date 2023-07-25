@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import os
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,6 +30,10 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'www.jeli.pl',
     'jeli.pl',
+    'www.api.jeli.pl',
+    'api.jeli.pl',
+    '127.0.0.1',
+    'localhost',
 ]
 
 
@@ -53,10 +59,8 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'https://localhost:8000',
     'https://localhost:3000',
-    'https://www.jeli.pl:8000',
-    'https://www.jeli.pl:3000',
-    'https://jeli.pl:8000',
-    'https://jeli.pl:3000',
+    'https://www.jeli.pl',
+    'https://jeli.pl',
 ]
 CORS_ALLOW_HEADERS = [
     "accept",
@@ -155,7 +159,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
