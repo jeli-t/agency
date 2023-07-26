@@ -18,6 +18,7 @@ import SocialMedia from './pages/Solutions/SocialMedia';
 import Seo from './pages/Solutions/Seo';
 import Privacy from './pages/Privacy';
 import Pricing from './pages/Pricing';
+import Blog from './pages/Blog';
 import UnderConstructionPage from './pages/UnderConstructionPage';
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -53,6 +54,7 @@ export default function App() {
                             <Route path='/results' element={<Results />} />
                             <Route path='/privacy' element={<Privacy />} />
                             <Route path='/pricing' element={<Pricing />} />
+                            <Route path='/blog' element={<Blog />} />
                             <Route path='*' element={<NotFoundPage />} />
                         </Routes>
                     </AppShell>
