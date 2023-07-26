@@ -42,13 +42,13 @@ export default function App() {
                             <Route path='/' element={<HomePage />} />
                             <Route path='/portfolio' element={<UnderConstructionPage />} />
                             <Route path='/solutions' element={<Solutions />} />
-                            <Route path='/solutions/websites' element={<Websites />} />
-                            <Route path='/solutions/seo' element={<Seo />} />
-                            <Route path='/solutions/social_media' element={<SocialMedia />} />
-                            <Route path='/solutions/digital_marketing' element={<DigitalMarketing />} />
+                            <Route path='/websites' element={<Websites />} />
+                            <Route path='/search-engine-optimization' element={<Seo />} />
+                            <Route path='/social-media' element={<SocialMedia />} />
+                            <Route path='/digital-marketing' element={<DigitalMarketing />} />
                             <Route path='/about' element={<About />} />
                             <Route path='/contact' element={<Contact />} />
-                            <Route path='/get_started' element={<GetStarted />} />
+                            <Route path='/get-started' element={<GetStarted />} />
                             <Route path='/results' element={<Results />} />
                             <Route path='/privacy' element={<Privacy />} />
                             <Route path='*' element={<NotFoundPage />} />

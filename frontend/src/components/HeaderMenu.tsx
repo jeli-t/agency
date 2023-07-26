@@ -118,7 +118,7 @@ export function SwitchToggle() {
 
 const mockdata = [
   {
-    "link": "/get_started",
+    "link": "/get-started",
     "label": "Get started",
   },
   {

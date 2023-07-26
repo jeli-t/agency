@@ -60,7 +60,7 @@ export function SolutionCategories() {
   return (
     <Container py='xl' size='fluid' className={classes.wrapper}>
       <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
-        <Link to='/solutions/websites' style={{textDecoration: 'none'}}>
+        <Link to='/websites' style={{textDecoration: 'none'}}>
             <Card key={'Websites'} p="md" radius="md" component="a" className={classes.card}>
                 <AspectRatio ratio={1920 / 1080}>
                     <div className={classes.ilustration} style={{backgroundImage: `url(${web_development})`}}></div>
@@ -71,7 +71,7 @@ export function SolutionCategories() {
             </Card>
         </ Link>
 
-        <Link to='/solutions/seo' style={{textDecoration: 'none'}}>
+        <Link to='/search-engine-optimization' style={{textDecoration: 'none'}}>
             <Card key={'Search Engine Optimization'} p="md" radius="md" component="a" className={classes.card}>
                 <AspectRatio ratio={1920 / 1080}>
                     <div className={classes.ilustration} style={{backgroundImage: `url(${seo})`}}></div>
@@ -82,7 +82,7 @@ export function SolutionCategories() {
             </Card>
         </Link>
 
-        <Link to='/solutions/social_media' style={{textDecoration: 'none'}}>
+        <Link to='/social-media' style={{textDecoration: 'none'}}>
             <Card key={'Social media'} p="md" radius="md" component="a" className={classes.card}>
                 <AspectRatio ratio={1920 / 1080}>
                     <div className={classes.ilustration} style={{backgroundImage: `url(${social_media})`}}></div>
@@ -93,7 +93,7 @@ export function SolutionCategories() {
             </Card>
         </Link>
 
-        <Link to='/solutions/digital_marketing' style={{textDecoration: 'none'}}>
+        <Link to='/digital-marketing' style={{textDecoration: 'none'}}>
             <Card key={'Digital marketing'} p="md" radius="md" component="a" className={classes.card}>
                 <AspectRatio ratio={1920 / 1080}>
                     <div className={classes.ilustration} style={{backgroundImage: `url(${marketing})`}}></div>
