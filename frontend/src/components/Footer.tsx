@@ -108,9 +108,6 @@ export function Footer() {
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <Link to='/' style={{textDecoration: 'none'}}>
-          {/* <div className={classes.logo}>
-            jeli.pl
-          </div> */}
           {theme.colorScheme === 'light' ? <img src={logoDark} className={classes.logo} /> : <img src={logoLight} className={classes.logo} />}
         </Link>
         <div className={classes.groups}>
@@ -119,11 +116,14 @@ export function Footer() {
             <Link to='/' className={classes.link}>
               Main page
             </Link>
-            <Link to='/get_started' className={classes.link}>
-              Get started
+            <Link to='/solutions' className={classes.link}>
+              Solutions
             </Link>
-            <Link to='/portfolio' className={classes.link}>
-              Portfolio
+            <Link to='/pricing' className={classes.link}>
+              Pricing
+            </Link>
+            <Link to='/blog' className={classes.link}>
+              Blog
             </Link>
             <Link to='/about' className={classes.link}>
               About
@@ -134,16 +134,16 @@ export function Footer() {
           </div>
           <div className={classes.wrapper}>
             <Text className={classes.title}>{'Solutions'}</Text>
-            <Link to='/solutions/websites' className={classes.link}>
+            <Link to='/websites' className={classes.link}>
               Websites
             </Link>
-            <Link to='/solutions/seo' className={classes.link}>
+            <Link to='/search-engine-optimization' className={classes.link}>
               SEO
             </Link>
-            <Link to='/solutions/social_media' className={classes.link}>
+            <Link to='/social-media' className={classes.link}>
               Social media
             </Link>
-            <Link to='/solutions/digital_marketing' className={classes.link}>
+            <Link to='/digital-marketing' className={classes.link}>
               Digital marketing
             </Link>
           </div>
@@ -157,7 +157,7 @@ export function Footer() {
       </Container>
       <Container className={classes.afterFooter}>
         <Text color="dimmed" size="sm">
-          © 2023 jeli.pl. All rights reserved.
+          © 2023 jeli.pl. All rights reserved. Powered by jeli.pl
         </Text>
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
