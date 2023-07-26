@@ -118,16 +118,16 @@ export function SwitchToggle() {
 
 const mockdata = [
   {
-    "link": "/get-started",
-    "label": "Get started",
-  },
-  {
     "link": "/solutions",
     "label": "Solutions",
   },
   {
-    "link": "/portfolio",
-    "label": "Portfolio",
+    "link": "/pricing",
+    "label": "Pricing",
+  },
+  {
+    "link": "/blog",
+    "label": "Blog",
   },
   {
     "link": "/about",
@@ -136,7 +136,11 @@ const mockdata = [
   {
     "link": "/contact",
     "label": "Contact",
-  }
+  },
+  {
+    "link": "/get-started",
+    "label": "Get started",
+  },
 ];
 
 export function HeaderMenu() {
