@@ -1,4 +1,5 @@
 import { createStyles, Title, Text, Button, Container, Group, rem, MantineProvider, useMantineTheme } from '@mantine/core';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
 
@@ -45,22 +46,29 @@ export default function NotFoundPage() {
   const mainTheme = useMantineTheme();
 
   return (
-    <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
-      <Container className={classes.root}>
-        <div className={classes.label}>404</div>
-        <Title className={classes.title}>You have found a secret place.</Title>
-        <Text color="dimmed" size="lg" align="center" className={classes.description}>
-          Unfortunately, this is only a 404 page. You may have mistyped the address, or the page has
-          been moved to another URL.
-        </Text>
-        <Group position="center">
-          <Link to='/'>
-            <Button color='orange' variant="light" size="md">
-              Take me back to home page
-            </Button>
-          </Link>
-        </Group>
-      </Container>
-    </MantineProvider>
+    <>
+      <Helmet>
+          <title>Jeli Digital Agency | Websites | SEO | Social media</title>
+          <meta name='description' content='404' />
+          <meta name="robots" content="Noindex" />
+      </Helmet>
+      <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
+        <Container className={classes.root}>
+          <div className={classes.label}>404</div>
+          <Title className={classes.title}>You have found a secret place.</Title>
+          <Text color="dimmed" size="lg" align="center" className={classes.description}>
+            Unfortunately, this is only a 404 page. You may have mistyped the address, or the page has
+            been moved to another URL.
+          </Text>
+          <Group position="center">
+            <Link to='/'>
+              <Button color='orange' variant="light" size="md">
+                Take me back to home page
+              </Button>
+            </Link>
+          </Group>
+        </Container>
+      </MantineProvider>
+    </>
   );
 }

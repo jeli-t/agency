@@ -1,13 +1,21 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
 import { SeoBanner } from '../../components/SeoBanner';
+import { Helmet } from 'react-helmet-async';
 
 
 export default function Seo() {
     const mainTheme = useMantineTheme();
 
     return (
-        <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
-            <SeoBanner></SeoBanner>
-        </MantineProvider>
+        <>
+        <Helmet>
+            <title>SEO | Jeli Digital Agency</title>
+            <meta name='description' content="You don't have to look for customers, they are already looking for you. Just let them know you exist." />
+            <link rel='canonical' href='/search-engine-optimization' />
+        </Helmet>
+            <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
+                <SeoBanner></SeoBanner>
+            </MantineProvider>
+        </>
     )
 }
