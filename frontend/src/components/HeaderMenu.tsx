@@ -12,6 +12,16 @@ const useStyles = createStyles((theme) => ({
     borderBottom: 0,
   },
 
+  header_container: {
+    marginLeft: 70,
+    marginRight: 70,
+
+    [theme.fn.smallerThan('lg')]: {
+      marginLeft: 0,
+      marginRight: 0,
+    },
+  },
+
   inner: {
     height: rem(56),
     display: 'flex',
@@ -26,7 +36,15 @@ const useStyles = createStyles((theme) => ({
   },
 
   logo: {
-    width: '5rem',
+    height: 50,
+
+    [theme.fn.smallerThan('lg')]: {
+      display: 'none',
+    },
+
+    [theme.fn.smallerThan('sm')]: {
+      display: 'block',
+    },
   },
 
   links: {
@@ -118,6 +136,10 @@ export function SwitchToggle() {
 
 const mockdata = [
   {
+    "link": "/",
+    "label": "Home page",
+  },
+  {
     "link": "/solutions",
     "label": "Solutions",
   },
@@ -167,7 +189,7 @@ export function HeaderMenu() {
 
   return (
     <Header height={56} className={classes.header} mb={120}>
-      <Container>
+      <Container size='fluid' className={classes.header_container}>
         <div className={classes.inner}>
           <Link to='/' style={{textDecoration: 'none'}}>
             <img src={logoLight} className={classes.logo} />
