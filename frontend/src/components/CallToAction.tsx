@@ -22,16 +22,18 @@ const useStyles = createStyles((theme) => ({
     },
 
     title: {
+        textAlign: 'center',
+        fontWeight: 800,
+        fontSize: rem(40),
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        marginBottom: theme.spacing.xs,
         fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(70),
-        fontWeight: 700,
-        margin: 10,
     
         [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(50),
+          fontSize: rem(28),
+          textAlign: 'left',
         },
-    },
+      },
 
     text: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
@@ -43,13 +45,6 @@ const useStyles = createStyles((theme) => ({
         [theme.fn.smallerThan('xs')]: {
             fontSize: rem(24),
         },
-    },
-
-    highlight: {
-        position: 'relative',
-        backgroundColor: theme.primaryColor,
-        borderRadius: theme.radius.sm,
-        padding: `${rem(4)} ${rem(12)}`,
     },
 
     ilustration: {
@@ -99,13 +94,13 @@ export function CallToAction() {
     return (
         <div className={classes.container}>
             <Title className={classes.title}>
-                Make yourself <span className={classes.highlight}>visible</span>
+                Not sure where to start?
             </Title>
             <div className={classes.ilustration} style={{backgroundImage: `url(${report})`}}></div>
             <Text className={classes.text}>
-                Get a <span style={{fontWeight: '700'}}>free</span> personalized report and suggestions
+                Get a <span style={{fontWeight: '700'}}>free</span> personalized suggestions and expertise
             </Text>
-            <Link to='/get_started'>
+            <Link to='/get-started'>
                 <Button className={classes.button} size='xl' radius='md'>
                     Get started
                 </Button>
