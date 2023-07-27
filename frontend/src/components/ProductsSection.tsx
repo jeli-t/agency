@@ -162,7 +162,7 @@ export function ProductsSection() {
                         Websites
                     </Title>
                     <Text className={classes.text}>
-                        The websites we design are not only supposed to look nice, but most importantly operate well and grow your business. We develop landing pages, business websites and small online stores. All tailored to your business needs. We deliver full service from design to hosting.
+                        A website is crucial for businesses for many reasons, and in the digital age it has become a fundamental component of any successful business strategy. Take a look what benefits it can bring to you and how we can help you with that.
                     </Text>
                     <Link to='/websites'>
                         <Button className={classes.button} size='lg' radius='md'>
@@ -179,7 +179,7 @@ export function ProductsSection() {
                         Search Engine Optimization
                     </Title>
                     <Text className={classes.text}>
-                        Already have a website? Good, now it's important to make sure it shows up when someone tries to google your business. We will help you optimize your site's position in search engines and gain a competitive edge in the digital world.
+                        Already have a website? Good, now it's important to make sure it shows up when someone tries to google your business. You don't have to look for customers, they are already looking for you. Just let them know you exist.
                     </Text>
                     <Link to='/search-engine-optimization'>
                         <Button className={classes.button} size='lg' radius='md'>
@@ -196,7 +196,7 @@ export function ProductsSection() {
                         Social media
                     </Title>
                     <Text className={classes.text}>
-                        Social media is one of the most important elements of building a brand nowadays. We can help you manage your Facebook page, Instagram and Twitter. We offer creating and scheduling content for posts and building a community around the brand.
+                        Social media is one of the most important elements of building a brand nowadays. Social media is also one of the best places to run advertising campaigns and reach new customers. Find out how to build an effective strategy.
                     </Text>
                     <Link to='/social-media'>
                         <Button className={classes.button} size='lg' radius='md'>
@@ -210,10 +210,10 @@ export function ProductsSection() {
                 <div className={classes.ilustration} style={{backgroundImage: `url(${marketing})`}}></div>
                 <div className={classes.description}>
                     <Title className={classes.service_title}>
-                        Digital marketing
+                        Much more
                     </Title>
                     <Text className={classes.text}>
-                        Do you want to reach new customers online? We will prepare Google Ads and Facebook Ads marketing campaigns for your company, as well as run a mailing and newsletter campaign.
+                        Digital marketing has much more potential. Google Ads? Running a blog about your business and industry? Mailing and newsletters? Courses? Here you will find plenty of ideas on how to grow your business online.
                     </Text>
                     <Link to='/digital-marketing'>
                         <Button className={classes.button} size='lg' radius='md'>
