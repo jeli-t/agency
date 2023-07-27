@@ -83,12 +83,12 @@ const features = [
 {
     icon: IconBrandInstagram,
     title: 'Social media',
-    description: 'Management, content creating, blogs',
+    description: 'Management, Advertising campaigns',
 },
 {
     icon: IconAd,
-    title: 'Digital marketing',
-    description: 'Google Ads, Facebook Ads, mailing and newsletter',
+    title: 'Other',
+    description: 'Google Ads, blogs, mailing and newsletter',
 },
 ];
 
@@ -116,20 +116,20 @@ const items = features.map((feature) => (
 
 return (
     <div className={classes.wrapper}>
-        <Grid gutter={40} className={classes.grid}>
+        <Grid gutter={50} className={classes.grid}>
             <Col span={12} md={5}>
-            <Title className={classes.title}>
-                Make yourself <span className={classes.highlight}>visible</span>
-            </Title>
-            <Text className={classes.text}>
-                If you are not on the Internet, you do not exist. At jeli.pl, we will help you become visible online. From the website to social media. We provide comprehensive and tailored solutions for small and medium-sized businesses.
-            </Text>
+                <Title className={classes.title}>
+                    Make yourself <span className={classes.highlight}>visible</span>
+                </Title>
+                <Text className={classes.text}>
+                    If you are not on the Internet, you do not exist. Digital marketing is the fastest way to grow your business nowadays. Check out our solutions and gain a competitive edge in the digital world.
+                </Text>
 
             </Col>
             <Col span={12} md={7}>
-            <SimpleGrid cols={2} spacing={30} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
-                {items}
-            </SimpleGrid>
+                <SimpleGrid cols={2} spacing={30} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
+                    {items}
+                </SimpleGrid>
             </Col>
         </Grid>
     </div>
