@@ -1,6 +1,7 @@
 import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon } from '@mantine/core';
 import contact from './../assets/contact.svg'
 import { IconBrandInstagram, IconMail, IconBrandFacebook } from '@tabler/icons-react';
+import { Link } from 'react-router-dom';
 
 
 const useStyles = createStyles((theme) => ({
@@ -164,10 +165,7 @@ export function ContactSection() {
                         Stay in touch
                     </Title>
                     <Text className={classes.text}>
-                        Write us what you need. We will answer all your questions.
-                    </Text>
-                    <Text className={classes.text}>
-                        If you want to use our services, we can arrange a video conference to discuss the details.
+                        Write to us what you need. We are happy to answer all your questions. If you want, we can also arrange a video consultation and prepare your marketing strategy for free.
                     </Text>
                     <div style={{marginTop: '40px'}}>
                         <a href='mailto: agency@jeli.pl'>
