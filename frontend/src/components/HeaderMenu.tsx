@@ -37,6 +37,7 @@ const useStyles = createStyles((theme) => ({
 
   logo: {
     height: 50,
+    width: 'auto',
 
     [theme.fn.smallerThan('lg')]: {
       display: 'none',
@@ -192,7 +193,7 @@ export function HeaderMenu() {
       <Container size='fluid' className={classes.header_container}>
         <div className={classes.inner}>
           <Link to='/' style={{textDecoration: 'none'}}>
-            <img src={logoLight} className={classes.logo} />
+            <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89' className={classes.logo} />
           </Link>
           <Group spacing={10} className={classes.links}>
             {items}
@@ -213,7 +214,7 @@ export function HeaderMenu() {
             <Container>
               <div className={classes.inner}>
                 <Link to='/' style={{textDecoration: 'none'}}>
-                  <img src={logoLight} className={classes.logo} />
+                  <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89' className={classes.logo} />
                 </Link>
                 <Burger
                   opened={opened}

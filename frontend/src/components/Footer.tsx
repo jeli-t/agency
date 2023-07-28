@@ -18,6 +18,7 @@ const useStyles = createStyles((theme) => ({
 
   logo: {
     maxWidth: rem(200),
+    height: 'auto',
     textDecoration: 'none',
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
     fontFamily: `Roboto, ${theme.fontFamily}`,
@@ -108,7 +109,7 @@ export function Footer() {
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <Link to='/' style={{textDecoration: 'none'}}>
-          {theme.colorScheme === 'light' ? <img src={logoDark} className={classes.logo} /> : <img src={logoLight} className={classes.logo} />}
+          {theme.colorScheme === 'light' ? <img src={logoDark} alt="Logo jeli.pl" title='jeli.pl' loading='lazy' width='200' height='112' className={classes.logo} /> : <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='lazy' width='200' height='112' className={classes.logo} />}
         </Link>
         <div className={classes.groups}>
           <div className={classes.wrapper}>

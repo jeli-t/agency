@@ -31,6 +31,7 @@ const useStyles = createStyles((theme) => ({
 
     logo: {
         width: '20rem',
+        height: 'auto',
         marginBottom: theme.spacing.lg,
 
         [theme.fn.smallerThan('xs')]: {
@@ -143,7 +144,7 @@ export function HeroSection() {
 
     return (
         <div className={classes.container}>
-            {theme.colorScheme === 'light' ? <img src={logoDark} className={classes.logo} /> : <img src={logoLight} className={classes.logo} />}
+            {theme.colorScheme === 'light' ? <img src={logoDark} alt="Logo jeli.pl" title='jeli.pl' loading='eager' width='320' height='180' className={classes.logo} /> : <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' width='320' height='180' className={classes.logo} />}
             <div className={classes.search_bar}>
                 <TypeAnimation
                     sequence={[
