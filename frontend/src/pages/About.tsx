@@ -1,5 +1,5 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
-import { MyStory } from '../components/MyStory';
+import { AboutUs } from '../components/AboutUs';
 import { Helmet } from 'react-helmet-async';
 
 
@@ -14,7 +14,7 @@ export default function About() {
                 <link rel='canonical' href='/about' />
             </Helmet>
             <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
-                <MyStory></MyStory>
+                <AboutUs></AboutUs>
             </MantineProvider>
         </>
     )

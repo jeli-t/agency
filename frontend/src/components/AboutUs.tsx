@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
-import about_me from './../assets/about_me.svg'
+import people from './../assets/people.svg'
 
 
 const useStyles = createStyles((theme) => ({
@@ -123,7 +123,7 @@ const useStyles = createStyles((theme) => ({
     },
 }))
 
-export function MyStory() {
+export function AboutUs() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
 
@@ -132,18 +132,13 @@ export function MyStory() {
             <div className={classes.hero_section}>
                 <div className={classes.description}>
                     <Title className={classes.title}>
-                        Hi, my name is Tomek
+                        Who are we?
                     </Title>
                     <Text className={classes.text}>
-                        I started my adventure with programming at the age of 12. Since then I have learned a lot and written thousands of lines of code. At this point, I have closed a few commercial projects and I am working on my portfolio. We are not registered company yet but I'am working on that. For now I work as a freelancer based on a contract for work.
+                        Jeli.pl is a group of young people with passion to what we do. We are a small team from Poland, but on a daily basis we work with the best freelancers from all over the world, so that the services we prepare for you are always of the highest quality. We love new challenges and sharing knowledge on our blog.
                     </Text>
-                    <Link to='/contact'>
-                        <Button className={classes.button} size='lg' radius='md'>
-                            Contact
-                        </Button>
-                    </Link>
                 </div>
-                <div className={classes.ilustration} style={{backgroundImage: `url(${about_me})`}}></div>
+                <div className={classes.ilustration} style={{backgroundImage: `url(${people})`}}></div>
             </div>
         </div>
     )
