@@ -7,6 +7,7 @@ import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import { useWindowScroll } from '@mantine/hooks';
 import logoDark from './../assets/logoDark.png';
 import logoLight from './../assets/logoLight.png';
+import { HashLink } from 'react-router-hash-link';
 
 
 const useStyles = createStyles((theme) => ({
@@ -88,8 +89,6 @@ const useStyles = createStyles((theme) => ({
 
     scroll_icon_desktop: {
         height: 50,
-        position: 'absolute',
-        bottom: 70,
         color: theme.colors.orange[8],
         cursor: 'pointer',
 
@@ -103,9 +102,7 @@ const useStyles = createStyles((theme) => ({
 
         [theme.fn.smallerThan('xs')]: {
             display: 'block',
-            height: 50,
-            position: 'absolute',
-            bottom: 70,
+            height: 40,
             color: theme.colors.orange[8],
             cursor: 'pointer',
         },
@@ -133,6 +130,11 @@ const useStyles = createStyles((theme) => ({
         [theme.fn.smallerThan('xs')]: {
           fontSize: rem(16),
         },
+    },
+
+    link: {
+        position: 'absolute',
+        bottom: 80,
     },
 }))
 
@@ -176,8 +178,10 @@ export function HeroSection() {
                     Contact
                 </Button>
             </Link>
-            <FontAwesomeIcon icon={faAnglesDown} beat className={classes.scroll_icon_desktop} onClick={()=> scrollTo({ y: 1000 })} />
-            <FontAwesomeIcon icon={faAnglesDown} beat className={classes.scroll_icon_mobile} onClick={()=> scrollTo({ y: 800 })} />
+            <HashLink to='/#Make-yourself-visible' smooth className={classes.link}>
+                <FontAwesomeIcon icon={faAnglesDown} beat className={classes.scroll_icon_desktop} />
+                <FontAwesomeIcon icon={faAnglesDown} beat className={classes.scroll_icon_mobile} />
+            </HashLink>
         </div>
     )
 }

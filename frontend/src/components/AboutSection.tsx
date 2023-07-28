@@ -30,7 +30,7 @@ const useStyles = createStyles((theme) => ({
         [theme.fn.smallerThan('md')]: {
             width: '100%',
             margin: 0,
-            marginTop: 20,
+            marginTop: 40,
             marginBottom: 20,
         },
     },
@@ -133,7 +133,7 @@ export function AboutSection() {
     ));
 
     return (
-        <div className={classes.wrapper}>
+        <section id='Make-yourself-visible' className={classes.wrapper}>
             <Grid gutter={50} className={classes.grid}>
                 <Col span={12} md={5}>
                     <Title order={2} className={classes.title}>
@@ -150,6 +150,6 @@ export function AboutSection() {
                     </SimpleGrid>
                 </Col>
             </Grid>
-        </div>
+        </section>
     );
 }
