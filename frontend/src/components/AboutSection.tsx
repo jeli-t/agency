@@ -9,6 +9,8 @@ import {
     rem,
 } from '@mantine/core';
 import { IconWorldWww, IconSearch, IconAd, IconBrandInstagram } from '@tabler/icons-react';
+import { HashLink } from 'react-router-hash-link';
+
 
 const useStyles = createStyles((theme) => ({
     wrapper: {
@@ -67,71 +69,87 @@ const useStyles = createStyles((theme) => ({
             fontSize: rem(16),
         },
     },
+
+    link: {
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        textDecoration: 'none',
+    }
 }));
 
 const features = [
 {
     icon: IconWorldWww,
     title: 'Websites',
+    id: '/#Websites',
     description: 'Design, UI/UX, development, hosting, domains',
 },
 {
     icon: IconSearch,
     title: 'Search Engine Optimization',
+    id: '/#Search-Engine-Optimization',
     description: 'SEO, SEM, Google Business Profil',
 },
 {
     icon: IconBrandInstagram,
     title: 'Social media',
+    id: '/#Social-media',
     description: 'Management, Advertising campaigns',
 },
 {
     icon: IconAd,
     title: 'Other',
+    id: '/#Digital-marketing',
     description: 'Google Ads, blogs, mailing and newsletter',
 },
 ];
 
 export function AboutSection() {
-const { classes } = useStyles();
+    const { classes } = useStyles();
+    const scrollWithOffset = (el:any) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -100; 
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+    }
 
-const items = features.map((feature) => (
-    <div key={feature.title}>
-        <ThemeIcon
-            size={50}
-            radius="md"
-            variant="gradient"
-            gradient={{ deg: 133, from: 'orange', to: 'red' }}
-        >
-            <feature.icon size={rem(26)} stroke={1.5} />
-        </ThemeIcon>
-        <Text fz={22} mt="sm" fw={600}>
-            {feature.title}
-        </Text>
-        <Text>
-            {feature.description}
-        </Text>
-    </div>
-));
-
-return (
-    <div className={classes.wrapper}>
-        <Grid gutter={50} className={classes.grid}>
-            <Col span={12} md={5}>
-                <Title order={2} className={classes.title}>
-                    Make yourself <span className={classes.highlight}>visible</span>
-                </Title>
-                <Text className={classes.text}>
-                    If you are not on the Internet, you do not exist. Digital marketing is the fastest way to grow your business nowadays. Check out our solutions and gain a competitive edge in the digital world.
+    const items = features.map((feature) => (
+        <HashLink to={feature.id} smooth scroll={scrollWithOffset} className={classes.link}>
+            <div key={feature.title}>
+                <ThemeIcon
+                    size={50}
+                    radius="md"
+                    variant="gradient"
+                    gradient={{ deg: 133, from: 'orange', to: 'red' }}
+                >
+                    <feature.icon size={rem(26)} stroke={1.5} />
+                </ThemeIcon>
+                <Text fz={22} mt="sm" fw={600}>
+                    {feature.title}
                 </Text>
+                <Text>
+                    {feature.description}
+                </Text>
+            </div>
+        </HashLink>
+    ));
 
-            </Col>
-            <Col span={12} md={7}>
-                <SimpleGrid cols={2} spacing={30} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
-                    {items}
-                </SimpleGrid>
-            </Col>
-        </Grid>
-    </div>
-);
+    return (
+        <div className={classes.wrapper}>
+            <Grid gutter={50} className={classes.grid}>
+                <Col span={12} md={5}>
+                    <Title order={2} className={classes.title}>
+                        Make yourself <span className={classes.highlight}>visible</span>
+                    </Title>
+                    <Text className={classes.text}>
+                        If you are not on the Internet, you do not exist. Digital marketing is the fastest way to grow your business nowadays. Check out our solutions and gain a competitive edge in the digital world.
+                    </Text>
+
+                </Col>
+                <Col span={12} md={7}>
+                    <SimpleGrid cols={2} spacing={30} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
+                        {items}
+                    </SimpleGrid>
+                </Col>
+            </Grid>
+        </div>
+    );
 }

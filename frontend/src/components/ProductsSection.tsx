@@ -155,7 +155,8 @@ export function ProductsSection() {
 
     return (
         <div className={classes.wrapper}>
-            <div className={classes.product}>
+
+            <section id='Websites' className={classes.product}>
                 <div className={classes.ilustration} style={{backgroundImage: `url(${web_development})`}}></div>
                 <div className={classes.description}>
                     <Title order={3} className={classes.service_title}>
@@ -170,9 +171,9 @@ export function ProductsSection() {
                         </Button>
                     </Link>
                 </div>
-            </div>
+            </section>
 
-            <div className={classes.product2}>
+            <section id='Search-Engine-Optimization' className={classes.product2}>
                 <div className={classes.ilustration} style={{backgroundImage: `url(${seo})`}}></div>
                 <div className={classes.description}>
                     <Title order={3} className={classes.service_title}>
@@ -187,9 +188,9 @@ export function ProductsSection() {
                         </Button>
                     </Link>
                 </div>
-            </div>
+            </section>
 
-            <div className={classes.product}>
+            <section id='Social-media' className={classes.product}>
                 <div className={classes.ilustration} style={{backgroundImage: `url(${social_media})`}}></div>
                 <div className={classes.description}>
                     <Title order={3} className={classes.service_title}>
@@ -204,9 +205,9 @@ export function ProductsSection() {
                         </Button>
                     </Link>
                 </div>
-            </div>
+            </section>
 
-            <div className={classes.product2}>
+            <section id='Digital-marketing' className={classes.product2}>
                 <div className={classes.ilustration} style={{backgroundImage: `url(${marketing})`}}></div>
                 <div className={classes.description}>
                     <Title order={3} className={classes.service_title}>
@@ -221,7 +222,7 @@ export function ProductsSection() {
                         </Button>
                     </Link>
                 </div>
-            </div>
+            </section>
         </div>
     )
 }
