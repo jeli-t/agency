@@ -118,7 +118,7 @@ return (
     <div className={classes.wrapper}>
         <Grid gutter={50} className={classes.grid}>
             <Col span={12} md={5}>
-                <Title className={classes.title}>
+                <Title order={2} className={classes.title}>
                     Make yourself <span className={classes.highlight}>visible</span>
                 </Title>
                 <Text className={classes.text}>

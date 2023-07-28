@@ -161,7 +161,7 @@ export function ContactSection() {
             <div className={classes.hero_section}>
                 <div className={classes.ilustration} style={{backgroundImage: `url(${contact})`}}></div>
                 <div className={classes.description}>
-                    <Title className={classes.title}>
+                    <Title order={2} className={classes.title}>
                         Stay in touch
                     </Title>
                     <Text className={classes.text}>

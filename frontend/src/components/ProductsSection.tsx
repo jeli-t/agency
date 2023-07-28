@@ -158,7 +158,7 @@ export function ProductsSection() {
             <div className={classes.product}>
                 <div className={classes.ilustration} style={{backgroundImage: `url(${web_development})`}}></div>
                 <div className={classes.description}>
-                    <Title className={classes.service_title}>
+                    <Title order={3} className={classes.service_title}>
                         Websites
                     </Title>
                     <Text className={classes.text}>
@@ -175,7 +175,7 @@ export function ProductsSection() {
             <div className={classes.product2}>
                 <div className={classes.ilustration} style={{backgroundImage: `url(${seo})`}}></div>
                 <div className={classes.description}>
-                    <Title className={classes.service_title}>
+                    <Title order={3} className={classes.service_title}>
                         Search Engine Optimization
                     </Title>
                     <Text className={classes.text}>
@@ -192,7 +192,7 @@ export function ProductsSection() {
             <div className={classes.product}>
                 <div className={classes.ilustration} style={{backgroundImage: `url(${social_media})`}}></div>
                 <div className={classes.description}>
-                    <Title className={classes.service_title}>
+                    <Title order={3} className={classes.service_title}>
                         Social media
                     </Title>
                     <Text className={classes.text}>
@@ -209,7 +209,7 @@ export function ProductsSection() {
             <div className={classes.product2}>
                 <div className={classes.ilustration} style={{backgroundImage: `url(${marketing})`}}></div>
                 <div className={classes.description}>
-                    <Title className={classes.service_title}>
+                    <Title order={3} className={classes.service_title}>
                         Much more
                     </Title>
                     <Text className={classes.text}>

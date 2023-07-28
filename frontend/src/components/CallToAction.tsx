@@ -93,7 +93,7 @@ export function CallToAction() {
 
     return (
         <div className={classes.container}>
-            <Title className={classes.title}>
+            <Title order={2} className={classes.title}>
                 Not sure where to start?
             </Title>
             <div className={classes.ilustration} style={{backgroundImage: `url(${report})`}}></div>
