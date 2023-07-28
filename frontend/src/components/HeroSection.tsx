@@ -25,6 +25,7 @@ const useStyles = createStyles((theme) => ({
         [theme.fn.smallerThan('xs')]: {
             backgroundImage: 'none',
             backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[8] : theme.colors.gray[1],
+            paddingBottom: '30vh',
         },
     },
 
@@ -37,20 +38,18 @@ const useStyles = createStyles((theme) => ({
         },
       },
 
-    hero_text: {
+    hero_title: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
         fontWeight: 600,
         padding: 5,
         backgroundColor: theme.colorScheme === 'dark' ? theme.black : theme.white,
-
-        [theme.fn.smallerThan('lg')]: {
-            fontSize: rem(20),
-        },
+        maxWidth: '90%',
+        textAlign: 'center',
 
         [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(16),
+            fontSize: rem(20),
             backgroundColor: 'transparent',
         },
     },
@@ -168,9 +167,9 @@ export function HeroSection() {
                 />
                 <IconSearch className={classes.search_icon} size="2rem" stroke={3} />
             </div>
-            <Text className={classes.hero_text}>
-                We will take care of your digital image
-            </Text>
+            <Title className={classes.hero_title}>
+                Jeli Digital Agency - Your trusted partner in the digital journey
+            </Title>
             <Link to='/contact'>
                 <Button className={classes.button} size='lg' radius='md'>
                     Contact
