@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const useStyles = createStyles((theme) => ({
     wrapper: {
-        height: '100vh',
+        height: 'fit',
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
@@ -20,21 +20,16 @@ const useStyles = createStyles((theme) => ({
 
     hero_section: {
         position: 'relative',
-        height: '800px',
         width: '80%',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        margin: 80,
+        marginBottom: 80,
 
         [theme.fn.smallerThan('lg')]: {
-            width: '100%',
-        },
-
-        [theme.fn.smallerThan('xs')]: {
             flexDirection: 'column',
             width: '90%',
-            margin: 0,
+            margin: 40,
         },
     },
 
@@ -47,36 +42,29 @@ const useStyles = createStyles((theme) => ({
         textAlign: 'left',
 
         [theme.fn.smallerThan('lg')]: {
-            width: '50%',
-            margin: 10,
-        },
-
-        [theme.fn.smallerThan('xs')]: {
-            width: '100%',
-            height: 'auto',
+            width: '90%',
         },
     },
 
     ilustration: {
-        height: '90%',
+        height: '100%',
         width: '55%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
 
         [theme.fn.smallerThan('lg')]: {
-            width: '50%',
-            margin: 10,
+            width: '90%',
         },
+    },
 
-        [theme.fn.smallerThan('xs')]: {
-            height: '300px',
-            width: '100%',
-            backgroundSize: '160%',
+    image: {
+        width: '120%',
+        height: 'auto',
+
+        [theme.fn.smallerThan('lg')]: {
+            maxWidth: '845px',
         },
     },
 
@@ -144,9 +132,9 @@ const useStyles = createStyles((theme) => ({
         position: 'absolute',
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(16),
-        bottom: 30,
+        bottom: '-40px',
 
-        [theme.fn.smallerThan('xs')]: {
+        [theme.fn.smallerThan('xl')]: {
             display: 'none',
         },
     },
@@ -159,7 +147,9 @@ export function ContactSection() {
     return (
         <div className={classes.wrapper}>
             <div className={classes.hero_section}>
-                <div className={classes.ilustration} style={{backgroundImage: `url(${contact})`}}></div>
+                <div className={classes.ilustration}>
+                    <img src={contact} alt='Video consultation' title='Video consultation' loading='lazy' width={845} height={800} className={classes.image} />
+                </div>
                 <div className={classes.description}>
                     <Title order={2} className={classes.title}>
                         Stay in touch
