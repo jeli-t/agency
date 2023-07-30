@@ -1,5 +1,6 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
 import { AboutUs } from '../components/AboutUs';
+import { OurProcess } from '../components/OurProcess'
 import { Helmet } from 'react-helmet-async';
 
 
@@ -15,6 +16,7 @@ export default function About() {
             </Helmet>
             <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
                 <AboutUs></AboutUs>
+                <OurProcess></OurProcess>
             </MantineProvider>
         </>
     )
