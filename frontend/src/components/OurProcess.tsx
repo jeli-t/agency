@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { createStyles, useMantineTheme, Title, rem, Text, Button, Timeline, TimelineItem } from '@mantine/core';
+import { createStyles, useMantineTheme, Title, rem, Text, Timeline } from '@mantine/core';
 import our_process from './../assets/our_process.svg'
 
 
@@ -20,7 +19,7 @@ const useStyles = createStyles((theme) => ({
     },
 
     hero_section: {
-        height: '800px',
+        minHeight: '800px',
         width: '80%',
         display: 'flex',
         justifyContent: 'center',
@@ -28,10 +27,6 @@ const useStyles = createStyles((theme) => ({
         marginBottom: 80,
 
         [theme.fn.smallerThan('lg')]: {
-            width: '100%',
-        },
-
-        [theme.fn.smallerThan('xs')]: {
             flexDirection: 'column-reverse',
             width: '90%',
             margin: 40,
@@ -47,13 +42,7 @@ const useStyles = createStyles((theme) => ({
         textAlign: 'left',
 
         [theme.fn.smallerThan('lg')]: {
-            width: '50%',
-            margin: 10,
-        },
-
-        [theme.fn.smallerThan('xs')]: {
-            width: '100%',
-            height: 'auto',
+            width: '90%',
         },
     },
 
@@ -64,19 +53,18 @@ const useStyles = createStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
 
         [theme.fn.smallerThan('lg')]: {
-            width: '50%',
-            margin: 10,
+            width: '90%',
         },
+    },
 
-        [theme.fn.smallerThan('xs')]: {
-            height: '300px',
-            width: '100%',
-            backgroundSize: '160%',
+    image: {
+        width: '120%',
+        height: 'auto',
+
+        [theme.fn.smallerThan('lg')]: {
+            maxWidth: '845px',
         },
     },
 
@@ -173,7 +161,9 @@ export function OurProcess() {
                         </Timeline.Item>
                     </Timeline>
                 </div>
-                <div className={classes.ilustration} style={{backgroundImage: `url(${our_process})`}}></div>
+                <div className={classes.ilustration}>
+                    <img src={our_process} alt='Our process' title='Our process' loading='lazy' width={845} height={800} className={classes.image} />
+                </div>
             </div>
         </div>
     )
