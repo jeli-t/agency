@@ -4,12 +4,12 @@ import { Dots } from '../assets/Dots';
 const useStyles = createStyles((theme) => ({
   wrapper: {
     position: 'relative',
-    paddingTop: rem(120),
-    paddingBottom: rem(80),
+    marginTop: rem(80),
+    marginBottom: rem(80),
 
     [theme.fn.smallerThan('sm')]: {
-      paddingTop: rem(80),
-      paddingBottom: rem(60),
+      marginTop: rem(60),
+      marginBottom: rem(60),
     },
   },
 
@@ -33,7 +33,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   title: {
-    textAlign: 'center',
+    textAlign: 'left',
     fontWeight: 800,
     fontSize: rem(40),
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
@@ -51,7 +51,7 @@ const useStyles = createStyles((theme) => ({
     fontFamily: `Roboto, ${theme.fontFamily}`,
     fontSize: rem(24),
     fontWeight: 500,
-    textAlign: 'center',
+    textAlign: 'left',
 
     [theme.fn.smallerThan('xs')]: {
       fontSize: rem(20),
@@ -71,13 +71,12 @@ export function WebsitesBanner() {
       <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
 
       <div className={classes.inner}>
-        <Title className={classes.title}>
-          Websites
-        </Title>
-
-        <Container p={0} size={700}>
+        <Container p={0} size={800}>
+          <Title className={classes.title}>
+            Why the website is so important?
+          </Title>
           <Text className={classes.description}>
-            On this page you will find all the information about how we create and price our websites. From design to deployment.
+            In today's digital age, the vast majority of consumers search for products, services, and information online. Without a website, your business may be virtually invisible to potential customers. Having a website allows you to establish an online presence, making it easier for people to find and learn about your business. A well-designed and professional website can significantly boost your business's credibility and trustworthiness. Having a website is the foundation of digital marketing.
           </Text>
         </Container>
       </div>
