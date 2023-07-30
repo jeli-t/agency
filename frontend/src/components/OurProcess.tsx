@@ -126,6 +126,12 @@ const useStyles = createStyles((theme) => ({
         },
     },
 
+    link: {
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        fontWeight: 600,
+        textDecoration: 'none',
+    },
+
 }))
 
 export function OurProcess() {
@@ -142,12 +148,12 @@ export function OurProcess() {
                     <Timeline bulletSize={24} lineWidth={4} color='orange' active={4} classNames={{itemTitle: classes.itemTitle}} >
                         <Timeline.Item title='Information gathering'>
                             <Text className={classes.text}>
-                                We collect basic information about your business and marketing goals. Check out the Get started section or contact us directly.
+                                We collect basic information about your business and marketing goals. Check out the <Link to='/get-started' className={classes.link}>Get started</Link> section or <Link to='/contact' className={classes.link}>contact</Link> us directly.
                             </Text>
                         </Timeline.Item>
                         <Timeline.Item title='Project planning'>
                             <Text className={classes.text}>
-                                We prepare an operation plan and marketing strategy for your company.
+                                We prepare an operation plan and marketing strategy for your company. You accept the proposal and we start the project.
                             </Text>
                         </Timeline.Item>
                         <Timeline.Item title='Team building'>
