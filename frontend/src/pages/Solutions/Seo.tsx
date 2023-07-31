@@ -1,5 +1,6 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
 import { SeoBanner } from '../../components/SeoBanner';
+import { SeoKeyAreas } from '../../components/SeoKeyAreas';
 import { Helmet } from 'react-helmet-async';
 
 
@@ -15,6 +16,7 @@ export default function Seo() {
         </Helmet>
             <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
                 <SeoBanner></SeoBanner>
+                <SeoKeyAreas></SeoKeyAreas>
             </MantineProvider>
         </>
     )
