@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { GoodWebsite } from '../../components/GoodWebsite';
 import { BuildWebsite } from '../../components/BuildWebsite';
 import { OurProcess } from '../../components/OurProcess';
+import { WebsitesOffer } from '../../components/WebsitesOffer';
 
 
 export default function Websites() {
@@ -21,6 +22,7 @@ export default function Websites() {
                 <GoodWebsite></GoodWebsite>
                 <BuildWebsite></BuildWebsite>
                 <OurProcess></OurProcess>
+                <WebsitesOffer></WebsitesOffer>
             </MantineProvider>
         </>
     )
