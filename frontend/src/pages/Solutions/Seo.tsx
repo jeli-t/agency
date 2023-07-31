@@ -3,6 +3,7 @@ import { SeoBanner } from '../../components/SeoBanner';
 import { SeoKeyAreas } from '../../components/SeoKeyAreas';
 import { Helmet } from 'react-helmet-async';
 import { SeoEffects } from '../../components/SeoEffects';
+import { OurProcess } from '../../components/OurProcess';
 
 
 export default function Seo() {
@@ -19,6 +20,7 @@ export default function Seo() {
                 <SeoBanner></SeoBanner>
                 <SeoKeyAreas></SeoKeyAreas>
                 <SeoEffects></SeoEffects>
+                <OurProcess></OurProcess>
             </MantineProvider>
         </>
     )
