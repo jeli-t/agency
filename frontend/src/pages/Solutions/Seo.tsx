@@ -4,6 +4,7 @@ import { SeoKeyAreas } from '../../components/SeoKeyAreas';
 import { Helmet } from 'react-helmet-async';
 import { SeoEffects } from '../../components/SeoEffects';
 import { OurProcess } from '../../components/OurProcess';
+import { SeoOffer } from '../../components/SeoOffer';
 
 
 export default function Seo() {
@@ -21,6 +22,7 @@ export default function Seo() {
                 <SeoKeyAreas></SeoKeyAreas>
                 <SeoEffects></SeoEffects>
                 <OurProcess></OurProcess>
+                <SeoOffer></SeoOffer>
             </MantineProvider>
         </>
     )
