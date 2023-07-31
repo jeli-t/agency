@@ -4,12 +4,12 @@ import { Dots } from '../assets/Dots';
 const useStyles = createStyles((theme) => ({
   wrapper: {
     position: 'relative',
-    paddingTop: rem(120),
-    paddingBottom: rem(80),
+    marginTop: rem(80),
+    marginBottom: rem(80),
 
     [theme.fn.smallerThan('sm')]: {
-      paddingTop: rem(80),
-      paddingBottom: rem(60),
+      marginTop: rem(60),
+      marginBottom: rem(60),
     },
   },
 
@@ -33,7 +33,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   title: {
-    textAlign: 'center',
+    textAlign: 'left',
     fontWeight: 800,
     fontSize: rem(40),
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
@@ -51,7 +51,7 @@ const useStyles = createStyles((theme) => ({
     fontFamily: `Roboto, ${theme.fontFamily}`,
     fontSize: rem(24),
     fontWeight: 500,
-    textAlign: 'center',
+    textAlign: 'left',
 
     [theme.fn.smallerThan('xs')]: {
       fontSize: rem(20),
@@ -71,13 +71,12 @@ export function SeoBanner() {
       <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
 
       <div className={classes.inner}>
-        <Title className={classes.title}>
-            Search Engine Optimization
-        </Title>
-
-        <Container p={0} size={700}>
+        <Container p={0} size={800}>
+          <Title order={1} className={classes.title}>
+            Search Engine Optimization (SEO)
+          </Title>
           <Text className={classes.description}>
-            On this page you will find all the information about how we can help you with SEO and SEM to make your site more visited.
+          The majority of web traffic comes through search engines like Google, Bing, and Yahoo. SEO helps your website rank higher in search engine results, increasing its visibility to potential visitors. Higher rankings mean more organic (non-paid) traffic, as users are more likely to click on the top results. While it may take time to see significant results, SEO is a long-term strategy that can provide ongoing benefits once you establish a strong online presence.
           </Text>
         </Container>
       </div>
