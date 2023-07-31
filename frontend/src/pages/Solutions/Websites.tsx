@@ -2,6 +2,8 @@ import { MantineProvider, useMantineTheme } from '@mantine/core';
 import { WebsitesBanner } from '../../components/WebsitesBanner';
 import { Helmet } from 'react-helmet-async';
 import { GoodWebsite } from '../../components/GoodWebsite';
+import { BuildWebsite } from '../../components/BuildWebsite';
+import { OurProcess } from '../../components/OurProcess';
 
 
 export default function Websites() {
@@ -17,6 +19,8 @@ export default function Websites() {
             <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
                 <WebsitesBanner></WebsitesBanner>
                 <GoodWebsite></GoodWebsite>
+                <BuildWebsite></BuildWebsite>
+                <OurProcess></OurProcess>
             </MantineProvider>
         </>
     )
