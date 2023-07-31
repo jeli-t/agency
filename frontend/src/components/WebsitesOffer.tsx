@@ -129,6 +129,8 @@ export function WebsitesOffer() {
                     </Title>
                     <Text className={classes.text}>
                         The websites we design are not only supposed to look nice, but most importantly work well and grow your business. We develop different types of websites, from landing pages and business websites to small online stores. All tailored to your business needs. We provide a full, comprehensive service from design to hosting and maintenance.
+                    </Text>
+                    <Text className={classes.text}>
                         Check out the Get started section for a <span style={{fontWeight: 700}}>free</span> personalized strategy and pricing, or contact us directly to schedule a video consultation.
                     </Text>
                     <div>
