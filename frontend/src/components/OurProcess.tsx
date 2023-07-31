@@ -130,7 +130,7 @@ export function OurProcess() {
         <div className={classes.wrapper}>
             <div className={classes.hero_section}>
                 <div className={classes.description}>
-                    <Title className={classes.title}>
+                    <Title order={2} className={classes.title}>
                         Our Process
                     </Title>
                     <Timeline bulletSize={24} lineWidth={4} color='orange' active={4} classNames={{itemTitle: classes.itemTitle}} >

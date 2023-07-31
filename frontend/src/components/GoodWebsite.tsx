@@ -139,7 +139,7 @@ export function GoodWebsite() {
         <div className={classes.wrapper}>
             <Container size={1400}>
                 <Container p={0} size={800}>
-                    <Title className={classes.title}>
+                    <Title order={2} className={classes.title}>
                         What makes a good website?
                     </Title>
                     <Text className={classes.description}>

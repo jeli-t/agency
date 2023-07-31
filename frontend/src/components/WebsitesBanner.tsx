@@ -72,7 +72,7 @@ export function WebsitesBanner() {
 
       <div className={classes.inner}>
         <Container p={0} size={800}>
-          <Title className={classes.title}>
+          <Title order={1} className={classes.title}>
             Why the website is so important?
           </Title>
           <Text className={classes.description}>

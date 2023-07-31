@@ -121,7 +121,7 @@ export function BuildWebsite() {
                     <img src={web_development} alt='Web development' title='How to build a website' loading='lazy' width={845} height={800} className={classes.image} />
                 </div>
                 <div className={classes.description}>
-                    <Title className={classes.title}>
+                    <Title order={2} className={classes.title}>
                         How to build a website?
                     </Title>
                     <Text className={classes.text}>

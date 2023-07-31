@@ -124,7 +124,7 @@ export function WebsitesOffer() {
                     <img src={trust_us} alt='Trust us' title='You can trust us' loading='lazy' width={845} height={800} className={classes.image} />
                 </div>
                 <div className={classes.description}>
-                    <Title className={classes.title}>
+                    <Title order={2} className={classes.title}>
                         Leave it to the professionals
                     </Title>
                     <Text className={classes.text}>
