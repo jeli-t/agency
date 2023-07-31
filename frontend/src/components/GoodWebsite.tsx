@@ -120,9 +120,9 @@ export function Feature({ icon: Icon, title, description }: FeatureProps) {
             <ThemeIcon variant="filled" size={50} radius={40}>
                 <Icon size="2rem" stroke={2} />
             </ThemeIcon>
-            <Text className={classes.feature_title}>
+            <Title order={3} className={classes.feature_title}>
                 {title}
-            </Text>
+            </Title>
             <Text className={classes.feature_description}>
                 {description}
             </Text>
