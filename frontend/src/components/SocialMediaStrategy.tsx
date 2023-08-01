@@ -1,5 +1,5 @@
 import { ThemeIcon, Text, Title, Container, SimpleGrid, createStyles, rem } from '@mantine/core';
-import { IconCameraPlus , IconUserStar, IconMessages, IconAd2, IconArticle } from '@tabler/icons-react';
+import { IconCameraPlus , IconUserStar, IconMessages, IconAd, IconArticle } from '@tabler/icons-react';
 
 
 const useStyles = createStyles((theme) => ({
@@ -81,7 +81,7 @@ export const MOCKDATA = [
             'Managing social media accounts involves posting content regularly, responding to comments and messages, monitoring trends, and engaging with followers to build a loyal community.',
     },
     {
-        icon: IconAd2,
+        icon: IconAd,
         title: 'Advertising',
         description:
             "Paid social media advertising allows businesses to reach a wider audience, target specific demographics, and promote their products or services to potential customers.",
