@@ -1,86 +1,86 @@
-import { createStyles, Title, Text, Button, Container, rem } from '@mantine/core';
+import { createStyles, Title, Text, Container, rem } from '@mantine/core';
 import { Dots } from '../assets/Dots';
 
+
 const useStyles = createStyles((theme) => ({
-  wrapper: {
-    position: 'relative',
-    paddingTop: rem(120),
-    paddingBottom: rem(80),
+    wrapper: {
+        position: 'relative',
+        marginTop: rem(80),
+        marginBottom: rem(80),
 
-    [theme.fn.smallerThan('sm')]: {
-      paddingTop: rem(80),
-      paddingBottom: rem(60),
+        [theme.fn.smallerThan('sm')]: {
+            marginTop: rem(60),
+            marginBottom: rem(60),
+        },
     },
-  },
 
-  inner: {
-    position: 'relative',
-    zIndex: 1,
-  },
-
-  dots: {
-    position: 'absolute',
-    color: theme.colorScheme === 'dark' ? theme.colors.gray[6] : theme.colors.gray[3],
-
-    [theme.fn.smallerThan('sm')]: {
-      display: 'none',
+    inner: {
+        position: 'relative',
+        zIndex: 1,
     },
-  },
 
-  dotsLeft: {
-    left: 0,
-    top: 0,
-  },
+    dots: {
+        position: 'absolute',
+        color: theme.colorScheme === 'dark' ? theme.colors.gray[6] : theme.colors.gray[3],
 
-  title: {
-    textAlign: 'center',
-    fontWeight: 800,
-    fontSize: rem(40),
-    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-    marginBottom: theme.spacing.xs,
-    fontFamily: `Roboto, ${theme.fontFamily}`,
-
-    [theme.fn.smallerThan('xs')]: {
-      fontSize: rem(28),
-      textAlign: 'left',
+        [theme.fn.smallerThan('sm')]: {
+            display: 'none',
+        },
     },
-  },
 
-  description: {
-    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-    fontFamily: `Roboto, ${theme.fontFamily}`,
-    fontSize: rem(24),
-    fontWeight: 500,
-    textAlign: 'center',
-
-    [theme.fn.smallerThan('xs')]: {
-      fontSize: rem(20),
-      textAlign: 'left',
+    dotsLeft: {
+        left: 0,
+        top: 0,
     },
-  },
+
+    title: {
+        textAlign: 'left',
+        fontWeight: 800,
+        fontSize: rem(40),
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        marginBottom: theme.spacing.xs,
+        fontFamily: `Roboto, ${theme.fontFamily}`,
+
+        [theme.fn.smallerThan('xs')]: {
+            fontSize: rem(28),
+            textAlign: 'left',
+        },
+    },
+
+    description: {
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        fontFamily: `Roboto, ${theme.fontFamily}`,
+        fontSize: rem(24),
+        fontWeight: 500,
+        textAlign: 'left',
+
+        [theme.fn.smallerThan('xs')]: {
+            fontSize: rem(20),
+            textAlign: 'left',
+        },
+    },
 }));
 
 export function DigitalMarketingBanner() {
-  const { classes } = useStyles();
+    const { classes } = useStyles();
 
-  return (
-    <Container className={classes.wrapper} size={1400}>
-      <Dots className={classes.dots} style={{ left: 0, top: 0 }} />
-      <Dots className={classes.dots} style={{ left: 60, top: 0 }} />
-      <Dots className={classes.dots} style={{ left: 0, top: 140 }} />
-      <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
+    return (
+        <Container className={classes.wrapper} size={1400}>
+            <Dots className={classes.dots} style={{ left: 0, top: 0 }} />
+            <Dots className={classes.dots} style={{ left: 60, top: 0 }} />
+            <Dots className={classes.dots} style={{ left: 0, top: 140 }} />
+            <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
 
-      <div className={classes.inner}>
-        <Title className={classes.title}>
-            Digital marketing
-        </Title>
-
-        <Container p={0} size={700}>
-          <Text className={classes.description}>
-            On this page you will find all the information about how we can prepare marketing campaigns for you to reach new customers on the Internet.          
-          </Text>
+            <div className={classes.inner}>
+                <Container p={0} size={800}>
+                    <Title order={1} className={classes.title}>
+                        Digital marketing opportunities
+                    </Title>
+                    <Text className={classes.description}>
+                        Digital marketing offers numerous opportunities for businesses to reach and engage with their target audience effectively. It allows for highly targeted advertising to reach specific demographics, interests, behaviors, and locations. This precision targeting increases the chances of converting leads into customers. Digital marketing has become an essential aspect of modern marketing for businesses of all sizes.
+                    </Text>
+                </Container>
+            </div>
         </Container>
-      </div>
-    </Container>
-  );
+    );
 }
