@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { SocialMediaStrategy } from '../../components/SocialMediaStrategy';
 import { SocialMediaWorth } from '../../components/SocialMediaWorth';
 import { OurProcess } from '../../components/OurProcess';
+import { SocialMediaOffer } from '../../components/SocialMediaOffer';
 
 
 export default function SocialMedia() {
@@ -21,6 +22,7 @@ export default function SocialMedia() {
                 <SocialMediaStrategy></SocialMediaStrategy>
                 <SocialMediaWorth></SocialMediaWorth>
                 <OurProcess></OurProcess>
+                <SocialMediaOffer></SocialMediaOffer>
             </MantineProvider>
         </>
     )
