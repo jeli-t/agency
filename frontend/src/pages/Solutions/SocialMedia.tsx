@@ -3,6 +3,7 @@ import { SocialMediaBanner } from '../../components/SocialMediaBanner';
 import { Helmet } from 'react-helmet-async';
 import { SocialMediaStrategy } from '../../components/SocialMediaStrategy';
 import { SocialMediaWorth } from '../../components/SocialMediaWorth';
+import { OurProcess } from '../../components/OurProcess';
 
 
 export default function SocialMedia() {
@@ -18,7 +19,8 @@ export default function SocialMedia() {
             <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
                 <SocialMediaBanner></SocialMediaBanner>
                 <SocialMediaStrategy></SocialMediaStrategy>
-                <SocialMediaWorth></SocialMediaWorth> 
+                <SocialMediaWorth></SocialMediaWorth>
+                <OurProcess></OurProcess>
             </MantineProvider>
         </>
     )
