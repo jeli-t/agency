@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { DigitalMarketingChannels } from '../../components/DigitalMarketingChannels';
 import { DigitalMarketingStrategy } from '../../components/DigitalMarketingStrategy';
 import { OurProcess } from '../../components/OurProcess';
+import { DigitalMarketingOffer } from '../../components/DigitalMarketingOffer';
 
 
 export default function DigitalMarketing() {
@@ -21,6 +22,7 @@ export default function DigitalMarketing() {
                 <DigitalMarketingChannels></DigitalMarketingChannels>
                 <DigitalMarketingStrategy></DigitalMarketingStrategy>
                 <OurProcess></OurProcess>
+                <DigitalMarketingOffer></DigitalMarketingOffer>
             </MantineProvider>
         </>
     )
