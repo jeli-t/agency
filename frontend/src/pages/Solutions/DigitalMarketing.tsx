@@ -1,6 +1,7 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
 import { DigitalMarketingBanner } from '../../components/DigitalMarketingBanner';
 import { Helmet } from 'react-helmet-async';
+import { DigitalMarketingChannels } from '../../components/DigitalMarketingChannels';
 
 
 export default function DigitalMarketing() {
@@ -15,6 +16,7 @@ export default function DigitalMarketing() {
             </Helmet>
             <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
                 <DigitalMarketingBanner></DigitalMarketingBanner>
+                <DigitalMarketingChannels></DigitalMarketingChannels>
             </MantineProvider>
         </>
     )
