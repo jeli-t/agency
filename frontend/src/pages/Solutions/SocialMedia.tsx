@@ -1,6 +1,7 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
 import { SocialMediaBanner } from '../../components/SocialMediaBanner';
 import { Helmet } from 'react-helmet-async';
+import { SocialMediaStrategy } from '../../components/SocialMediaStrategy';
 
 
 export default function SocialMedia() {
@@ -15,6 +16,7 @@ export default function SocialMedia() {
             </Helmet>
             <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
                 <SocialMediaBanner></SocialMediaBanner>
+                <SocialMediaStrategy></SocialMediaStrategy>
             </MantineProvider>
         </>
     )
