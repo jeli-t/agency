@@ -78,7 +78,7 @@ const useStyles = createStyles((theme) => ({
     },
 }));
 
-export function ResultsBanner() {
+export function ReportBanner() {
     const { classes } = useStyles();
 
     return (

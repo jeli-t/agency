@@ -1,21 +1,21 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
-import { ResultsBanner } from '../components/ResultsBanner';
+import { ReportBanner } from '../components/ReportBanner';
 import { Helmet } from 'react-helmet-async';
 
 
-export default function Results() {
+export default function Report() {
     const mainTheme = useMantineTheme();
 
     return (
         <>
             <Helmet>
-                <title>Personalized suggestions | Jeli Digital Agency</title>
-                <meta name='description' content='' />
+                <title>Parsonalized report | Jeli Digital Agency</title>
+                <meta name='description' content='We are preparing a report for you. It should be ready within 24 hours.' />
                 <link rel='canonical' href='/results' />
                 <meta name="robots" content="Noindex" />
             </Helmet>
             <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
-                <ResultsBanner></ResultsBanner>
+                <ReportBanner></ReportBanner>
             </MantineProvider>
         </>
     )

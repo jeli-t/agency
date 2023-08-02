@@ -113,7 +113,7 @@ export function Survey() {
 
             if (response.status === 201) {
                 setErrorDisplay('none')
-                navigate('/results')
+                navigate('/report')
             } else if (response.status === 400) {
                 setErrorDisplay('block')
             }
