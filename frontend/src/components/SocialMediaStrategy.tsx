@@ -1,5 +1,5 @@
 import { ThemeIcon, Text, Title, Container, SimpleGrid, createStyles, rem } from '@mantine/core';
-import { IconCameraPlus , IconUserStar, IconMessages, IconAd, IconArticle } from '@tabler/icons-react';
+import { IconCameraPlus , IconUserStar, IconMessages, IconAd, IconArticle, IconHandClick } from '@tabler/icons-react';
 
 
 const useStyles = createStyles((theme) => ({
@@ -99,6 +99,12 @@ export const MOCKDATA = [
         title: 'Influencer Marketing',
         description:
             'Collaborating with social media influencers, who have a significant and engaged following, can help businesses reach their target audience through authentic and trusted recommendations.',
+    },
+    {
+        icon: IconHandClick,
+        title: 'Affiliate Marketing',
+        description:
+            "This channel involves collaborating with partners who promote a business's products or services in exchange for a commission for each sale generated through their efforts."
     },
     {
         icon: IconArticle,
