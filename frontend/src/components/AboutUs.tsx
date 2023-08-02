@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
+import { createStyles, useMantineTheme, Title, rem, Text } from '@mantine/core';
 import people from './../assets/people.svg'
 
 
 const useStyles = createStyles((theme) => ({
     wrapper: {
-        height: 'fit',
+        height: '100vh',
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
@@ -14,6 +12,7 @@ const useStyles = createStyles((theme) => ({
         alignItems: 'center',
 
         [theme.fn.smallerThan('xs')]: {
+            height: 'fit',
             justifyContent: 'flex-start',
         }
     },
