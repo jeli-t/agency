@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import web_development from './../assets/web_development.svg'
@@ -92,6 +91,7 @@ const useStyles = createStyles((theme) => ({
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
+        transition: 'transform 150ms ease, box-shadow 150ms ease',
 
         [theme.fn.smallerThan('lg')]: {
             width: '50%',
@@ -101,6 +101,10 @@ const useStyles = createStyles((theme) => ({
         [theme.fn.smallerThan('xs')]: {
             width: '100%',
             marginBottom: -10,
+        },
+
+        '&:hover': {
+            transform: 'scale(1.05)',
         },
     },
 
