@@ -1,96 +1,116 @@
-import { createStyles, Title, Text, Button, Container, rem } from '@mantine/core';
+import { createStyles, Title, Text, Container, rem, Button } from '@mantine/core';
 import { Dots } from '../assets/Dots';
+import { Link } from 'react-router-dom';
+
 
 const useStyles = createStyles((theme) => ({
-  wrapper: {
-    position: 'relative',
-    paddingTop: rem(120),
-    paddingBottom: rem(80),
+    wrapper: {
+        position: 'relative',
+        marginTop: rem(80),
+        marginBottom: rem(80),
 
-    [theme.fn.smallerThan('sm')]: {
-      paddingTop: rem(80),
-      paddingBottom: rem(60),
+        [theme.fn.smallerThan('sm')]: {
+            marginTop: rem(60),
+            marginBottom: rem(60),
+        },
     },
-  },
 
-  inner: {
-    position: 'relative',
-    zIndex: 1,
-  },
-
-  dots: {
-    position: 'absolute',
-    color: theme.colorScheme === 'dark' ? theme.colors.gray[6] : theme.colors.gray[3],
-
-    [theme.fn.smallerThan('sm')]: {
-      display: 'none',
+    inner: {
+        position: 'relative',
+        zIndex: 1,
     },
-  },
 
-  dotsLeft: {
-    left: 0,
-    top: 0,
-  },
+    dots: {
+        position: 'absolute',
+        color: theme.colorScheme === 'dark' ? theme.colors.gray[6] : theme.colors.gray[3],
 
-  title: {
-    textAlign: 'center',
-    fontWeight: 800,
-    fontSize: rem(40),
-    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-    marginBottom: theme.spacing.xs,
-    fontFamily: `Roboto, ${theme.fontFamily}`,
-
-    [theme.fn.smallerThan('xs')]: {
-      fontSize: rem(28),
-      textAlign: 'left',
+        [theme.fn.smallerThan('sm')]: {
+            display: 'none',
+        },
     },
-  },
 
-  description: {
-    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-    fontFamily: `Roboto, ${theme.fontFamily}`,
-    fontSize: rem(24),
-    fontWeight: 500,
-    textAlign: 'center',
-
-    [theme.fn.smallerThan('xs')]: {
-      fontSize: rem(20),
-      textAlign: 'left',
+    dotsLeft: {
+        left: 0,
+        top: 0,
     },
-  },
 
-  highlight: {
-    position: 'relative',
-    backgroundColor: theme.primaryColor,
-    borderRadius: theme.radius.sm,
-    padding: `${rem(4)} ${rem(12)}`,
-  },
+    title: {
+        textAlign: 'left',
+        fontWeight: 800,
+        fontSize: rem(40),
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        marginBottom: theme.spacing.xs,
+        fontFamily: `Roboto, ${theme.fontFamily}`,
+
+        [theme.fn.smallerThan('xs')]: {
+            fontSize: rem(28),
+            textAlign: 'left',
+        },
+    },
+
+    description: {
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        fontFamily: `Roboto, ${theme.fontFamily}`,
+        fontSize: rem(24),
+        fontWeight: 500,
+        textAlign: 'left',
+
+        [theme.fn.smallerThan('xs')]: {
+            fontSize: rem(20),
+            textAlign: 'left',
+        },
+    },
+
+    button: {
+      width: 200,
+      marginTop: 20,
+      marginRight: 20,
+      color: theme.white,
+      fontFamily: `Roboto, ${theme.fontFamily}`,
+      fontSize: rem(24),
+      fontWeight: 600,
+  
+      [theme.fn.smallerThan('xs')]: {
+          width: 140,
+          fontSize: rem(16),
+          marginRight: 10,
+      },
+    },
 }));
 
 export function ResultsBanner() {
-  const { classes } = useStyles();
+    const { classes } = useStyles();
 
-  return (
-    <Container className={classes.wrapper} size={1400}>
-      <Dots className={classes.dots} style={{ left: 0, top: 0 }} />
-      <Dots className={classes.dots} style={{ left: 60, top: 0 }} />
-      <Dots className={classes.dots} style={{ left: 0, top: 140 }} />
-      <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
+    return (
+        <Container className={classes.wrapper} size={1400}>
+            <Dots className={classes.dots} style={{ left: 0, top: 0 }} />
+            <Dots className={classes.dots} style={{ left: 60, top: 0 }} />
+            <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
 
-      <div className={classes.inner}>
-        <Title className={classes.title}>
-            That's it!
-        </Title>
-
-        <Container p={0} size={800}>
-          <Text className={classes.description}>
-            We are preparing a report for you. It will be ready within 24 hours.
-          </Text>
-          <Text className={classes.description}>
-            Based on your answers, we can recommend reading the following articles.
-          </Text>
+            <div className={classes.inner}>
+                <Container p={0} size={800}>
+                    <Title order={1} className={classes.title}>
+                      That's it!
+                    </Title>
+                    <Text className={classes.description}>
+                      We are preparing a report for you. It should be ready within 24 hours.
+                      Do you have any questions? Write to us.
+                      If you are looking for more digital marketing knowledge, check out our blog.
+                    </Text>
+                    <div>
+                        <Link to='/contact'>
+                            <Button className={classes.button} size='lg' radius='md'>
+                                Contact
+                            </Button>
+                        </Link>
+                        <Link to='/blog'>
+                            <Button className={classes.button} size='lg' radius='md'>
+                                Blog
+                            </Button>
+                        </Link>
+                    </div>
+                </Container>
+            </div>
         </Container>
-      </div>
-    </Container>
-  );
+    );
 }
