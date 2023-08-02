@@ -73,7 +73,15 @@ const useStyles = createStyles((theme) => ({
     link: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         textDecoration: 'none',
-    }
+    },
+
+    tile: {
+        transition: 'transform 150ms ease, box-shadow 150ms ease',
+
+        '&:hover': {
+            transform: 'scale(1.02)',
+          },
+    },
 }));
 
 const features = [
@@ -113,7 +121,7 @@ export function AboutSection() {
 
     const items = features.map((feature) => (
         <HashLink to={feature.id} smooth scroll={scrollWithOffset} className={classes.link}>
-            <div key={feature.title}>
+            <div key={feature.title} className={classes.tile}>
                 <ThemeIcon
                     size={50}
                     radius="md"
