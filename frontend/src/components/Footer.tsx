@@ -98,6 +98,15 @@ const useStyles = createStyles((theme) => ({
       marginTop: theme.spacing.xs,
     },
   },
+
+  mobile_privacy: {
+    display: 'none',
+
+    [theme.fn.smallerThan('sm')]: {
+      marginTop: theme.spacing.xs,
+      display: 'block',
+    },
+  },
 }));
 
 export function Footer() {
@@ -114,24 +123,26 @@ export function Footer() {
         <div className={classes.groups}>
           <div className={classes.wrapper}>
             <Text className={classes.title}>{'Navigation'}</Text>
-            <Link to='/' className={classes.link}>
-              Main page
-            </Link>
-            <Link to='/solutions' className={classes.link}>
-              Solutions
-            </Link>
-            <Link to='/pricing' className={classes.link}>
-              Pricing
-            </Link>
-            <Link to='/blog' className={classes.link}>
-              Blog
-            </Link>
-            <Link to='/about' className={classes.link}>
-              About
-            </Link>
-            <Link to='/contact' className={classes.link}>
-              Contact
-            </Link>
+            <nav>
+              <a href='/' className={classes.link}>
+                Main page
+              </a>
+              <a href='/solutions' className={classes.link}>
+                Solutions
+              </a>
+              <a href='/pricing' className={classes.link}>
+                Pricing
+              </a>
+              <a href='/blog' className={classes.link}>
+                Blog
+              </a>
+              <a href='/about' className={classes.link}>
+                About
+              </a>
+              <a href='/contact' className={classes.link}>
+                Contact
+              </a>
+            </nav>
           </div>
           <div className={classes.wrapper}>
             <Text className={classes.title}>{'Solutions'}</Text>
@@ -151,7 +162,7 @@ export function Footer() {
           <div className={classes.wrapper}>
             <Text className={classes.title}>{'Other'}</Text>
             <Link to='/privacy' className={classes.link}>
-              Privacy
+              Privacy policy
             </Link>
           </div>
         </div>
@@ -178,6 +189,11 @@ export function Footer() {
             </ActionIcon>
           </a>
         </Group>
+        <div className={classes.mobile_privacy}>
+          <Link to='/privacy' className={classes.link}>
+            Privacy policy
+          </Link>
+        </div>
       </Container>
     </footer>
   );
