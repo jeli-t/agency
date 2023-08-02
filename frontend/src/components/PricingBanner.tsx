@@ -4,12 +4,12 @@ import { Dots } from '../assets/Dots';
 const useStyles = createStyles((theme) => ({
   wrapper: {
     position: 'relative',
-    paddingTop: rem(120),
-    paddingBottom: rem(80),
+    marginTop: rem(80),
+    marginBottom: rem(80),
 
     [theme.fn.smallerThan('sm')]: {
-      paddingTop: rem(80),
-      paddingBottom: rem(60),
+      marginTop: rem(60),
+      marginBottom: rem(60),
     },
   },
 
@@ -33,7 +33,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   title: {
-    textAlign: 'center',
+    textAlign: 'left',
     fontWeight: 800,
     fontSize: rem(40),
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
@@ -51,7 +51,7 @@ const useStyles = createStyles((theme) => ({
     fontFamily: `Roboto, ${theme.fontFamily}`,
     fontSize: rem(24),
     fontWeight: 500,
-    textAlign: 'center',
+    textAlign: 'left',
 
     [theme.fn.smallerThan('xs')]: {
       fontSize: rem(20),
@@ -71,13 +71,15 @@ export function PricingBanner() {
       <Dots className={classes.dots} style={{ right: 0, top: 60 }} />
 
       <div className={classes.inner}>
-        <Title className={classes.title}>
-            Pricing
-        </Title>
-
-        <Container p={0} size={700}>
+        <Container p={0} size={800}>
+          <Title order={1} className={classes.title}>
+            Our Pricing Guide
+          </Title>
           <Text className={classes.description}>
-            On this page you will find all the information about how we price our services.
+            First of all, every project is different, and the scope of services may vary depending on your marketing goals and the type of business. We price each project separately. The following prices are for reference only.
+          </Text>
+          <Text className={classes.description}>
+            If you would like to receive a <span style={{fontWeight: 700}}>free</span> personalized pricing and strategy for your business, check out the Get started section or contact us directly to schedule a <span style={{fontWeight: 700}}>free</span> video consultation.
           </Text>
         </Container>
       </div>
