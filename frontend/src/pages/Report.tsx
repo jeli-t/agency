@@ -1,5 +1,6 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
 import { ReportBanner } from '../components/ReportBanner';
+import { ReportIllustration } from '../components/ReportIllustration';
 import { Helmet } from 'react-helmet-async';
 
 
@@ -16,6 +17,7 @@ export default function Report() {
             </Helmet>
             <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
                 <ReportBanner></ReportBanner>
+                <ReportIllustration></ReportIllustration>
             </MantineProvider>
         </>
     )
