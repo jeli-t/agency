@@ -70,7 +70,9 @@ export function Survey() {
 
     const [businessType, setBusinessType] = useInputState('');
     const [industry, setIndustry] = useInputState('');
+    const [companySize, setCompanySize] = useInputState('');
     const [mainGoal, setMainGoal] = useInputState('');
+    const [budget, setBudget] = useInputState('');
     const [website, setWebsite] = useInputState('');
     const [socialMedia, setSocialMedia] = useInputState('');
     const [advertising, setAdvertising] = useInputState('');
@@ -99,7 +101,9 @@ export function Survey() {
                 body: JSON.stringify({
                     'businessType': businessType,
                     'industry': industry,
+                    'companySize': companySize,
                     'mainGoal': mainGoal,
+                    'budget': budget,
                     'website': website,
                     'socialMedia': socialMedia,
                     'advertising': advertising,
@@ -144,6 +148,17 @@ export function Survey() {
 
                 <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
 
+                <Radio.Group name='company_size' required onChange={(value)=>setCompanySize(value)} label='What is the size of the company?' size='2xl' fz={30} fw={600} className={classes.question}>
+                    <Flex direction="column" gap="sm" my='md'>
+                        <Radio value="micro" label="Micro (1-9 people)" size='lg'/>
+                        <Radio value="small" label="Small (10-49 people)" size='lg'/>
+                        <Radio value="medium" label="Medium (50-249 people)" size='lg' />
+                        <Radio value="large" label="Large (250+ people)" size='lg' />
+                    </Flex>
+                </Radio.Group>
+
+                <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
+
                 <Radio.Group name='main_goal' required onChange={(value)=>setMainGoal(value)} label='What is your main goal?' size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
                         <Radio value="start_online" label="Start a new online business" size='lg' />
@@ -152,6 +167,14 @@ export function Survey() {
                         <Radio value="marketing" label="Reach new customers" size='lg' />
                         <Radio value="other" label='Other (write below)' size='lg' />
                         <TextInput placeholder='Other' size='lg' variant="filled" onChange={(value)=>setMainGoal(value)} />
+                    </Flex>
+                </Radio.Group>
+
+                <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
+
+                <Radio.Group name='budget' required onChange={(value)=>setBudget(value)} label='What is your budget for digital marketing?' size='2xl' fz={30} fw={600} className={classes.question}>
+                    <Flex direction="column" gap="sm" my='md'>
+                        <TextInput placeholder='Your monthly budget here' size='lg' variant="filled" onChange={(value)=>setBudget(value)} />
                     </Flex>
                 </Radio.Group>
 
@@ -177,7 +200,7 @@ export function Survey() {
 
                 <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
 
-                <Radio.Group name='advertising' required onChange={(value)=>setAdvertising(value)} label='Do you run online advertising?' size='2xl' fz={30} fw={600} className={classes.question}>
+                <Radio.Group name='advertising' required onChange={(value)=>setAdvertising(value)} label='Do you use any online advertising?' size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
                         <Radio value="no" label="No" size='lg' />
                         <Radio value="yes" label="Yes (write below)" size='lg' />
