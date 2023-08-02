@@ -64,6 +64,14 @@ const useStyles = createStyles((theme) => ({
             fontSize: rem(16),
         },
     },
+
+    tile: {
+        transition: 'transform 150ms ease, box-shadow 150ms ease',
+
+        '&:hover': {
+            transform: 'scale(1.02)',
+          },
+    },
 }));
 
 
@@ -134,7 +142,7 @@ export function Feature({ icon: Icon, title, description }: FeatureProps) {
     const { classes } = useStyles();
 
     return (
-        <div>
+        <div className={classes.tile}>
             <ThemeIcon variant="filled" size={50} radius={40}>
                 <Icon size="2rem" stroke={2} />
             </ThemeIcon>
