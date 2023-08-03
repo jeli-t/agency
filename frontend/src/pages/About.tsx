@@ -12,7 +12,7 @@ export default function About() {
         <>
             <Helmet>
                 <title>About Us | Jeli Digital Agency</title>
-                <meta name='description' content="" />
+                <meta name='description' content="Jeli Digital Agency is a modern company that offers a comprehensive approach to online marketing, from website to social media." />
                 <link rel='canonical' href='/about' />
             </Helmet>
             <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>

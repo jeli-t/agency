@@ -122,7 +122,7 @@ export function AboutUs() {
                         Who are we?
                     </Title>
                     <Text className={classes.text}>
-                        Jeli.pl is a group of young people with passion to what we do. We are a small team from Poland, but on a daily basis we work with the best freelancers from all over the world, so that the services we prepare for you are always of the highest quality. We love new challenges and sharing knowledge on our blog.
+                        Jeli Digital Agency is a modern company that offers a comprehensive approach to online marketing, from website to social media. We are a small team of young people with passion from Poland, but on a daily basis we work with the best freelancers from all over the world, so that the services we prepare for you are always of the highest quality. We love new challenges and sharing knowledge on our blog.
                     </Text>
                 </div>
                 <div className={classes.ilustration}>
