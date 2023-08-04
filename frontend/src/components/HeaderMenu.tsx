@@ -116,6 +116,10 @@ const useStyles = createStyles((theme) => ({
       ),
     },
 
+    [theme.fn.smallerThan('lg')]: {
+      color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+    },
+
     [theme.fn.smallerThan('sm')]: {
       color: theme.colorScheme === 'dark' ? theme.white : theme.black,
       fontSize: rem(25),
@@ -131,23 +135,22 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
+  dropdown: {
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[8] : theme.colors.gray[2],
+  },
+
   language_label: {
     display: 'block',
+    width: 100,
     lineHeight: 1,
     padding: `${rem(8)} ${rem(12)}`,
-    borderRadius: theme.radius.sm,
+    border: 'none',
     textDecoration: 'none',
-    color: theme.white,
     fontSize: theme.fontSizes.lg,
+    fontFamily: `Roboto, ${theme.fontFamily}`,
     fontWeight: 500,
-    backgroundColor: theme.primaryColor,
-
-    '&:hover': {
-      backgroundColor: theme.fn.lighten(
-        theme.fn.variant({ variant: 'filled', color: theme.primaryColor }).background!,
-        0.1
-      ),
-    },
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[8] : theme.colors.gray[2],
+    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
 
     [theme.fn.smallerThan('sm')]: {
       color: theme.colorScheme === 'dark' ? theme.white : theme.black,
@@ -232,12 +235,11 @@ export function LanguageMenu() {
           Language
         </Button>
       </Menu.Target>
-      <Menu.Dropdown>
+      <Menu.Dropdown className={classes.dropdown}>
           {Object.keys(lngs).map((lng) => (
             <Menu.Item>
-              <button key={lng} className={classes.language_label} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-                {/* {lngs[lng].nativeName} */}
-                asdf
+              <button key={lng} className={classes.language_label} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+                {lngs[lng as keyof typeof lngs].nativeName}
               </button>
             </Menu.Item>
           ))}
@@ -318,8 +320,8 @@ export function HeaderMenu() {
             <SwitchToggle />
             <div>
               {Object.keys(lngs).map((lng) => (
-                <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-                  {/* {lngs[lng].nativeName} */}
+                <button key={lng} className={classes.language_label} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+                  {lngs[lng as keyof typeof lngs].nativeName}
                 </button>
               ))}
             </div>
