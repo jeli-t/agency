@@ -8,6 +8,7 @@ import { useWindowScroll } from '@mantine/hooks';
 import logoDark from './../assets/logoDark.png';
 import logoLight from './../assets/logoLight.png';
 import { HashLink } from 'react-router-hash-link';
+import { useTranslation, Trans } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -141,6 +142,7 @@ const useStyles = createStyles((theme) => ({
 export function HeroSection() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     const [scroll, scrollTo] = useWindowScroll();
 
@@ -171,7 +173,8 @@ export function HeroSection() {
                 <IconSearch className={classes.search_icon} size="2rem" stroke={3} />
             </div>
             <Title className={classes.hero_title}>
-                Jeli Digital Agency - Your trusted partner in the digital journey
+                {t("hero.title")}
+                {/* Jeli Digital Agency - Your trusted partner in the digital journey */}
             </Title>
             <Link to='/contact'>
                 <Button className={classes.button} size='lg' radius='md'>

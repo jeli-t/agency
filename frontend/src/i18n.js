@@ -19,7 +19,18 @@ i18n
     resources: {
       en: {
         translation: {
-          // here we will place our translations...
+            hero: {
+                title: 'Jeli Digital Agency - Your trusted partner in the digital journey',
+                button: 'Contact'
+            }
+        }
+      },
+      pl: {
+        translation: {
+            hero: {
+                title: 'Jeli Digital Agency - Twój zaufany partner w świecie online',
+                button: 'Contact'
+            }
         }
       }
     }
