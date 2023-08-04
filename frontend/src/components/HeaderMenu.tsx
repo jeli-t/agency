@@ -30,6 +30,7 @@ const useStyles = createStyles((theme) => ({
 
   inner: {
     height: rem(56),
+    width: '100%',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -43,7 +44,8 @@ const useStyles = createStyles((theme) => ({
 
   logo: {
     height: 50,
-    width: 'auto',
+    maxWidth: '25%',
+    flexGrow: 1,
 
     [theme.fn.smallerThan('lg')]: {
       display: 'none',
@@ -55,28 +57,44 @@ const useStyles = createStyles((theme) => ({
   },
 
   links: {
+    minWidth: '50%',
+    display: 'flex',
+    justifyContent: 'center',
+
+    [theme.fn.smallerThan('lg')]: {
+      justifyContent: 'left',
+      minWidth: '75%',
+    },
+
     [theme.fn.smallerThan('sm')]: {
       display: 'none',
     },
   },
 
   buttons: {
+    maxWidth: '25%',
+    flexGrow: 1,
+    display: 'flex',
+    justifyContent: 'right',
+
+    [theme.fn.smallerThan('lg')]: {
+      display: 'none'
+    },
+
     [theme.fn.smallerThan('sm')]: {
       display: 'none',
     },
   },
 
   responsive_buttons: {
-    [theme.fn.smallerThan('sm')]: {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      flexDirection: 'column',
-    },
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
   },
 
   burger: {
-    [theme.fn.largerThan('sm')]: {
+    [theme.fn.largerThan('lg')]: {
       display: 'none',
     },
   },
@@ -256,9 +274,11 @@ export function HeaderMenu() {
     <Header height={56} className={classes.header} mb={120}>
       <Container size='fluid' className={classes.header_container}>
         <div className={classes.inner}>
-          <Link to='/' style={{textDecoration: 'none'}}>
-            <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89' className={classes.logo} />
-          </Link>
+          <div className={classes.logo}>
+            <Link to='/'>
+              <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89' />
+            </Link>
+          </div>
           <Group spacing={10} className={classes.links}>
             {items}
           </Group>
@@ -276,10 +296,10 @@ export function HeaderMenu() {
         </div>
         <Drawer opened={opened} onClose={close} size="100%" position='top' withCloseButton={false} transitionProps={{ transition: 'fade', duration: 150, timingFunction: 'easy' }}>
           <Header height={56} className={classes.header} mb={120}>
-            <Container>
+            <Container size='fluid'>
               <div className={classes.inner}>
-                <Link to='/' style={{textDecoration: 'none'}}>
-                  <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89' className={classes.logo} />
+                <Link to='/'>
+                  <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89'/>
                 </Link>
                 <Burger
                   opened={opened}
