@@ -116,11 +116,10 @@ const useStyles = createStyles((theme) => ({
       ),
     },
 
-
     [theme.fn.smallerThan('sm')]: {
       color: theme.colorScheme === 'dark' ? theme.white : theme.black,
       fontSize: rem(25),
-      marginTop: 25,
+      marginTop: 12,
     },
   },
 
@@ -359,19 +358,20 @@ export function HeaderMenu() {
           </Header>
           <div className={classes.responsive_menu}>
             {items}
-          </div>
-          <Group className={classes.responsive_buttons}>
-            <SwitchToggle />
-            <div>
-              {Object.keys(lngs).map((lng) => (
-                <button key={lng} className={classes.language_label} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-                  {lngs[lng as keyof typeof lngs].nativeName}
-                </button>
-              ))}
+            <Divider size='sm' w={'70%'} variant='solid' my='sm' color={theme.colors.gray[5]} />
+            <div style={{height: 30, display: 'flex', alignItems: 'center'}}>
+              <SwitchToggle />
             </div>
-          </Group>
+            <Divider size='sm' w={'70%'} variant='solid' my='sm' color={theme.colors.gray[5]} />
+            <Text className={classes.link}>Language:</Text>
+            {Object.keys(lngs).map((lng) => (
+              <button key={lng} className={classes.language_label} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+                {lngs[lng as keyof typeof lngs].nativeName}
+              </button>
+            ))}
+          </div>
         </Drawer>
       </Container>
     </Header>
   );
-}
+} 
