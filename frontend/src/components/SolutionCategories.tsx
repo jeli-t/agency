@@ -4,6 +4,7 @@ import seo from './../assets/seo.svg'
 import social_media from './../assets/social_media.svg'
 import marketing from './../assets/marketing.svg'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -56,6 +57,7 @@ const useStyles = createStyles((theme) => ({
 
 export function SolutionCategories() {
   const { classes } = useStyles();
+  const { t } = useTranslation();
 
   return (
     <Container py='xl' size='fluid' className={classes.wrapper}>
@@ -66,7 +68,7 @@ export function SolutionCategories() {
                     <div className={classes.ilustration} style={{backgroundImage: `url(${web_development})`}}></div>
                 </AspectRatio>
                 <Text className={classes.title} mt={5}>
-                    Websites
+                    {t("solution_categories.solution1")}
                 </Text>
             </Card>
         </ Link>
@@ -77,7 +79,7 @@ export function SolutionCategories() {
                     <div className={classes.ilustration} style={{backgroundImage: `url(${seo})`}}></div>
                 </AspectRatio>
                 <Text className={classes.title} mt={5}>
-                    Search Engine Optimization
+                    {t("solution_categories.solution2")}
                 </Text>
             </Card>
         </Link>
@@ -88,7 +90,7 @@ export function SolutionCategories() {
                     <div className={classes.ilustration} style={{backgroundImage: `url(${social_media})`}}></div>
                 </AspectRatio>
                 <Text className={classes.title} mt={5}>
-                    Social media
+                    {t("solution_categories.solution3")}
                 </Text>
             </Card>
         </Link>
@@ -99,7 +101,7 @@ export function SolutionCategories() {
                     <div className={classes.ilustration} style={{backgroundImage: `url(${marketing})`}}></div>
                 </AspectRatio>
                 <Text className={classes.title} mt={5}>
-                    Digital marketing
+                    {t("solution_categories.solution4")}
                 </Text>
             </Card>
         </Link>

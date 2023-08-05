@@ -142,5 +142,11 @@
     "blog_banner": {
         "title": "Welcome to our blog",
         "text": "Here we share our knowledge and experience in web development, search engine optimization, social media marketing and many other topics related to building brand image and marketing on the Internet."
+    },
+    "solution_categories": {
+        "solution1": "Websites",
+        "solution2": "Search Engine Optimization",
+        "solution3": "Social media",
+        "solution4": "Digital marketing"
     }
 }
