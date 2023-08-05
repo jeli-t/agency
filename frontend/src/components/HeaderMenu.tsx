@@ -1,7 +1,7 @@
-import { createStyles, useMantineTheme, Header, Group, Burger, Container, rem, Title, useMantineColorScheme, Switch, Drawer, Text, Menu, Button } from '@mantine/core';
+import { createStyles, useMantineTheme, Header, Group, Burger, Container, rem, Title, useMantineColorScheme, Switch, Drawer, Text, Menu, Button, Divider } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { Link, useLocation } from 'react-router-dom';
-import { IconChevronDown, IconMoonStars, IconSun } from '@tabler/icons-react';
+import { IconChevronDown, IconMoonStars, IconSun, IconMenu2 } from '@tabler/icons-react';
 import { useEffect } from 'react';
 import logoLight from './../assets/logoLight.png';
 import { useTranslation, Trans } from 'react-i18next';
@@ -94,7 +94,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   burger: {
-    [theme.fn.largerThan('lg')]: {
+    [theme.fn.largerThan('sm')]: {
       display: 'none',
     },
   },
@@ -116,9 +116,6 @@ const useStyles = createStyles((theme) => ({
       ),
     },
 
-    [theme.fn.smallerThan('lg')]: {
-      color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-    },
 
     [theme.fn.smallerThan('sm')]: {
       color: theme.colorScheme === 'dark' ? theme.white : theme.black,
@@ -166,6 +163,18 @@ const useStyles = createStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
+  },
+
+  buttons_menu: {
+    display: 'none',
+
+    [theme.fn.smallerThan('lg')]: {
+      display: 'block',
+    },
+
+    [theme.fn.smallerThan('sm')]: {
+      display: 'none',
+    },
   },
 }));
 
@@ -248,6 +257,38 @@ export function LanguageMenu() {
   );
 }
 
+export function ButtonsMenu() {
+  const theme = useMantineTheme();
+  const { classes } = useStyles();
+  const { t, i18n } = useTranslation();
+
+  return (
+    <Menu
+      transitionProps={{ transition: 'scale-y' }}
+      position="top-end"
+      width={'auto'}
+      withinPortal
+    >
+      <Menu.Target>
+        <Button className={classes.link} style={{margin: 0, padding: 0}} rightIcon={<IconMenu2 size="2rem" stroke={1.5} />} />
+      </Menu.Target>
+      <Menu.Dropdown className={classes.dropdown}>
+        <Text className={classes.language_label} style={{fontSize: theme.fontSizes.xl}}>Language:</Text>
+        {Object.keys(lngs).map((lng) => (
+          <Menu.Item>
+            <button key={lng} className={classes.language_label} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+              {lngs[lng as keyof typeof lngs].nativeName}
+            </button>
+          </Menu.Item>
+        ))}
+        <Divider size='md' color={theme.colors.gray[5]}></Divider>
+        <Menu.Item>
+          <SwitchToggle />
+        </Menu.Item>
+      </Menu.Dropdown>
+    </Menu>
+  );
+}
 
 export function HeaderMenu() {
   const theme = useMantineTheme();
@@ -288,6 +329,9 @@ export function HeaderMenu() {
             <LanguageMenu></LanguageMenu>
             <SwitchToggle />
           </Group>
+          <div className={classes.buttons_menu}>
+            <ButtonsMenu />
+          </div>
           <Burger
             opened={opened}
             onClick={open}
