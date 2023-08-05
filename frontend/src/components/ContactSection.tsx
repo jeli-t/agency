@@ -2,6 +2,7 @@ import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon } from '@man
 import contact from './../assets/contact.svg'
 import { IconBrandInstagram, IconMail, IconBrandFacebook } from '@tabler/icons-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -143,6 +144,7 @@ const useStyles = createStyles((theme) => ({
 export function ContactSection() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.wrapper}>
@@ -152,10 +154,10 @@ export function ContactSection() {
                 </div>
                 <div className={classes.description}>
                     <Title order={2} className={classes.title}>
-                        Stay in touch
+                        {t("contact_section.title")}
                     </Title>
                     <Text className={classes.text}>
-                        Write to us what you need. We are happy to answer all your questions. If you want, we can also arrange a video consultation and prepare your marketing strategy for free.
+                        {t("contact_section.text")}
                     </Text>
                     <div style={{marginTop: '40px'}}>
                         <a href='mailto: agency@jeli.pl'>
@@ -204,7 +206,7 @@ export function ContactSection() {
                     </div>
                 </div>
                 <Text className={classes.faq}>
-                    Please check the FAQ section below.
+                    {t("contact_section.faq")}
                 </Text>
             </div>
         </div>

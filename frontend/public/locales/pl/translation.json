@@ -46,5 +46,10 @@
         "text_highlight": "darmową",
         "text2": " spersonalizowaną strategię i ofertę",
         "button": "Zaczynajmy"
+    },
+    "contact_section": {
+        "title": "Jesteśmy w kontakcie",
+        "text": "Napisz do nas, czego potrzebujesz. Chętnie odpowiemy na wszystkie pytania. Jeśli chcesz, możemy zorganizować wideokonsultacje i przygotować Twoją strategię marketingową za darmo.",
+        "faq": "Sekcja FAQ poniżej"
     }
 }

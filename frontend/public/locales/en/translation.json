@@ -46,5 +46,10 @@
         "text_highlight": "free",
         "text2": " personalized strategy and offer",
         "button": "Get started"
+    },
+    "contact_section": {
+        "title": "Stay in touch",
+        "text": "Write to us what you need. We are happy to answer all your questions. If you want, we can also arrange a video consultation and prepare your marketing strategy for free.",
+        "faq": "Please check the FAQ section below."
     }
 }
