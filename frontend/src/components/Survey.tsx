@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useInputState } from '@mantine/hooks';
 import { useState } from 'react';
 import { isEmail, isNotEmpty, useForm } from '@mantine/form';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -63,6 +64,7 @@ const useStyles = createStyles((theme) => ({
 export function Survey() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     const [serverError, setServerError] = useState<string | null>(null);
     const [errorDisplay, setErrorDisplay] = useInputState('none');
@@ -87,8 +89,8 @@ export function Survey() {
         validateInputOnBlur: true,
     
         validate: {
-            email: isEmail("Invalid email address"),
-            terms: isNotEmpty('You must accept this consent'),
+            email: isEmail(t("survey.email_error")),
+            terms: isNotEmpty(t("survey.terms_error")),
         },
     });
 
@@ -127,102 +129,102 @@ export function Survey() {
         <Container py='xl' className={classes.wrapper}>
             <form onSubmit={ form.onSubmit(handleSubmit) }>
                 
-                <Radio.Group name='business_type' required  onChange={(value)=>setBusinessType(value)} label='What type of business do you run?' size='2xl' fz={30} fw={600} className={classes.question}>
+                <Radio.Group name='business_type' required  onChange={(value)=>setBusinessType(value)} label={t("survey.question1")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
-                        <Radio value="services" label="Local services" size='lg'/>
-                        <Radio value="online_services" label="Online services" size='lg' />
-                        <Radio value="shop" label="Local shop" size='lg' />
-                        <Radio value="online_shop" label="Online shop" size='lg' />
-                        <Radio value="other" label='Other (write below)' size='lg' />
-                        <TextInput placeholder='Other' size='lg' variant="filled" onChange={(value)=>setBusinessType(value)} />
+                        <Radio value={t("survey.answer1a")} label={t("survey.answer1a")} size='lg'/>
+                        <Radio value={t("survey.answer1b")} label={t("survey.answer1b")} size='lg' />
+                        <Radio value={t("survey.answer1c")} label={t("survey.answer1c")} size='lg' />
+                        <Radio value={t("survey.answer1d")} label={t("survey.answer1d")} size='lg' />
+                        <Radio value={t("survey.answer1e")} label={t("survey.answer1e")} size='lg' />
+                        <TextInput placeholder={t("survey.placeholder1")} size='lg' variant="filled" onChange={(value)=>setBusinessType(value)} />
                     </Flex>
                 </Radio.Group>
 
                 <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
 
-                <Radio.Group name='industry' required onChange={(value)=>setIndustry(value)} label='What industry do you operate in?' size='2xl' fz={30} fw={600} className={classes.question}>
+                <Radio.Group name='industry' required onChange={(value)=>setIndustry(value)} label={t("survey.question2")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
-                        <TextInput placeholder='Your industry here' size='lg' variant="filled" onChange={(value)=>setIndustry(value)} />
+                        <TextInput placeholder={t("survey.placeholder2")} size='lg' variant="filled" onChange={(value)=>setIndustry(value)} />
                     </Flex>
                 </Radio.Group>
 
                 <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
 
-                <Radio.Group name='company_size' required onChange={(value)=>setCompanySize(value)} label='What is the size of the company?' size='2xl' fz={30} fw={600} className={classes.question}>
+                <Radio.Group name='company_size' required onChange={(value)=>setCompanySize(value)} label={t("survey.question3")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
-                        <Radio value="micro" label="Micro (1-9 people)" size='lg'/>
-                        <Radio value="small" label="Small (10-49 people)" size='lg'/>
-                        <Radio value="medium" label="Medium (50-249 people)" size='lg' />
-                        <Radio value="large" label="Large (250+ people)" size='lg' />
+                        <Radio value={t("survey.answer3a")} label={t("survey.answer3a")} size='lg'/>
+                        <Radio value={t("survey.answer3b")} label={t("survey.answer3b")} size='lg'/>
+                        <Radio value={t("survey.answer3c")} label={t("survey.answer3c")} size='lg' />
+                        <Radio value={t("survey.answer3d")} label={t("survey.answer3d")} size='lg' />
                     </Flex>
                 </Radio.Group>
 
                 <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
 
-                <Radio.Group name='main_goal' required onChange={(value)=>setMainGoal(value)} label='What is your main goal?' size='2xl' fz={30} fw={600} className={classes.question}>
+                <Radio.Group name='main_goal' required onChange={(value)=>setMainGoal(value)} label={t("survey.question4")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
-                        <Radio value="start_online" label="Start a new online business" size='lg' />
-                        <Radio value="bring_online" label="Bring my local business to the Internet" size='lg' />
-                        <Radio value="brand" label="Build a recognizable brand" size='lg' />
-                        <Radio value="marketing" label="Reach new customers" size='lg' />
-                        <Radio value="other" label='Other (write below)' size='lg' />
-                        <TextInput placeholder='Other' size='lg' variant="filled" onChange={(value)=>setMainGoal(value)} />
+                        <Radio value={t("survey.answer4a")} label={t("survey.answer4a")} size='lg' />
+                        <Radio value={t("survey.answer4b")} label={t("survey.answer4b")} size='lg' />
+                        <Radio value={t("survey.answer4c")} label={t("survey.answer4c")} size='lg' />
+                        <Radio value={t("survey.answer4d")} label={t("survey.answer4d")} size='lg' />
+                        <Radio value={t("survey.answer4e")} label={t("survey.answer4e")} size='lg' />
+                        <TextInput placeholder={t("survey.placeholder4")} size='lg' variant="filled" onChange={(value)=>setMainGoal(value)} />
                     </Flex>
                 </Radio.Group>
 
                 <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
 
-                <Radio.Group name='budget' required onChange={(value)=>setBudget(value)} label='What is your budget for digital marketing?' size='2xl' fz={30} fw={600} className={classes.question}>
+                <Radio.Group name='budget' required onChange={(value)=>setBudget(value)} label={t("survey.question5")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
-                        <TextInput placeholder='Your monthly budget here' size='lg' variant="filled" onChange={(value)=>setBudget(value)} />
+                        <TextInput placeholder={t("survey.placeholder5")} size='lg' variant="filled" onChange={(value)=>setBudget(value)} />
                     </Flex>
                 </Radio.Group>
 
                 <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
 
-                <Radio.Group name='website' required onChange={(value)=>setWebsite(value)} label='Do you have a website?' size='2xl' fz={30} fw={600} className={classes.question}>
+                <Radio.Group name='website' required onChange={(value)=>setWebsite(value)} label={t("survey.question6")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
-                        <Radio value="no" label="No" size='lg' />
-                        <Radio value="yes" label="Yes (If you would like to get an audit of your website, please provide the link below)" size='lg' />
-                        <TextInput placeholder='https://example.com' size='lg' variant="filled" onChange={(value)=>setWebsite(value)} />
+                        <Radio value={t("survey.answer6a")} label={t("survey.answer6a")} size='lg' />
+                        <Radio value={t("survey.answer6b")} label={t("survey.answer6b")} size='lg' />
+                        <TextInput placeholder={t("survey.placeholder6")} size='lg' variant="filled" onChange={(value)=>setWebsite(value)} />
                     </Flex>
                 </Radio.Group>
 
                 <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
 
-                <Radio.Group name='social_media' required onChange={(value)=>setSocialMedia(value)} label='Do you have social media?' size='2xl' fz={30} fw={600} className={classes.question}>
+                <Radio.Group name='social_media' required onChange={(value)=>setSocialMedia(value)} label={t("survey.question7")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
-                        <Radio value="no" label="No" size='lg' />
-                        <Radio value="yes" label="Yes (If you would like to get an audit of your social media, please provide the link below)" size='lg' />
-                        <TextInput placeholder='https://example.com' size='lg' variant="filled" onChange={(value)=>setSocialMedia(value)} />
+                        <Radio value={t("survey.answer7a")} label={t("survey.answer7a")} size='lg' />
+                        <Radio value={t("survey.answer7b")} label={t("survey.answer7b")} size='lg' />
+                        <TextInput placeholder={t("survey.placeholder7")} size='lg' variant="filled" onChange={(value)=>setSocialMedia(value)} />
                     </Flex>
                 </Radio.Group>
 
                 <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
 
-                <Radio.Group name='advertising' required onChange={(value)=>setAdvertising(value)} label='Do you use any online advertising?' size='2xl' fz={30} fw={600} className={classes.question}>
+                <Radio.Group name='advertising' required onChange={(value)=>setAdvertising(value)} label={t("survey.question8")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
-                        <Radio value="no" label="No" size='lg' />
-                        <Radio value="yes" label="Yes (write below)" size='lg' />
-                        <TextInput placeholder='Facebook Ads, Google Ads, mailing, other' size='lg' variant="filled" onChange={(value)=>setAdvertising(value)} />
+                        <Radio value={t("survey.answer8a")} label={t("survey.answer8a")} size='lg' />
+                        <Radio value={t("survey.answer8b")} label={t("survey.answer8b")} size='lg' />
+                        <TextInput placeholder={t("survey.placeholder8")} size='lg' variant="filled" onChange={(value)=>setAdvertising(value)} />
                     </Flex>
                 </Radio.Group>
 
                 <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
 
-                <Radio.Group name='email' required onChange={(value)=>setEmail(value)} label='Where should we send the report?' size='2xl' fz={30} fw={600} className={classes.question}>
+                <Radio.Group name='email' required onChange={(value)=>setEmail(value)} label={t("survey.question9")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
-                        <TextInput {...form.getInputProps('email')} onChange={e => {setEmail(e.target.value); form.setFieldValue("email", e.target.value)}} placeholder='email@example.com' size='lg' variant="filled" />
-                        <Checkbox {...form.getInputProps('terms')} label="I agree to receive marketing information" size='lg' />
+                        <TextInput {...form.getInputProps('email')} onChange={e => {setEmail(e.target.value); form.setFieldValue("email", e.target.value)}} placeholder={t("survey.placeholder9")} size='lg' variant="filled" />
+                        <Checkbox {...form.getInputProps('terms')} label={t("survey.terms")} size='lg' />
                     </Flex>
                 </Radio.Group>
 
                 <Button type='submit' size='lg' className={classes.button}>
-                    Request FREE report
+                    {t("survey.button")}
                 </Button>
 
                 <div className={classes.error} style={{display: `${errorDisplay}`}}>
-                    Please fill out the entire form
+                    {t("survey.error")}
                 </div>
             </form>
         </Container>
