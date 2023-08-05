@@ -28,5 +28,16 @@
         "description3": "Management, Advertising campaigns",
         "feature4": "And more...",
         "description4": "Google Ads, blogs, mailing and newsletter"
+    },
+    "products_section": {
+        "button": "Read more",
+        "title1": "Websites",
+        "description1": "A website is crucial for businesses for many reasons, and in the digital age it has become a fundamental component of any successful business strategy. Take a look what benefits it can bring to you and how we can help you with that.",
+        "title2": "Search Engine Optimization",
+        "description2": "Already have a website? Good, now it's important to make sure it shows up when someone tries to google your business. You don't have to look for customers, they are already looking for you. Just let them know you exist.",
+        "title3": "Social media",
+        "description3": "Social media is one of the most important elements of building a brand nowadays. Social media is also one of the best places to run advertising campaigns and reach new customers. Find out how to build an effective strategy.",
+        "title4": "Much more",
+        "description4": "Digital marketing has much more potential. Google Ads? Running a blog about your business and industry? Mailing and newsletters? Webinars? Affiliate marketing? Here you will find plenty of ideas on how to grow your business online."
     }
 }

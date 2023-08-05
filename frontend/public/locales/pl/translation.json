@@ -28,5 +28,16 @@
         "description3": "Zarządzanie, kampanie reklamowe",
         "feature4": "I inne...",
         "description4": "Google Ads, blogi, mailing i newsletter"
+    },
+    "products_section": {
+        "button": "Czytaj więcej",
+        "title1": "Strony internetowe",
+        "description1": "Strona internetowa ma kluczowe znaczenie dla firm z wielu powodów, a w erze cyfrowej stała się jednym z podstawowych elementów każdej udanej strategii biznesowej. Zobacz, jakie korzyści może przynieść Twojej firmie i jak możemy Ci w tym pomóc.",
+        "title2": "Pozycjonowanie stron",
+        "description2": "Masz już stronę internetową? Dobrze, teraz ważne jest, aby upewnić się, że pokaże się, gdy ktoś spróbuje wygooglować Twoją firmę. Nie musisz szukać klientów, oni już Cię szukają. Po prostu pokaż im, że istniejesz.",
+        "title3": "Social media",
+        "description3": "Media społecznościowe to obecnie jeden z najważniejszych elementów budowania marki. Social media to także jedno z najlepszych miejsc do prowadzenia kampanii reklamowych i docierania do nowych klientów. Sprawdź, jak zbudować skuteczną strategię.",
+        "title4": "Wiele więcej",
+        "description4": "Marketing cyfrowy ma znacznie większy potencjał. Reklamy Google? Prowadzenie bloga o swojej firmie i branży? Mailing i newsletter? Webinary? Marketing afiliacyjny? Tutaj znajdziesz mnóstwo pomysłów na to, jak rozwinąć swój biznes online."
     }
 }

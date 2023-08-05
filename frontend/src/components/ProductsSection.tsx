@@ -4,6 +4,7 @@ import web_development from './../assets/web_development.svg'
 import seo from './../assets/seo.svg'
 import social_media from './../assets/social_media.svg'
 import marketing from './../assets/marketing.svg'
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -156,6 +157,7 @@ const useStyles = createStyles((theme) => ({
 export function ProductsSection() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.wrapper}>
@@ -164,14 +166,15 @@ export function ProductsSection() {
                 <div className={classes.ilustration} style={{backgroundImage: `url(${web_development})`}}></div>
                 <div className={classes.description}>
                     <Title order={3} className={classes.service_title}>
-                        Websites
+                        {/* Websites */}
+                        {t("products_section.title1")}
                     </Title>
                     <Text className={classes.text}>
-                        A website is crucial for businesses for many reasons, and in the digital age it has become a fundamental component of any successful business strategy. Take a look what benefits it can bring to you and how we can help you with that.
+                        {t("products_section.description1")}
                     </Text>
                     <Link to='/websites'>
                         <Button className={classes.button} size='lg' radius='md'>
-                            Read more
+                            {t("products_section.button")}
                         </Button>
                     </Link>
                 </div>
@@ -181,14 +184,15 @@ export function ProductsSection() {
                 <div className={classes.ilustration} style={{backgroundImage: `url(${seo})`}}></div>
                 <div className={classes.description}>
                     <Title order={3} className={classes.service_title}>
-                        Search Engine Optimization
+                        {/* Search Engine Optimization */}
+                        {t("products_section.title2")}
                     </Title>
                     <Text className={classes.text}>
-                        Already have a website? Good, now it's important to make sure it shows up when someone tries to google your business. You don't have to look for customers, they are already looking for you. Just let them know you exist.
+                        {t("products_section.description2")}
                     </Text>
                     <Link to='/search-engine-optimization'>
                         <Button className={classes.button} size='lg' radius='md'>
-                            Read more
+                            {t("products_section.button")}
                         </Button>
                     </Link>
                 </div>
@@ -198,14 +202,15 @@ export function ProductsSection() {
                 <div className={classes.ilustration} style={{backgroundImage: `url(${social_media})`}}></div>
                 <div className={classes.description}>
                     <Title order={3} className={classes.service_title}>
-                        Social media
+                        {/* Social media */}
+                        {t("products_section.title3")}
                     </Title>
                     <Text className={classes.text}>
-                        Social media is one of the most important elements of building a brand nowadays. Social media is also one of the best places to run advertising campaigns and reach new customers. Find out how to build an effective strategy.
+                        {t("products_section.description3")}
                     </Text>
                     <Link to='/social-media'>
                         <Button className={classes.button} size='lg' radius='md'>
-                            Read more
+                            {t("products_section.button")}
                         </Button>
                     </Link>
                 </div>
@@ -215,14 +220,15 @@ export function ProductsSection() {
                 <div className={classes.ilustration} style={{backgroundImage: `url(${marketing})`}}></div>
                 <div className={classes.description}>
                     <Title order={3} className={classes.service_title}>
-                        Much more
+                        {/* Much more */}
+                        {t("products_section.title4")}
                     </Title>
                     <Text className={classes.text}>
-                        Digital marketing has much more potential. Google Ads? Running a blog about your business and industry? Mailing and newsletters? Courses? Here you will find plenty of ideas on how to grow your business online.
+                        {t("products_section.description4")}
                     </Text>
                     <Link to='/digital-marketing'>
                         <Button className={classes.button} size='lg' radius='md'>
-                            Read more
+                            {t("products_section.button")}
                         </Button>
                     </Link>
                 </div>
