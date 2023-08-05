@@ -15,5 +15,18 @@
         "search2": "Search Engine Optimization",
         "search3": "Social media",
         "search4": "Digital marketing"
+    },
+    "about_section": {
+        "title": "Make yourself ",
+        "title_highlight": "visible",
+        "description": "If you are not on the Internet, you do not exist. Digital marketing is the fastest way to grow your business nowadays. Check out our solutions and gain a competitive edge in the digital world.",
+        "feature1": "Websites",
+        "description1": "Design, UI/UX, development, hosting, domains",
+        "feature2": "Search Engine Optimization",
+        "description2": "SEO, SEM, Google Business Profil",
+        "feature3": "Social media",
+        "description3": "Management, Advertising campaigns",
+        "feature4": "And more...",
+        "description4": "Google Ads, blogs, mailing and newsletter"
     }
 }

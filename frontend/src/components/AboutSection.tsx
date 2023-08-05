@@ -10,6 +10,7 @@ import {
 } from '@mantine/core';
 import { IconWorldWww, IconSearch, IconAd, IconBrandInstagram } from '@tabler/icons-react';
 import { HashLink } from 'react-router-hash-link';
+import { useTranslation, Trans } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -87,32 +88,34 @@ const useStyles = createStyles((theme) => ({
 const features = [
 {
     icon: IconWorldWww,
-    title: 'Websites',
+    title: 'about_section.feature1',
     id: '/#Websites',
-    description: 'Design, UI/UX, development, hosting, domains',
+    description: 'about_section.description1',
 },
 {
     icon: IconSearch,
-    title: 'Search Engine Optimization',
+    title: 'about_section.feature2',
     id: '/#Search-Engine-Optimization',
-    description: 'SEO, SEM, Google Business Profil',
+    description: 'about_section.description2',
 },
 {
     icon: IconBrandInstagram,
-    title: 'Social media',
+    title: 'about_section.feature3',
     id: '/#Social-media',
-    description: 'Management, Advertising campaigns',
+    description: 'about_section.description3',
 },
 {
     icon: IconAd,
-    title: 'Other',
+    title: 'about_section.feature4',
     id: '/#Digital-marketing',
-    description: 'Google Ads, blogs, mailing and newsletter',
+    description: 'about_section.description4',
 },
 ];
 
 export function AboutSection() {
     const { classes } = useStyles();
+    const { t, i18n } = useTranslation();
+
     const scrollWithOffset = (el:any) => {
         const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
         const yOffset = -100; 
@@ -131,10 +134,10 @@ export function AboutSection() {
                     <feature.icon size={rem(26)} stroke={1.5} />
                 </ThemeIcon>
                 <Text fz={22} mt="sm" fw={600}>
-                    {feature.title}
+                    {t(feature.title)}
                 </Text>
                 <Text>
-                    {feature.description}
+                    {t(feature.description)}
                 </Text>
             </div>
         </HashLink>
@@ -145,10 +148,13 @@ export function AboutSection() {
             <Grid gutter={50} className={classes.grid}>
                 <Col span={12} md={5}>
                     <Title order={2} className={classes.title}>
-                        Make yourself <span className={classes.highlight}>visible</span>
+                        {t("about_section.title")}
+                        <span className={classes.highlight}>
+                            {t("about_section.title_highlight")}
+                        </span>
                     </Title>
                     <Text className={classes.text}>
-                        If you are not on the Internet, you do not exist. Digital marketing is the fastest way to grow your business nowadays. Check out our solutions and gain a competitive edge in the digital world.
+                        {t("about_section.description")}
                     </Text>
 
                 </Col>

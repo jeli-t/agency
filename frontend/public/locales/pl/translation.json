@@ -2,7 +2,7 @@
     "header": {
         "home": "Strona główna",
         "solutions": "Rozwiązania",
-        "pricing": "Ceny",
+        "pricing": "Cennik",
         "blog": "Blog",
         "about": "O nas",
         "contact": "Kontakt",
@@ -15,5 +15,18 @@
         "search2": "Pozycjonowanie stron (SEO)",
         "search3": "Social media",
         "search4": "Marketing cyfrowy"
+    },
+    "about_section": {
+        "title": "Stań się ",
+        "title_highlight": "zauważalnym",
+        "description": "Jeśli nie ma Cię w Internecie, to znaczy, że nie istniejesz. Marketing cyfrowy to obecnie najszybszy sposób na rozwój firmy. Sprawdź nasze rozwiązania i zyskaj przewagę nad konkurencją w świecie online.",
+        "feature1": "Strony internetowe",
+        "description1": "Projektowanie, UI/UX, rozwój, hosting, domeny",
+        "feature2": "Pozycjonowanie stron",
+        "description2": "SEO, SEM, Google Business Profil",
+        "feature3": "Social media",
+        "description3": "Zarządzanie, kampanie reklamowe",
+        "feature4": "I inne...",
+        "description4": "Google Ads, blogi, mailing i newsletter"
     }
 }
