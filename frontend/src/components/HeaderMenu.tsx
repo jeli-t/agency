@@ -198,31 +198,38 @@ export function SwitchToggle() {
 const mockdata = [
   {
     "link": "/",
-    "label": "Home page",
+    // "label": "Home page",
+    "label": "header.home",
   },
   {
     "link": "/solutions",
-    "label": "Solutions",
+    // "label": "Solutions",
+    "label": "header.solutions",
   },
   {
     "link": "/pricing",
-    "label": "Pricing",
+    // "label": "Pricing",
+    "label": "header.pricing",
   },
   {
     "link": "/blog",
-    "label": "Blog",
+    // "label": "Blog",
+    "label": "header.blog",
   },
   {
     "link": "/about",
-    "label": "About",
+    // "label": "About",
+    "label": "header.about",
   },
   {
     "link": "/contact",
-    "label": "Contact",
+    // "label": "Contact",
+    "label": "header.contact",
   },
   {
     "link": "/get-started",
-    "label": "Get started",
+    // "label": "Get started",
+    "label": "header.get_started",
   },
 ];
 
@@ -307,7 +314,7 @@ export function HeaderMenu() {
         to={link.link}
         className={classes.link}
       >
-        {link.label}
+        {t(link.label)}
       </Link>
     );
   });

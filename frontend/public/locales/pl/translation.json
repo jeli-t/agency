@@ -1,4 +1,13 @@
 {
+    "header": {
+        "home": "Strona główna",
+        "solutions": "Rozwiązania",
+        "pricing": "Ceny",
+        "blog": "Blog",
+        "about": "O nas",
+        "contact": "Kontakt",
+        "get_started": "Zaczynajmy"
+    },
     "hero": {
         "title": "Jeli Digital Agency - Twój zaufany partner w świecie online",
         "button": "Kontakt",
