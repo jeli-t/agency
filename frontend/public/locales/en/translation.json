@@ -174,5 +174,9 @@
         "description5": "Users have limited patience for slow-loading websites. A good website is optimized for speed, ensuring that pages load quickly. This optimization can include image compression, efficient coding, and reliable hosting.",
         "feature6": "Many more...",
         "description6": "There are many other things that are important if you want to build a successful website. If you are looking for more web development knowledge, check out our blog."
+    },
+    "build_website": {
+        "title": "How to build a website?",
+        "text": "There is a long way from an idea to a working website. If you have already decided to build your website, you need to answer some questions. How much time can you spend? How much money to spend? Do you want to use a website builder or hire professionals? What technology should you use? Where to buy a domain name and hosting? What are the stages of creating a website and how do you get started? Check out how the professionals do it."
     }
 }

@@ -1,5 +1,6 @@
 import { createStyles, useMantineTheme, Title, rem, Text } from '@mantine/core';
 import web_development from './../assets/web_development.svg'
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -113,6 +114,7 @@ const useStyles = createStyles((theme) => ({
 export function BuildWebsite() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.wrapper}>
@@ -122,10 +124,10 @@ export function BuildWebsite() {
                 </div>
                 <div className={classes.description}>
                     <Title order={2} className={classes.title}>
-                        How to build a website?
+                        {t("build_website.title")}
                     </Title>
                     <Text className={classes.text}>
-                        There is a long way from an idea to a working website. If you have already decided to build your website, you need to answer some questions. How much time can you spend? How much money to spend? Do you want to use a website builder or hire professionals? What technology should you use? Where to buy a domain name and hosting? What are the stages of creating a website and how do you get started? Check out how the professionals do it.
+                        {t("build_website.text")}
                     </Text>
                 </div>
             </div>
