@@ -1,5 +1,6 @@
 import { createStyles, Title, Text, Button, Container, rem } from '@mantine/core';
 import { Dots } from '../assets/Dots';
+import { useTranslation } from 'react-i18next';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -62,6 +63,7 @@ const useStyles = createStyles((theme) => ({
 
 export function WebsitesBanner() {
   const { classes } = useStyles();
+  const { t } = useTranslation();
 
   return (
     <Container className={classes.wrapper} size={1400}>
@@ -73,10 +75,10 @@ export function WebsitesBanner() {
       <div className={classes.inner}>
         <Container p={0} size={800}>
           <Title order={1} className={classes.title}>
-            Why the website is so important?
+            {t("websites_banner.title")}
           </Title>
           <Text className={classes.description}>
-            In today's digital age, the vast majority of consumers search for products, services, and information online. Without a website, your business may be virtually invisible to potential customers. Having a website allows you to establish an online presence, making it easier for people to find and learn about your business. A well-designed and professional website can significantly boost your business's credibility and trustworthiness. Having a website is the foundation of digital marketing.
+            {t("websites_banner.text")}
           </Text>
         </Container>
       </div>
