@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { createStyles, useMantineTheme, Title, rem, Text, Timeline } from '@mantine/core';
 import our_process from './../assets/our_process.svg'
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -125,38 +126,39 @@ const useStyles = createStyles((theme) => ({
 export function OurProcess() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.wrapper}>
             <div className={classes.hero_section}>
                 <div className={classes.description}>
                     <Title order={2} className={classes.title}>
-                        Our Process
+                        {t("our_process.title")}
                     </Title>
                     <Timeline bulletSize={24} lineWidth={4} color='orange' active={4} classNames={{itemTitle: classes.itemTitle}} >
-                        <Timeline.Item title='Information gathering'>
+                        <Timeline.Item title={t("our_process.step1")}>
                             <Text className={classes.text}>
-                                We collect basic information about your business and marketing goals. Check out the <Link to='/get-started' className={classes.link}>Get started</Link> section or <Link to='/contact' className={classes.link}>contact</Link> us directly.
+                                {t("our_process.description1")}
                             </Text>
                         </Timeline.Item>
-                        <Timeline.Item title='Project planning'>
+                        <Timeline.Item title={t("our_process.step2")}>
                             <Text className={classes.text}>
-                                We prepare an operation plan and marketing strategy for your company. You accept the proposal and we start the project.
+                                {t("our_process.description2")}
                             </Text>
                         </Timeline.Item>
-                        <Timeline.Item title='Team building'>
+                        <Timeline.Item title={t("our_process.step3")}>
                             <Text className={classes.text}>
-                                Based on the needs of the project, we choose the technologies we will use and form a team that will be responsible for its development.
+                                {t("our_process.description3")}
                             </Text>
                         </Timeline.Item>
-                        <Timeline.Item title='Project development' lineVariant='dashed'>
+                        <Timeline.Item title={t("our_process.step4")} lineVariant='dashed'>
                             <Text className={classes.text}>
-                                We start working on the project to meet your marketing goals. We stay in touch and make adjustments all the time.
+                                {t("our_process.description4")}
                             </Text>
                         </Timeline.Item>
-                        <Timeline.Item title='Success'>
+                        <Timeline.Item title={t("our_process.step5")}>
                             <Text className={classes.text}>
-                                The strategy is working, and your business is growing faster than ever before.
+                                {t("our_process.description5")}
                             </Text>
                         </Timeline.Item>
                     </Timeline>

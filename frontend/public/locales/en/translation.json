@@ -55,5 +55,18 @@
     "about_us": {
         "title": "Who are we?",
         "text": "Jeli Digital Agency is a modern company that offers a comprehensive approach to online marketing, from website to social media. We are a small team of young people with passion from Poland, but on a daily basis we work with the best freelancers from all over the world, so that the services we prepare for you are always of the highest quality. We love new challenges and sharing knowledge on our blog."
+    },
+    "our_process": {
+        "title": "Our Process",
+        "step1": "Information gathering",
+        "description1": "We collect basic information about your business and marketing goals. Check out the Get started section or contact us directly.",
+        "step2": "Project planning",
+        "description2": "We prepare an operation plan and marketing strategy for your company. You accept the proposal and we start the project.",
+        "step3": "Team building",
+        "description3": "Based on the needs of the project, we choose the technologies we will use and form a team that will be responsible for its development.",
+        "step4": "Project development",
+        "description4": "We start working on the project to meet your marketing goals. We stay in touch and make adjustments all the time.",
+        "step5": "Success",
+        "description5": "The strategy is working, and your business is growing faster than ever before."
     }
 }

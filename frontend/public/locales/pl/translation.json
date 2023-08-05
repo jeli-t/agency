@@ -55,5 +55,18 @@
     "about_us": {
         "title": "Kim jesteśmy?",
         "text": "Jeli Digital Agency to nowoczesna firma, która oferuje kompleksowe podejście do marketingu online, od strony internetowej po media społecznościowe. Jesteśmy niewielkim zespołem młodych ludzi z pasją z Polski, ale na co dzień współpracujemy z najlepszymi freelancerami z całego świata, dzięki czemu usługi, które dla Ciebie przygotowujemy, są zawsze najwyższej jakości. Uwielbiamy nowe wyzwania i dzielenie się wiedzą na naszym blogu."
+    },
+    "our_process": {
+        "title": "Nasz proces",
+        "step1": "Gromadzenie informacji",
+        "description1": "Zbieramy podstawowe informacje o Twojej firmie i celach marketingowych. Sprawdź sekcję Zaczynajmy lub skontaktuj się z nami bezpośrednio.",
+        "step2": "Planowanie projektu",
+        "description2": "Przygotowujemy plan działania i strategię marketingową dla Twojej firmy. Akceptujesz propozycję i rozpoczynamy projekt.",
+        "step3": "Budowanie zespołu",
+        "description3": "W oparciu o potrzeby projektu wybieramy technologie, z których będziemy korzystać i tworzymy zespół, który będzie odpowiedzialny za jego rozwój.",
+        "step4": "Prace nad projektem",
+        "description4": "Rozpoczynamy pracę nad projektem, aby spełnić Twoje cele marketingowe. Pozostajemy w kontakcie i cały czas wprowadzamy poprawki.",
+        "step5": "Sukces",
+        "description5": "Strategia działa, a Twoja firma rozwija się szybciej niż kiedykolwiek wcześniej."
     }
 }
