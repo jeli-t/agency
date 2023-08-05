@@ -158,5 +158,21 @@
     "websites_banner": {
         "title": "Dlaczego strona internetowa jest tak ważna?",
         "text": "W dzisiejszej erze cyfrowej zdecydowana większość konsumentów poszukuje produktów, usług i informacji online. Bez strony internetowej Twoja firma może być praktycznie niewidoczna dla potencjalnych klientów. Posiadanie strony internetowej pozwala zaistnieć w Internecie, ułatwiając ludziom znalezienie i poznanie Twojej firmy. Dobrze zaprojektowana i profesjonalna strona internetowa może znacznie zwiększyć wiarygodność firmy."
+    },
+    "good_website": {
+        "title": "Co sprawia, że strona internetowa jest dobra?",
+        "text": "Tworzenie stron internetowych obejmuje wiele elementów, które razem przyczyniają się do doskonałego doświadczenia użytkownika i skutecznej obecności w Internecie. Jeśli chcesz zbudować dobrą stronę internetową dla swojej firmy, musisz wziąć pod uwagę te kilka rzeczy.",
+        "feature1": "Przyjazny interfejs użytkownika",
+        "description1": "Dobra strona internetowa jest łatwa w nawigacji, z przejrzystym i intuicyjnym interfejsem użytkownika. Odwiedzający powinni być w stanie szybko znaleźć informacje i uzyskać dostęp do ważnych sekcji bez problemu. Dobrze zorganizowane menu i logiczny układ strony są niezbędne.",
+        "feature2": "Responsywność",
+        "description2": "Wraz z rosnącym wykorzystaniem urządzeń mobilnych, dobra strona internetowa musi być zoptymalizowana pod kątem różnych rozmiarów ekranu. Powinna płynnie dostosowywać się do różnych urządzeń, zapewniając użytkownikom pozytywne wrażenia niezależnie od tego, czy uzyskują dostęp do witryny na komputerze, tablecie czy smartfonie.",
+        "feature3": "Wysokiej jakości treści",
+        "description3": "Treść jest kluczowa, dlatego dobra strona internetowa zapewnia odwiedzającym wartościową, istotną i dobrze zaprezentowaną treść. Dotyczy to wciągającego tekstu, atrakcyjnych obrazów, filmów informacyjnych i innych elementów multimedialnych, które poprawiają wrażenia użytkownika.",
+        "feature4": "Pozycjonowanie strony",
+        "description4": "Dobra strona internetowa jest zoptymalizowana pod kątem wyszukiwarek, dzięki czemu ma większe szanse na pojawienie się w wynikach wyszukiwania. Właściwe użycie słów kluczowych, metatagów i wysokiej jakości treści to tylko niektóre z elementów, które przyczyniają się do dobrych praktyk SEO.",
+        "feature5": "Szybki czas ładowania",
+        "description5": "Użytkownicy mają ograniczoną cierpliwość do wolno ładujących się stron internetowych. Dobra strona internetowa jest zoptymalizowana pod kątem szybkości, zapewniając szybkie ładowanie stron. Optymalizacja ta może obejmować kompresję obrazu, wydajne kodowanie i niezawodny hosting.",
+        "feature6": "Wiele więcej...",
+        "description6": "Istnieje wiele innych rzeczy, które są ważne, jeśli chcesz zbudować udaną stronę internetową. Jeśli szukasz więcej wiedzy na temat tworzenia stron internetowych, sprawdź nasz blog."
     }
 }

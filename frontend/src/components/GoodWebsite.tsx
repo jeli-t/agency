@@ -1,5 +1,6 @@
 import { ThemeIcon, Text, Title, Container, SimpleGrid, createStyles, rem } from '@mantine/core';
 import { IconMoodHappy , IconSearch, IconDeviceMobile, IconBrandSpeedtest, IconLetterCase, IconArticle } from '@tabler/icons-react';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -78,39 +79,33 @@ const useStyles = createStyles((theme) => ({
 export const MOCKDATA = [
     {
         icon: IconMoodHappy ,
-        title: 'User-Friendly Interface',
-        description:
-            'A good website is easy to navigate, with a clear and intuitive user interface. Visitors should be able to find information quickly and access important sections without confusion. A well-organized menu and logical page layout are essential.',
+        title: 'good_website.feature1',
+        description: "good_website.description1"
     },
     {
         icon: IconDeviceMobile,
-        title: 'Mobile Responsiveness',
-        description:
-            'With the increasing use of mobile devices, a good website must be optimized for various screen sizes. It should adapt seamlessly to different devices, ensuring that users have a positive experience regardless of whether they access the site on a desktop, tablet, or smartphone.',
+        title: 'good_website.feature2',
+        description: "good_website.description2"
     },
     {
         icon: IconLetterCase,
-        title: 'High-Quality Content',
-        description:
-            'Content is king, and a good website provides valuable, relevant, and well-presented content to its visitors. This includes engaging text, captivating images, informative videos, and other multimedia elements that enhance the user experience.',
+        title: 'good_website.feature3',
+        description: "good_website.description3"
     },
     {
         icon: IconSearch,
-        title: 'Search Engine Optimization',
-        description:
-            'A good website is optimized for search engines, making it more likely to appear in search results. Proper use of keywords, meta tags, and high-quality content are some of the elements that contribute to good SEO practices.',
+        title: 'good_website.feature4',
+        description: "good_website.description4"
     },
     {
         icon: IconBrandSpeedtest,
-        title: 'Fast Loading Times',
-        description:
-            'Users have limited patience for slow-loading websites. A good website is optimized for speed, ensuring that pages load quickly. This optimization can include image compression, efficient coding, and reliable hosting.',
+        title: 'good_website.feature5',
+        description: "good_website.description5"
     },
     {
         icon: IconArticle,
-        title: 'Many more...',
-        description:
-            'There are many other things that are important if you want to build a successful website. If you are looking for more web development knowledge, check out our blog.',
+        title: 'good_website.feature6',
+        description: "good_website.description6"
     },
 ];
 
@@ -122,6 +117,7 @@ interface FeatureProps {
 
 export function Feature({ icon: Icon, title, description }: FeatureProps) {
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.tile}>
@@ -129,10 +125,10 @@ export function Feature({ icon: Icon, title, description }: FeatureProps) {
                 <Icon size="2rem" stroke={2} />
             </ThemeIcon>
             <Title order={3} className={classes.feature_title}>
-                {title}
+                {t(`${title}`)}
             </Title>
             <Text className={classes.feature_description}>
-                {description}
+                {t(`${description}`)}
             </Text>
         </div>
     );
@@ -141,6 +137,8 @@ export function Feature({ icon: Icon, title, description }: FeatureProps) {
 
 export function GoodWebsite() {
     const { classes } = useStyles();
+    const { t } = useTranslation();
+    
     const features = MOCKDATA.map((feature, index) => <Feature {...feature} key={index} />);
 
     return (
@@ -148,10 +146,10 @@ export function GoodWebsite() {
             <Container size={1400}>
                 <Container p={0} size={800}>
                     <Title order={2} className={classes.title}>
-                        What makes a good website?
+                        {t("good_website.title")}
                     </Title>
                     <Text className={classes.description}>
-                        Website development involves multiple elements that together contribute to an excellent user experience and a successful online presence. If you want to build a good website for your business, you need to consider these few things.
+                        {t("good_website.text")}
                     </Text>
                 </Container>
                 <SimpleGrid
