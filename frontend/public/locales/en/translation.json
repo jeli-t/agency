@@ -1,6 +1,10 @@
 {
     "hero": {
         "title": "Jeli Digital Agency - Your trusted partner in the digital journey",
-        "button": "Contact"
+        "button": "Contact",
+        "search1": "Websites",
+        "search2": "Search Engine Optimization",
+        "search3": "Social media",
+        "search4": "Digital marketing"
     }
 }

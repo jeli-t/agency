@@ -154,16 +154,20 @@ export function HeroSection() {
                     sequence={[
                         1000,
                         '',
-                        'Websites',
+                        // 'Websites',
+                        t("hero.search1"),
                         2000,
                         '',
-                        'Search Engine Optimization',
+                        // 'Search Engine Optimization',
+                        t("hero.search2"),
                         2000,
                         '',
-                        'Social media',
+                        // 'Social media',
+                        t("hero.search3"),
                         2000,
                         '',
-                        'Digital marketing',
+                        // 'Digital marketing',
+                        t("hero.search4"),
                         1000,
                     ]}
                     wrapper="span"
@@ -174,11 +178,10 @@ export function HeroSection() {
             </div>
             <Title className={classes.hero_title}>
                 {t("hero.title")}
-                {/* Jeli Digital Agency - Your trusted partner in the digital journey */}
             </Title>
             <Link to='/contact'>
                 <Button className={classes.button} size='lg' radius='md'>
-                    Contact
+                    {t("hero.button")}
                 </Button>
             </Link>
             <HashLink to='/#Make-yourself-visible' smooth className={classes.link}>

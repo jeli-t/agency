@@ -1,6 +1,10 @@
 {
     "hero": {
         "title": "Jeli Digital Agency - Twój zaufany partner w świecie online",
-        "button": "Kontakt"
+        "button": "Kontakt",
+        "search1": "Strony internetowe",
+        "search2": "Pozycjonowanie stron (SEO)",
+        "search3": "Social media",
+        "search4": "Marketing cyfrowy"
     }
 }
