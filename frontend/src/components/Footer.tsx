@@ -3,6 +3,7 @@ import { IconBrandInstagram, IconMail, IconBrandFacebook } from '@tabler/icons-r
 import { Link } from 'react-router-dom';
 import logoDark from './../assets/logoDark.png';
 import logoLight from './../assets/logoLight.png';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -112,7 +113,7 @@ const useStyles = createStyles((theme) => ({
 export function Footer() {
   const { classes } = useStyles();
   const theme = useMantineTheme();
-
+  const { t } = useTranslation();
 
   return (
     <footer className={classes.footer}>
@@ -122,47 +123,50 @@ export function Footer() {
         </Link>
         <div className={classes.groups}>
           <div className={classes.wrapper}>
-            <Text className={classes.title}>{'Navigation'}</Text>
+            <Text className={classes.title}>{t("footer.title1")}</Text>
             <nav>
               <a href='/' className={classes.link}>
-                Main page
+                {t("footer.home")}
               </a>
               <a href='/solutions' className={classes.link}>
-                Solutions
+                {t("footer.solutions")}
               </a>
               <a href='/pricing' className={classes.link}>
-                Pricing
+                {t("footer.pricing")}
               </a>
               <a href='/blog' className={classes.link}>
-                Blog
+                {t("footer.blog")}
               </a>
               <a href='/about' className={classes.link}>
-                About
+                {t("footer.about")}
               </a>
               <a href='/contact' className={classes.link}>
-                Contact
+                {t("footer.contact")}
+              </a>
+              <a href='/get-started' className={classes.link}>
+                {t("footer.get_started")}
               </a>
             </nav>
           </div>
           <div className={classes.wrapper}>
-            <Text className={classes.title}>{'Solutions'}</Text>
+            <Text className={classes.title}>{t("footer.title2")}</Text>
             <Link to='/websites' className={classes.link}>
-              Websites
+              {t("footer.solution1")}
             </Link>
             <Link to='/search-engine-optimization' className={classes.link}>
-              SEO
+              {t("footer.solution2")}
             </Link>
             <Link to='/social-media' className={classes.link}>
-              Social media
+              {t("footer.solution3")}
             </Link>
             <Link to='/digital-marketing' className={classes.link}>
-              Digital marketing
+              {t("footer.solution4")}
             </Link>
           </div>
           <div className={classes.wrapper}>
-            <Text className={classes.title}>{'Other'}</Text>
+            <Text className={classes.title}>{t("footer.title3")}</Text>
             <Link to='/privacy' className={classes.link}>
-              Privacy policy
+              {t("footer.privacy")}
             </Link>
           </div>
         </div>

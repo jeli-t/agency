@@ -8,6 +8,23 @@
         "contact": "Kontakt",
         "get_started": "Zaczynajmy"
     },
+    "footer": {
+        "title1": "Nawigacja",
+        "home": "Strona główna",
+        "solutions": "Rozwiązania",
+        "pricing": "Cennik",
+        "blog": "Blog",
+        "about": "O nas",
+        "contact": "Kontakt",
+        "get_started": "Zaczynajmy",
+        "title2": "Rozwiązania",
+        "solution1": "Strony internetowe",
+        "solution2": "Pozycjonowanie stron (SEO)",
+        "solution3": "Social media",
+        "solution4": "Marketing cyfrowy",
+        "title3": "Inne",
+        "privacy": "Polityka prywatności"
+    },
     "hero": {
         "title": "Jeli Digital Agency - Twój zaufany partner w świecie online",
         "button": "Kontakt",

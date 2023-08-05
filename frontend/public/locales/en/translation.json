@@ -8,6 +8,23 @@
         "contact": "Contact",
         "get_started": "Get started"
     },
+    "footer": {
+        "title1": "Navigation",
+        "home": "Home page",
+        "solutions": "Solutions",
+        "pricing": "Pricing",
+        "blog": "Blog",
+        "about": "About",
+        "contact": "Contact",
+        "get_started": "Get started",
+        "title2": "Solutions",
+        "solution1": "Websites",
+        "solution2": "Search Engine Optimization",
+        "solution3": "Social media",
+        "solution4": "Digital marketing",
+        "title3": "Other",
+        "privacy": "Privacy policy"
+    },
     "hero": {
         "title": "Jeli Digital Agency - Your trusted partner in the digital journey",
         "button": "Contact",
