@@ -134,6 +134,12 @@
         "email_error": "Nieprawidłowy adres e-mail",
         "terms_error": "Musisz zaakceptować tę zgodę"
     },
+    "report_banner": {
+        "title": "To wszystko!",
+        "text": "Przygotowujemy dla ciebie raport. Powinien on być gotowy w ciągu 24 godzin. Masz jakieś pytania? Napisz do nas. Jeśli szukasz więcej wiedzy na temat marketingu cyfrowego, sprawdź nasz blog.",
+        "button1": "Kontakt",
+        "button2": "Blog"
+    },
     "pricing_banner": {
         "title": "Nasz przewodnik cenowy",
         "text1": "Po pierwsze, każdy projekt jest inny, a zakres usług może się różnić w zależności od celów marketingowych i rodzaju działalności. Każdy projekt wyceniamy osobno. Poniższe ceny mają wyłącznie charakter orientacyjny.",

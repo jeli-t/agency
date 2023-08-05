@@ -1,6 +1,7 @@
 import { createStyles, Title, Text, Container, rem, Button } from '@mantine/core';
 import { Dots } from '../assets/Dots';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -80,6 +81,7 @@ const useStyles = createStyles((theme) => ({
 
 export function ReportBanner() {
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <Container className={classes.wrapper} size={1400}>
@@ -90,22 +92,20 @@ export function ReportBanner() {
             <div className={classes.inner}>
                 <Container p={0} size={800}>
                     <Title order={1} className={classes.title}>
-                      That's it!
+                      {t("report_banner.title")}
                     </Title>
                     <Text className={classes.description}>
-                      We are preparing a report for you. It should be ready within 24 hours.
-                      Do you have any questions? Write to us.
-                      If you are looking for more digital marketing knowledge, check out our blog.
+                        {t("report_banner.text")}
                     </Text>
                     <div>
                         <Link to='/contact'>
                             <Button className={classes.button} size='lg' radius='md'>
-                                Contact
+                                {t("report_banner.button1")}
                             </Button>
                         </Link>
                         <Link to='/blog'>
                             <Button className={classes.button} size='lg' radius='md'>
-                                Blog
+                                {t("report_banner.button2")}
                             </Button>
                         </Link>
                     </div>

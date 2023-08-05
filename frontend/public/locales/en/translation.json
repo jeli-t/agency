@@ -134,6 +134,12 @@
         "email_error": "Invalid email address",
         "terms_error": "You must accept this consent"
     },
+    "report_banner": {
+        "title": "That's it!",
+        "text": "We are preparing a report for you. It should be ready within 24 hours. Do you have any questions? Write to us. If you are looking for more digital marketing knowledge, check out our blog.",
+        "button1": "Contact",
+        "button2": "Blog"
+    },
     "pricing_banner": {
         "title": "Our Pricing Guide",
         "text1": "First of all, every project is different, and the scope of services may vary depending on your marketing goals and the type of business. We price each project separately. The following prices are for reference only.",
