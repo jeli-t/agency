@@ -1,5 +1,6 @@
 import { createStyles, useMantineTheme, Title, rem, Text } from '@mantine/core';
 import people from './../assets/people.svg'
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -113,16 +114,17 @@ const useStyles = createStyles((theme) => ({
 export function AboutUs() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.wrapper}>
             <div className={classes.hero_section}>
                 <div className={classes.description}>
                     <Title className={classes.title}>
-                        Who are we?
+                        {t("about_us.title")}
                     </Title>
                     <Text className={classes.text}>
-                        Jeli Digital Agency is a modern company that offers a comprehensive approach to online marketing, from website to social media. We are a small team of young people with passion from Poland, but on a daily basis we work with the best freelancers from all over the world, so that the services we prepare for you are always of the highest quality. We love new challenges and sharing knowledge on our blog.
+                        {t("about_us.text")}
                     </Text>
                 </div>
                 <div className={classes.ilustration}>
