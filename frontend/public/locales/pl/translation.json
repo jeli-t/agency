@@ -178,5 +178,12 @@
     "build_website": {
         "title": "Jak zbudować stronę internetową?",
         "text": "Od pomysłu do działającej strony internetowej jest długa droga. Jeśli już zdecydowałeś się zbudować swoją stronę internetową, musisz odpowiedzieć sobie na kilka pytań. Ile czasu możesz poświęcić? Ile pieniędzy wydać? Czy chcesz skorzystać z kreatora stron, czy zatrudnić profesjonalistów? Jakiej technologii powinieneś użyć? Gdzie kupić nazwę domeny i hosting? Jakie są etapy tworzenia strony internetowej i jak zacząć? Sprawdź, jak robią to profesjonaliści."
+    },
+    "websites_offer": {
+        "title": "Zostaw to profesjonalistom",
+        "text1": "Projektowane przez nas strony internetowe mają nie tylko ładnie wyglądać, ale przede wszystkim dobrze działać i rozwijać Twój biznes. Tworzymy różne rodzaje stron internetowych, od stron wizytówek i stron biznesowych po małe sklepy internetowe. Wszystko dostosowane do potrzeb Twojej firmy. Zapewniamy pełną, kompleksową obsługę od projektu po hosting i utrzymanie.",
+        "text2": "Sprawdź sekcję Zaczynajmy, aby uzyskać bezpłatną spersonalizowaną strategię i wycenę, lub skontaktuj się z nami bezpośrednio, aby umówić się na konsultację wideo.",
+        "button1": "Zaczynajmy",
+        "button2": "Kontakt"
     }
 }

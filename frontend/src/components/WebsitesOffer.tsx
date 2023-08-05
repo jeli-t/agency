@@ -1,6 +1,7 @@
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import trust_us from './../assets/trust_us.svg'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -116,6 +117,7 @@ const useStyles = createStyles((theme) => ({
 export function WebsitesOffer() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.wrapper}>
@@ -125,23 +127,23 @@ export function WebsitesOffer() {
                 </div>
                 <div className={classes.description}>
                     <Title order={2} className={classes.title}>
-                        Leave it to the professionals
+                        {t("websites_offer.title")}
                     </Title>
                     <Text className={classes.text}>
-                        The websites we design are not only supposed to look nice, but most importantly work well and grow your business. We develop different types of websites, from landing pages and business websites to small online stores. All tailored to your business needs. We provide a full, comprehensive service from design to hosting and maintenance.
+                        {t("websites_offer.text1")}
                     </Text>
                     <Text className={classes.text}>
-                        Check out the Get started section for a <span style={{fontWeight: 700}}>free</span> personalized strategy and pricing, or contact us directly to schedule a video consultation.
+                        {t("websites_offer.text2")}
                     </Text>
                     <div>
                         <Link to='/get-started'>
                             <Button className={classes.button} size='lg' radius='md'>
-                                Get started
+                                {t("websites_offer.button1")}
                             </Button>
                         </Link>
                         <Link to='/contact'>
                             <Button className={classes.button} size='lg' radius='md'>
-                                Contact
+                                {t("websites_offer.button2")}
                             </Button>
                         </Link>
                     </div>
