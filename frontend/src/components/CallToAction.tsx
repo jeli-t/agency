@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import report from './../assets/report.svg';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -90,19 +91,24 @@ const useStyles = createStyles((theme) => ({
 export function CallToAction() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.container}>
             <Title order={2} className={classes.title}>
-                Not sure where to start?
+                {t("call_to_action.title")}
             </Title>
             <div className={classes.ilustration} style={{backgroundImage: `url(${report})`}}></div>
             <Text className={classes.text}>
-                Get a <span style={{fontWeight: '700'}}>free</span> personalized suggestions and expertise
+                {t("call_to_action.text1")}
+                <span style={{fontWeight: '700'}}>
+                    {t("call_to_action.text_highlight")}
+                </span>
+                {t("call_to_action.text2")}
             </Text>
             <Link to='/get-started'>
                 <Button className={classes.button} size='xl' radius='md'>
-                    Get started
+                    {t("call_to_action.button")}
                 </Button>
             </Link>
         </div>

@@ -39,5 +39,12 @@
         "description3": "Social media is one of the most important elements of building a brand nowadays. Social media is also one of the best places to run advertising campaigns and reach new customers. Find out how to build an effective strategy.",
         "title4": "Much more",
         "description4": "Digital marketing has much more potential. Google Ads? Running a blog about your business and industry? Mailing and newsletters? Webinars? Affiliate marketing? Here you will find plenty of ideas on how to grow your business online."
+    },
+    "call_to_action": {
+        "title": "Not sure where to start?",
+        "text1": "Get a ",
+        "text_highlight": "free",
+        "text2": " personalized strategy and offer",
+        "button": "Get started"
     }
 }

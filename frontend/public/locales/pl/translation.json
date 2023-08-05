@@ -39,5 +39,12 @@
         "description3": "Media społecznościowe to obecnie jeden z najważniejszych elementów budowania marki. Social media to także jedno z najlepszych miejsc do prowadzenia kampanii reklamowych i docierania do nowych klientów. Sprawdź, jak zbudować skuteczną strategię.",
         "title4": "Wiele więcej",
         "description4": "Marketing cyfrowy ma znacznie większy potencjał. Reklamy Google? Prowadzenie bloga o swojej firmie i branży? Mailing i newsletter? Webinary? Marketing afiliacyjny? Tutaj znajdziesz mnóstwo pomysłów na to, jak rozwinąć swój biznes online."
+    },
+    "call_to_action": {
+        "title": "Nie wiesz od czego zacząć?",
+        "text1": "Zamów ",
+        "text_highlight": "darmową",
+        "text2": " spersonalizowaną strategię i ofertę",
+        "button": "Zaczynajmy"
     }
 }
