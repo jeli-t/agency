@@ -1,5 +1,6 @@
 import { createStyles, Title, Text, Container, rem } from '@mantine/core';
 import { Dots } from '../assets/Dots';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -63,6 +64,7 @@ const useStyles = createStyles((theme) => ({
 
 export function GetStartedBanner() {
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <Container className={classes.wrapper} size={1400}>
@@ -73,10 +75,10 @@ export function GetStartedBanner() {
             <div className={classes.inner}>
                 <Container p={0} size={800}>
                     <Title order={1} className={classes.title}>
-                      Not sure where to start?
+                      {t("get_started_banner.title")}
                     </Title>
                     <Text className={classes.description}>
-                    Answer a few questions below. We will prepare a <span style={{fontWeight: 700}}>free</span> personalized strategy and offer for your business. The survey should take no more than 5 minutes. It is non-committal and we will prepare a report within 24 hours.
+                        {t("get_started_banner.text")}
                     </Text>
                 </Container>
             </div>

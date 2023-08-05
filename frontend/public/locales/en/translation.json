@@ -68,5 +68,9 @@
         "description4": "We start working on the project to meet your marketing goals. We stay in touch and make adjustments all the time.",
         "step5": "Success",
         "description5": "The strategy is working, and your business is growing faster than ever before."
+    },
+    "get_started_banner": {
+        "title": "Not sure where to start?",
+        "text" : "Answer a few questions below. We will prepare a free personalized strategy and offer for your business. The survey should take no more than 5 minutes. It is non-committal and we will prepare a report within 24 hours."
     }
 }

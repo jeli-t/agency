@@ -68,5 +68,9 @@
         "description4": "Rozpoczynamy pracę nad projektem, aby spełnić Twoje cele marketingowe. Pozostajemy w kontakcie i cały czas wprowadzamy poprawki.",
         "step5": "Sukces",
         "description5": "Strategia działa, a Twoja firma rozwija się szybciej niż kiedykolwiek wcześniej."
+    },
+    "get_started_banner": {
+        "title": "Nie wiesz od czego zacząć?",
+        "text" : "Odpowiedz na kilka poniższych pytań. Przygotujemy bezpłatną spersonalizowaną strategię i ofertę dla Twojej firmy. Ankieta nie powinna zająć więcej niż 5 minut. Jest ona niezobowiązująca, a raport przygotujemy w ciągu 24 godzin."
     }
 }
