@@ -1,5 +1,6 @@
 import { createStyles, Title, Text, Container, rem } from '@mantine/core';
 import { Dots } from '../assets/Dots';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -63,6 +64,7 @@ const useStyles = createStyles((theme) => ({
 
 export function BlogBanner() {
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <Container className={classes.wrapper} size={1400}>
@@ -73,10 +75,10 @@ export function BlogBanner() {
             <div className={classes.inner}>
                 <Container p={0} size={800}>
                     <Title order={1} className={classes.title}>
-                      Welcome to our blog
+                      {t("blog_banner.title")}
                     </Title>
                     <Text className={classes.description}>
-                      Here we share our knowledge and experience in web development, search engine optimization, social media marketing and many other topics related to building brand image and marketing on the Internet. 
+                        {t("blog_banner.text")}
                     </Text>
                 </Container>
             </div>
