@@ -133,5 +133,10 @@
         "error": "Please fill out the entire form",
         "email_error": "Invalid email address",
         "terms_error": "You must accept this consent"
+    },
+    "pricing_banner": {
+        "title": "Our Pricing Guide",
+        "text1": "First of all, every project is different, and the scope of services may vary depending on your marketing goals and the type of business. We price each project separately. The following prices are for reference only.",
+        "text2": "If you would like to receive a free personalized pricing and strategy for your business, check out the Get started section or contact us directly to schedule a free video consultation."
     }
 }

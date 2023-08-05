@@ -133,5 +133,10 @@
         "error": "Prosimy o wypełnienie całego formularza",
         "email_error": "Nieprawidłowy adres e-mail",
         "terms_error": "Musisz zaakceptować tę zgodę"
+    },
+    "pricing_banner": {
+        "title": "Nasz przewodnik cenowy",
+        "text1": "Po pierwsze, każdy projekt jest inny, a zakres usług może się różnić w zależności od celów marketingowych i rodzaju działalności. Każdy projekt wyceniamy osobno. Poniższe ceny mają wyłącznie charakter orientacyjny.",
+        "text2": "Jeśli chcesz otrzymać bezpłatną spersonalizowaną wycenę i strategię dla swojej firmy, sprawdź sekcję Zaczynajmy lub skontaktuj się z nami bezpośrednio, aby umówić się na bezpłatną konsultację wideo."
     }
 }

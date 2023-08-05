@@ -1,5 +1,6 @@
 import { createStyles, Title, Text, Button, Container, rem } from '@mantine/core';
 import { Dots } from '../assets/Dots';
+import { useTranslation } from 'react-i18next';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -62,6 +63,7 @@ const useStyles = createStyles((theme) => ({
 
 export function PricingBanner() {
   const { classes } = useStyles();
+  const { t } = useTranslation();
 
   return (
     <Container className={classes.wrapper} size={1400}>
@@ -73,13 +75,13 @@ export function PricingBanner() {
       <div className={classes.inner}>
         <Container p={0} size={800}>
           <Title order={1} className={classes.title}>
-            Our Pricing Guide
+            {t("pricing_banner.title")}
           </Title>
           <Text className={classes.description}>
-            First of all, every project is different, and the scope of services may vary depending on your marketing goals and the type of business. We price each project separately. The following prices are for reference only.
+            {t("pricing_banner.text1")}
           </Text>
           <Text className={classes.description}>
-            If you would like to receive a <span style={{fontWeight: 700}}>free</span> personalized pricing and strategy for your business, check out the Get started section or contact us directly to schedule a <span style={{fontWeight: 700}}>free</span> video consultation.
+            {t("pricing_banner.text2")}
           </Text>
         </Container>
       </div>
