@@ -277,5 +277,11 @@
     "digital_marketing_strategy": {
         "title": "Najlepsza strategia?",
         "text": "Możesz zapytać, jaka jest najlepsza strategia marketingu cyfrowego i nie ma jednej dobrej odpowiedzi. Wybór kanałów marketingowych zależy od celów biznesowych, grupy docelowej, budżetu oraz charakteru promowanych produktów lub usług. Zobacz, jak krok po kroku budujemy skuteczne strategie."
+    },
+    "digital_marketing_offer": {
+        "title": "Darmowa spersonalizowana strategia",
+        "text": "Jeśli chcesz otrzymać bezpłatną spersonalizowaną strategię i ofertę dla swojej firmy, sprawdź sekcję Zaczynajmy. Jeśli chcesz zapytać o cokolwiek związanego z marketingiem cyfrowym, napisz do nas wiadomość lub skontaktuj się z nami bezpośrednio, aby umówić się na bezpłatną konsultację wideo.",
+        "button1": "Zaczynajmy",
+        "button2": "Kontakt"
     }
 }

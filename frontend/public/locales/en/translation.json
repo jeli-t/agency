@@ -277,5 +277,11 @@
     "digital_marketing_strategy": {
         "title": "The best strategy?",
         "text": "You may ask what is the best digital marketing strategy, and there is no one right answer. Selection of the channels depends on the business's goals, target audience, budget, and the nature of products or services being promoted. See how we build successful strategies step by step."
+    },
+    "digital_marketing_offer": {
+        "title": "Free personalized strategy",
+        "text": "If you would like to receive a free personalized strategy and offer for your business, check out the Get started section. If you want to ask about anything related to digital marketing, write us a message or contact us directly to schedule a free video consultation.",
+        "button1": "Get started",
+        "button2": "Contact"
     }
 }

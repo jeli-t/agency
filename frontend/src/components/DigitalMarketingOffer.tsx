@@ -1,6 +1,7 @@
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import report from './../assets/report.svg'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -117,6 +118,7 @@ const useStyles = createStyles((theme) => ({
 export function DigitalMarketingOffer() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.wrapper}>
@@ -126,20 +128,20 @@ export function DigitalMarketingOffer() {
                 </div>
                 <div className={classes.description}>
                     <Title order={2} className={classes.title}>
-                        Free personalized strategy
+                        {t("digital_marketing_offer.title")}
                     </Title>
                     <Text className={classes.text}>
-                        If you would like to receive a <span style={{fontWeight: 700}}>free</span> personalized strategy and offer for your business, check out the Get started section. If you want to ask about anything related to digital marketing, write us a message or contact us directly to schedule a <span style={{fontWeight: 700}}>free</span> video consultation.
+                        {t("digital_marketing_offer.text")}
                     </Text>
                     <div>
                         <Link to='/get-started'>
                             <Button className={classes.button} size='lg' radius='md'>
-                                Get started
+                                {t("digital_marketing_offer.button1")}
                             </Button>
                         </Link>
                         <Link to='/contact'>
                             <Button className={classes.button} size='lg' radius='md'>
-                                Contact
+                                {t("digital_marketing_offer.button2")}
                             </Button>
                         </Link>
                     </div>
