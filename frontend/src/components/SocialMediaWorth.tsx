@@ -1,5 +1,6 @@
 import { createStyles, useMantineTheme, Title, rem, Text } from '@mantine/core';
 import social_media_dilemma from './../assets/social_media_dilemma.svg'
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -113,6 +114,7 @@ const useStyles = createStyles((theme) => ({
 export function SocialMediaWorth() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.wrapper}>
@@ -122,10 +124,10 @@ export function SocialMediaWorth() {
                 </div>
                 <div className={classes.description}>
                     <Title order={2} className={classes.title}>
-                        Is social media marketing worth it?
+                        {t("social_media_worth.title")}
                     </Title>
                     <Text className={classes.text}>
-                        Social media is an essential and powerful digital marketing tool. Compared to traditional advertising methods, social media marketing can be more cost-effective, making it suitable for businesses of all sizes. However, marketing effectiveness can vary depending on several factors, such as the nature of the business, the target audience and the platforms used. Successful social media marketing strategies require thoughtful content creation, consistent monitoring and adaptation to changing trends. Check out how we do it.
+                        {t("social_media_worth.text")}
                     </Text>
                 </div>
             </div>
