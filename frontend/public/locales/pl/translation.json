@@ -251,5 +251,27 @@
     "digital_marketing_banner": {
         "title": "Możliwości marketingu cyfrowego",
         "text": "Marketing cyfrowy oferuje firmom wiele możliwości skutecznego docierania do grupy docelowej i nawiązywania z nią kontaktu. Pozwala na wysoce ukierunkowaną reklamę, aby dotrzeć do określonych danych demograficznych, zainteresowań, zachowań i lokalizacji. To precyzyjne targetowanie zwiększa szanse na przekształcenie potencjalnych klientów w klientów. Marketing cyfrowy stał się istotnym aspektem nowoczesnego marketingu dla firm każdej wielkości."
+    },
+    "digital_marketing_channels": {
+        "title": "Kanały marketingu cyfrowego",
+        "text": "Istnieje wiele sposobów na dotarcie do potencjalnych klientów i budowanie marki poprzez marketing cyfrowy. Oto najpopularniejsze i najskuteczniejsze kanały i techniki marketingowe:",
+        "feature1": "Strona internetowa",
+        "description1": "Posiadanie strony internetowej pozwala na zaistnienie w Internecie, ułatwiając ludziom znalezienie i poznanie Twojej firmy, produktów i usług.",
+        "feature2": "Media społecznościowe",
+        "description2": "Tworząc i udostępniając treści w mediach społecznościowych, możesz nawiązać kontakt z grupą docelową, zwiększyć widoczność marki i przyciągnąć ruch do swojej witryny.",
+        "feature3": "Pozycjonowanie stron (SEO)",
+        "description3": "Dobra strona internetowa jest zoptymalizowana pod kątem wyszukiwarek, dzięki czemu jest bardziej prawdopodobne, że pojawi się w wynikach wyszukiwania. Wyższy ranking strony = więcej potencjalnych klientów.",
+        "feature4": "Reklama",
+        "description4": "Możesz prowadzić płatne kampanie reklamowe za pomocą Google Ads lub na platformach mediów społecznościowych, takich jak Facebook, Instagram i inne.",
+        "feature5": "Blog",
+        "description5": "Tworzenie wartościowych i istotnych treści może pozycjonować firmę jako autorytet w branży, przyciągać potencjalnych klientów i budować zaufanie wśród odbiorców.",
+        "feature6": "Marketing afiliacyjny",
+        "description6": "Ten kanał obejmuje współpracę z partnerami, którzy promują produkty lub usługi firmy w zamian za prowizję od każdej sprzedaży wygenerowanej dzięki ich wysiłkom.",
+        "feature7": "Webinary i podcasty",
+        "description7": "Możesz organizować webinary lub podcasty, aby edukować, angażować i budować relacje z grupą docelową.",
+        "feature8": "Marketing e-mail",
+        "description8": "Firmy wykorzystują pocztę elektroniczną do wysyłania ukierunkowanych wiadomości, biuletynów i promocji do listy subskrybentów i potencjalnych klientów.",
+        "feature9": "Wiele więcej...",
+        "description9": "Jeśli szukasz więcej wiedzy na temat marketingu cyfrowego, sprawdź nasz blog."
     }
 }

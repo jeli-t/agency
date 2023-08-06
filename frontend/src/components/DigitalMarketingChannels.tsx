@@ -1,5 +1,6 @@
 import { ThemeIcon, Text, Title, Container, SimpleGrid, createStyles, rem } from '@mantine/core';
 import { IconWorldWww , IconSearch, IconThumbUp, IconAd, IconArticle, IconPencil, IconHandClick, IconSchool, IconMail } from '@tabler/icons-react';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -78,57 +79,48 @@ const useStyles = createStyles((theme) => ({
 export const MOCKDATA = [
     {
         icon: IconWorldWww ,
-        title: 'Website',
-        description:
-            'Having a website allows you to establish an online presence, making it easier for people to find and learn about your business, products and services.',
+        title: 'digital_marketing_channels.feature1',
+        description: "digital_marketing_channels.description1"
     },
     {
         icon: IconThumbUp,
-        title: 'Social media',
-        description:
-            'By creating and sharing content on social media channels, you can connect with your target audiences, increase brand visibility and drive traffic to your website.',
+        title: 'digital_marketing_channels.feature2',
+        description: "digital_marketing_channels.description2"
     },
     {
         icon: IconSearch,
-        title: 'Search Engine Optimization',
-        description:
-            'A good website is optimized for search engines, making it more likely to appear in search results. Higher page ranking = more leads.',
+        title: 'digital_marketing_channels.feature3',
+        description: "digital_marketing_channels.description3"
     },
     {
         icon: IconAd,
-        title: 'Advertising',
-        description:
-            'You can run paid advertising campaigns using Google Ads or social media platforms such as Facebook, Instagram and others.'
+        title: 'digital_marketing_channels.feature4',
+        description: "digital_marketing_channels.description4"
     },
     {
         icon: IconPencil,
-        title: 'Blog',
-        description:
-            'Creating valuable and relevant content can position a business as an industry authority, attract potential customers, and foster trust with the audience.'
+        title: 'digital_marketing_channels.feature5',
+        description: "digital_marketing_channels.description5"
     },
     {
         icon: IconHandClick,
-        title: 'Affiliate Marketing',
-        description:
-            "This channel involves collaborating with partners who promote a business's products or services in exchange for a commission for each sale generated through their efforts."
+        title: 'digital_marketing_channels.feature6',
+        description: "digital_marketing_channels.description6"
     },
     {
         icon: IconSchool,
-        title: 'Webinars and podcasts',
-        description:
-            'You can hold webinars or host podcasts to educate, engage and build relationships with your target audience.',
+        title: 'digital_marketing_channels.feature7',
+        description: "digital_marketing_channels.description7"
     },
     {
         icon: IconMail,
-        title: 'Email Marketing',
-        description:
-            'Companies use email to send targeted messages, newsletters and promotions to a list of subscribers and potential customers.',
+        title: 'digital_marketing_channels.feature8',
+        description: "digital_marketing_channels.description8"
     },
     {
         icon: IconArticle,
-        title: 'Many more...',
-        description:
-            'If you are looking for more digital marketing knowledge, check out our blog.',
+        title: 'digital_marketing_channels.feature9',
+        description: "digital_marketing_channels.description9"
     },
 ];
 
@@ -140,6 +132,7 @@ interface FeatureProps {
 
 export function Feature({ icon: Icon, title, description }: FeatureProps) {
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.tile}>
@@ -147,10 +140,10 @@ export function Feature({ icon: Icon, title, description }: FeatureProps) {
                 <Icon size="2rem" stroke={2} />
             </ThemeIcon>
             <Title order={3} className={classes.feature_title}>
-                {title}
+                {t(`${title}`)}
             </Title>
             <Text className={classes.feature_description}>
-                {description}
+                {t(`${description}`)}
             </Text>
         </div>
     );
@@ -159,6 +152,8 @@ export function Feature({ icon: Icon, title, description }: FeatureProps) {
 
 export function DigitalMarketingChannels() {
     const { classes } = useStyles();
+    const { t } = useTranslation();
+
     const features = MOCKDATA.map((feature, index) => <Feature {...feature} key={index} />);
 
     return (
@@ -166,10 +161,10 @@ export function DigitalMarketingChannels() {
             <Container size={1400}>
                 <Container p={0} size={800}>
                     <Title order={2} className={classes.title}>
-                        Digital marketing channels
+                        {t("digital_marketing_channels.title")}
                     </Title>
                     <Text className={classes.description}>
-                        There are many ways to reach potential customers and build your brand through digital marketing. Here are the most popular and effective marketing channels and techniques:
+                        {t("digital_marketing_channels.text")}
                     </Text>
                 </Container>
                 <SimpleGrid
