@@ -1,5 +1,6 @@
 import { createStyles, Title, Text, Container, rem } from '@mantine/core';
 import { Dots } from '../assets/Dots';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -63,6 +64,7 @@ const useStyles = createStyles((theme) => ({
 
 export function DigitalMarketingBanner() {
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <Container className={classes.wrapper} size={1400}>
@@ -74,10 +76,10 @@ export function DigitalMarketingBanner() {
             <div className={classes.inner}>
                 <Container p={0} size={800}>
                     <Title order={1} className={classes.title}>
-                        Digital marketing opportunities
+                        {t("digital_marketing_banner.title")}
                     </Title>
                     <Text className={classes.description}>
-                        Digital marketing offers numerous opportunities for businesses to reach and engage with their target audience effectively. It allows for highly targeted advertising to reach specific demographics, interests, behaviors, and locations. This precision targeting increases the chances of converting leads into customers. Digital marketing has become an essential aspect of modern marketing for businesses of all sizes.
+                        {t("digital_marketing_banner.text")}
                     </Text>
                 </Container>
             </div>
