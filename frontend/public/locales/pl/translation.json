@@ -209,5 +209,12 @@
     "seo_effects": {
         "title": "Skuteczność SEO",
         "text": "SEO to strategia długoterminowa, dlatego wyniki mogą nie być natychmiastowe. Wyszukiwarki potrzebują czasu, aby zaindeksować i sklasyfikować strony, a działania SEO nabrały tempa. Ogólnie rzecz biorąc, może minąć kilka miesięcy, zanim zauważalna będzie znacząca poprawa w rankingach i ruchu organicznym. SEO jest procesem ciągłym. Po osiągnięciu dobrych pozycji należy utrzymywać i kontynuować optymalizację witryny i treści, aby nie dać się wyprzedzić konkurencji i dostosować się do zmieniających się algorytmów wyszukiwarek. Zobacz, jak my to robimy."
+    },
+    "seo_offer": {
+        "title": "Na księżyc",
+        "text1": "Pozwól nam się tym zająć i przenieść Twoją witrynę na szczyt wyników wyszukiwania. Przygotujemy strategię dostosowaną do Twojej firmy i zoptymalizujemy Twoją stronę tak, aby obejmowała wszystkie kluczowe obszary optymalizacji pod kątem wyszukiwarek.",
+        "text2": "Sprawdź sekcję Zaczynajmy, aby uzyskać bezpłatną spersonalizowaną strategię i wycenę, lub skontaktuj się z nami bezpośrednio, aby umówić się na konsultację wideo.",
+        "button1": "Zaczynajmy",
+        "button2": "Kontakt"
     }
 }

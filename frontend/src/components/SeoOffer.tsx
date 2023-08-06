@@ -1,6 +1,7 @@
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import rocket from './../assets/rocket.svg'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -117,6 +118,7 @@ const useStyles = createStyles((theme) => ({
 export function SeoOffer() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.wrapper}>
@@ -126,23 +128,23 @@ export function SeoOffer() {
                 </div>
                 <div className={classes.description}>
                     <Title order={2} className={classes.title}>
-                        To the moon
+                        {t("seo_offer.title")}
                     </Title>
                     <Text className={classes.text}>
-                        Let us do the work and move your website to the top of the search results. We will prepare a strategy tailored to your business and optimize your page to cover all the key areas of Search Engine Optimization.
+                        {t("seo_offer.text1")}
                     </Text>
                     <Text className={classes.text}>
-                        Check out the Get started section for a <span style={{fontWeight: 700}}>free</span> personalized strategy and pricing, or contact us directly to schedule a video consultation.
+                        {t("seo_offer.text2")}
                     </Text>
                     <div>
                         <Link to='/get-started'>
                             <Button className={classes.button} size='lg' radius='md'>
-                                Get started
+                                {t("seo_offer.button1")}
                             </Button>
                         </Link>
                         <Link to='/contact'>
                             <Button className={classes.button} size='lg' radius='md'>
-                                Contact
+                                {t("seo_offer.button2")}
                             </Button>
                         </Link>
                     </div>
