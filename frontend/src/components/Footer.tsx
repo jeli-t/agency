@@ -165,7 +165,7 @@ export function Footer() {
           </div>
           <div className={classes.wrapper}>
             <Text className={classes.title}>{t("footer.title3")}</Text>
-            <Link to='/privacy' className={classes.link}>
+            <Link to={t("footer.privacy_link")} className={classes.link}>
               {t("footer.privacy")}
             </Link>
           </div>
@@ -194,8 +194,8 @@ export function Footer() {
           </a>
         </Group>
         <div className={classes.mobile_privacy}>
-          <Link to='/privacy' className={classes.link}>
-            Privacy policy
+          <Link to={t("footer.privacy_link")} className={classes.link}>
+            {t("footer.privacy")}
           </Link>
         </div>
       </Container>

@@ -23,7 +23,8 @@
         "solution3": "Social media",
         "solution4": "Digital marketing",
         "title3": "Other",
-        "privacy": "Privacy policy"
+        "privacy": "Privacy policy",
+        "privacy_link": "/privacy-policy"
     },
     "hero": {
         "title": "Jeli Digital Agency - Your trusted partner in the digital journey",

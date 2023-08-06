@@ -16,7 +16,8 @@ import Websites from './pages/Solutions/Websites';
 import DigitalMarketing from './pages/Solutions/DigitalMarketing';
 import SocialMedia from './pages/Solutions/SocialMedia';
 import Seo from './pages/Solutions/Seo';
-import Privacy from './pages/Privacy';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import PolitykaPrywatnosci from './pages/PolitykaPrywatnosci';
 import Pricing from './pages/Pricing';
 import Blog from './pages/Blog';
 import UnderConstructionPage from './pages/UnderConstructionPage';
@@ -52,7 +53,8 @@ export default function App() {
                             <Route path='/contact' element={<Contact />} />
                             <Route path='/get-started' element={<GetStarted />} />
                             <Route path='/report' element={<Report />} />
-                            <Route path='/privacy' element={<Privacy />} />
+                            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+                            <Route path='/polityka-prywatnosci' element={<PolitykaPrywatnosci />} />
                             <Route path='/pricing' element={<Pricing />} />
                             <Route path='/blog' element={<Blog />} />
                             <Route path='*' element={<NotFoundPage />} />
