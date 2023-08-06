@@ -1,5 +1,6 @@
 import { createStyles, Title, Text, Container, rem } from '@mantine/core';
 import { Dots } from '../assets/Dots';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -63,6 +64,7 @@ const useStyles = createStyles((theme) => ({
 
 export function SocialMediaBanner() {
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <Container className={classes.wrapper} size={1400}>
@@ -74,10 +76,10 @@ export function SocialMediaBanner() {
             <div className={classes.inner}>
                 <Container p={0} size={800}>
                     <Title order={1} className={classes.title}>
-                        The power of Social media
+                        {t("social_media_banner.title")}
                     </Title>
                     <Text className={classes.description}>
-                        The power of social media is undeniable and has had a profound impact on various aspects of society, communication, and business. Social media platforms have billions of daily active users, providing companies with the ability to reach a wide and diverse audience. By creating and sharing content on social media channels, you can connect with your target audiences, increase brand visibility, drive traffic to your website and achieve specific marketing goals. Don't miss this opportunity.
+                        {t("social_media_banner.text")}
                     </Text>
                 </Container>
             </div>
