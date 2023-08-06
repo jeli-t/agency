@@ -22,9 +22,12 @@ import Pricing from './pages/Pricing';
 import Blog from './pages/Blog';
 import UnderConstructionPage from './pages/UnderConstructionPage';
 import NotFoundPage from './pages/NotFoundPage';
+import { useTranslation } from 'react-i18next';
 
 
 export default function App() {
+    const { t } = useTranslation();
+
     const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
         key: 'jeli-color-scheme',
         defaultValue: 'dark',
@@ -37,7 +40,7 @@ export default function App() {
     return (
         <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
             <MantineProvider withGlobalStyles withNormalizeCSS theme={{primaryColor: 'orange', colorScheme}}>
-                <CookieConsent style={{paddingLeft: 20, paddingRight: 20}}>This website uses cookies. By staying on the site, you accept the cookies and <a href='/privacy'>privacy policy </a> of this website.</CookieConsent>
+                <CookieConsent style={{paddingLeft: 20, paddingRight: 20}} buttonText={t("cookie_consent.button")}>{t("cookie_consent.text1")}<a href={t("cookie_consent.privacy_link")}>{t("cookie_consent.link_text")}</a> {t("cookie_consent.text2")}</CookieConsent>
                 <BrowserRouter>
                     <ScrollToTop></ScrollToTop>
                     <AppShell header={<HeaderMenu />} footer={<Footer />} padding={0}>

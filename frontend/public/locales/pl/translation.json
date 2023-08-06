@@ -26,6 +26,13 @@
         "privacy": "Polityka prywatności",
         "privacy_link": "/polityka-prywatnosci"
     },
+    "cookie_consent": {
+        "text1": "Ta strona używa plików cookie. Pozostając na stronie, akceptujesz pliki cookie i ",
+        "privacy_link": "/polityka-prywatnosci",
+        "link_text": "Politykę Prywatności",
+        "text2": " niniejszej witryny.",
+        "button": "Akceptuj wszystkie pliki cookie"
+    },
     "hero": {
         "title": "Jeli Digital Agency - Twój zaufany partner w świecie online",
         "button": "Kontakt",

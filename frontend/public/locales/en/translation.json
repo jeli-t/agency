@@ -26,6 +26,13 @@
         "privacy": "Privacy policy",
         "privacy_link": "/privacy-policy"
     },
+    "cookie_consent": {
+        "text1": "This website uses cookies. By staying on the site, you accept the cookies and ",
+        "privacy_link": "/privacy-policy",
+        "link_text": "Privacy Policy",
+        "text2": " of this website.",
+        "button": "Accept all cookies"
+    },
     "hero": {
         "title": "Jeli Digital Agency - Your trusted partner in the digital journey",
         "button": "Contact",
