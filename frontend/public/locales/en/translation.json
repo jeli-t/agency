@@ -185,5 +185,9 @@
         "text2": "Check out the Get started section for a free personalized strategy and pricing, or contact us directly to schedule a video consultation.",
         "button1": "Get started",
         "button2": "Contact"
+    },
+    "seo_banner": {
+        "title": "Search Engine Optimization (SEO)",
+        "text": "The majority of web traffic comes through search engines like Google, Bing, and Yahoo. SEO helps your website rank higher in search engine results, increasing its visibility to potential visitors. Higher rankings mean more organic (non-paid) traffic, as users are more likely to click on the top results. While it may take time to see significant results, SEO is a long-term strategy that can provide ongoing benefits once you establish a strong online presence."
     }
 }

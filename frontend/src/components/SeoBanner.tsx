@@ -1,5 +1,6 @@
 import { createStyles, Title, Text, Button, Container, rem } from '@mantine/core';
 import { Dots } from '../assets/Dots';
+import { useTranslation } from 'react-i18next';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -62,6 +63,7 @@ const useStyles = createStyles((theme) => ({
 
 export function SeoBanner() {
   const { classes } = useStyles();
+  const { t } = useTranslation();
 
   return (
     <Container className={classes.wrapper} size={1400}>
@@ -73,10 +75,10 @@ export function SeoBanner() {
       <div className={classes.inner}>
         <Container p={0} size={800}>
           <Title order={1} className={classes.title}>
-            Search Engine Optimization (SEO)
+            {t("seo_banner.title")}
           </Title>
           <Text className={classes.description}>
-          The majority of web traffic comes through search engines like Google, Bing, and Yahoo. SEO helps your website rank higher in search engine results, increasing its visibility to potential visitors. Higher rankings mean more organic (non-paid) traffic, as users are more likely to click on the top results. While it may take time to see significant results, SEO is a long-term strategy that can provide ongoing benefits once you establish a strong online presence.
+            {t("seo_banner.text")}
           </Text>
         </Container>
       </div>

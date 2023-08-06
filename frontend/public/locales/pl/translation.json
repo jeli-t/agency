@@ -185,5 +185,9 @@
         "text2": "Sprawdź sekcję Zaczynajmy, aby uzyskać bezpłatną spersonalizowaną strategię i wycenę, lub skontaktuj się z nami bezpośrednio, aby umówić się na konsultację wideo.",
         "button1": "Zaczynajmy",
         "button2": "Kontakt"
+    },
+    "seo_banner": {
+        "title": "Pozycjonowanie stron (SEO)",
+        "text": "Większość ruchu w sieci pochodzi z wyszukiwarek takich jak Google, Bing i Yahoo. Pozycjonowanie pomaga witrynie uzyskać wyższą pozycję w wynikach wyszukiwania, zwiększając jej widoczność dla potencjalnych odwiedzających. Wyższe pozycje w rankingach oznaczają większy bezpłatny ruch organiczny, ponieważ użytkownicy chętniej klikają w najwyższe wyniki. Chociaż osiągnięcie widocznych rezultatów może zająć trochę czasu, SEO jest długoterminową strategią, która może zapewnić stałe korzyści po osiągnięciu silnej pozycji w wyszukiwarce."
     }
 }
