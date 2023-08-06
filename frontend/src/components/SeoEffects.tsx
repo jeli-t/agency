@@ -1,5 +1,6 @@
 import { createStyles, useMantineTheme, Title, rem, Text } from '@mantine/core';
 import seo from './../assets/seo.svg'
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -113,6 +114,7 @@ const useStyles = createStyles((theme) => ({
 export function SeoEffects() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.wrapper}>
@@ -122,10 +124,10 @@ export function SeoEffects() {
                 </div>
                 <div className={classes.description}>
                     <Title order={2} className={classes.title}>
-                        SEO effectiveness
+                        {t("seo_effects.title")}
                     </Title>
                     <Text className={classes.text}>
-                        SEO is a long-term strategy, and results may not be immediate. It takes time for search engines to index and rank pages, and for SEO efforts to gain momentum. Generally, it may take several months before significant improvements in rankings and organic traffic are noticeable. SEO is an ongoing process. Once you achieve good rankings, you need to maintain and continue optimizing your website and content to stay ahead of the competition and adapt to changing search engine algorithms. Take a look how we do that.
+                        {t("seo_effects.text")}
                     </Text>
                 </div>
             </div>
