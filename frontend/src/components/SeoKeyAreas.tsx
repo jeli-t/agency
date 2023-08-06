@@ -1,5 +1,6 @@
 import { ThemeIcon, Text, Title, Container, SimpleGrid, createStyles, rem } from '@mantine/core';
 import { IconKey , IconCurrentLocation, IconFileSettings, IconBuildingBroadcastTower, IconLetterCase, IconArticle } from '@tabler/icons-react';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -78,39 +79,33 @@ const useStyles = createStyles((theme) => ({
 export const MOCKDATA = [
     {
         icon: IconKey ,
-        title: 'Keyword Research',
-        description:
-            "Identifying and targeting relevant keywords and phrases that users frequently use to search for products, services, or information related to your website's content.",
+        title: 'seo_key_areas.feature1',
+        description: 'seo_key_areas.description1'
     },
     {
         icon: IconFileSettings,
-        title: 'On-Page Optimization',
-        description:
-            'Optimizing individual web pages by incorporating targeted keywords into titles, meta tags, headings, content, and URLs. This also involves improving the overall user experience, ensuring the website is easy to navigate and read.',
+        title: 'seo_key_areas.feature2',
+        description: 'seo_key_areas.description2'
     },
     {
         icon: IconBuildingBroadcastTower,
-        title: 'Off-Page Optimization',
-        description:
-            "Building the website's authority and credibility through external factors such as backlinks (links from other websites), social media presence, and online mentions.",
+        title: 'seo_key_areas.feature3',
+        description: 'seo_key_areas.description3'
     },
     {
         icon: IconCurrentLocation,
-        title: 'Local SEO',
-        description:
-            'For businesses with a physical presence, optimizing to appear in local search results, such as Google My Business listings and local directories.',
+        title: 'seo_key_areas.feature4',
+        description: 'seo_key_areas.description4'
     },
     {
         icon: IconLetterCase,
-        title: 'Content Marketing',
-        description:
-            'Creating high-quality, valuable, and relevant content that attracts and engages users. Content marketing is essential for both on-page optimization and attracting natural backlinks.',
+        title: 'seo_key_areas.feature5',
+        description: 'seo_key_areas.description5'
     },
     {
         icon: IconArticle,
-        title: 'Many more...',
-        description:
-            "If you're looking for more SEO-related knowledge, check out our blog.",
+        title: 'seo_key_areas.feature6',
+        description: 'seo_key_areas.description6'
     },
 ];
 
@@ -122,6 +117,7 @@ interface FeatureProps {
 
 export function Feature({ icon: Icon, title, description }: FeatureProps) {
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.tile}>
@@ -129,10 +125,10 @@ export function Feature({ icon: Icon, title, description }: FeatureProps) {
                 <Icon size="2rem" stroke={2} />
             </ThemeIcon>
             <Title order={3} className={classes.feature_title}>
-                {title}
+                {t(`${title}`)}
             </Title>
             <Text className={classes.feature_description}>
-                {description}
+                {t(`${description}`)}
             </Text>
         </div>
     );
@@ -141,6 +137,8 @@ export function Feature({ icon: Icon, title, description }: FeatureProps) {
 
 export function SeoKeyAreas() {
     const { classes } = useStyles();
+    const { t } = useTranslation();
+    
     const features = MOCKDATA.map((feature, index) => <Feature {...feature} key={index} />);
 
     return (
@@ -148,10 +146,10 @@ export function SeoKeyAreas() {
             <Container size={1400}>
                 <Container p={0} size={800}>
                     <Title order={2} className={classes.title}>
-                        The key areas of SEO
+                        {t("seo_key_areas.title")}
                     </Title>
                     <Text className={classes.description}>
-                        Search engine optimization encompasses various strategies and techniques to improve a site's visibility, rankings and overall online presence. The main areas of activity include:
+                        {t("seo_key_areas.text")}
                     </Text>
                 </Container>
                 <SimpleGrid

@@ -189,5 +189,21 @@
     "seo_banner": {
         "title": "Pozycjonowanie stron (SEO)",
         "text": "Większość ruchu w sieci pochodzi z wyszukiwarek takich jak Google, Bing i Yahoo. Pozycjonowanie pomaga witrynie uzyskać wyższą pozycję w wynikach wyszukiwania, zwiększając jej widoczność dla potencjalnych odwiedzających. Wyższe pozycje w rankingach oznaczają większy bezpłatny ruch organiczny, ponieważ użytkownicy chętniej klikają w najwyższe wyniki. Chociaż osiągnięcie widocznych rezultatów może zająć trochę czasu, SEO jest długoterminową strategią, która może zapewnić stałe korzyści po osiągnięciu silnej pozycji w wyszukiwarce."
+    },
+    "seo_key_areas": {
+        "title": "Kluczowe obszary SEO",
+        "text": "Optymalizacja pod kątem wyszukiwarek obejmuje różne strategie i techniki mające na celu poprawę widoczności witryny, rankingów i ogólnej obecności w Internecie. Główne obszary działań obejmują:",
+        "feature1": "Analiza słów kluczowych",
+        "description1": "Identyfikacja i dopasowanie odpowiednich słów kluczowych i fraz, których użytkownicy często używają do wyszukiwania produktów, usług lub informacji związanych z treścią witryny.",
+        "feature2": "Optymalizacja strony",
+        "description2": "Optymalizacja poszczególnych podstron poprzez umieszczenie określonych słów kluczowych w tytułach, meta-tagach, nagłówkach, treści i adresach URL. Obejmuje to również poprawę ogólnego doświadczenia użytkownika, zapewniając łatwą nawigację i czytelność witryny.",
+        "feature3": "Optymalizacja zewnętrzna",
+        "description3": "Budowanie autorytetu i wiarygodności witryny poprzez czynniki zewnętrzne, takie jak linki zwrotne (linki z innych witryn), obecność w mediach społecznościowych i wzmianki online.",
+        "feature4": "Lokalne SEO",
+        "description4": "W przypadku firm z fizyczną obecnością, optymalizacja pod kątem wyświetlania się w lokalnych wynikach wyszukiwania, takich jak Google Moja Firma i lokalnych mapach.",
+        "feature5": "Treści marketingowe",
+        "description5": "Tworzenie wysokiej jakości, wartościowych i istotnych treści, które przyciągają i angażują użytkowników. Treści marketingowe są niezbędne zarówno do optymalizacji strony, jak i przyciągania naturalnych linków zwrotnych.",
+        "feature6": "Wiele więcej...",
+        "description6": "Jeśli szukasz więcej wiedzy na temat SEO, zajrzyj na naszego bloga."
     }
 }

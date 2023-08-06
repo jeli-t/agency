@@ -189,5 +189,21 @@
     "seo_banner": {
         "title": "Search Engine Optimization (SEO)",
         "text": "The majority of web traffic comes through search engines like Google, Bing, and Yahoo. SEO helps your website rank higher in search engine results, increasing its visibility to potential visitors. Higher rankings mean more organic (non-paid) traffic, as users are more likely to click on the top results. While it may take time to see significant results, SEO is a long-term strategy that can provide ongoing benefits once you establish a strong online presence."
+    },
+    "seo_key_areas": {
+        "title": "The key areas of SEO",
+        "text": "Search engine optimization encompasses various strategies and techniques to improve a site's visibility, rankings and overall online presence. The main areas of activity include:",
+        "feature1": "Keyword Research",
+        "description1": "Identifying and targeting relevant keywords and phrases that users frequently use to search for products, services, or information related to your website's content.",
+        "feature2": "On-Page Optimization",
+        "description2": "Optimizing individual web pages by incorporating targeted keywords into titles, meta tags, headings, content, and URLs. This also involves improving the overall user experience, ensuring the website is easy to navigate and read.",
+        "feature3": "Off-Page Optimization",
+        "description3": "Building the website's authority and credibility through external factors such as backlinks (links from other websites), social media presence, and online mentions.",
+        "feature4": "Local SEO",
+        "description4": "For businesses with a physical presence, optimizing to appear in local search results, such as Google My Business listings and local directories.",
+        "feature5": "Content Marketing",
+        "description5": "Creating high-quality, valuable, and relevant content that attracts and engages users. Content marketing is essential for both on-page optimization and attracting natural backlinks.",
+        "feature6": "Many more...",
+        "description6": "If you're looking for more SEO-related knowledge, check out our blog."
     }
 }
