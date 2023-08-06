@@ -240,5 +240,12 @@
     "social_media_worth": {
         "title": "Czy marketing w mediach społecznościowych jest opłacalny?",
         "text": "Media społecznościowe są istotnym i potężnym narzędziem marketingu cyfrowego. W porównaniu z tradycyjnymi metodami reklamowymi, marketing w mediach społecznościowych może być znacznie tańszy, dzięki czemu nadaje się dla firm każdej wielkości. Skuteczność marketingu może się jednak różnić w zależności od kilku czynników, takich jak charakter działalności, grupa docelowa i wykorzystywane platformy. Skuteczne strategie marketingowe w mediach społecznościowych wymagają przemyślanego tworzenia treści, konsekwentnego monitorowania i dostosowywania się do zmieniających się trendów. Sprawdź, jak my to robimy."
+    },
+    "social_media_offer": {
+        "title": "Zaoszczędź swój czas",
+        "text1": "Zajmiemy się Twoimi mediami społecznościowymi. Będziemy zarządzać Twoimi kontami i przygotowywać kampanie reklamowe dla Twojego biznesu. Na razie działamy tylko na Facebooku i Instagramie.",
+        "text2": "Sprawdź sekcję Zaczynajmy, aby uzyskać bezpłatną spersonalizowaną strategię i wycenę, lub skontaktuj się z nami bezpośrednio, aby umówić się na konsultację wideo.",
+        "button1": "Zaczynajmy",
+        "button2": "Kontakt"
     }
 }

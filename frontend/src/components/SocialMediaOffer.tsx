@@ -1,6 +1,7 @@
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import social_media from './../assets/social_media.svg'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -116,6 +117,7 @@ const useStyles = createStyles((theme) => ({
 export function SocialMediaOffer() {
     const theme = useMantineTheme();
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.wrapper}>
@@ -125,23 +127,23 @@ export function SocialMediaOffer() {
                 </div>
                 <div className={classes.description}>
                     <Title order={2} className={classes.title}>
-                        Save your time
+                        {t("social_media_offer.title")}
                     </Title>
                     <Text className={classes.text}>
-                        We will take care of your social media. We will manage your accounts and prepare advertising campaigns for your business. For now, we operate only on Facebook and Instagram.
+                        {t("social_media_offer.text1")}
                     </Text>
                     <Text className={classes.text}>
-                        Check out the Get started section for a <span style={{fontWeight: 700}}>free</span> personalized strategy and pricing, or contact us directly to schedule a video consultation.
+                        {t("social_media_offer.text2")}
                     </Text>
                     <div>
                         <Link to='/get-started'>
                             <Button className={classes.button} size='lg' radius='md'>
-                                Get started
+                                {t("social_media_offer.button1")}
                             </Button>
                         </Link>
                         <Link to='/contact'>
                             <Button className={classes.button} size='lg' radius='md'>
-                                Contact
+                                {t("social_media_offer.button2")}
                             </Button>
                         </Link>
                     </div>
