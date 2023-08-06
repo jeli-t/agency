@@ -1,5 +1,6 @@
 import { ThemeIcon, Text, Title, Container, SimpleGrid, createStyles, rem } from '@mantine/core';
 import { IconCameraPlus , IconUserStar, IconMessages, IconAd, IconArticle, IconHandClick } from '@tabler/icons-react';
+import { useTranslation } from 'react-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -78,39 +79,33 @@ const useStyles = createStyles((theme) => ({
 export const MOCKDATA = [
     {
         icon: IconCameraPlus ,
-        title: 'Content Creation',
-        description:
-            " Social media marketing involves producing various types of content, such as text posts, images, videos, infographics, and interactive content, tailored to the preferences of the target audience and the specific platform.",
+        title: 'social_media_strategy.feature1',
+        description: 'social_media_strategy.description1'
     },
     {
         icon: IconMessages,
-        title: 'Management',
-        description:
-            'Managing social media accounts involves posting content regularly, responding to comments and messages, monitoring trends, and engaging with followers to build a loyal community.',
+        title: 'social_media_strategy.feature2',
+        description: 'social_media_strategy.description2'
     },
     {
         icon: IconAd,
-        title: 'Advertising',
-        description:
-            "Paid social media advertising allows businesses to reach a wider audience, target specific demographics, and promote their products or services to potential customers.",
+        title: 'social_media_strategy.feature3',
+        description: 'social_media_strategy.description3'
     },
     {
         icon: IconUserStar,
-        title: 'Influencer Marketing',
-        description:
-            'Collaborating with social media influencers, who have a significant and engaged following, can help businesses reach their target audience through authentic and trusted recommendations.',
+        title: 'social_media_strategy.feature4',
+        description: 'social_media_strategy.description4'
     },
     {
         icon: IconHandClick,
-        title: 'Affiliate Marketing',
-        description:
-            "This channel involves collaborating with partners who promote a business's products or services in exchange for a commission for each sale generated through their efforts."
+        title: 'social_media_strategy.feature5',
+        description: 'social_media_strategy.description5'
     },
     {
         icon: IconArticle,
-        title: 'Many more...',
-        description:
-            "Social media marketing is a dynamic and constantly evolving field. Check out our blog for up-to-date knowledge.",
+        title: 'social_media_strategy.feature6',
+        description: 'social_media_strategy.description6'
     },
 ];
 
@@ -122,6 +117,7 @@ interface FeatureProps {
 
 export function Feature({ icon: Icon, title, description }: FeatureProps) {
     const { classes } = useStyles();
+    const { t } = useTranslation();
 
     return (
         <div className={classes.tile}>
@@ -129,10 +125,10 @@ export function Feature({ icon: Icon, title, description }: FeatureProps) {
                 <Icon size="2rem" stroke={2} />
             </ThemeIcon>
             <Title order={3} className={classes.feature_title}>
-                {title}
+                {t(`${title}`)}
             </Title>
             <Text className={classes.feature_description}>
-                {description}
+                {t(`${description}`)}
             </Text>
         </div>
     );
@@ -141,6 +137,8 @@ export function Feature({ icon: Icon, title, description }: FeatureProps) {
 
 export function SocialMediaStrategy() {
     const { classes } = useStyles();
+    const { t } = useTranslation();
+
     const features = MOCKDATA.map((feature, index) => <Feature {...feature} key={index} />);
 
     return (
@@ -148,10 +146,10 @@ export function SocialMediaStrategy() {
             <Container size={1400}>
                 <Container p={0} size={800}>
                     <Title order={2} className={classes.title}>
-                        Social media marketing strategy
+                        {t("social_media_strategy.title")}
                     </Title>
                     <Text className={classes.description}>
-                        There are many ways to promote your products, services and brands on social media platforms. Depending on your business and marketing goals, you should build a strategy based on a combination of the following elements:
+                        {t("social_media_strategy.text")}
                     </Text>
                 </Container>
                 <SimpleGrid

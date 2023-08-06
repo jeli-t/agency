@@ -220,5 +220,21 @@
     "social_media_banner": {
         "title": "The power of Social media",
         "text": "The power of social media is undeniable and has had a profound impact on various aspects of society, communication, and business. Social media platforms have billions of daily active users, providing companies with the ability to reach a wide and diverse audience. By creating and sharing content on social media channels, you can connect with your target audiences, increase brand visibility, drive traffic to your website and achieve specific marketing goals. Don't miss this opportunity."
+    },
+    "social_media_strategy": {
+        "title": "Social media marketing strategy",
+        "text": "There are many ways to promote your products, services and brands on social media platforms. Depending on your business and marketing goals, you should build a strategy based on a combination of the following elements:",
+        "feature1": "Content Creation",
+        "description1": "Social media marketing involves producing various types of content, such as text posts, images, videos, infographics, and interactive content, tailored to the preferences of the target audience and the specific platform.",
+        "feature2": "Management",
+        "description2": "Managing social media accounts involves posting content regularly, responding to comments and messages, monitoring trends, and engaging with followers to build a loyal community.",
+        "feature3": "Advertising",
+        "description3": "Paid social media advertising allows businesses to reach a wider audience, target specific demographics, and promote their products or services to potential customers.",
+        "feature4": "Influencer Marketing",
+        "description4": "Collaborating with social media influencers, who have a significant and engaged following, can help businesses reach their target audience through authentic and trusted recommendations.",
+        "feature5": "Affiliate Marketing",
+        "description5": "This channel involves collaborating with partners who promote a business's products or services in exchange for a commission for each sale generated through their efforts.",
+        "feature6": "Many more...",
+        "description6": "Social media marketing is a dynamic and constantly evolving field. Check out our blog for up-to-date knowledge."
     }
 }

@@ -220,5 +220,21 @@
     "social_media_banner": {
         "title": "Moc mediów społecznościowych",
         "text": "Wpływ mediów społecznościowych na różne aspekty życia społecznego, komunikacji i biznesu jest niezaprzeczalny. Platformy mediów społecznościowych mają miliardy aktywnych użytkowników dziennie, zapewniając firmom możliwość dotarcia do szerokiego i zróżnicowanego grona odbiorców. Tworząc i udostępniając treści w kanałach mediów społecznościowych, możesz nawiązać kontakt z docelowymi odbiorcami, zwiększyć widoczność marki, przyciągnąć ruch do swojej witryny i osiągnąć określone cele marketingowe. Nie przegap tej okazji."
+    },
+    "social_media_strategy": {
+        "title": "Strategia marketingowa w mediach społecznościowych",
+        "text": "Istnieje wiele sposobów promowania produktów, usług i marek na platformach mediów społecznościowych. W zależności od celów biznesowych i marketingowych, powinieneś zbudować strategię opartą na połączeniu następujących elementów:",
+        "feature1": "Tworzenie treści",
+        "description1": "Marketing w mediach społecznościowych obejmuje tworzenie różnego rodzaju treści, takich jak posty, zdjęcia, filmy i infografiki dostosowane do preferencji grupy docelowej i konkretnej platformy.",
+        "feature2": "Zarządzanie",
+        "description2": "Zarządzanie kontami w mediach społecznościowych obejmuje regularne publikowanie treści, odpowiadanie na komentarze i wiadomości, monitorowanie trendów i angażowanie obserwujących w celu budowania lojalnej społeczności.",
+        "feature3": "Reklama",
+        "description3": "Płatne reklamy w mediach społecznościowych pozwalają firmom dotrzeć do szerszego grona odbiorców, dotrzeć do określonych grup demograficznych i promować swoje produkty lub usługi wśród potencjalnych klientów.",
+        "feature4": "Wpływowi twórcy",
+        "description4": "Współpraca z influencerami w mediach społecznościowych, którzy mają znaczące i zaangażowane grono obserwujących, może pomóc firmom dotrzeć do docelowych odbiorców poprzez autentyczne i zaufane rekomendacje.",
+        "feature5": "Marketing afiliacyjny",
+        "description5": "Współpraca z partnerami, którzy promują produkty lub usługi firmy w zamian za prowizję od każdej sprzedaży wygenerowanej dzięki ich wysiłkom.",
+        "feature6": "Wiele więcej...",
+        "description6": "Marketing w mediach społecznościowych to dynamiczna i stale rozwijająca się dziedzina. Sprawdź nasz blog, aby uzyskać aktualną wiedzę."
     }
 }
