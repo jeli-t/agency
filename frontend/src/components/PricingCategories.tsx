@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { PricingWebsites } from './PricingWebsites';
 import { PricingSeo } from './PricingSeo';
 import { PricingSocialMedia } from './PricingSocialMedia';
+import { PricingOther } from './PricingOther';
 
 
 const useStyles = createStyles((theme) => ({
@@ -77,7 +78,7 @@ export function PricingCategories() {
                         <Title order={2} className={classes.title}>{t("pricing_categories.other")}</Title>
                     </Accordion.Control>
                     <Accordion.Panel>
-                        {/* pricing here */}
+                        <PricingOther />
                     </Accordion.Panel>
                 </Accordion.Item>
 
