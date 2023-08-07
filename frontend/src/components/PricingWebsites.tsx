@@ -18,6 +18,11 @@ export const MOCKDATA = [
         description: "pricing_website.description3",
         price: "pricing_website.price3",
     },
+    {
+        title: 'pricing_website.product4',
+        description: "pricing_website.description4",
+        price: "pricing_website.price4",
+    },
 ];
 
 

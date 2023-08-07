@@ -161,14 +161,17 @@
     },
     "pricing_website": {
         "product1": "Strona internetowa Wordpress",
-        "description1": "Prosta strona internetowa oparta o system wordpress",
+        "description1": "Prosta strona internetowa oparta na systemie wordpress. Łatwa do samodzielnej edycji, przyjazna dla urządzeń mobilnych, podstawowa optymalizacja SEO na stronie. Cena nie obejmuje zdjęć stockowych, copywritingu i dodatkowych płatnych wtyczek wordpress.",
         "price1": "1200zł",
         "product2": "Niestandardowa strona internetowa",
-        "description2": "Indywidualny projekt UI/UX i złożony backend",
+        "description2": "Niestandardowy projekt strony internetowej dostosowany do Twoich potrzeb. Profesjonalny design UI/UX, frontend oparty na ReactJS, szybki czas ładowania strony, przyjazna dla urządzeń mobilnych, optymalizacja SEO na stronie, backend i API w Python Django. Cena nie obejmuje żadnych zdjęć stockowych i copywritingu.",
         "price2": "3200zł",
         "product3": "Hosting",
-        "description3": "Hosting i kopia zapasowa strony internetowej",
-        "price3": "50zł/miesiąc"
+        "description3": "Szybki hosting dla Twojej strony. Certyfikat Let's Encrypt SSL (Twoja strona będzie miała zieloną kłódkę i 'https' w adresie URL). Kopia zapasowa witryny co tydzień.",
+        "price3": "50zł/miesiąc",
+        "product4": "Dodatkowa konserwacja witryny",
+        "description4": "Dodatkowa pomoc przy stronie internetowej. Aktualizacje, ulepszenia wizualne, dodawanie nowych funkcjonalności i elementów.",
+        "price4": "50zł/godzina"
     },
     "blog_banner": {
         "title": "Witamy na naszym blogu",

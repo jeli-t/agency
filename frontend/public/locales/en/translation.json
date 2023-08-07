@@ -161,14 +161,17 @@
     },
     "pricing_website": {
         "product1": "Wordpress website",
-        "description1": "Simple wordpress based website",
+        "description1": "Simple website based on wordpress system. Easy to edit by yourself, mobile-friendly, basic on-page SEO optimization. Price does not include any stock images, copywriting and additional paid wordpress plugins.",
         "price1": "300$",
         "product2": "Custom website",
-        "description2": "Custom UI/UX project and complex backend",
+        "description2": "Custom website project tailored to your needs. Professional UI/UX design, ReactJS frontend, fast loading times, mobile-friendly, on-page SEO optimization, backend and API in Python Django. Price does not include any stock images and copywriting.",
         "price2": "800$",
-        "product3": "Hosting",
-        "description3": "Hosting and backup for your website",
-        "price3": "12$/month"
+        "product3": "Hosting + SSL + Backup",
+        "description3": "Fast hosting for your website. Let's Encrypt SSL certificate (your page will have a green padlock and 'https' in URL). Website backup each week.",
+        "price3": "12$/month",
+        "product4": "Additional maintenance",
+        "description4": "Additional help with your website. Updates, visual improvements, adding new functionality and elements.",
+        "price4": "12$/hour"
     },
     "blog_banner": {
         "title": "Welcome to our blog",
