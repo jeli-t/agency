@@ -20,12 +20,11 @@ const useStyles = createStyles((theme) => ({
     },
 
     hero_section: {
-        position: 'relative',
         width: '80%',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: 80,
+        margin: 20,
 
         [theme.fn.smallerThan('lg')]: {
             flexDirection: 'column',
@@ -61,7 +60,7 @@ const useStyles = createStyles((theme) => ({
     },
 
     image: {
-        width: '120%',
+        width: '110%',
         height: 'auto',
 
         [theme.fn.smallerThan('lg')]: {
@@ -126,17 +125,6 @@ const useStyles = createStyles((theme) => ({
     
         [theme.fn.smallerThan('xs')]: {
           fontSize: rem(16),
-        },
-    },
-
-    faq: {
-        position: 'absolute',
-        fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(16),
-        bottom: '-40px',
-
-        [theme.fn.smallerThan('xl')]: {
-            display: 'none',
         },
     },
 }))
@@ -205,9 +193,6 @@ export function ContactSection() {
                         </a>
                     </div>
                 </div>
-                <Text className={classes.faq}>
-                    {t("contact_section.faq")}
-                </Text>
             </div>
         </div>
     )
