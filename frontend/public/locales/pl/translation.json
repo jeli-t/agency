@@ -153,6 +153,12 @@
         "text1": "Po pierwsze, każdy projekt jest inny, a zakres usług może się różnić w zależności od celów marketingowych i rodzaju działalności. Każdy projekt wyceniamy osobno. Poniższe ceny mają wyłącznie charakter orientacyjny.",
         "text2": "Jeśli chcesz otrzymać bezpłatną spersonalizowaną wycenę i strategię dla swojej firmy, sprawdź sekcję Zaczynajmy lub skontaktuj się z nami bezpośrednio, aby umówić się na bezpłatną konsultację wideo."
     },
+    "pricing_categories": {
+        "websites": "Strony internetowe",
+        "seo": "Pozycjonowanie stron (SEO)",
+        "social_media": "Media społecznościowe",
+        "other": "Pozostałe"
+    },
     "blog_banner": {
         "title": "Witamy na naszym blogu",
         "text": "Tutaj dzielimy się naszą wiedzą i doświadczeniem w zakresie tworzenia stron internetowych, pozycjonowania stron w wyszukiwarkach, marketingu w mediach społecznościowych i wielu innych tematów związanych z budowaniem wizerunku marki i marketingiem w Internecie."
@@ -160,7 +166,7 @@
     "solution_categories": {
         "solution1": "Strony internetowe",
         "solution2": "Pozycjonowanie stron (SEO)",
-        "solution3": "Social media",
+        "solution3": "Media społecznościowe",
         "solution4": "Marketing cyfrowy"
     },
     "websites_banner": {

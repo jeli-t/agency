@@ -153,6 +153,12 @@
         "text1": "First of all, every project is different, and the scope of services may vary depending on your marketing goals and the type of business. We price each project separately. The following prices are for reference only.",
         "text2": "If you would like to receive a free personalized pricing and strategy for your business, check out the Get started section or contact us directly to schedule a free video consultation."
     },
+    "pricing_categories": {
+        "websites": "Websites",
+        "seo": "Search Engine Optimization",
+        "social_media": "Social media",
+        "other": "Other"
+    },
     "blog_banner": {
         "title": "Welcome to our blog",
         "text": "Here we share our knowledge and experience in web development, search engine optimization, social media marketing and many other topics related to building brand image and marketing on the Internet."

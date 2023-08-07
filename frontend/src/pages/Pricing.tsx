@@ -1,5 +1,6 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
 import { PricingBanner } from '../components/PricingBanner';
+import { PricingCategories } from '../components/PricingCategories';
 import { Helmet } from 'react-helmet-async';
 
 
@@ -15,6 +16,7 @@ export default function Pricing() {
             </Helmet>
             <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
                 <PricingBanner></PricingBanner>
+                <PricingCategories></PricingCategories>
             </MantineProvider>
         </>
     )
