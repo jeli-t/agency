@@ -173,6 +173,20 @@
         "description4": "Dodatkowa pomoc przy stronie internetowej. Aktualizacje, ulepszenia wizualne, dodawanie nowych funkcjonalności i elementów.",
         "price4": "50zł/godzina"
     },
+    "pricing_seo": {
+        "product1": "Optymalizacja strony",
+        "description1": "",
+        "price1": "zł",
+        "product2": "Optymalizacja zewnętrzna",
+        "description2": "",
+        "price2": "zł",
+        "product3": "Pozycjonowanie lokalne",
+        "description3": "",
+        "price3": "zł",
+        "product4": "Reklamy w wyszukiwarce (SEM)",
+        "description4": "",
+        "price4": "zł"
+    },
     "blog_banner": {
         "title": "Witamy na naszym blogu",
         "text": "Tutaj dzielimy się naszą wiedzą i doświadczeniem w zakresie tworzenia stron internetowych, pozycjonowania stron w wyszukiwarkach, marketingu w mediach społecznościowych i wielu innych tematów związanych z budowaniem wizerunku marki i marketingiem w Internecie."

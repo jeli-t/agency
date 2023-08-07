@@ -173,6 +173,20 @@
         "description4": "Additional help with your website. Updates, visual improvements, adding new functionality and elements.",
         "price4": "12$/hour"
     },
+    "pricing_seo": {
+        "product1": "On-Page Optimization",
+        "description1": "",
+        "price1": "$",
+        "product2": "Off-Page Optimization",
+        "description2": "",
+        "price2": "$",
+        "product3": "Local SEO",
+        "description3": "",
+        "price3": "$",
+        "product4": "Search Engine Marketing (SEM)",
+        "description4": "",
+        "price4": "$"
+    },
     "blog_banner": {
         "title": "Welcome to our blog",
         "text": "Here we share our knowledge and experience in web development, search engine optimization, social media marketing and many other topics related to building brand image and marketing on the Internet."
