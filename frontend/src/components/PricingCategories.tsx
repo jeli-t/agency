@@ -2,6 +2,7 @@ import { Container, Title, Accordion, createStyles, rem } from '@mantine/core';
 import { useTranslation } from 'react-i18next';
 import { PricingWebsites } from './PricingWebsites';
 import { PricingSeo } from './PricingSeo';
+import { PricingSocialMedia } from './PricingSocialMedia';
 
 
 const useStyles = createStyles((theme) => ({
@@ -67,7 +68,7 @@ export function PricingCategories() {
                         <Title order={2} className={classes.title}>{t("pricing_categories.social_media")}</Title>
                     </Accordion.Control>
                     <Accordion.Panel>
-                        {/* pricing here */}
+                        <PricingSocialMedia />
                     </Accordion.Panel>
                 </Accordion.Item>
 
