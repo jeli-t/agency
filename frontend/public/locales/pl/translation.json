@@ -159,6 +159,17 @@
         "social_media": "Media społecznościowe",
         "other": "Pozostałe"
     },
+    "pricing_website": {
+        "product1": "Strona internetowa Wordpress",
+        "description1": "Prosta strona internetowa oparta o system wordpress",
+        "price1": "1200zł",
+        "product2": "Niestandardowa strona internetowa",
+        "description2": "Indywidualny projekt UI/UX i złożony backend",
+        "price2": "3200zł",
+        "product3": "Hosting",
+        "description3": "Hosting i kopia zapasowa strony internetowej",
+        "price3": "50zł/miesiąc"
+    },
     "blog_banner": {
         "title": "Witamy na naszym blogu",
         "text": "Tutaj dzielimy się naszą wiedzą i doświadczeniem w zakresie tworzenia stron internetowych, pozycjonowania stron w wyszukiwarkach, marketingu w mediach społecznościowych i wielu innych tematów związanych z budowaniem wizerunku marki i marketingiem w Internecie."

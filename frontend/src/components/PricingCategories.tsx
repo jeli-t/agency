@@ -1,5 +1,7 @@
 import { Container, Title, Accordion, createStyles, rem } from '@mantine/core';
 import { useTranslation } from 'react-i18next';
+import { PricingWebsites } from './PricingWebsites';
+
 
 const useStyles = createStyles((theme) => ({
     wrapper: {
@@ -43,16 +45,16 @@ export function PricingCategories() {
             <Accordion variant="separated">
                 <Accordion.Item className={classes.item} value={t("pricing_categories.websites")}>
                     <Accordion.Control>
-                        <Title className={classes.title}>{t("pricing_categories.websites")}</Title>
+                        <Title order={2} className={classes.title}>{t("pricing_categories.websites")}</Title>
                     </Accordion.Control>
                     <Accordion.Panel>
-                        {/* pricing here */}
+                        <PricingWebsites />
                     </Accordion.Panel>
                 </Accordion.Item>
 
                 <Accordion.Item className={classes.item} value={t("pricing_categories.seo")}>
                     <Accordion.Control>
-                        <Title className={classes.title}>{t("pricing_categories.seo")}</Title>
+                        <Title order={2} className={classes.title}>{t("pricing_categories.seo")}</Title>
                     </Accordion.Control>
                     <Accordion.Panel>
                         {/* pricing here */}
@@ -61,7 +63,7 @@ export function PricingCategories() {
 
                 <Accordion.Item className={classes.item} value={t("pricing_categories.social_media")}>
                     <Accordion.Control>
-                        <Title className={classes.title}>{t("pricing_categories.social_media")}</Title>
+                        <Title order={2} className={classes.title}>{t("pricing_categories.social_media")}</Title>
                     </Accordion.Control>
                     <Accordion.Panel>
                         {/* pricing here */}
@@ -70,7 +72,7 @@ export function PricingCategories() {
 
                 <Accordion.Item className={classes.item} value={t("pricing_categories.other")}>
                     <Accordion.Control>
-                        <Title className={classes.title}>{t("pricing_categories.other")}</Title>
+                        <Title order={2} className={classes.title}>{t("pricing_categories.other")}</Title>
                     </Accordion.Control>
                     <Accordion.Panel>
                         {/* pricing here */}

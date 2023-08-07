@@ -159,6 +159,17 @@
         "social_media": "Social media",
         "other": "Other"
     },
+    "pricing_website": {
+        "product1": "Wordpress website",
+        "description1": "Simple wordpress based website",
+        "price1": "300$",
+        "product2": "Custom website",
+        "description2": "Custom UI/UX project and complex backend",
+        "price2": "800$",
+        "product3": "Hosting",
+        "description3": "Hosting and backup for your website",
+        "price3": "12$/month"
+    },
     "blog_banner": {
         "title": "Welcome to our blog",
         "text": "Here we share our knowledge and experience in web development, search engine optimization, social media marketing and many other topics related to building brand image and marketing on the Internet."
