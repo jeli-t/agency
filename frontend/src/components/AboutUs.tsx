@@ -1,4 +1,5 @@
-import { createStyles, useMantineTheme, Title, rem, Text } from '@mantine/core';
+import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon } from '@mantine/core';
+import { IconBrandInstagram, IconBrandFacebook } from '@tabler/icons-react';
 import people from './../assets/people.svg'
 import { useTranslation } from 'react-i18next';
 
@@ -98,15 +99,13 @@ const useStyles = createStyles((theme) => ({
         },
     },
 
-    button: {
+    icon: {
+        display: 'inline-block',
         marginTop: 20,
-        color: theme.white,
-        fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(24),
-        fontWeight: 600,
-    
-        [theme.fn.smallerThan('xs')]: {
-          fontSize: rem(16),
+        marginRight: 20,
+
+        '&:hover': {
+            transform: 'scale(1.1)',
         },
     },
 }))
@@ -126,6 +125,32 @@ export function AboutUs() {
                     <Text className={classes.text}>
                         {t("about_us.text")}
                     </Text>
+                    <div>
+                        <div className={classes.icon}>
+                            <a href='https://www.instagram.com/jeli_agency/'>
+                                <ThemeIcon
+                                    size={50}
+                                    radius="md"
+                                    variant="gradient"
+                                    gradient={{ deg: 133, from: 'orange', to: 'red' }}
+                                >
+                                    <IconBrandInstagram size="2rem" stroke={2} />
+                                </ThemeIcon>
+                            </a>
+                        </div>
+                        <div className={classes.icon}>
+                            <a href='https://www.facebook.com/profile.php?id=100095023350168'>
+                                <ThemeIcon
+                                    size={50}
+                                    radius="md"
+                                    variant="gradient"
+                                    gradient={{ deg: 133, from: 'orange', to: 'red' }}
+                                >
+                                    <IconBrandFacebook size="2rem" stroke={2} />
+                                </ThemeIcon>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div className={classes.ilustration}>
                     <img src={people} alt='Our team' title='Our team' loading='lazy' width={845} height={800} className={classes.image} />
