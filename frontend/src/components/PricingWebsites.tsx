@@ -49,6 +49,12 @@ const useStyles = createStyles((theme) => ({
     title_row: {
         display: 'flex',
         justifyContent: 'space-between',
+        marginBottom: 10,
+
+        [theme.fn.smallerThan('lg')]: {
+            flexDirection: 'column',
+            gap: 5,
+        },
     },
 
     description: {
@@ -59,7 +65,7 @@ const useStyles = createStyles((theme) => ({
     },
 
     price: {
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        color: theme.primaryColor,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
         fontWeight: 600,
@@ -110,7 +116,7 @@ export function PricingWebsites() {
     const products = MOCKDATA.map((feature, index) => <Product {...feature} key={index} />);
 
     return (
-        <Container size="md" className={classes.wrapper}>
+        <Container size="md" p={0} className={classes.wrapper}>
             {products}
         </Container>
     );
