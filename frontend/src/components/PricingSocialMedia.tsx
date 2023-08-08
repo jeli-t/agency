@@ -18,11 +18,6 @@ export const MOCKDATA = [
         description: "pricing_social_media.description3",
         price: "pricing_social_media.price3",
     },
-    {
-        title: 'pricing_social_media.product4',
-        description: "pricing_social_media.description4",
-        price: "pricing_social_media.price4",
-    },
 ];
 
 

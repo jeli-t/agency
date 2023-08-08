@@ -187,6 +187,17 @@
         "description4": "",
         "price4": "zł"
     },
+    "pricing_social_media": {
+        "product1": "Tworzenie treści",
+        "description1": "",
+        "price1": "zł",
+        "product2": "Zarządzanie",
+        "description2": "",
+        "price2": "zł",
+        "product3": "Kampanie reklamowe",
+        "description3": "",
+        "price3": "zł"
+    },
     "blog_banner": {
         "title": "Witamy na naszym blogu",
         "text": "Tutaj dzielimy się naszą wiedzą i doświadczeniem w zakresie tworzenia stron internetowych, pozycjonowania stron w wyszukiwarkach, marketingu w mediach społecznościowych i wielu innych tematów związanych z budowaniem wizerunku marki i marketingiem w Internecie."

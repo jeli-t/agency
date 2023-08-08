@@ -187,6 +187,17 @@
         "description4": "",
         "price4": "$"
     },
+    "pricing_social_media": {
+        "product1": "Content creation",
+        "description1": "",
+        "price1": "$",
+        "product2": "Management",
+        "description2": "",
+        "price2": "$",
+        "product3": "Advertising",
+        "description3": "",
+        "price3": "$"
+    },
     "blog_banner": {
         "title": "Welcome to our blog",
         "text": "Here we share our knowledge and experience in web development, search engine optimization, social media marketing and many other topics related to building brand image and marketing on the Internet."
