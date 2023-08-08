@@ -198,6 +198,17 @@
         "description3": "",
         "price3": "$"
     },
+    "pricing_other": {
+        "product1": "Blog copywriting",
+        "description1": "",
+        "price1": "$",
+        "product2": "Google Ads",
+        "description2": "",
+        "price2": "$",
+        "product3": "Email marketing",
+        "description3": "",
+        "price3": "$"
+    },
     "blog_banner": {
         "title": "Welcome to our blog",
         "text": "Here we share our knowledge and experience in web development, search engine optimization, social media marketing and many other topics related to building brand image and marketing on the Internet."

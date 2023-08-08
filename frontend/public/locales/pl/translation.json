@@ -198,6 +198,17 @@
         "description3": "",
         "price3": "zł"
     },
+    "pricing_other": {
+        "product1": "Prowadzenie bloga",
+        "description1": "",
+        "price1": "zł",
+        "product2": "Google Ads",
+        "description2": "",
+        "price2": "zł",
+        "product3": "Marketing e-mail",
+        "description3": "",
+        "price3": "zł"
+    },
     "blog_banner": {
         "title": "Witamy na naszym blogu",
         "text": "Tutaj dzielimy się naszą wiedzą i doświadczeniem w zakresie tworzenia stron internetowych, pozycjonowania stron w wyszukiwarkach, marketingu w mediach społecznościowych i wielu innych tematów związanych z budowaniem wizerunku marki i marketingiem w Internecie."
