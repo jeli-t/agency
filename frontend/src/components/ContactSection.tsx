@@ -99,6 +99,14 @@ const useStyles = createStyles((theme) => ({
         },
     },
 
+    icon: {
+        marginRight: 20,
+
+        '&:hover': {
+            transform: 'scale(1.1)',
+        },
+    },
+
     contact_info: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
@@ -116,17 +124,6 @@ const useStyles = createStyles((theme) => ({
         },
     },
 
-    button: {
-        marginTop: 20,
-        color: theme.white,
-        fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(24),
-        fontWeight: 600,
-    
-        [theme.fn.smallerThan('xs')]: {
-          fontSize: rem(16),
-        },
-    },
 }))
 
 export function ContactSection() {
@@ -154,6 +151,7 @@ export function ContactSection() {
                                 radius="md"
                                 variant="gradient"
                                 gradient={{ deg: 133, from: 'orange', to: 'red' }}
+                                className={classes.icon}
                             >
                                 <IconMail size="2rem" stroke={2} />
                             </ThemeIcon>
@@ -169,6 +167,7 @@ export function ContactSection() {
                                 radius="md"
                                 variant="gradient"
                                 gradient={{ deg: 133, from: 'orange', to: 'red' }}
+                                className={classes.icon}
                             >
                                 <IconBrandInstagram size="2rem" stroke={2} />
                             </ThemeIcon>
@@ -184,6 +183,7 @@ export function ContactSection() {
                                 radius="md"
                                 variant="gradient"
                                 gradient={{ deg: 133, from: 'orange', to: 'red' }}
+                                className={classes.icon}
                             >
                                 <IconBrandFacebook size="2rem" stroke={2} />
                             </ThemeIcon>
