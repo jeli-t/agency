@@ -1,6 +1,7 @@
 import { MantineProvider, useMantineTheme } from '@mantine/core';
 import { BlogBanner } from '../components/BlogBanner';
 import { Helmet } from 'react-helmet-async';
+import { BlogGrid } from '../components/BlogGrid';
 
 
 export default function Blog() {
@@ -15,6 +16,7 @@ export default function Blog() {
             </Helmet>
             <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
                 <BlogBanner></BlogBanner>
+                <BlogGrid></BlogGrid>
             </MantineProvider>
         </>
     )
