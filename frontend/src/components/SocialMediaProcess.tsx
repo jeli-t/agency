@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { createStyles, useMantineTheme, Title, rem, Text, Timeline } from '@mantine/core';
-import social_media_process from './../assets/social_media.svg'
+import social_media_process from './../assets/our_process.svg'
 import { useTranslation } from 'react-i18next';
 
 
