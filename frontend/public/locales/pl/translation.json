@@ -396,23 +396,5 @@
         "answer4": "Tak, zapewniamy bezpłatne wsparcie od etapu przygotowania strategii marketingowej do uruchomienia strony internetowej, a nawet po jej ostatecznym odbiorze. Zawsze chętnie odpowiemy na wszystkie pytania i pomożemy Ci rozwiązać Twoje problemy.",
         "question5": "Czy będę mógł edytować swoją stronę?",
         "answer5": "Jeśli zdecydujesz się na stronę opartą na systemie Wordpress, pokażemy Ci, w jaki sposób możesz łatwo samodzielnie edytować swoją witrynę w każdej chwili. Jeśli potrzebujesz dodatkowej pomocy przy wdrażaniu nowych funkcji, oferujemy dodatkowe usługi serwisowe w cenie 50 zł za godzinę."
-    },
-    "blog_post1": {
-        "url": "https://jeli.pl/blog/post1",
-        "title": "Post 1",
-        "image": "https://jeli.pl/img/writing-a-blog.png",
-        "date": "August 09, 2023"
-    },
-    "blog_post2": {
-        "url": "https://jeli.pl/blog/post2",
-        "title": "Post 2",
-        "image": "https://jeli.pl/img/writing-a-blog.png",
-        "date": "August 10, 2023"
-    },
-    "blog_post3": {
-        "url": "https://jeli.pl/blog/post3",
-        "title": "Post 3",
-        "image": "https://jeli.pl/img/writing-a-blog.png",
-        "date": "August 11, 2023"
     }
 }

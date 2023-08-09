@@ -396,23 +396,5 @@
         "answer4": "Yes, we provide free support from the stage of preparation of the marketing strategy to the launch of the website and even after its final reception. We are always happy to answer all your questions and help you solve your problems.",
         "question5": "Will I be able to edit my website?",
         "answer5": "If you decide to go with a Wordpress website, we will show you how you can easily edit your site on your own at any time. If you need additional help implementing new features, we offer additional maintenance services at $12 per hour."
-    },
-    "blog_post1": {
-        "url": "https://jeli.pl/blog/post1",
-        "title": "Post 1",
-        "image": "https://jeli.pl/img/writing-a-blog.png",
-        "date": "August 09, 2023"
-    },
-    "blog_post2": {
-        "url": "https://jeli.pl/blog/post2",
-        "title": "Post 2",
-        "image": "https://jeli.pl/img/writing-a-blog.png",
-        "date": "August 10, 2023"
-    },
-    "blog_post3": {
-        "url": "https://jeli.pl/blog/post3",
-        "title": "Post 3",
-        "image": "https://jeli.pl/img/writing-a-blog.png",
-        "date": "August 11, 2023"
     }
 }

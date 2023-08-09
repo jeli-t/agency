@@ -44,7 +44,7 @@ const useStyles = createStyles((theme) => ({
 
 export function BlogGrid() {
   const { classes } = useStyles();
-  const { t } = useTranslation();
+  const { t } = useTranslation(['blog']);
 
   const cards = mockdata.map((article) => (
     <Link to={t(`${article.url}`)} style={{textDecoration: 'none'}}>
