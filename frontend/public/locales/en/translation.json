@@ -188,15 +188,12 @@
         "price4": "$"
     },
     "pricing_social_media": {
-        "product1": "Content creation",
-        "description1": "",
-        "price1": "$",
-        "product2": "Management",
-        "description2": "",
-        "price2": "$",
-        "product3": "Advertising",
-        "description3": "",
-        "price3": "$"
+        "product1": "Management",
+        "description1": "Designing a profile, regular publishing of prepared content, responding to messages and building a community. This is the base price for 1 social media channel (Facebook or Instagram) for an account with up to 1,000 followers.",
+        "price1": "100$/month",
+        "product2": "Advertising",
+        "description2": "Preparing an advertising campaign. Targeting specific demographics, interests, behaviors, and locations. This is the base price only for the preparation and handling of the campaign.",
+        "price2": "200$/month"
     },
     "pricing_other": {
         "product1": "Blog copywriting",

@@ -188,15 +188,12 @@
         "price4": "zł"
     },
     "pricing_social_media": {
-        "product1": "Tworzenie treści",
-        "description1": "",
-        "price1": "zł",
-        "product2": "Zarządzanie",
-        "description2": "",
-        "price2": "zł",
-        "product3": "Kampanie reklamowe",
-        "description3": "",
-        "price3": "zł"
+        "product1": "Zarządzanie",
+        "description1": "Projekt profilu, regularne publikowanie przygotowanych treści, odpowiadanie na wiadomości i budowanie społeczności. Jest to cena podstawowa za 1 kanał w mediach społecznościowych (Facebook lub Instagram) dla konta z maksymalnie 1000 obserwujących.",
+        "price1": "400zł/miesiąc",
+        "product2": "Reklama",
+        "description2": "Przygotowanie kampanii reklamowej. Ukierunkowanie na określone dane demograficzne, zainteresowania, zachowania i lokalizacje. Jest to cena podstawowa tylko za przygotowanie i obsługę kampanii.",
+        "price2": "800zł/miesiąc"
     },
     "pricing_other": {
         "product1": "Prowadzenie bloga",
