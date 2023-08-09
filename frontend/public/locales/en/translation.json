@@ -302,6 +302,19 @@
         "title": "Is social media marketing worth it?",
         "text": "Social media is an essential and powerful digital marketing tool. Compared to traditional advertising methods, social media marketing can be more cost-effective, making it suitable for businesses of all sizes. However, marketing effectiveness can vary depending on several factors, such as the nature of the business, the target audience and the platforms used. Successful social media marketing strategies require thoughtful content creation, consistent monitoring and adaptation to changing trends. Check out how we do it."
     },
+    "social_media_process": {
+        "title": "Our Process",
+        "step1": "Information gathering",
+        "description1": "Collecting basic information about the company, marketing goals and identifying the target audience.",
+        "step2": "Profile design",
+        "description2": "Create a profile, setting up all descriptions and lead channels. Preparing a publication strategy.",
+        "step3": "Publication",
+        "description3": "Regular publishing of prepared content.",
+        "step4": "Building community",
+        "description4": "Responding to messages and comments from followers. Engaging and building a community.",
+        "step5": "Success",
+        "description5": "Your brand / company becomes more popular and trustworthy among customers."
+    },
     "social_media_offer": {
         "title": "Save your time",
         "text1": "We will take care of your social media. We will manage your accounts and prepare advertising campaigns for your business. For now, we operate only on Facebook and Instagram.",

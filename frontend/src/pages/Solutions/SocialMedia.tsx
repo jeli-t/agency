@@ -3,7 +3,7 @@ import { SocialMediaBanner } from '../../components/SocialMediaBanner';
 import { Helmet } from 'react-helmet-async';
 import { SocialMediaStrategy } from '../../components/SocialMediaStrategy';
 import { SocialMediaWorth } from '../../components/SocialMediaWorth';
-import { OurProcess } from '../../components/OurProcess';
+import { SocialMediaProcess } from '../../components/SocialMediaProcess';
 import { SocialMediaOffer } from '../../components/SocialMediaOffer';
 
 
@@ -21,7 +21,7 @@ export default function SocialMedia() {
                 <SocialMediaBanner></SocialMediaBanner>
                 <SocialMediaStrategy></SocialMediaStrategy>
                 <SocialMediaWorth></SocialMediaWorth>
-                <OurProcess></OurProcess>
+                <SocialMediaProcess></SocialMediaProcess>
                 <SocialMediaOffer></SocialMediaOffer>
             </MantineProvider>
         </>
