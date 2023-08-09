@@ -284,6 +284,19 @@
         "title": "SEO effectiveness",
         "text": "SEO is a long-term strategy, and results may not be immediate. It takes time for search engines to index and rank pages, and for SEO efforts to gain momentum. Generally, it may take several months before significant improvements in rankings and organic traffic are noticeable. SEO is an ongoing process. Once you achieve good rankings, you need to maintain and continue optimizing your website and content to stay ahead of the competition and adapt to changing search engine algorithms. Take a look how we do that."
     },
+    "seo_process": {
+        "title": "Our Process",
+        "step1": "Information gathering",
+        "description1": "We collect basic information about your business and marketing goals. Check out the Get started section or contact us directly.",
+        "step2": "Project planning",
+        "description2": "We discuss in detail the scope of the SEO, areas to focus and budget.",
+        "step3": "Keyword research",
+        "description3": "Identifying relevant keywords and phrases that users frequently use to search for products, services, or information related to your website's content.",
+        "step4": "Optimization",
+        "description4": "According to the agreed scope of work, we start on-page optimization, off-page optimization, local SEO efforts and SEM campaigns.",
+        "step5": "Success",
+        "description5": "Your website appears higher and higher in search results, leading to more organic traffic and more potential customers."
+    },
     "seo_offer": {
         "title": "To the moon",
         "text1": "Let us do the work and move your website to the top of the search results. We will prepare a strategy tailored to your business and optimize your page to cover all the key areas of Search Engine Optimization.",

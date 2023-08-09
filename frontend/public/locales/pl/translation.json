@@ -284,6 +284,19 @@
         "title": "Skuteczność SEO",
         "text": "SEO to strategia długoterminowa, dlatego wyniki mogą nie być natychmiastowe. Wyszukiwarki potrzebują czasu, aby zaindeksować i sklasyfikować strony, a działania SEO nabrały tempa. Ogólnie rzecz biorąc, może minąć kilka miesięcy, zanim zauważalna będzie znacząca poprawa w rankingach i ruchu organicznym. SEO jest procesem ciągłym. Po osiągnięciu dobrych pozycji należy utrzymywać i kontynuować optymalizację witryny i treści, aby nie dać się wyprzedzić konkurencji i dostosować się do zmieniających się algorytmów wyszukiwarek. Zobacz, jak my to robimy."
     },
+    "seo_process": {
+        "title": "Nasz proces",
+        "step1": "Gromadzenie informacji",
+        "description1": "Zbieramy podstawowe informacje o Twojej firmie i celach marketingowych. Sprawdź sekcję Zaczynajmy lub skontaktuj się z nami bezpośrednio.",
+        "step2": "Planowanie projektu",
+        "description2": "Szczegółowo omawiamy zakres SEO, obszary, na których należy się skupić i budżet.",
+        "step3": "Analiza słów kluczowych",
+        "description3": "Identyfikacja odpowiednich słów kluczowych i fraz, których użytkownicy często używają do wyszukiwania produktów, usług lub informacji związanych z treścią witryny.",
+        "step4": "Optymalizacja",
+        "description4": "Zgodnie z ustalonym zakresem prac, rozpoczynamy optymalizację na stronie, optymalizację zewnętrzną, lokalne działania SEO i kampanie SEM.",
+        "step5": "Sukces",
+        "description5": "Twoja witryna pojawia się coraz wyżej w wynikach wyszukiwania, co prowadzi do większego ruchu organicznego i większej liczby potencjalnych klientów."
+    },
     "seo_offer": {
         "title": "Na księżyc",
         "text1": "Pozwól nam się tym zająć i przenieść Twoją witrynę na szczyt wyników wyszukiwania. Przygotujemy strategię dostosowaną do Twojej firmy i zoptymalizujemy Twoją stronę tak, aby obejmowała wszystkie kluczowe obszary optymalizacji pod kątem wyszukiwarek.",
