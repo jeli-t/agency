@@ -53,14 +53,14 @@ const useStyles = createStyles((theme) => ({
     },
 
     description: {
-        color: theme.primaryColor,
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(16),
         fontWeight: 500,
     },
 
     price: {
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        color: theme.primaryColor,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
         fontWeight: 600,

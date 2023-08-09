@@ -197,14 +197,14 @@
     },
     "pricing_other": {
         "product1": "Prowadzenie bloga",
-        "description1": "",
-        "price1": "zł",
+        "description1": "Przygotowywanie treści na bloga na konkretny temat. Ukierunkowanie na określone słowa kluczowe i linkowanie do Twoich produktów lub usług. Jest to szacunkowa cena za wpis o długości około 1000 słów.",
+        "price1": "80zł/post",
         "product2": "Google Ads",
-        "description2": "",
-        "price2": "zł",
-        "product3": "Marketing e-mail",
-        "description3": "",
-        "price3": "zł"
+        "description2": "Przygotowanie kampanii reklamowej. Dostosowanie do określonych grup demograficznych, zainteresowań, zachowań i lokalizacji. Jest to cena podstawowa tylko za przygotowanie i obsługę kampanii.",
+        "price2": "600zł/miesiąc",
+        "product3": "Newsletter / marketing e-mail",
+        "description3": "Dodamy funkcję newslettera do Twojej witryny / bloga i przeprowadzimy kampanię marketingową e-mail.",
+        "price3": "200zł/miesiąc"
     },
     "blog_banner": {
         "title": "Witamy na naszym blogu",

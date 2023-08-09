@@ -197,14 +197,14 @@
     },
     "pricing_other": {
         "product1": "Blog copywriting",
-        "description1": "",
-        "price1": "$",
+        "description1": "Preparing content for a blog on a given topic. Targeting specific keywords and linking to your products or services. This is an estimated price for a 1000-word post.",
+        "price1": "20$/post",
         "product2": "Google Ads",
-        "description2": "",
-        "price2": "$",
-        "product3": "Email marketing",
-        "description3": "",
-        "price3": "$"
+        "description2": "Preparing an advertising campaign. Targeting specific demographics, interests, behaviors, and locations. This is the base price only for the preparation and handling of the campaign.",
+        "price2": "150$/month",
+        "product3": "Newsletter / email marketing",
+        "description3": "We will add a newsletter feature to your website/blog and run an email marketing campaigns.",
+        "price3": "50$/month"
     },
     "blog_banner": {
         "title": "Welcome to our blog",
