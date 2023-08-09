@@ -383,5 +383,18 @@
         "text": "Jeśli chcesz otrzymać bezpłatną spersonalizowaną strategię i ofertę dla swojej firmy, sprawdź sekcję Zaczynajmy. Jeśli chcesz zapytać o cokolwiek związanego z marketingiem cyfrowym, napisz do nas wiadomość lub skontaktuj się z nami bezpośrednio, aby umówić się na bezpłatną konsultację wideo.",
         "button1": "Zaczynajmy",
         "button2": "Kontakt"
+    },
+    "faq_section": {
+        "title": "Często zadawane pytania",
+        "question1": "Ile kosztuje strona internetowa?",
+        "answer1": "Wszystko zależy od wielkości projektu. Proste strony biznesowe kosztują około 1200 zł, duże niestandardowe strony internetowe i aplikacje internetowe zaczynają się od 3200 zł. Oprócz kosztów stworzenia strony internetowej, musisz być przygotowany na wydanie około 400 zł rocznie na hosting i nazwę domeny (pomożemy Ci wybrać odpowiednią dla Twoich potrzeb). Sprawdź naszą sekcję Cennik lub zapytaj o spersonalizowaną wycenę.",
+        "question2": "Z jakich technologii korzystacie?",
+        "answer2": "Większość stron internetowych tworzymy przy użyciu Wordpress Elementor, dzięki czemu każdy może łatwo aktualizować informacje na stronie bez zatrudniania specjalisty. W przypadku bardziej złożonych projektów używamy React JS na frontendzie i Python Django na backendzie",
+        "question3": "Jak długo trwa stworzenie strony internetowej?",
+        "answer3": "Wszystko zależy od wielkości projektu. Proste strony biznesowe zajmują od kilku dni do tygodnia, duże niestandardowe projekty mogą zająć nawet miesiąc.",
+        "question4": "Czy zapewniacie jakieś wsparcie?",
+        "answer4": "Tak, zapewniamy bezpłatne wsparcie od etapu przygotowania strategii marketingowej do uruchomienia strony internetowej, a nawet po jej ostatecznym odbiorze. Zawsze chętnie odpowiemy na wszystkie pytania i pomożemy Ci rozwiązać Twoje problemy.",
+        "question5": "Czy będę mógł edytować swoją stronę?",
+        "answer5": "Jeśli zdecydujesz się na stronę opartą na systemie Wordpress, pokażemy Ci, w jaki sposób możesz łatwo samodzielnie edytować swoją witrynę w każdej chwili. Jeśli potrzebujesz dodatkowej pomocy przy wdrażaniu nowych funkcji, oferujemy dodatkowe usługi serwisowe w cenie 50 zł za godzinę."
     }
 }
