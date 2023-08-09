@@ -175,17 +175,17 @@
     },
     "pricing_seo": {
         "product1": "On-Page Optimization",
-        "description1": "",
-        "price1": "$",
+        "description1": "Detailed keyword analysis, optimizing individual pages by including specific keywords in titles, meta tags, headings, content and URLs, improving loading times and overall user experience",
+        "price1": "150$",
         "product2": "Off-Page Optimization",
-        "description2": "",
-        "price2": "$",
+        "description2": "Building your site's authority and credibility through links and articles from other companies in your industry.",
+        "price2": "40$/link",
         "product3": "Local SEO",
-        "description3": "",
-        "price3": "$",
+        "description3": "Design and maintenance of Google My Business profile, on-page optimization for your city / area.",
+        "price3": "50$/month",
         "product4": "Search Engine Marketing (SEM)",
-        "description4": "",
-        "price4": "$"
+        "description4": "Preparing an advertising campaign. Targeting specific keywords and locations. This is the base price only for the preparation and handling of the campaign.",
+        "price4": "150$/month"
     },
     "pricing_social_media": {
         "product1": "Management",

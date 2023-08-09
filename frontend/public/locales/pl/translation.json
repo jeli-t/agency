@@ -175,17 +175,17 @@
     },
     "pricing_seo": {
         "product1": "Optymalizacja strony",
-        "description1": "",
-        "price1": "zł",
+        "description1": "Szczegółowa analiza słów kluczowych, optymalizacja poszczególnych stron poprzez uwzględnienie określonych słów kluczowych w tytułach, metatagach, nagłówkach, treści i adresach URL, poprawa czasu ładowania storny i ogólnej wygody użytkownika.",
+        "price1": "600zł",
         "product2": "Optymalizacja zewnętrzna",
-        "description2": "",
-        "price2": "zł",
-        "product3": "Pozycjonowanie lokalne",
-        "description3": "",
-        "price3": "zł",
-        "product4": "Reklamy w wyszukiwarce (SEM)",
-        "description4": "",
-        "price4": "zł"
+        "description2": "Budowanie autorytetu i wiarygodności witryny poprzez linki i artykuły innych firm z branży.",
+        "price2": "160zł/link",
+        "product3": "Lokalne SEO",
+        "description3": "Projektowanie i utrzymywanie profilu Google Moja Firma, optymalizacja strony pod kątem miasta / obszaru.",
+        "price3": "200zł/miesiąc",
+        "product4": "Marketing w wyszukiwarce (SEM)",
+        "description4": "Przygotowanie kampanii reklamowej. Dostosowanie do określonych słów kluczowych i lokalizacji. Jest to cena podstawowa tylko za przygotowanie i obsługę kampanii.",
+        "price4": "600zł/miesiąc"
     },
     "pricing_social_media": {
         "product1": "Zarządzanie",
