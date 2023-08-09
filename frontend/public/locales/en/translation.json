@@ -240,6 +240,19 @@
         "title": "How to build a website?",
         "text": "There is a long way from an idea to a working website. If you have already decided to build your website, you need to answer some questions. How much time can you spend? How much money to spend? Do you want to use a website builder or hire professionals? What technology should you use? Where to buy a domain name and hosting? What are the stages of creating a website and how do you get started? Check out how the professionals do it."
     },
+    "websites_process": {
+        "title": "Our Process",
+        "step1": "Information gathering",
+        "description1": "We collect basic information about your business and marketing goals. Check out the Get started section or contact us directly.",
+        "step2": "Project planning",
+        "description2": "We discuss in detail the scope of the website, the functionalities, the visual style and the content we will put on it.",
+        "step3": "Team building",
+        "description3": "Based on the needs of the project, we choose the technologies we will use and form a team that will be responsible for its development.",
+        "step4": "Project development",
+        "description4": "We start working on the website. We stay in touch and make improvements all the time to meet your expectations.",
+        "step5": "Success",
+        "description5": "Your website is up and running to grow your business online."
+    },
     "websites_offer": {
         "title": "Leave it to the professionals",
         "text1": "The websites we design are not only supposed to look nice, but most importantly work well and grow your business. We develop different types of websites, from landing pages and business websites to small online stores. All tailored to your business needs. We provide a full, comprehensive service from design to hosting and maintenance.",

@@ -3,7 +3,7 @@ import { WebsitesBanner } from '../../components/WebsitesBanner';
 import { Helmet } from 'react-helmet-async';
 import { GoodWebsite } from '../../components/GoodWebsite';
 import { BuildWebsite } from '../../components/BuildWebsite';
-import { OurProcess } from '../../components/OurProcess';
+import { WebsitesProcess } from '../../components/WebsitesProcess';
 import { WebsitesOffer } from '../../components/WebsitesOffer';
 
 
@@ -21,7 +21,7 @@ export default function Websites() {
                 <WebsitesBanner></WebsitesBanner>
                 <GoodWebsite></GoodWebsite>
                 <BuildWebsite></BuildWebsite>
-                <OurProcess></OurProcess>
+                <WebsitesProcess></WebsitesProcess>
                 <WebsitesOffer></WebsitesOffer>
             </MantineProvider>
         </>
