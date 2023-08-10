@@ -1,7 +1,8 @@
-import { Container, MantineProvider, createStyles, useMantineTheme, Title, Text, rem, AspectRatio, Image, Card } from '@mantine/core';
+import { Container, MantineProvider, createStyles, useMantineTheme, Title, Text, rem, AspectRatio, Image, Card, List } from '@mantine/core';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import cover from './../assets/blog/wordpress.jpg'
+import { WebsitesOffer } from '../components/WebsitesOffer';
 
 
 const mockdata = [
@@ -33,26 +34,40 @@ const useStyles = createStyles((theme) => ({
     title: {
         textAlign: 'left',
         fontWeight: 800,
-        fontSize: rem(40),
+        fontSize: rem(30),
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         marginBottom: theme.spacing.xs,
         fontFamily: `Roboto, ${theme.fontFamily}`,
 
         [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(28),
+            fontSize: rem(20),
             textAlign: 'left',
         },
     },
 
-    description: {
+    header: {
+        textAlign: 'left',
+        fontWeight: 600,
+        fontSize: rem(26),
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        marginBottom: theme.spacing.xs,
+        fontFamily: `Roboto, ${theme.fontFamily}`,
+
+        [theme.fn.smallerThan('xs')]: {
+            fontSize: rem(22),
+            textAlign: 'left',
+        },
+    },
+
+    text: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(24),
+        fontSize: rem(20),
         fontWeight: 500,
         textAlign: 'left',
 
         [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(20),
+            fontSize: rem(16),
             textAlign: 'left',
         },
     },
@@ -72,23 +87,86 @@ export default function Wordpress() {
             <Text color="dimmed" size="xs" transform="uppercase" weight={700} mt="md">
                 {t(`${article.date}`)}
             </Text>
-            <Text className={classes.title} mt={5}>
+            <Title order={1} className={classes.title} mt={5}>
                 {t(`${article.title}`)}
-            </Text>
+            </Title>
         </Card>
     ));
 
     return (
         <>
             <Helmet>
-                <title>Blog | Jeli Digital Agency</title>
-                <meta name='description' content="" />
-                <link rel='canonical' href='/' />
+                <title>Is WordPress right for you? | Jeli Digital Agency</title>
+                <meta name='description' content="Is WordPress right for you? What you can do with WordPress? Is WordPress good? How expensive is WordPress website? Is it hard to learn Wordpress? Here we answere all these questions." />
+                <link rel='canonical' href='/blog/is-wordpress-right-for-you' />
             </Helmet>
             <MantineProvider theme={mainTheme} withGlobalStyles withNormalizeCSS>
-                <Container py='xl'>
+                <Container p='md'>
                     {card}
+
+                    {/* content */}
+                    <Text className={classes.text} mt={'4rem'}>
+                        {t("blog_post1.description")}
+                    </Text>
+                    <Title order={2} className={classes.header} mt={'4rem'}>
+                        {t("blog_post1.header1")}
+                    </Title>
+                    <List type="unordered" withPadding className={classes.text}>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.type1")}</span>{t("blog_post1.type1_description")}</List.Item>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.type2")}</span>{t("blog_post1.type2_description")}</List.Item>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.type3")}</span>{t("blog_post1.type3_description")}</List.Item>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.type4")}</span>{t("blog_post1.type4_description")}</List.Item>
+                    </List>
+                    <Title order={2} className={classes.header} mt={'4rem'}>
+                        {t("blog_post1.header2")}
+                    </Title>
+                    <Text className={classes.text} style={{fontWeight: "bolder"}} mt={'1rem'}>
+                        {t("blog_post1.pros")}
+                    </Text>
+                    <List type="ordered" withPadding className={classes.text}>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.pros1")}</span>{t("blog_post1.pros1_description")}</List.Item>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.pros2")}</span>{t("blog_post1.pros2_description")}</List.Item>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.pros3")}</span>{t("blog_post1.pros3_description")}</List.Item>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.pros4")}</span>{t("blog_post1.pros4_description")}</List.Item>
+                    </List>
+                    <Text className={classes.text} style={{fontWeight: "bolder"}} mt={'1rem'}>
+                        {t("blog_post1.cons")}
+                    </Text>
+                    <List type="ordered" withPadding className={classes.text}>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.cons1")}</span>{t("blog_post1.cons1_description")}</List.Item>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.cons2")}</span>{t("blog_post1.cons2_description")}</List.Item>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.cons3")}</span>{t("blog_post1.cons3_description")}</List.Item>
+                    </List>
+                    <Title order={2} className={classes.header} mt={'4rem'}>
+                        {t("blog_post1.header3")}
+                    </Title>
+                    <Text className={classes.text} mt={'1rem'}>
+                        {t("blog_post1.text3")}
+                    </Text>
+                    <List type="ordered" withPadding className={classes.text}>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.cost1")}</span>{t("blog_post1.cost1_description")}</List.Item>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.cost2")}</span>{t("blog_post1.cost2_description")}</List.Item>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.cost3")}</span>{t("blog_post1.cost3_description")}</List.Item>
+                    </List>
+                    <Title order={2} className={classes.header} mt={'4rem'}>
+                        {t("blog_post1.header4")}
+                    </Title>
+                    <Text className={classes.text} mt={'1rem'}>
+                        {t("blog_post1.text4")}
+                    </Text>
+                    <List type="ordered" withPadding className={classes.text}>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.point1")}</span>{t("blog_post1.point1_description")}</List.Item>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.point2")}</span>{t("blog_post1.point2_description")}</List.Item>
+                        <List.Item mt={'md'}><span style={{fontWeight: "bolder"}}>{t("blog_post1.point3")}</span>{t("blog_post1.point3_description")}</List.Item>
+                    </List>
+                    <Text className={classes.text} mt={'4rem'} mb={'4rem'}>
+                        {t("blog_post1.conclusion")}
+                    </Text>
+
                 </Container>
+
+                {/* call to action */}
+                <WebsitesOffer></WebsitesOffer>
             </MantineProvider>
         </>
     )
