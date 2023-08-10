@@ -1,26 +1,16 @@
 import { Link } from 'react-router-dom';
-import { createStyles, SimpleGrid, Card, Image, Text, Container, AspectRatio } from '@mantine/core';
+import { createStyles, SimpleGrid, Card, Text, Container, AspectRatio } from '@mantine/core';
 import { useTranslation } from 'react-i18next';
+//covers
+import cover from './../assets/blog/wordpress.jpg'
 
 
 const mockdata = [
   {
-    url: 'blog_post3.url',
-    title: 'blog_post3.title',
-    image: 'blog_post3.image',
-    date: 'blog_post3.date',
-  },
-  {
-    url: 'blog_post2.url',
-    title: 'blog_post2.title',
-    image: 'blog_post2.image',
-    date: 'blog_post2.date',
-  },
-  {
     url: 'blog_post1.url',
     title: 'blog_post1.title',
-    image: 'blog_post1.image',
     date: 'blog_post1.date',
+    cover: cover,
   },
 ];
 
@@ -49,15 +39,15 @@ export function BlogGrid() {
   const cards = mockdata.map((article) => (
     <Link to={t(`${article.url}`)} style={{textDecoration: 'none'}}>
         <Card key={article.title} p="md" radius="md" className={classes.card}>
-        <AspectRatio ratio={1920 / 1080}>
-            <Image src={t(`${article.image}`)} />
-        </AspectRatio>
-        <Text color="dimmed" size="xs" transform="uppercase" weight={700} mt="md">
-            {t(`${article.date}`)}
-        </Text>
-        <Text className={classes.title} mt={5}>
-            {t(`${article.title}`)}
-        </Text>
+          <AspectRatio ratio={1920 / 1080}>
+              <img src={t(`${article.cover}`)} alt={t(`${article.title}`)} title={t(`${article.title}`)} loading='lazy' width={424} height={238} />
+          </AspectRatio>
+          <Text color="dimmed" size="xs" transform="uppercase" weight={700} mt="md">
+              {t(`${article.date}`)}
+          </Text>
+          <Text className={classes.title} mt={5}>
+              {t(`${article.title}`)}
+          </Text>
         </Card>
     </Link>
   ));

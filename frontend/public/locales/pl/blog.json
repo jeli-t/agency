@@ -1,20 +1,7 @@
 {
     "blog_post1": {
-        "url": "https://jeli.pl/blog/post1",
-        "title": "Post 1",
-        "image": "https://jeli.pl/img/writing-a-blog.png",
-        "date": "August 09, 2023"
-    },
-    "blog_post2": {
-        "url": "https://jeli.pl/blog/post2",
-        "title": "Post 2",
-        "image": "https://jeli.pl/img/writing-a-blog.png",
-        "date": "August 10, 2023"
-    },
-    "blog_post3": {
-        "url": "https://jeli.pl/blog/post3",
-        "title": "Post 3",
-        "image": "https://jeli.pl/img/writing-a-blog.png",
-        "date": "August 11, 2023"
+        "url": "/blog/is-wordpress-right-for-you",
+        "title": "Czy WordPress jest dla Ciebie odpowiedni?",
+        "date": "10 Sierpnia 2023"
     }
 }

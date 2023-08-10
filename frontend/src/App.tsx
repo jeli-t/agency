@@ -5,7 +5,9 @@ import { useLocalStorage } from '@mantine/hooks';
 import ScrollToTop from './components/ScrollToTop';
 import { HeaderMenu } from './components/HeaderMenu';
 import { Footer } from './components/Footer';
+import { useTranslation } from 'react-i18next';
 
+// pages
 import HomePage from './pages/HomePage';
 import GetStarted from './pages/GetStarted';
 import Report from './pages/Report';
@@ -22,7 +24,9 @@ import Pricing from './pages/Pricing';
 import Blog from './pages/Blog';
 import UnderConstructionPage from './pages/UnderConstructionPage';
 import NotFoundPage from './pages/NotFoundPage';
-import { useTranslation } from 'react-i18next';
+
+// blog posts
+import Wordpress from './blog_posts/Wordpress';
 
 
 export default function App() {
@@ -60,6 +64,9 @@ export default function App() {
                             <Route path='/polityka-prywatnosci' element={<PolitykaPrywatnosci />} />
                             <Route path='/pricing' element={<Pricing />} />
                             <Route path='/blog' element={<Blog />} />
+                            {/* blog posts */}
+                            <Route path='/blog/is-wordpress-right-for-you' element={<Wordpress />} />
+
                             <Route path='*' element={<NotFoundPage />} />
                         </Routes>
                     </AppShell>
