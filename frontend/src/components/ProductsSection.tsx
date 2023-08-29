@@ -68,7 +68,7 @@ const useStyles = createStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'left',
 
         [theme.fn.smallerThan('lg')]: {
             width: '50%',
@@ -129,7 +129,7 @@ const useStyles = createStyles((theme) => ({
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
-        fontWeight: 600,
+        fontWeight: 400,
         padding: 5,
 
         [theme.fn.smallerThan('lg')]: {
@@ -142,7 +142,7 @@ const useStyles = createStyles((theme) => ({
     },
 
     button: {
-        margin: 10,
+        marginTop: 30,
         color: theme.white,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
