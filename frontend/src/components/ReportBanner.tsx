@@ -69,7 +69,7 @@ const useStyles = createStyles((theme) => ({
       color: theme.white,
       fontFamily: `Roboto, ${theme.fontFamily}`,
       fontSize: rem(24),
-      fontWeight: 600,
+      fontWeight: 400,
   
       [theme.fn.smallerThan('xs')]: {
           width: 140,
@@ -99,12 +99,12 @@ export function ReportBanner() {
                     </Text>
                     <div>
                         <Link to='/contact'>
-                            <Button className={classes.button} size='lg' radius='md'>
+                            <Button className={classes.button} size='md' radius='md'>
                                 {t("report_banner.button1")}
                             </Button>
                         </Link>
                         <Link to='/blog'>
-                            <Button className={classes.button} size='lg' radius='md'>
+                            <Button className={classes.button} size='md' radius='md'>
                                 {t("report_banner.button2")}
                             </Button>
                         </Link>
