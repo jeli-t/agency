@@ -29,15 +29,15 @@ const useStyles = createStyles((theme) => ({
     title: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(24),
+        fontSize: rem(26),
         fontWeight: 600,
 
         [theme.fn.smallerThan('lg')]: {
-            fontSize: rem(20),
+            fontSize: rem(24),
         },
 
         [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(18),
+            fontSize: rem(20),
         },
     },
 
@@ -55,22 +55,32 @@ const useStyles = createStyles((theme) => ({
     description: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(16),
-        fontWeight: 500,
+        fontSize: rem(20),
+        fontWeight: 400,
+        marginRight: 160,
+
+        [theme.fn.smallerThan('lg')]: {
+            fontSize: rem(18),
+            marginRight: 0,
+        },
+
+        [theme.fn.smallerThan('sm')]: {
+            fontSize: rem(16),
+        },
     },
 
     price: {
         color: theme.primaryColor,
         fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(24),
+        fontSize: rem(26),
         fontWeight: 600,
 
         [theme.fn.smallerThan('lg')]: {
-            fontSize: rem(20),
+            fontSize: rem(24),
         },
 
         [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(18),
+            fontSize: rem(20),
         },
     },
 }));
