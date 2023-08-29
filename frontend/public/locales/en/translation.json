@@ -137,7 +137,7 @@
         "question9": "Where should we send the report?",
         "placeholder9": "email@example.com",
         "terms": "I agree to receive marketing information",
-        "button": "Request a free report",
+        "button": "Request a free personalized strategy",
         "error": "Please fill out the entire form",
         "email_error": "Invalid email address",
         "terms_error": "You must accept this consent"

@@ -35,7 +35,7 @@ const useStyles = createStyles((theme) => ({
     },
 
     button: {
-        width: '90%',
+        margin: 'auto',
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
         fontWeight: 600,
@@ -140,7 +140,7 @@ export function Survey() {
                     </Flex>
                 </Radio.Group>
 
-                <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
+                <Divider my='xl' style={{height: '10px', width: '100%'}} size='md' variant='dotted' color='orange' />
 
                 <Radio.Group name='industry' required onChange={(value)=>setIndustry(value)} label={t("survey.question2")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
@@ -148,7 +148,7 @@ export function Survey() {
                     </Flex>
                 </Radio.Group>
 
-                <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
+                <Divider my='xl' style={{height: '10px', width: '100%'}} size='md' variant='dotted' color='orange' />
 
                 <Radio.Group name='company_size' required onChange={(value)=>setCompanySize(value)} label={t("survey.question3")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
@@ -159,7 +159,7 @@ export function Survey() {
                     </Flex>
                 </Radio.Group>
 
-                <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
+                <Divider my='xl' style={{height: '10px', width: '100%'}} size='md' variant='dotted' color='orange' />
 
                 <Radio.Group name='main_goal' required onChange={(value)=>setMainGoal(value)} label={t("survey.question4")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
@@ -172,7 +172,7 @@ export function Survey() {
                     </Flex>
                 </Radio.Group>
 
-                <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
+                <Divider my='xl' style={{height: '10px', width: '100%'}} size='md' variant='dotted' color='orange' />
 
                 <Radio.Group name='budget' required onChange={(value)=>setBudget(value)} label={t("survey.question5")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
@@ -180,7 +180,7 @@ export function Survey() {
                     </Flex>
                 </Radio.Group>
 
-                <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
+                <Divider my='xl' style={{height: '10px', width: '100%'}} size='md' variant='dotted' color='orange' />
 
                 <Radio.Group name='website' required onChange={(value)=>setWebsite(value)} label={t("survey.question6")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
@@ -190,7 +190,7 @@ export function Survey() {
                     </Flex>
                 </Radio.Group>
 
-                <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
+                <Divider my='xl' style={{height: '10px', width: '100%'}} size='md' variant='dotted' color='orange' />
 
                 <Radio.Group name='social_media' required onChange={(value)=>setSocialMedia(value)} label={t("survey.question7")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
@@ -200,7 +200,7 @@ export function Survey() {
                     </Flex>
                 </Radio.Group>
 
-                <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
+                <Divider my='xl' style={{height: '10px', width: '100%'}} size='md' variant='dotted' color='orange' />
 
                 <Radio.Group name='advertising' required onChange={(value)=>setAdvertising(value)} label={t("survey.question8")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
@@ -210,7 +210,7 @@ export function Survey() {
                     </Flex>
                 </Radio.Group>
 
-                <Divider my='xl' style={{height: '10px', width: '100%'}} size='xl' variant='dotted' color='orange' />
+                <Divider my='xl' style={{height: '10px', width: '100%'}} size='md' variant='dotted' color='orange' />
 
                 <Radio.Group name='email' required onChange={(value)=>setEmail(value)} label={t("survey.question9")} size='2xl' fz={30} fw={600} className={classes.question}>
                     <Flex direction="column" gap="sm" my='md'>
