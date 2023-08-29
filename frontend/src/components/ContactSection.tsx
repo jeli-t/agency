@@ -88,7 +88,7 @@ const useStyles = createStyles((theme) => ({
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
-        fontWeight: 600,
+        fontWeight: 400,
 
         [theme.fn.smallerThan('lg')]: {
             fontSize: rem(20),
@@ -111,7 +111,7 @@ const useStyles = createStyles((theme) => ({
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(30),
-        fontWeight: 500,
+        fontWeight: 400,
         display: 'inline-flex',
         marginLeft: 10,
 
