@@ -1,4 +1,4 @@
-import { Container, Title, Accordion, createStyles, rem } from '@mantine/core';
+import { Container, Title, Accordion, createStyles, rem, Text } from '@mantine/core';
 import { useTranslation } from 'react-i18next';
 
 
@@ -44,6 +44,16 @@ const useStyles = createStyles((theme) => ({
       theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
     }`,
   },
+
+  question: {
+    fontFamily: `Roboto, ${theme.fontFamily}`,
+    fontSize: theme.fontSizes.xl,
+  },
+
+  answer: {
+    fontFamily: `Roboto, ${theme.fontFamily}`,
+    fontSize: theme.fontSizes.lg,
+  },
 }));
 
 
@@ -59,10 +69,14 @@ export function Question({ question, answer }: QuestionProps) {
   return (
     <Accordion.Item className={classes.item} value={t(`${question}`)}>
       <Accordion.Control>
-        {t(`${question}`)}
+        <Text className={classes.question}>
+          {t(`${question}`)}
+        </Text>
       </Accordion.Control>
       <Accordion.Panel>
-        {t(`${answer}`)}
+        <Text className={classes.answer}>
+          {t(`${answer}`)}
+        </Text>
       </Accordion.Panel>
     </Accordion.Item>
   );
