@@ -41,6 +41,8 @@ const useStyles = createStyles((theme) => ({
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
         fontWeight: 600,
+        marginTop: 10,
+        marginBottom: 10,
 
         [theme.fn.smallerThan('lg')]: {
             fontSize: rem(20),
