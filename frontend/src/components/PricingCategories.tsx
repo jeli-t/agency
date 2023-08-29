@@ -16,7 +16,7 @@ const useStyles = createStyles((theme) => ({
     title: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(26),
+        fontSize: rem(30),
         fontWeight: 600,
 
         [theme.fn.smallerThan('lg')]: {
