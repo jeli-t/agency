@@ -37,10 +37,11 @@ const useStyles = createStyles((theme) => ({
       },
 
     text: {
+        marginTop: 20,
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(34),
-        fontWeight: 500,
+        fontWeight: 400,
         textAlign: 'center',
 
         [theme.fn.smallerThan('xs')]: {
@@ -71,8 +72,8 @@ const useStyles = createStyles((theme) => ({
         margin: 20,
         color: theme.white,
         fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(40),
-        fontWeight: 600,
+        fontSize: rem(30),
+        fontWeight: 400,
         backgroundImage: 'linear-gradient(133deg, #fd7e14 0%, #fa5252 100%)',
         transition: '0.2s',
         opacity: 1,
@@ -107,7 +108,7 @@ export function CallToAction() {
                 {t("call_to_action.text2")}
             </Text>
             <Link to='/get-started'>
-                <Button className={classes.button} size='xl' radius='md'>
+                <Button className={classes.button} size='lg' radius='md'>
                     {t("call_to_action.button")}
                 </Button>
             </Link>
