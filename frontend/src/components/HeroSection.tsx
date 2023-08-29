@@ -19,22 +19,19 @@ const useStyles = createStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundImage: theme.colorScheme === 'dark' ? 'radial-gradient(#ff8700 1.7px, #000000 1.7px)' : 'radial-gradient(#ff8700 1.7px, #ffffff 1.7px)',
+        backgroundImage: theme.colorScheme === 'dark' ? 'radial-gradient(#ff8700 1px, #000000 1px)' : 'radial-gradient(#ff8700 1px, #ffffff 1px)',
         backgroundSize: '40px 40px',
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center center',
 
         [theme.fn.smallerThan('xs')]: {
-            backgroundImage: 'none',
-            backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[8] : theme.colors.gray[1],
             paddingBottom: '30vh',
         },
     },
 
     logo: {
-        width: '20rem',
+        width: '30rem',
         height: 'auto',
-        marginBottom: theme.spacing.lg,
 
         [theme.fn.smallerThan('xs')]: {
             width: '15rem',
@@ -47,6 +44,7 @@ const useStyles = createStyles((theme) => ({
         fontSize: rem(24),
         fontWeight: 600,
         padding: 5,
+        marginTop: 20,
         backgroundColor: theme.colorScheme === 'dark' ? theme.black : theme.white,
         maxWidth: '90%',
         textAlign: 'center',
@@ -72,7 +70,7 @@ const useStyles = createStyles((theme) => ({
         color: theme.black,
 
         [theme.fn.smallerThan('xs')]: {
-            paddingLeft: 10,
+            paddingLeft: 20,
             border: '2px solid',
         },
     },
@@ -122,12 +120,12 @@ const useStyles = createStyles((theme) => ({
     },
 
     button: {
-        margin: 10,
+        marginTop: 20,
         color: theme.white,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
         fontWeight: 600,
-    
+
         [theme.fn.smallerThan('xs')]: {
           fontSize: rem(16),
         },
