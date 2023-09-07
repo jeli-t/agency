@@ -1,8 +1,7 @@
 import { createStyles, useMantineTheme, Header, Group, Burger, Container, rem, Title, useMantineColorScheme, Switch, Drawer, Text, Menu, Button, Divider } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link'
 import { IconChevronDown, IconMoonStars, IconSun, IconMenu2 } from '@tabler/icons-react';
-import { useEffect } from 'react';
 import logoLight from './../assets/logoLight.png';
 import { useTranslation, Trans } from 'react-i18next';
 
@@ -302,16 +301,12 @@ export function HeaderMenu() {
   const [opened, { open, close }] = useDisclosure(false);
   const { t, i18n } = useTranslation();
 
-  const location = useLocation();
-  useEffect(() => {
-    close();
-  }, [location])
 
   const items = mockdata.map((link) => {
     return (
       <Link
         key={link.label}
-        to={link.link}
+        href={link.link}
         className={classes.link}
       >
         {t(link.label)}
@@ -324,7 +319,7 @@ export function HeaderMenu() {
       <Container size='fluid' className={classes.header_container}>
         <div className={classes.inner}>
           <div className={classes.logo}>
-            <Link to='/'>
+            <Link href='/'>
               <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89' />
             </Link>
           </div>
@@ -350,7 +345,7 @@ export function HeaderMenu() {
           <Header height={56} className={classes.header} mb={120}>
             <Container size='fluid'>
               <div className={classes.inner}>
-                <Link to='/'>
+                <Link href='/'>
                   <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89'/>
                 </Link>
                 <Burger

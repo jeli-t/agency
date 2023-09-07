@@ -1,8 +1,6 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import dynamic from 'next/dynamic'
 import { MantineProvider, ColorSchemeProvider, ColorScheme, AppShell } from '@mantine/core';
-import { BrowserRouter } from 'react-router-dom';
 import CookieConsent from "react-cookie-consent";
 import { useLocalStorage } from '@mantine/hooks';
 import ScrollToTop from '../components/ScrollToTop';
@@ -34,13 +32,10 @@ export default function App(props: AppProps) {
 
             <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
                 <MantineProvider withGlobalStyles withNormalizeCSS theme={{primaryColor: 'orange', colorScheme}}>
-                    {/* <CookieConsent style={{paddingLeft: 20, paddingRight: 20}} buttonText={t("cookie_consent.button")}>{t("cookie_consent.text1")}<a href={t("cookie_consent.privacy_link")}>{t("cookie_consent.link_text")}</a> {t("cookie_consent.text2")}</CookieConsent> */}
-                    {/* <BrowserRouter> */}
-                        {/* <ScrollToTop></ScrollToTop> */}
-                        {/* <AppShell header={<HeaderMenu />} footer={<Footer />} padding={0}> */}
+                    <CookieConsent style={{paddingLeft: 20, paddingRight: 20}} buttonText={t("cookie_consent.button")}>{t("cookie_consent.text1")}<a href={t("cookie_consent.privacy_link")}>{t("cookie_consent.link_text")}</a> {t("cookie_consent.text2")}</CookieConsent>
+                        <AppShell header={<HeaderMenu />} footer={<Footer />} padding={0}>
                             <Component {...pageProps} />
-                        {/* </AppShell> */}
-                    {/* </BrowserRouter> */}
+                        </AppShell>
                 </MantineProvider>
             </ColorSchemeProvider>
         </>
