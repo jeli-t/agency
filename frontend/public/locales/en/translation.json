@@ -1,0 +1,400 @@
+{
+    "header": {
+        "home": "Home page",
+        "solutions": "Solutions",
+        "pricing": "Pricing",
+        "blog": "Blog",
+        "about": "About",
+        "contact": "Contact",
+        "get_started": "Get started"
+    },
+    "footer": {
+        "title1": "Navigation",
+        "home": "Home page",
+        "solutions": "Solutions",
+        "pricing": "Pricing",
+        "blog": "Blog",
+        "about": "About",
+        "contact": "Contact",
+        "get_started": "Get started",
+        "title2": "Solutions",
+        "solution1": "Websites",
+        "solution2": "Search Engine Optimization",
+        "solution3": "Social media",
+        "solution4": "Digital marketing",
+        "title3": "Other",
+        "privacy": "Privacy policy",
+        "privacy_link": "/privacy-policy"
+    },
+    "cookie_consent": {
+        "text1": "This website uses cookies. By staying on the site, you accept the cookies and ",
+        "privacy_link": "/privacy-policy",
+        "link_text": "Privacy Policy",
+        "text2": " of this website.",
+        "button": "Accept all cookies"
+    },
+    "hero": {
+        "title": "Jeli Digital Agency - Your trusted partner in the digital world",
+        "button": "Contact",
+        "search1": "Websites",
+        "search2": "Search Engine Optimization",
+        "search3": "Social media",
+        "search4": "Digital marketing"
+    },
+    "about_section": {
+        "title": "Make yourself ",
+        "title_highlight": "visible",
+        "description": "If you are not on the Internet, you do not exist. Digital marketing is the fastest way to grow your business nowadays. Check out our solutions and gain a competitive edge in the digital world.",
+        "feature1": "Websites",
+        "description1": "Design, UI/UX, development, hosting, domains",
+        "feature2": "Search Engine Optimization",
+        "description2": "SEO, SEM, Google Business Profil",
+        "feature3": "Social media",
+        "description3": "Management, Advertising campaigns",
+        "feature4": "And more...",
+        "description4": "Google Ads, blogs, mailing and newsletter"
+    },
+    "products_section": {
+        "button": "Read more",
+        "title1": "Websites",
+        "description1": "A website is crucial for businesses for many reasons, and in the digital age it has become a fundamental component of any successful business strategy. Take a look what benefits it can bring to you and how we can help you with that.",
+        "title2": "Search Engine Optimization",
+        "description2": "Already have a website? Good, now it's important to make sure it shows up when someone tries to google your business. You don't have to look for customers, they are already looking for you. Just let them know you exist.",
+        "title3": "Social media",
+        "description3": "Social media is one of the most important elements of building a brand nowadays. Social media is also one of the best places to run advertising campaigns and reach new customers. Find out how to build an effective strategy.",
+        "title4": "Much more",
+        "description4": "Digital marketing has much more potential. Google Ads? Running a blog about your business and industry? Mailing and newsletters? Webinars? Affiliate marketing? Here you will find plenty of ideas on how to grow your business online."
+    },
+    "call_to_action": {
+        "title": "Not sure where to start?",
+        "text1": "Get a ",
+        "text_highlight": "free",
+        "text2": " personalized strategy and offer",
+        "button": "Get started"
+    },
+    "contact_section": {
+        "title": "Stay in touch",
+        "text": "Write to us what you need. We are happy to answer all your questions. If you want, we can also arrange a video consultation and prepare your marketing strategy for free.",
+        "faq": "Please check the FAQ section below."
+    },
+    "about_us": {
+        "title": "Who are we?",
+        "text": "Jeli Digital Agency is a modern, dynamically growing company from Poland. We are a small team of young people with passion, but we often cooperate with freelancers from all over the world, so that the services we prepare for you are always of the highest quality. We love new challenges and sharing our knowledge on our blog and social media."
+    },
+    "our_process": {
+        "title": "Our Process",
+        "step1": "Information gathering",
+        "description1": "We collect basic information about your business and marketing goals. Check out the Get started section or contact us directly.",
+        "step2": "Project planning",
+        "description2": "We prepare an operation plan and marketing strategy for your company. You accept the proposal and we start the project.",
+        "step3": "Team building",
+        "description3": "Based on the needs of the project, we choose the technologies we will use and form a team that will be responsible for its development.",
+        "step4": "Project development",
+        "description4": "We start working on the project to meet your marketing goals. We stay in touch and make adjustments all the time.",
+        "step5": "Success",
+        "description5": "The strategy is working, and your business is growing faster than ever before."
+    },
+    "get_started_banner": {
+        "title": "Not sure where to start?",
+        "text" : "Answer a few questions below. We will prepare a free personalized strategy and offer for your business. The survey should take no more than 5 minutes. It is non-committal and we will prepare a report within 24 hours."
+    },
+    "survey": {
+        "question1": "What type of business do you run?",
+        "answer1a": "Local services",
+        "answer1b": "Online services",
+        "answer1c": "Local shop",
+        "answer1d": "Online shop",
+        "answer1e": "Other (write below)",
+        "placeholder1": "Type of business",
+        "question2": "What industry do you operate in?",
+        "placeholder2": "Your industry",
+        "question3": "What is the size of the company?",
+        "answer3a": "Micro (1-9 people)",
+        "answer3b": "Small (10-49 people)",
+        "answer3c": "Medium (50-249 people)",
+        "answer3d": "Large (250+ people)",
+        "question4": "What is your main goal?",
+        "answer4a": "Start a new online business",
+        "answer4b": "Bring my local business to the Internet",
+        "answer4c": "Build a recognizable brand",
+        "answer4d": "Reach new customers",
+        "answer4e": "Other (write below)",
+        "placeholder4": "Other goal",
+        "question5": "What is your budget for digital marketing?",
+        "placeholder5": "Your monthly budget in dollars",
+        "question6": "Do you have a website?",
+        "answer6a": "No",
+        "answer6b": "Yes (If you would like us to audit your website, please provide the link below)",
+        "placeholder6": "https://example.com",
+        "question7": "Do you have social media?",
+        "answer7a": "No",
+        "answer7b": "Yes (If you would like us to audit your social media, please provide the link below)",
+        "placeholder7": "https://www.instagram.com/jeli_agency/",
+        "question8": "Do you use any online advertising?",
+        "answer8a": "No",
+        "answer8b": "Yes (Please write below)",
+        "placeholder8": "Facebook Ads, mailing, other?",
+        "question9": "Where should we send the report?",
+        "placeholder9": "email@example.com",
+        "terms": "I agree to receive marketing information",
+        "button": "Request a free personalized strategy",
+        "error": "Please fill out the entire form",
+        "email_error": "Invalid email address",
+        "terms_error": "You must accept this consent"
+    },
+    "report_banner": {
+        "title": "That's it!",
+        "text": "We are preparing a report for you. It should be ready within 24 hours. Do you have any questions? Write to us. If you are looking for more digital marketing knowledge, check out our blog.",
+        "button1": "Contact",
+        "button2": "Blog"
+    },
+    "pricing_banner": {
+        "title": "Our Pricing Guide",
+        "text1": "First of all, every project is different, and the scope of services may vary depending on your marketing goals and the type of business. We price each project separately. The following prices are for reference only.",
+        "text2": "If you would like to receive a free personalized pricing and strategy for your business, check out the Get started section or contact us directly to schedule a free video consultation."
+    },
+    "pricing_categories": {
+        "websites": "Websites",
+        "seo": "Search Engine Optimization",
+        "social_media": "Social media",
+        "other": "Other"
+    },
+    "pricing_website": {
+        "product1": "Wordpress website",
+        "description1": "Simple website based on wordpress system. Easy to edit by yourself, blog functionality, mobile-friendly, basic on-page SEO optimization. Assistance with domain and hosting selection. Price does not include any stock images, domain, hosting and additional paid wordpress plugins.",
+        "price1": "300$",
+        "product2": "Custom website / Web app",
+        "description2": "Custom website project or simple web app. All tailored to your needs. Professional UI/UX design, React JS frontend, fast loading times, mobile-friendly, on-page SEO optimization, databases, authentication system, backend and API in Python Django. Assistance with domain and hosting selection. Price does not include any stock images, domain and hosting.",
+        "price2": "800$",
+        "product3": "Hosting + SSL + Backup + email",
+        "description3": "Fast hosting for your website. Let's Encrypt SSL certificate (your page will have a green padlock and 'https' in URL). Website backup each week. Email address in your domain.",
+        "price3": "12$/month",
+        "product4": "Additional maintenance",
+        "description4": "Additional help with your website. Updates, visual improvements, adding new functionality and elements.",
+        "price4": "12$/hour"
+    },
+    "pricing_seo": {
+        "product1": "On-Page Optimization",
+        "description1": "Detailed keyword analysis, optimizing individual pages by including specific keywords in titles, meta tags, headings, content and URLs, improving loading times and overall user experience",
+        "price1": "150$",
+        "product2": "Off-Page Optimization",
+        "description2": "Building your site's authority and credibility through links and articles from other companies in your industry.",
+        "price2": "40$/link",
+        "product3": "Local SEO",
+        "description3": "Design and maintenance of Google My Business profile, on-page optimization for your city / area.",
+        "price3": "50$/month",
+        "product4": "Search Engine Marketing (SEM)",
+        "description4": "Preparing an advertising campaign. Targeting specific keywords and locations. This is the base price only for the preparation and handling of the campaign.",
+        "price4": "150$/month"
+    },
+    "pricing_social_media": {
+        "product1": "Management",
+        "description1": "Designing a profile, regular publishing of prepared content, responding to messages and building a community. This is the base price for 1 social media channel (Facebook or Instagram) for an account with up to 1,000 followers.",
+        "price1": "100$/month",
+        "product2": "Advertising",
+        "description2": "Preparing an advertising campaign. Targeting specific demographics, interests, behaviors, and locations. This is the base price only for the preparation and handling of the campaign.",
+        "price2": "200$/month"
+    },
+    "pricing_other": {
+        "product1": "Blog copywriting",
+        "description1": "Preparing content for a blog on a given topic. Targeting specific keywords and linking to your products or services. This is an estimated price for a 1000-word post.",
+        "price1": "20$/post",
+        "product2": "Google Ads",
+        "description2": "Preparing an advertising campaign. Targeting specific demographics, interests, behaviors, and locations. This is the base price only for the preparation and handling of the campaign.",
+        "price2": "150$/month",
+        "product3": "Newsletter / email marketing",
+        "description3": "We will add a newsletter feature to your website/blog and run an email marketing campaigns.",
+        "price3": "50$/month"
+    },
+    "blog_banner": {
+        "title": "Welcome to our blog",
+        "text": "Here we share our knowledge and experience in web development, search engine optimization, social media marketing and many other topics related to building brand image and marketing on the Internet."
+    },
+    "solution_categories": {
+        "solution1": "Websites",
+        "solution2": "Search Engine Optimization",
+        "solution3": "Social media",
+        "solution4": "Digital marketing"
+    },
+    "websites_banner": {
+        "title": "Why the website is so important?",
+        "text": "In today's digital age, the vast majority of consumers search for products, services, and information online. Without a website, your business may be virtually invisible to potential customers. Having a website allows you to establish an online presence, making it easier for people to find and learn about your business. A well-designed and professional website can significantly boost your business's credibility and trustworthiness."
+    },
+    "good_website": {
+        "title": "What makes a good website?",
+        "text": "Website development involves multiple elements that together contribute to an excellent user experience and a successful online presence. If you want to build a good website for your business, you need to consider these few things.",
+        "feature1": "User-Friendly Interface",
+        "description1": "A good website is easy to navigate, with a clear and intuitive user interface. Visitors should be able to find information quickly and access important sections without confusion. A well-organized menu and logical page layout are essential.",
+        "feature2": "Mobile Responsiveness",
+        "description2": "With the increasing use of mobile devices, a good website must be optimized for various screen sizes. It should adapt seamlessly to different devices, ensuring that users have a positive experience regardless of whether they access the site on a desktop, tablet, or smartphone.",
+        "feature3": "High-Quality Content",
+        "description3": "Content is king, and a good website provides valuable, relevant, and well-presented content to its visitors. This includes engaging text, captivating images, informative videos, and other multimedia elements that enhance the user experience.",
+        "feature4": "Search Engine Optimization",
+        "description4": "A good website is optimized for search engines, making it more likely to appear in search results. Proper use of keywords, meta tags, and high-quality content are some of the elements that contribute to good SEO practices.",
+        "feature5": "Fast Loading Times",
+        "description5": "Users have limited patience for slow-loading websites. A good website is optimized for speed, ensuring that pages load quickly. This optimization can include image compression, efficient coding, and reliable hosting.",
+        "feature6": "Many more...",
+        "description6": "There are many other things that are important if you want to build a successful website. If you are looking for more web development knowledge, check out our blog."
+    },
+    "build_website": {
+        "title": "How to build a website?",
+        "text": "There is a long way from an idea to a working website. If you have already decided to build your website, you need to answer some questions. How much time can you spend? How much money to spend? Do you want to use a website builder or hire professionals? What technology should you use? Where to buy a domain name and hosting? What are the stages of creating a website and how do you get started? Check out how the professionals do it."
+    },
+    "websites_process": {
+        "title": "Our Process",
+        "step1": "Information gathering",
+        "description1": "We collect basic information about your business and marketing goals. Check out the Get started section or contact us directly.",
+        "step2": "Project planning",
+        "description2": "We discuss in detail the scope of the website, the functionalities, the visual style and the content we will put on it.",
+        "step3": "Team building",
+        "description3": "Based on the needs of the project, we choose the technologies we will use and form a team that will be responsible for its development.",
+        "step4": "Project development",
+        "description4": "We start working on the website. We stay in touch and make improvements all the time to meet your expectations.",
+        "step5": "Success",
+        "description5": "Your website is up and running to grow your business online."
+    },
+    "websites_offer": {
+        "title": "Leave it to the professionals",
+        "text1": "The websites we design are not only supposed to look nice, but most importantly work well and grow your business. We develop different types of websites, from landing pages and business websites to small online stores. All tailored to your business needs. We provide a full, comprehensive service from design to hosting and maintenance.",
+        "text2": "Check out the Get started section for a free personalized strategy and pricing, or contact us directly to schedule a video consultation.",
+        "button1": "Get started",
+        "button2": "Contact"
+    },
+    "seo_banner": {
+        "title": "Search Engine Optimization (SEO)",
+        "text": "The majority of web traffic comes through search engines like Google, Bing, and Yahoo. SEO helps your website rank higher in search engine results, increasing its visibility to potential visitors. Higher rankings mean more organic (non-paid) traffic, as users are more likely to click on the top results. While it may take time to see significant results, SEO is a long-term strategy that can provide ongoing benefits once you establish a strong online presence."
+    },
+    "seo_key_areas": {
+        "title": "The key areas of SEO",
+        "text": "Search engine optimization encompasses various strategies and techniques to improve a site's visibility, rankings and overall online presence. The main areas of activity include:",
+        "feature1": "Keyword Research",
+        "description1": "Identifying and targeting relevant keywords and phrases that users frequently use to search for products, services, or information related to your website's content.",
+        "feature2": "On-Page Optimization",
+        "description2": "Optimizing individual web pages by incorporating targeted keywords into titles, meta tags, headings, content, and URLs. This also involves improving the overall user experience, ensuring the website is easy to navigate and read.",
+        "feature3": "Off-Page Optimization",
+        "description3": "Building the website's authority and credibility through external factors such as backlinks (links from other websites), social media presence, and online mentions.",
+        "feature4": "Local SEO",
+        "description4": "For businesses with a physical presence, optimizing to appear in local search results, such as Google My Business listings and local directories.",
+        "feature5": "Content Marketing",
+        "description5": "Creating high-quality, valuable, and relevant content that attracts and engages users. Content marketing is essential for both on-page optimization and attracting natural backlinks.",
+        "feature6": "Many more...",
+        "description6": "If you're looking for more SEO-related knowledge, check out our blog."
+    },
+    "seo_effects": {
+        "title": "SEO effectiveness",
+        "text": "SEO is a long-term strategy, and results may not be immediate. It takes time for search engines to index and rank pages, and for SEO efforts to gain momentum. Generally, it may take several months before significant improvements in rankings and organic traffic are noticeable. SEO is an ongoing process. Once you achieve good rankings, you need to maintain and continue optimizing your website and content to stay ahead of the competition and adapt to changing search engine algorithms. Take a look how we do that."
+    },
+    "seo_process": {
+        "title": "Our Process",
+        "step1": "Information gathering",
+        "description1": "We collect basic information about your business and marketing goals. Check out the Get started section or contact us directly.",
+        "step2": "Project planning",
+        "description2": "We discuss in detail the scope of the SEO, areas to focus and budget.",
+        "step3": "Keyword research",
+        "description3": "Identifying relevant keywords and phrases that users frequently use to search for products, services, or information related to your website's content.",
+        "step4": "Optimization",
+        "description4": "According to the agreed scope of work, we start on-page optimization, off-page optimization, local SEO efforts and SEM campaigns.",
+        "step5": "Success",
+        "description5": "Your website appears higher and higher in search results, leading to more organic traffic and more potential customers."
+    },
+    "seo_offer": {
+        "title": "To the moon",
+        "text1": "Let us do the work and move your website to the top of the search results. We will prepare a strategy tailored to your business and optimize your page to cover all the key areas of Search Engine Optimization.",
+        "text2": "Check out the Get started section for a free personalized strategy and pricing, or contact us directly to schedule a video consultation.",
+        "button1": "Get started",
+        "button2": "Contact"
+    },
+    "social_media_banner": {
+        "title": "The power of Social media",
+        "text": "The power of social media is undeniable and has had a profound impact on various aspects of society, communication, and business. Social media platforms have billions of daily active users, providing companies with the ability to reach a wide and diverse audience. By creating and sharing content on social media channels, you can connect with your target audiences, increase brand visibility, drive traffic to your website and achieve specific marketing goals. Don't miss this opportunity."
+    },
+    "social_media_strategy": {
+        "title": "Social media marketing strategy",
+        "text": "There are many ways to promote your products, services and brands on social media platforms. Depending on your business and marketing goals, you should build a strategy based on a combination of the following elements:",
+        "feature1": "Content Creation",
+        "description1": "Social media marketing involves producing various types of content, such as text posts, images, videos, infographics, and interactive content, tailored to the preferences of the target audience and the specific platform.",
+        "feature2": "Management",
+        "description2": "Managing social media accounts involves posting content regularly, responding to comments and messages, monitoring trends, and engaging with followers to build a loyal community.",
+        "feature3": "Advertising",
+        "description3": "Paid social media advertising allows businesses to reach a wider audience, target specific demographics, and promote their products or services to potential customers.",
+        "feature4": "Influencer Marketing",
+        "description4": "Collaborating with social media influencers, who have a significant and engaged following, can help businesses reach their target audience through authentic and trusted recommendations.",
+        "feature5": "Affiliate Marketing",
+        "description5": "This channel involves collaborating with partners who promote a business's products or services in exchange for a commission for each sale generated through their efforts.",
+        "feature6": "Many more...",
+        "description6": "Social media marketing is a dynamic and constantly evolving field. Check out our blog for up-to-date knowledge."
+    },
+    "social_media_worth": {
+        "title": "Is social media marketing worth it?",
+        "text": "Social media is an essential and powerful digital marketing tool. Compared to traditional advertising methods, social media marketing can be more cost-effective, making it suitable for businesses of all sizes. However, marketing effectiveness can vary depending on several factors, such as the nature of the business, the target audience and the platforms used. Successful social media marketing strategies require thoughtful content creation, consistent monitoring and adaptation to changing trends. Check out how we do it."
+    },
+    "social_media_process": {
+        "title": "Our Process",
+        "step1": "Information gathering",
+        "description1": "Collecting basic information about the company, marketing goals and identifying the target audience.",
+        "step2": "Profile design",
+        "description2": "Create a profile, setting up all descriptions and lead channels. Preparing a publication strategy.",
+        "step3": "Publication",
+        "description3": "Regular publishing of prepared content.",
+        "step4": "Building community",
+        "description4": "Responding to messages and comments from followers. Engaging and building a community.",
+        "step5": "Success",
+        "description5": "Your brand / company becomes more popular and trustworthy among customers."
+    },
+    "social_media_offer": {
+        "title": "Save your time",
+        "text1": "We will take care of your social media. We will manage your accounts and prepare advertising campaigns for your business. For now, we operate only on Facebook and Instagram.",
+        "text2": "Check out the Get started section for a free personalized strategy and pricing, or contact us directly to schedule a video consultation.",
+        "button1": "Get started",
+        "button2": "Contact"
+    },
+    "digital_marketing_banner": {
+        "title": "Digital marketing opportunities",
+        "text": "Digital marketing offers numerous opportunities for businesses to reach and engage with their target audience effectively. It allows for highly targeted advertising to reach specific demographics, interests, behaviors, and locations. This precision targeting increases the chances of converting leads into customers. Digital marketing has become an essential aspect of modern marketing for businesses of all sizes."
+    },
+    "digital_marketing_channels": {
+        "title": "Digital marketing channels",
+        "text": "There are many ways to reach potential customers and build your brand through digital marketing. Here are the most popular and effective marketing channels and techniques:",
+        "feature1": "Website",
+        "description1": "Having a website allows you to establish an online presence, making it easier for people to find and learn about your business, products and services.",
+        "feature2": "Social media",
+        "description2": "By creating and sharing content on social media channels, you can connect with your target audiences, increase brand visibility and drive traffic to your website.",
+        "feature3": "Search Engine Optimization",
+        "description3": "A good website is optimized for search engines, making it more likely to appear in search results. Higher page ranking = more leads.",
+        "feature4": "Advertising",
+        "description4": "You can run paid advertising campaigns using Google Ads or social media platforms such as Facebook, Instagram and others.",
+        "feature5": "Blog",
+        "description5": "Creating valuable and relevant content can position a business as an industry authority, attract potential customers, and foster trust with the audience.",
+        "feature6": "Affiliate Marketing",
+        "description6": "This channel involves collaborating with partners who promote a business's products or services in exchange for a commission for each sale generated through their efforts.",
+        "feature7": "Webinars and podcasts",
+        "description7": "You can hold webinars or host podcasts to educate, engage and build relationships with your target audience.",
+        "feature8": "Email Marketing",
+        "description8": "Companies use email to send targeted messages, newsletters and promotions to a list of subscribers and potential customers.",
+        "feature9": "Many more...",
+        "description9": "If you are looking for more digital marketing knowledge, check out our blog."
+    },
+    "digital_marketing_strategy": {
+        "title": "The best strategy?",
+        "text": "You may ask what is the best digital marketing strategy, and there is no one right answer. Selection of the channels depends on the business's goals, target audience, budget, and the nature of products or services being promoted. See how we build successful strategies step by step."
+    },
+    "digital_marketing_offer": {
+        "title": "Free personalized strategy",
+        "text": "If you would like to receive a free personalized strategy and offer for your business, check out the Get started section. If you want to ask about anything related to digital marketing, write us a message or contact us directly to schedule a free video consultation.",
+        "button1": "Get started",
+        "button2": "Contact"
+    },
+    "faq_section": {
+        "title": "Frequently Asked Questions",
+        "question1": "How much does a website cost?",
+        "answer1": "It all depends on the size of the project. Simple business pages cost around 300$, large custom websites and web apps starts from 800$. In addition to the cost of developing a website, you must be prepared to spend about $100 per year for hosting and domain name (we will help you choose the right one for your needs). Check our Pricing section or ask for personalized pricing.",
+        "question2": "What technologies do you use?",
+        "answer2": "We create most of the websites using Wordpress Elementor, so anyone can easily update information on the site without hiring a specialist. For more complex projects, we use React JS on frontend and Python Django on backend",
+        "question3": "How long does it take to make a website?",
+        "answer3": "It all depends on the size of the project. Simple business pages take a few days to a week, large custom projects can take up to a month.",
+        "question4": "Do you provide any support?",
+        "answer4": "Yes, we provide free support from the stage of preparation of the marketing strategy to the launch of the website and even after its final reception. We are always happy to answer all your questions and help you solve your problems.",
+        "question5": "Will I be able to edit my website?",
+        "answer5": "If you decide to go with a Wordpress website, we will show you how you can easily edit your site on your own at any time. If you need additional help implementing new features, we offer additional maintenance services at $12 per hour."
+    }
+}
