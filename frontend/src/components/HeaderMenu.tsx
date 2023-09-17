@@ -1,4 +1,5 @@
 import { createStyles, useMantineTheme, Header, Group, Burger, Container, rem, Title, useMantineColorScheme, Switch, Drawer, Text, Menu, Button, Divider } from '@mantine/core';
+import Image from 'next/image'
 import { useDisclosure } from '@mantine/hooks';
 import Link from 'next/link'
 import { IconChevronDown, IconMoonStars, IconSun, IconMenu2 } from '@tabler/icons-react';
@@ -327,7 +328,7 @@ export function HeaderMenu() {
         <div className={classes.inner}>
           <div className={classes.logo}>
             <Link href='/'>
-              <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89' />
+              <Image src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89' />
             </Link>
           </div>
           <Group spacing={10} className={classes.links}>
@@ -353,7 +354,7 @@ export function HeaderMenu() {
             <Container size='fluid'>
               <div className={classes.inner}>
                 <Link href='/'>
-                  <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89'/>
+                  <Image src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89'/>
                 </Link>
                 <Burger
                   opened={opened}

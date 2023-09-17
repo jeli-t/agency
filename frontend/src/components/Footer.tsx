@@ -1,4 +1,5 @@
 import { createStyles, Text, Container, ActionIcon, Group, rem, useMantineTheme } from '@mantine/core';
+import Image from 'next/image'
 import { IconBrandInstagram, IconMail, IconBrandFacebook } from '@tabler/icons-react';
 import Link from 'next/link'
 import logoDark from './../assets/logoDark.png';
@@ -119,7 +120,7 @@ export function Footer() {
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <Link href='/' style={{textDecoration: 'none'}}>
-          {theme.colorScheme === 'light' ? <img src={logoDark} alt="Logo jeli.pl" title='jeli.pl' loading='lazy' width='200' height='112' className={classes.logo} /> : <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='lazy' width='200' height='112' className={classes.logo} />}
+          {theme.colorScheme === 'light' ? <Image src={logoDark} alt="Logo jeli.pl" title='jeli.pl' loading='lazy' width='200' height='112' className={classes.logo} /> : <Image src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='lazy' width='200' height='112' className={classes.logo} />}
         </Link>
         <div className={classes.groups}>
           <div className={classes.wrapper}>
