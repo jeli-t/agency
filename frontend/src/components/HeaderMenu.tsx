@@ -3,11 +3,12 @@ import { useDisclosure } from '@mantine/hooks';
 import Link from 'next/link'
 import { IconChevronDown, IconMoonStars, IconSun, IconMenu2 } from '@tabler/icons-react';
 import logoLight from './../assets/logoLight.png';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'next-i18next'
+
 
 const lngs = {
   en: { nativeName: 'English' },
-  pl: { nativeName: 'Polski' },
+  pl: { nativeName: 'Polish' },
 };
 
 
@@ -235,7 +236,7 @@ const mockdata = [
 export function LanguageMenu() {
   const theme = useMantineTheme();
   const { classes } = useStyles();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Menu
@@ -250,13 +251,16 @@ export function LanguageMenu() {
         </Button>
       </Menu.Target>
       <Menu.Dropdown className={classes.dropdown}>
-          {Object.keys(lngs).map((lng) => (
-            <Menu.Item>
-              <button key={lng} className={classes.language_label} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-                {lngs[lng as keyof typeof lngs].nativeName}
-              </button>
-            </Menu.Item>
-          ))}
+        <Menu.Item>
+          <Link href="/" locale="pl" key={'Polish'} className={classes.language_label}>
+            Polish
+          </Link>
+        </Menu.Item>
+        <Menu.Item>
+          <Link href="/" locale="en" key={'English'} className={classes.language_label}>
+            English
+          </Link>
+        </Menu.Item>
       </Menu.Dropdown>
     </Menu>
   );
@@ -265,7 +269,7 @@ export function LanguageMenu() {
 export function ButtonsMenu() {
   const theme = useMantineTheme();
   const { classes } = useStyles();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Menu
@@ -279,13 +283,16 @@ export function ButtonsMenu() {
       </Menu.Target>
       <Menu.Dropdown className={classes.dropdown}>
         <Text className={classes.language_label} style={{fontSize: theme.fontSizes.xl}}>Language:</Text>
-        {Object.keys(lngs).map((lng) => (
-          <Menu.Item>
-            <button key={lng} className={classes.language_label} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-              {lngs[lng as keyof typeof lngs].nativeName}
-            </button>
-          </Menu.Item>
-        ))}
+        <Menu.Item>
+          <Link href="/" locale="pl" key={'Polish'} className={classes.language_label}>
+            Polish
+          </Link>
+        </Menu.Item>
+        <Menu.Item>
+          <Link href="/" locale="en" key={'English'} className={classes.language_label}>
+            English
+          </Link>
+        </Menu.Item>
         <Divider size='md' color={theme.colors.gray[5]}></Divider>
         <Menu.Item>
           <SwitchToggle />
@@ -299,7 +306,7 @@ export function HeaderMenu() {
   const theme = useMantineTheme();
   const { classes } = useStyles();
   const [opened, { open, close }] = useDisclosure(false);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
 
   const items = mockdata.map((link) => {
@@ -366,14 +373,15 @@ export function HeaderMenu() {
             </div>
             <Divider size='sm' w={'70%'} variant='solid' my='sm' color={theme.colors.gray[5]} />
             <Text className={classes.link}>Language:</Text>
-            {Object.keys(lngs).map((lng) => (
-              <button key={lng} className={classes.language_label} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-                {lngs[lng as keyof typeof lngs].nativeName}
-              </button>
-            ))}
+            <Link href="/" locale="pl" key={'Polish'} className={classes.language_label}>
+              Polish
+            </Link>
+            <Link href="/" locale="en" key={'English'} className={classes.language_label}>
+              English
+            </Link>
           </div>
         </Drawer>
       </Container>
     </Header>
   );
-} 
+}

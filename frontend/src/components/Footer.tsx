@@ -3,7 +3,7 @@ import { IconBrandInstagram, IconMail, IconBrandFacebook } from '@tabler/icons-r
 import Link from 'next/link'
 import logoDark from './../assets/logoDark.png';
 import logoLight from './../assets/logoLight.png';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 
 const useStyles = createStyles((theme) => ({
