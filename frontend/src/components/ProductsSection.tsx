@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import web_development from './../assets/web_development.svg'
 import seo from './../assets/seo.svg'
 import social_media from './../assets/social_media.svg'
 import marketing from './../assets/marketing.svg'
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -172,7 +172,7 @@ export function ProductsSection() {
                     <Text className={classes.text}>
                         {t("products_section.description1")}
                     </Text>
-                    <Link to='/websites'>
+                    <Link href='/websites'>
                         <Button className={classes.button} size='lg' radius='md'>
                             {t("products_section.button")}
                         </Button>
@@ -190,7 +190,7 @@ export function ProductsSection() {
                     <Text className={classes.text}>
                         {t("products_section.description2")}
                     </Text>
-                    <Link to='/search-engine-optimization'>
+                    <Link href='/search-engine-optimization'>
                         <Button className={classes.button} size='lg' radius='md'>
                             {t("products_section.button")}
                         </Button>
@@ -208,7 +208,7 @@ export function ProductsSection() {
                     <Text className={classes.text}>
                         {t("products_section.description3")}
                     </Text>
-                    <Link to='/social-media'>
+                    <Link href='/social-media'>
                         <Button className={classes.button} size='lg' radius='md'>
                             {t("products_section.button")}
                         </Button>
@@ -226,7 +226,7 @@ export function ProductsSection() {
                     <Text className={classes.text}>
                         {t("products_section.description4")}
                     </Text>
-                    <Link to='/digital-marketing'>
+                    <Link href='/digital-marketing'>
                         <Button className={classes.button} size='lg' radius='md'>
                             {t("products_section.button")}
                         </Button>

@@ -17,6 +17,7 @@ const useStyles = createStyles((theme) => ({
   header: {
     backgroundColor: theme.fn.variant({ variant: 'filled', color: theme.primaryColor }).background,
     borderBottom: 0,
+    margin: 0,
   },
 
   header_container: {
@@ -323,7 +324,7 @@ export function HeaderMenu() {
   });
 
   return (
-    <Header height={56} className={classes.header} mb={120}>
+    <Header height={56} className={classes.header}>
       <Container size='fluid' className={classes.header_container}>
         <div className={classes.inner}>
           <div className={classes.logo}>

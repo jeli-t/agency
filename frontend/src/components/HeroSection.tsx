@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
+import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
 import { IconSearch } from '@tabler/icons-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,8 +8,7 @@ import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import { useWindowScroll } from '@mantine/hooks';
 import logoDark from './../assets/logoDark.png';
 import logoLight from './../assets/logoLight.png';
-import { HashLink } from 'react-router-hash-link';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'next-i18next'
 
 
 const useStyles = createStyles((theme) => ({
@@ -146,7 +146,7 @@ export function HeroSection() {
 
     return (
         <div className={classes.container}>
-            {theme.colorScheme === 'light' ? <img src={logoDark} alt="Logo jeli.pl" title='jeli.pl' loading='eager' width='320' height='180' className={classes.logo} /> : <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' width='320' height='180' className={classes.logo} />}
+            {theme.colorScheme === 'light' ? <Image src={logoDark} alt="Logo jeli.pl" title='jeli.pl' loading='eager' width='320' height='180' className={classes.logo} /> : <Image src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' width='320' height='180' className={classes.logo} />}
             <div className={classes.search_bar}>
                 <TypeAnimation
                     sequence={[
@@ -177,15 +177,15 @@ export function HeroSection() {
             <Title className={classes.hero_title}>
                 {t("hero.title")}
             </Title>
-            <Link to='/contact'>
+            <Link href='/contact'>
                 <Button className={classes.button} size='lg' radius='md'>
                     {t("hero.button")}
                 </Button>
             </Link>
-            <HashLink to='/#Make-yourself-visible' smooth className={classes.link}>
+            <Link href='/#Make-yourself-visible'  className={classes.link}>
                 <FontAwesomeIcon icon={faAnglesDown} beat className={classes.scroll_icon_desktop} />
                 <FontAwesomeIcon icon={faAnglesDown} beat className={classes.scroll_icon_mobile} />
-            </HashLink>
+            </Link>
         </div>
     )
 }

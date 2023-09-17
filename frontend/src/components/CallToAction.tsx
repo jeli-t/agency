@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link'
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import report from './../assets/report.svg';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -107,7 +107,7 @@ export function CallToAction() {
                 </span>
                 {t("call_to_action.text2")}
             </Text>
-            <Link to='/get-started'>
+            <Link href='/get-started'>
                 <Button className={classes.button} size='lg' radius='md'>
                     {t("call_to_action.button")}
                 </Button>
