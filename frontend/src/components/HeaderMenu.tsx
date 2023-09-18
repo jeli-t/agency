@@ -15,6 +15,8 @@ const lngs = {
 
 const useStyles = createStyles((theme) => ({
   header: {
+    position: 'fixed',
+    top: 0,
     backgroundColor: theme.fn.variant({ variant: 'filled', color: theme.primaryColor }).background,
     borderBottom: 0,
     margin: 0,
