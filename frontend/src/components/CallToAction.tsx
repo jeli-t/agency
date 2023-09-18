@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import report from './../assets/report.svg';
 import { useTranslation } from 'next-i18next';
+import Image from 'next/image';
 
 
 const useStyles = createStyles((theme) => ({
@@ -27,7 +28,6 @@ const useStyles = createStyles((theme) => ({
         fontWeight: 800,
         fontSize: rem(40),
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-        marginBottom: theme.spacing.xs,
         fontFamily: `Roboto, ${theme.fontFamily}`,
     
         [theme.fn.smallerThan('xs')]: {
@@ -37,7 +37,6 @@ const useStyles = createStyles((theme) => ({
       },
 
     text: {
-        marginTop: 20,
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(34),
@@ -50,21 +49,13 @@ const useStyles = createStyles((theme) => ({
     },
 
     ilustration: {
-        margin: 10,
         height: '500px',
         width: '70%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
+        position: "relative",
 
         [theme.fn.smallerThan('xs')]: {
-            height: '400px',
+            height: '300px',
             width: '100%',
-            backgroundSize: '220%',
         },
     },
 
@@ -99,7 +90,9 @@ export function CallToAction() {
             <Title order={2} className={classes.title}>
                 {t("call_to_action.title")}
             </Title>
-            <div className={classes.ilustration} style={{backgroundImage: `url(${report})`}}></div>
+            <div className={classes.ilustration}>
+                <Image src={report} alt="Personalized strategy" fill={true} />
+            </div>
             <Text className={classes.text}>
                 {t("call_to_action.text1")}
                 <span style={{fontWeight: '700'}}>
