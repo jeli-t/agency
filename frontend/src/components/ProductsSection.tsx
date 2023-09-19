@@ -31,6 +31,7 @@ const useStyles = createStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         margin: 80,
+        scrollMarginTop: '100px',
 
         [theme.fn.smallerThan('lg')]: {
             width: '100%',
@@ -51,6 +52,7 @@ const useStyles = createStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         margin: 80,
+        scrollMarginTop: '100px',
 
         [theme.fn.smallerThan('lg')]: {
             width: '100%',
