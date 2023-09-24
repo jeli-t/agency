@@ -1,14 +1,16 @@
-import { createStyles, SimpleGrid, Card, Image, Text, Container, AspectRatio, rem, Center } from '@mantine/core';
-import web_development from './../assets/web_development.svg'
-import seo from './../assets/seo.svg'
-import social_media from './../assets/social_media.svg'
-import marketing from './../assets/marketing.svg'
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { createStyles, SimpleGrid, Card, Text, Container, AspectRatio, rem } from '@mantine/core';
+import web_development from './../assets/web_development.svg';
+import seo from './../assets/seo.svg';
+import social_media from './../assets/social_media.svg';
+import marketing from './../assets/marketing.svg';
+import Image from "next/image";
+import Link from "next/link";
+import { useTranslation } from 'next-i18next'
 
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
+    marginTop: 70,
     width: '60vw',
 
     [theme.fn.smallerThan('lg')]: {
@@ -41,18 +43,7 @@ const useStyles = createStyles((theme) => ({
     [theme.fn.smallerThan('xs')]: {
         fontSize: rem(20),
     },
-},
-
-  ilustration: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-},
+  },
 }));
 
 export function SolutionCategories() {
@@ -62,10 +53,10 @@ export function SolutionCategories() {
   return (
     <Container py='xl' size='fluid' className={classes.wrapper}>
       <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
-        <Link to='/websites' style={{textDecoration: 'none'}}>
-            <Card key={'Websites'} p="md" radius="md" component="a" className={classes.card}>
+        <Link href='/websites' style={{textDecoration: 'none'}}>
+            <Card key={'Websites'} p="md" radius="md" className={classes.card}>
                 <AspectRatio ratio={1920 / 1080}>
-                    <div className={classes.ilustration} style={{backgroundImage: `url(${web_development})`}}></div>
+                    <Image src={web_development} alt="Web development" fill={true} />
                 </AspectRatio>
                 <Text className={classes.title} mt={5}>
                     {t("solution_categories.solution1")}
@@ -73,10 +64,10 @@ export function SolutionCategories() {
             </Card>
         </ Link>
 
-        <Link to='/search-engine-optimization' style={{textDecoration: 'none'}}>
-            <Card key={'Search Engine Optimization'} p="md" radius="md" component="a" className={classes.card}>
+        <Link href='/search-engine-optimization' style={{textDecoration: 'none'}}>
+            <Card key={'Search Engine Optimization'} p="md" radius="md" className={classes.card}>
                 <AspectRatio ratio={1920 / 1080}>
-                    <div className={classes.ilustration} style={{backgroundImage: `url(${seo})`}}></div>
+                    <Image src={seo} alt="Search engine optimization" fill={true} />
                 </AspectRatio>
                 <Text className={classes.title} mt={5}>
                     {t("solution_categories.solution2")}
@@ -84,10 +75,10 @@ export function SolutionCategories() {
             </Card>
         </Link>
 
-        <Link to='/social-media' style={{textDecoration: 'none'}}>
-            <Card key={'Social media'} p="md" radius="md" component="a" className={classes.card}>
+        <Link href='/social-media' style={{textDecoration: 'none'}}>
+            <Card key={'Social media'} p="md" radius="md" className={classes.card}>
                 <AspectRatio ratio={1920 / 1080}>
-                    <div className={classes.ilustration} style={{backgroundImage: `url(${social_media})`}}></div>
+                    <Image src={social_media} alt="Social media" fill={true} />
                 </AspectRatio>
                 <Text className={classes.title} mt={5}>
                     {t("solution_categories.solution3")}
@@ -95,10 +86,10 @@ export function SolutionCategories() {
             </Card>
         </Link>
 
-        <Link to='/digital-marketing' style={{textDecoration: 'none'}}>
-            <Card key={'Digital marketing'} p="md" radius="md" component="a" className={classes.card}>
+        <Link href='/digital-marketing' style={{textDecoration: 'none'}}>
+            <Card key={'Digital marketing'} p="md" radius="md" className={classes.card}>
                 <AspectRatio ratio={1920 / 1080}>
-                    <div className={classes.ilustration} style={{backgroundImage: `url(${marketing})`}}></div>
+                    <Image src={marketing} alt="Digital marketing" fill={true} />
                 </AspectRatio>
                 <Text className={classes.title} mt={5}>
                     {t("solution_categories.solution4")}
