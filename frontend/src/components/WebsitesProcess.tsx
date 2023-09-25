@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
 import { createStyles, useMantineTheme, Title, rem, Text, Timeline } from '@mantine/core';
 import websites_process from './../assets/our_process.svg'
-import { useTranslation } from 'react-i18next';
+import Image from "next/image";
+import { useTranslation } from 'next-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -20,52 +20,55 @@ const useStyles = createStyles((theme) => ({
     },
 
     hero_section: {
-        minHeight: '800px',
         width: '80%',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        margin: 20,
+        marginTop: 80,
         marginBottom: 80,
 
         [theme.fn.smallerThan('lg')]: {
             flexDirection: 'column-reverse',
             width: '90%',
-            margin: 40,
+            margin: 0,
+            marginBottom: 80,
         },
     },
 
     description: {
         height: '100%',
-        width: '45%',
+        width: '42%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         textAlign: 'left',
 
         [theme.fn.smallerThan('lg')]: {
-            width: '90%',
+            width: '50%',
+            margin: 10,
+        },
+
+        [theme.fn.smallerThan('xs')]: {
+            width: '100%',
+            height: 'auto',
+            marginTop: -20,
         },
     },
 
     ilustration: {
-        height: '100%',
-        width: '55%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
+        height: '700px',
+        width: '58%',
+        position: "relative",
 
         [theme.fn.smallerThan('lg')]: {
-            width: '90%',
+            width: '50%',
+            height: '300px',
         },
-    },
 
-    image: {
-        width: '120%',
-        height: 'auto',
-
-        [theme.fn.smallerThan('lg')]: {
-            maxWidth: '845px',
+        [theme.fn.smallerThan('xs')]: {
+            width: '120%',
+            marginTop: '40px',
         },
     },
 
@@ -164,7 +167,7 @@ export function WebsitesProcess() {
                     </Timeline>
                 </div>
                 <div className={classes.ilustration}>
-                    <img src={websites_process} alt='Our process' title='Our process' loading='lazy' width={845} height={800} className={classes.image} />
+                    <Image src={websites_process} alt='Our process' title='Our process' loading='lazy' fill={true} />
                 </div>
             </div>
         </div>

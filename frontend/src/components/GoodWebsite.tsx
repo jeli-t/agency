@@ -1,6 +1,6 @@
 import { ThemeIcon, Text, Title, Container, SimpleGrid, createStyles, rem } from '@mantine/core';
 import { IconMoodHappy , IconSearch, IconDeviceMobile, IconBrandSpeedtest, IconLetterCase, IconArticle } from '@tabler/icons-react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 
 const useStyles = createStyles((theme) => ({
