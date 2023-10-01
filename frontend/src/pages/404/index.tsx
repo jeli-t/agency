@@ -1,9 +1,17 @@
 import Head from 'next/head'
-import { HeaderMenu } from '../components/HeaderMenu';
-import { Footer } from '../components/Footer';
 import { createStyles, Title, Text, Button, Container, Group, rem } from '@mantine/core';
 import Link from "next/link";
 import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { HeaderMenu } from '../../components/HeaderMenu';
+import { Footer } from '../../components/Footer';
+
+
+export const getStaticProps = async ({ locale } : any) => ({
+    props: {
+      ...(await serverSideTranslations(locale, ['common']))
+    }
+  })
 
 
 const useStyles = createStyles((theme) => ({
@@ -60,15 +68,16 @@ export default function NotFoundPage() {
             <HeaderMenu />
             <Container className={classes.root}>
                 <div className={classes.label}>404</div>
-                <Title className={classes.title}>You have found a secret place.</Title>
+                <Title className={classes.title}>
+                    {t("404.title")}
+                </Title>
                 <Text color="dimmed" size="lg" align="center" className={classes.description}>
-                Unfortunately, this is only a 404 page. You may have mistyped the address, or the page has
-                been moved to another URL.
+                    {t("404.description")}
                 </Text>
                 <Group position="center">
                 <Link href='/'>
                     <Button color='orange' variant="light" size="md">
-                    Take me back to home page
+                        {t("404.button")}
                     </Button>
                 </Link>
                 </Group>

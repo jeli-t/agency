@@ -1,4 +1,9 @@
 {
+    "404": {
+        "title": "Znalazłeś tajne miejsce.",
+        "description": "Niestety, jest to tylko strona 404. Możliwe, że adres został błędnie wpisany lub strona została przeniesiona pod inny adres URL.",
+        "button": "Wróć do strony głównej"
+    },
     "header": {
         "home": "Strona główna",
         "solutions": "Rozwiązania",
