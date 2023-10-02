@@ -12,7 +12,7 @@ export const getStaticProps = async ({ locale } : any) => ({
   }
 })
 
-export default function Home() {
+export default function Solutions() {
   const { t } = useTranslation();
 
   return (

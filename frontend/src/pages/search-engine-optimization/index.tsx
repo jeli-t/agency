@@ -15,7 +15,7 @@ export const getStaticProps = async ({ locale } : any) => ({
   }
 })
 
-export default function Home() {
+export default function SEO() {
   const { t } = useTranslation();
 
   return (
