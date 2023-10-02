@@ -120,7 +120,7 @@ export default function PolitykaPrywatnosci() {
         <p><strong>W celu realizacji umowy:</strong> opracowanie, przestrzeganie i realizacja umowy zakupu produktów, przedmiotów lub usług zakupionych przez Ciebie lub jakiejkolwiek innej umowy zawartej z Nami za pośrednictwem Usługi.</p>
         </li>
         <li>
-        <p><strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.</p>
+        <p><strong>Aby się z Tobą skontaktować:</strong> Kontakt mailowy, telefoniczny, SMS lub inne równoważne formy komunikacji elektronicznej, takie jak powiadomienia push aplikacji mobilnej dotyczące aktualizacji lub komunikatów informacyjnych związanych z funkcjonalnościami, produktami lub zakontraktowanymi usługami, w tym aktualizacjami zabezpieczeń, gdy jest to konieczne lub uzasadnione w celu ich wdrożenia.</p>
         </li>
         <li>
         <p><strong>Aby zapewnić użytkownikowi</strong> wiadomości, ofert specjalnych i ogólne informacje o innych oferowanych przez nas towarach, usługach i wydarzeniach, które są podobne do tych, które użytkownik już zakupił lub o które zapytał, chyba że użytkownik zrezygnował z otrzymywania takich informacji.</p>
