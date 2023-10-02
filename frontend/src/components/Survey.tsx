@@ -1,9 +1,9 @@
 import { Button, Container, createStyles, rem, useMantineTheme, Divider, Radio, Flex, TextInput, Checkbox } from '@mantine/core';
-import { useNavigate } from 'react-router-dom';
+import { redirect } from 'next/navigation'
 import { useInputState } from '@mantine/hooks';
 import { useState } from 'react';
 import { isEmail, isNotEmpty, useForm } from '@mantine/form';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -68,7 +68,6 @@ export function Survey() {
 
     const [serverError, setServerError] = useState<string | null>(null);
     const [errorDisplay, setErrorDisplay] = useInputState('none');
-    const navigate = useNavigate()
 
     const [businessType, setBusinessType] = useInputState('');
     const [industry, setIndustry] = useInputState('');
@@ -115,7 +114,7 @@ export function Survey() {
 
             if (response.status === 201) {
                 setErrorDisplay('none')
-                navigate('/report')
+                redirect('/report')
             } else if (response.status === 400) {
                 setErrorDisplay('block')
             }
