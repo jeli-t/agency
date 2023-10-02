@@ -126,27 +126,27 @@ export function Footer() {
           <div className={classes.wrapper}>
             <Text className={classes.title}>{t("footer.title1")}</Text>
             <nav>
-              <a href='/' className={classes.link}>
+              <Link href='/' className={classes.link}>
                 {t("footer.home")}
-              </a>
-              <a href='/solutions' className={classes.link}>
+              </Link>
+              <Link href='/solutions' className={classes.link}>
                 {t("footer.solutions")}
-              </a>
-              <a href='/pricing' className={classes.link}>
+              </Link>
+              <Link href='/pricing' className={classes.link}>
                 {t("footer.pricing")}
-              </a>
-              <a href='/blog' className={classes.link}>
+              </Link>
+              <Link href='/blog' className={classes.link}>
                 {t("footer.blog")}
-              </a>
-              <a href='/about' className={classes.link}>
+              </Link>
+              <Link href='/about' className={classes.link}>
                 {t("footer.about")}
-              </a>
-              <a href='/contact' className={classes.link}>
+              </Link>
+              <Link href='/contact' className={classes.link}>
                 {t("footer.contact")}
-              </a>
-              <a href='/get-started' className={classes.link}>
+              </Link>
+              <Link href='/get-started' className={classes.link}>
                 {t("footer.get_started")}
-              </a>
+              </Link>
             </nav>
           </div>
           <div className={classes.wrapper}>
@@ -178,21 +178,21 @@ export function Footer() {
         </Text>
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
-          <a href='mailto: agency@jeli.pl'>
+          <Link href='mailto: agency@jeli.pl'>
             <ActionIcon size="lg">
               <IconMail size="1.05rem" stroke={1.5} />
             </ActionIcon>
-          </a>
-          <a href='https://www.facebook.com/profile.php?id=100095023350168'>
+          </Link>
+          <Link href='https://www.facebook.com/profile.php?id=100095023350168'>
             <ActionIcon size="lg">
               <IconBrandFacebook size="1.05rem" stroke={1.5} />
             </ActionIcon>
-          </a>
-          <a href='https://www.instagram.com/jeli_agency/'>
+          </Link>
+          <Link href='https://www.instagram.com/jeli_agency/'>
             <ActionIcon size="lg">
               <IconBrandInstagram size="1.05rem" stroke={1.5} />
             </ActionIcon>
-          </a>
+          </Link>
         </Group>
         <div className={classes.mobile_privacy}>
           <Link href={t("footer.privacy_link")} className={classes.link}>
