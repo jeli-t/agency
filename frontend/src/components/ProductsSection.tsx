@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import web_development from './../assets/web_development.svg'
 import seo from './../assets/seo.svg'
 import social_media from './../assets/social_media.svg'
 import marketing from './../assets/marketing.svg'
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
+import Image from "next/image";
 
 
 const useStyles = createStyles((theme) => ({
@@ -30,6 +31,7 @@ const useStyles = createStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         margin: 80,
+        scrollMarginTop: '100px',
 
         [theme.fn.smallerThan('lg')]: {
             width: '100%',
@@ -50,6 +52,7 @@ const useStyles = createStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         margin: 80,
+        scrollMarginTop: '100px',
 
         [theme.fn.smallerThan('lg')]: {
             width: '100%',
@@ -83,20 +86,13 @@ const useStyles = createStyles((theme) => ({
     },
 
     ilustration: {
-        height: '100%',
+        height: '130%',
         width: '60%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
+        position: "relative",
         transition: 'transform 150ms ease, box-shadow 150ms ease',
 
         [theme.fn.smallerThan('lg')]: {
             width: '50%',
-            margin: 10,
         },
 
         [theme.fn.smallerThan('xs')]: {
@@ -163,7 +159,9 @@ export function ProductsSection() {
         <div className={classes.wrapper}>
 
             <section id='Websites' className={classes.product}>
-                <div className={classes.ilustration} style={{backgroundImage: `url(${web_development})`}}></div>
+                <div className={classes.ilustration}>
+                    <Image src={web_development} alt="Web development" fill={true} />
+                </div>
                 <div className={classes.description}>
                     <Title order={3} className={classes.service_title}>
                         {/* Websites */}
@@ -172,7 +170,7 @@ export function ProductsSection() {
                     <Text className={classes.text}>
                         {t("products_section.description1")}
                     </Text>
-                    <Link to='/websites'>
+                    <Link href='/websites'>
                         <Button className={classes.button} size='lg' radius='md'>
                             {t("products_section.button")}
                         </Button>
@@ -181,7 +179,9 @@ export function ProductsSection() {
             </section>
 
             <section id='Search-Engine-Optimization' className={classes.product2}>
-                <div className={classes.ilustration} style={{backgroundImage: `url(${seo})`}}></div>
+                <div className={classes.ilustration}>
+                    <Image src={seo} alt="Search Engine Optimization" fill={true} />
+                </div>
                 <div className={classes.description}>
                     <Title order={3} className={classes.service_title}>
                         {/* Search Engine Optimization */}
@@ -190,7 +190,7 @@ export function ProductsSection() {
                     <Text className={classes.text}>
                         {t("products_section.description2")}
                     </Text>
-                    <Link to='/search-engine-optimization'>
+                    <Link href='/search-engine-optimization'>
                         <Button className={classes.button} size='lg' radius='md'>
                             {t("products_section.button")}
                         </Button>
@@ -199,7 +199,9 @@ export function ProductsSection() {
             </section>
 
             <section id='Social-media' className={classes.product}>
-                <div className={classes.ilustration} style={{backgroundImage: `url(${social_media})`}}></div>
+                <div className={classes.ilustration}>
+                    <Image src={social_media} alt="Social media" fill={true} />
+                </div>
                 <div className={classes.description}>
                     <Title order={3} className={classes.service_title}>
                         {/* Social media */}
@@ -208,7 +210,7 @@ export function ProductsSection() {
                     <Text className={classes.text}>
                         {t("products_section.description3")}
                     </Text>
-                    <Link to='/social-media'>
+                    <Link href='/social-media'>
                         <Button className={classes.button} size='lg' radius='md'>
                             {t("products_section.button")}
                         </Button>
@@ -217,7 +219,9 @@ export function ProductsSection() {
             </section>
 
             <section id='Digital-marketing' className={classes.product2}>
-                <div className={classes.ilustration} style={{backgroundImage: `url(${marketing})`}}></div>
+                <div className={classes.ilustration}>
+                    <Image src={marketing} alt="Digital marketing" fill={true} />
+                </div>
                 <div className={classes.description}>
                     <Title order={3} className={classes.service_title}>
                         {/* Much more */}
@@ -226,7 +230,7 @@ export function ProductsSection() {
                     <Text className={classes.text}>
                         {t("products_section.description4")}
                     </Text>
-                    <Link to='/digital-marketing'>
+                    <Link href='/digital-marketing'>
                         <Button className={classes.button} size='lg' radius='md'>
                             {t("products_section.button")}
                         </Button>

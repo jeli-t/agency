@@ -1,9 +1,10 @@
 import { createStyles, Text, Container, ActionIcon, Group, rem, useMantineTheme } from '@mantine/core';
+import Image from 'next/image'
 import { IconBrandInstagram, IconMail, IconBrandFacebook } from '@tabler/icons-react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link'
 import logoDark from './../assets/logoDark.png';
 import logoLight from './../assets/logoLight.png';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -118,8 +119,8 @@ export function Footer() {
   return (
     <footer className={classes.footer}>
       <Container className={classes.inner}>
-        <Link to='/' style={{textDecoration: 'none'}}>
-          {theme.colorScheme === 'light' ? <img src={logoDark} alt="Logo jeli.pl" title='jeli.pl' loading='lazy' width='200' height='112' className={classes.logo} /> : <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='lazy' width='200' height='112' className={classes.logo} />}
+        <Link href='/' style={{textDecoration: 'none'}}>
+          {theme.colorScheme === 'light' ? <Image src={logoDark} alt="Logo jeli.pl" title='jeli.pl' loading='lazy' width='200' height='112' className={classes.logo} /> : <Image src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='lazy' width='200' height='112' className={classes.logo} />}
         </Link>
         <div className={classes.groups}>
           <div className={classes.wrapper}>
@@ -150,22 +151,22 @@ export function Footer() {
           </div>
           <div className={classes.wrapper}>
             <Text className={classes.title}>{t("footer.title2")}</Text>
-            <Link to='/websites' className={classes.link}>
+            <Link href='/websites' className={classes.link}>
               {t("footer.solution1")}
             </Link>
-            <Link to='/search-engine-optimization' className={classes.link}>
+            <Link href='/search-engine-optimization' className={classes.link}>
               {t("footer.solution2")}
             </Link>
-            <Link to='/social-media' className={classes.link}>
+            <Link href='/social-media' className={classes.link}>
               {t("footer.solution3")}
             </Link>
-            <Link to='/digital-marketing' className={classes.link}>
+            <Link href='/digital-marketing' className={classes.link}>
               {t("footer.solution4")}
             </Link>
           </div>
           <div className={classes.wrapper}>
             <Text className={classes.title}>{t("footer.title3")}</Text>
-            <Link to={t("footer.privacy_link")} className={classes.link}>
+            <Link href={t("footer.privacy_link")} className={classes.link}>
               {t("footer.privacy")}
             </Link>
           </div>
@@ -194,7 +195,7 @@ export function Footer() {
           </a>
         </Group>
         <div className={classes.mobile_privacy}>
-          <Link to={t("footer.privacy_link")} className={classes.link}>
+          <Link href={t("footer.privacy_link")} className={classes.link}>
             {t("footer.privacy")}
           </Link>
         </div>

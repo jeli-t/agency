@@ -1,7 +1,8 @@
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import report from './../assets/report.svg'
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import Image from "next/image";
+import Link from "next/link";
+import { useTranslation } from 'next-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -23,47 +24,51 @@ const useStyles = createStyles((theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 40,
+        margin: 20,
+        marginTop: 80,
+        marginBottom: 80,
 
         [theme.fn.smallerThan('lg')]: {
             flexDirection: 'column',
             width: '90%',
-            margin: 40,
+            margin: 0,
+            marginBottom: 80,
         },
     },
 
     description: {
         height: '100%',
-        width: '45%',
+        width: '42%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         textAlign: 'left',
 
         [theme.fn.smallerThan('lg')]: {
-            width: '90%',
+            width: '50%',
+            margin: 10,
+        },
+
+        [theme.fn.smallerThan('xs')]: {
+            width: '100%',
+            height: 'auto',
+            marginTop: -20,
         },
     },
 
     ilustration: {
-        height: '100%',
-        width: '55%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
+        height: '700px',
+        width: '58%',
+        position: "relative",
 
         [theme.fn.smallerThan('lg')]: {
-            width: '90%',
+            width: '50%',
+            height: '300px',
         },
-    },
 
-    image: {
-        width: '100%',
-        height: 'auto',
-
-        [theme.fn.smallerThan('lg')]: {
-            maxWidth: '845px',
+        [theme.fn.smallerThan('xs')]: {
+            width: '120%',
+            marginTop: '40px',
         },
     },
 
@@ -125,7 +130,7 @@ export function DigitalMarketingOffer() {
         <div className={classes.wrapper}>
             <div className={classes.hero_section}>
                 <div className={classes.ilustration}>
-                    <img src={report} alt='Trust us' title='You can trust us' loading='lazy' width={845} height={800} className={classes.image} />
+                    <Image src={report} alt='Trust us' title='You can trust us' loading='lazy' fill={true} />
                 </div>
                 <div className={classes.description}>
                     <Title order={2} className={classes.title}>
@@ -135,12 +140,12 @@ export function DigitalMarketingOffer() {
                         {t("digital_marketing_offer.text")}
                     </Text>
                     <div>
-                        <Link to='/get-started'>
+                        <Link href='/get-started'>
                             <Button className={classes.button} size='lg' radius='md'>
                                 {t("digital_marketing_offer.button1")}
                             </Button>
                         </Link>
-                        <Link to='/contact'>
+                        <Link href='/contact'>
                             <Button className={classes.button} size='lg' radius='md'>
                                 {t("digital_marketing_offer.button2")}
                             </Button>

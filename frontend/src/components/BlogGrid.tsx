@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 import { createStyles, SimpleGrid, Card, Text, Container, AspectRatio } from '@mantine/core';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
+import Image from "next/image";
 //covers
 import cover from './../assets/blog/wordpress.jpg'
 
@@ -37,10 +38,10 @@ export function BlogGrid() {
   const { t } = useTranslation(['blog']);
 
   const cards = mockdata.map((article) => (
-    <Link to={t(`${article.url}`)} style={{textDecoration: 'none'}}>
+    <Link href={t(`${article.url}`)} style={{textDecoration: 'none'}}>
         <Card key={article.title} p="md" radius="md" className={classes.card}>
           <AspectRatio ratio={1920 / 1080}>
-              <img src={t(`${article.cover}`)} alt={t(`${article.title}`)} title={t(`${article.title}`)} loading='lazy' width={424} height={238} />
+              <Image src={cover} alt={t(`${article.title}`)} title={t(`${article.title}`)} loading='lazy' fill={true} />
           </AspectRatio>
           <Text color="dimmed" size="xs" transform="uppercase" weight={700} mt="md">
               {t(`${article.date}`)}
