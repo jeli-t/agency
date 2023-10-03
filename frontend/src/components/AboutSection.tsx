@@ -117,7 +117,7 @@ export function AboutSection() {
     const { t } = useTranslation();
 
     const items = features.map((feature) => (
-        <Link href={feature.id} className={classes.link}>
+        <Link key={feature.title} href={feature.id} className={classes.link}>
             <div key={feature.title} className={classes.tile}>
                 <ThemeIcon
                     size={50}

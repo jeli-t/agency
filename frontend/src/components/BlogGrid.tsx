@@ -38,7 +38,7 @@ export function BlogGrid() {
   const { t } = useTranslation(['blog']);
 
   const cards = mockdata.map((article) => (
-    <Link href={t(`${article.url}`)} style={{textDecoration: 'none'}}>
+    <Link key={article.title} href={t(`${article.url}`)} style={{textDecoration: 'none'}}>
         <Card key={article.title} p="md" radius="md" className={classes.card}>
           <AspectRatio ratio={1920 / 1080}>
               <Image src={cover} alt={t(`${article.title}`)} title={t(`${article.title}`)} loading='lazy' fill={true} />
