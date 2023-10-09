@@ -165,18 +165,21 @@
         "other": "Pozostałe"
     },
     "pricing_website": {
-        "product1": "Strona internetowa Wordpress",
-        "description1": "Prosta strona internetowa oparta na systemie wordpress. Łatwa do samodzielnej edycji, funkcja bloga, przyjazna dla urządzeń mobilnych, podstawowa optymalizacja SEO na stronie. Pomoc przy wyborze domeny i hostingu. Cena nie obejmuje obrazów stockowych, domeny, hostingu i dodatkowych płatnych wtyczek wordpress.",
-        "price1": "1200zł",
-        "product2": "Niestandardowa strona internetowa",
-        "description2": "Niestandardowy projekt strony internetowej lub aplikacji internetowej. Wszystko dostosowane do Twoich potrzeb. Profesjonalny design UI/UX, frontend oparty na React JS, szybki czas ładowania strony, przyjazna dla urządzeń mobilnych, optymalizacja SEO na stronie, bazy danych, system uwierzytelniania, backend i API w Python Django. Pomoc w wyborze domeny i hostingu. Cena nie obejmuje obrazów stockowych, domeny i hostingu.",
-        "price2": "3200zł",
-        "product3": "Hosting + SSL + kopia zapasowa + poczta",
-        "description3": "Szybki hosting dla Twojej strony. Certyfikat Let's Encrypt SSL (Twoja strona będzie miała zieloną kłódkę i 'https' w adresie URL). Kopia zapasowa witryny co tydzień. Poczta email w twojej domenie.",
-        "price3": "50zł/miesiąc",
-        "product4": "Dodatkowa konserwacja witryny",
-        "description4": "Dodatkowa pomoc przy stronie internetowej. Aktualizacje, ulepszenia wizualne, dodawanie nowych funkcjonalności i elementów.",
-        "price4": "50zł/godzina"
+        "product1": "Strona wizytówka",
+        "description1": "Prosta i czytelna strona reklamowa. Najważniejsze informacje o twojej działalności oraz dane kontaktowe. Łatwa do samodzielnej edycji, przyjazna dla urządzeń mobilnych, podstawowa optymalizacja SEO na stronie. Pomoc przy wyborze domeny i hostingu. Cena nie obejmuje obrazów stockowych, domeny i hostingu.",
+        "price1": "400zł",
+        "product2": "Strona internetowa Wordpress",
+        "description2": "Prosta strona internetowa oparta na systemie wordpress. Łatwa do samodzielnej edycji, funkcja bloga, przyjazna dla urządzeń mobilnych, podstawowa optymalizacja SEO na stronie. Pomoc przy wyborze domeny i hostingu. Cena nie obejmuje obrazów stockowych, domeny, hostingu i dodatkowych płatnych wtyczek wordpress.",
+        "price2": "1200zł",
+        "product3": "Niestandardowa strona internetowa",
+        "description3": "Niestandardowy projekt strony internetowej lub aplikacji internetowej. Wszystko dostosowane do Twoich potrzeb. Profesjonalny design UI/UX, frontend oparty na React JS, szybki czas ładowania strony, przyjazna dla urządzeń mobilnych, optymalizacja SEO na stronie, bazy danych, system uwierzytelniania, backend i API w Python Django. Pomoc w wyborze domeny i hostingu. Cena nie obejmuje obrazów stockowych, domeny i hostingu.",
+        "price3": "3200zł",
+        "product4": "Hosting + SSL + kopia zapasowa + poczta",
+        "description4": "Szybki hosting dla Twojej strony. Certyfikat Let's Encrypt SSL (Twoja strona będzie miała zieloną kłódkę i 'https' w adresie URL). Kopia zapasowa witryny co tydzień. Poczta email w twojej domenie.",
+        "price4": "50zł/miesiąc",
+        "product5": "Dodatkowa konserwacja witryny",
+        "description5": "Dodatkowa pomoc przy stronie internetowej. Aktualizacje, ulepszenia wizualne, dodawanie nowych funkcjonalności i elementów.",
+        "price5": "50zł/godzina"
     },
     "pricing_seo": {
         "product1": "Optymalizacja strony",

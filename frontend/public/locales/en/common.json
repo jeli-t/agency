@@ -165,18 +165,21 @@
         "other": "Other"
     },
     "pricing_website": {
-        "product1": "Wordpress website",
-        "description1": "Simple website based on wordpress system. Easy to edit by yourself, blog functionality, mobile-friendly, basic on-page SEO optimization. Assistance with domain and hosting selection. Price does not include any stock images, domain, hosting and additional paid wordpress plugins.",
-        "price1": "300$",
-        "product2": "Custom website / Web app",
-        "description2": "Custom website project or simple web app. All tailored to your needs. Professional UI/UX design, React JS frontend, fast loading times, mobile-friendly, on-page SEO optimization, databases, authentication system, backend and API in Python Django. Assistance with domain and hosting selection. Price does not include any stock images, domain and hosting.",
-        "price2": "800$",
-        "product3": "Hosting + SSL + Backup + email",
-        "description3": "Fast hosting for your website. Let's Encrypt SSL certificate (your page will have a green padlock and 'https' in URL). Website backup each week. Email address in your domain.",
-        "price3": "12$/month",
-        "product4": "Additional maintenance",
-        "description4": "Additional help with your website. Updates, visual improvements, adding new functionality and elements.",
-        "price4": "12$/hour"
+        "product1": "Landing page",
+        "description1": "Simple and clear business website. Easy to edit by yourself, mobile-friendly, basic on-page SEO optimization. Assistance with domain and hosting selection. Price does not include any stock images, domain and hosting",
+        "price1": "100$",
+        "product2": "Wordpress website",
+        "description2": "Simple website based on wordpress system. Easy to edit by yourself, blog functionality, mobile-friendly, basic on-page SEO optimization. Assistance with domain and hosting selection. Price does not include any stock images, domain, hosting and additional paid wordpress plugins.",
+        "price2": "300$",
+        "product3": "Custom website / Web app",
+        "description3": "Custom website project or simple web app. All tailored to your needs. Professional UI/UX design, React JS frontend, fast loading times, mobile-friendly, on-page SEO optimization, databases, authentication system, backend and API in Python Django. Assistance with domain and hosting selection. Price does not include any stock images, domain and hosting.",
+        "price3": "800$",
+        "product4": "Hosting + SSL + Backup + email",
+        "description4": "Fast hosting for your website. Let's Encrypt SSL certificate (your page will have a green padlock and 'https' in URL). Website backup each week. Email address in your domain.",
+        "price4": "12$/month",
+        "product5": "Additional maintenance",
+        "description5": "Additional help with your website. Updates, visual improvements, adding new functionality and elements.",
+        "price5": "12$/hour"
     },
     "pricing_seo": {
         "product1": "On-Page Optimization",
