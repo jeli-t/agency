@@ -72,10 +72,8 @@
     },
     "call_to_action": {
         "title": "Nie wiesz od czego zacząć?",
-        "text1": "Zamów ",
-        "text_highlight": "darmową",
-        "text2": " spersonalizowaną strategię i ofertę",
-        "button": "Zaczynajmy"
+        "text": "Napisz do mnie. Pomogę Ci znaleźć rozwiązanie i przygotuję Twoją strategię marketingową za darmo",
+        "button": "Kontakt"
     },
     "contact_section": {
         "title": "Jesteśmy w kontakcie",

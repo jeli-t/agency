@@ -139,6 +139,8 @@ const useStyles = createStyles((theme) => ({
 
   dropdown: {
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[8] : theme.colors.gray[2],
+    border: 'solid 2px',
+    borderColor: theme.primaryColor,
   },
 
   language_label: {
@@ -238,11 +240,11 @@ const mockdata = [
     // "label": "Contact",
     "label": "header.contact",
   },
-  {
-    "link": "/get-started",
-    // "label": "Get started",
-    "label": "header.get_started",
-  },
+  // {
+  //   "link": "/get-started",
+  //   // "label": "Get started",
+  //   "label": "header.get_started",
+  // },
 ];
 
 export function LanguageMenu() {

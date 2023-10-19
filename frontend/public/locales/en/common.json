@@ -72,10 +72,8 @@
     },
     "call_to_action": {
         "title": "Not sure where to start?",
-        "text1": "Get a ",
-        "text_highlight": "free",
-        "text2": " personalized strategy and offer",
-        "button": "Get started"
+        "text": "Text me. I will help you find a solution and prepare your marketing strategy for free",
+        "button": "Contact"
     },
     "contact_section": {
         "title": "Stay in touch",

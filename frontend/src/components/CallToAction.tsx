@@ -32,11 +32,12 @@ const useStyles = createStyles((theme) => ({
     
         [theme.fn.smallerThan('xs')]: {
           fontSize: rem(28),
-          textAlign: 'left',
+        //   textAlign: 'left',
         },
       },
 
     text: {
+        maxWidth: '50%',
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(34),
@@ -44,7 +45,8 @@ const useStyles = createStyles((theme) => ({
         textAlign: 'center',
 
         [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(24),
+            fontSize: rem(20),
+            maxWidth: '95%',
         },
     },
 
@@ -75,7 +77,6 @@ const useStyles = createStyles((theme) => ({
     
         [theme.fn.smallerThan('xs')]: {
           fontSize: rem(24),
-          margin: 10,
         },
     },
 }))
@@ -94,13 +95,9 @@ export function CallToAction() {
                 <Image src={report} alt="Personalized strategy" fill={true} />
             </div>
             <Text className={classes.text}>
-                {t("call_to_action.text1")}
-                <span style={{fontWeight: '700'}}>
-                    {t("call_to_action.text_highlight")}
-                </span>
-                {t("call_to_action.text2")}
+                {t("call_to_action.text")}
             </Text>
-            <Link href='/get-started'>
+            <Link href='/contact'>
                 <Button className={classes.button} size='lg' radius='md'>
                     {t("call_to_action.button")}
                 </Button>
