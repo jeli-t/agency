@@ -143,11 +143,6 @@ export function SocialMediaOffer() {
                         {t("social_media_offer.text2")}
                     </Text>
                     <div>
-                        <Link href='/get-started'>
-                            <Button className={classes.button} size='lg' radius='md'>
-                                {t("social_media_offer.button1")}
-                            </Button>
-                        </Link>
                         <Link href='/contact'>
                             <Button className={classes.button} size='lg' radius='md'>
                                 {t("social_media_offer.button2")}
