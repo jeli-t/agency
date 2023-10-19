@@ -9,7 +9,7 @@
         "solutions": "Rozwiązania",
         "pricing": "Cennik",
         "blog": "Blog",
-        "about": "O nas",
+        "about": "O mnie",
         "contact": "Kontakt",
         "get_started": "Zaczynajmy"
     },
@@ -83,8 +83,8 @@
         "faq": "Sekcja FAQ poniżej"
     },
     "about_us": {
-        "title": "Kim jesteśmy?",
-        "text": "Jeli Digital Agency to nowoczesna, dynamicznie rozwijająca się firma z Polski. Jesteśmy niewielkim zespołem młodych ludzi z pasją, ale często podejmujemy współpracę z freelancerami z całego świata, dzięki czemu usługi, które dla Ciebie przygotowujemy, są zawsze najwyższej jakości. Uwielbiamy nowe wyzwania oraz dzielenie się wiedzą na naszym blogu i mediach społecznościowych."
+        "title": "Jednoosobowa Agencja",
+        "text": "Cześć, nazywam się Tomasz Jelito i jestem osobą stojącą za Jeli.pl! Swoją cyfrową podróż rozpocząłem w wieku 12 lat, ucząc się podstaw programowania i projektowania stron internetowych. Dziś pracuję jako freelancer w stale rozwijającym się świecie marketingu cyfrowego. Jeli.pl to jednoosobowa agencja, większość pracy wykonuję sam lub współpracuję z innymi freelancerami. Dlaczego Jeli.pl? To nie tylko biznes, to moja pasja. Sprawdź moje projekty, napisz wiadomość i zapraszam do Jeli.pl, gdzie jednoosobowa agencja nie oznacza pracy w pojedynkę!"
     },
     "our_process": {
         "title": "Nasz proces",
