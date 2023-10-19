@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { IconChevronDown, IconMoonStars, IconSun, IconMenu2 } from '@tabler/icons-react';
 import logoLight from './../assets/logoLight.png';
 import { useTranslation } from 'next-i18next'
+import { useState } from 'react';
 
 
 const lngs = {
@@ -20,6 +21,7 @@ const useStyles = createStyles((theme) => ({
     backgroundColor: theme.fn.variant({ variant: 'filled', color: theme.primaryColor }).background,
     borderBottom: 0,
     margin: 0,
+    zIndex: 100,
   },
 
   header_container: {
@@ -146,16 +148,22 @@ const useStyles = createStyles((theme) => ({
     padding: `${rem(8)} ${rem(12)}`,
     border: 'none',
     textDecoration: 'none',
+    textAlign: 'center',
     fontSize: theme.fontSizes.lg,
     fontFamily: `Roboto, ${theme.fontFamily}`,
     fontWeight: 500,
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[8] : theme.colors.gray[2],
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
 
+    '&:hover': {
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[7] : theme.colors.gray[3],
+    },
+
     [theme.fn.smallerThan('sm')]: {
       color: theme.colorScheme === 'dark' ? theme.white : theme.black,
       fontSize: rem(25),
       marginTop: 25,
+      width: 200,
     },
   },
 
@@ -353,7 +361,7 @@ export function HeaderMenu() {
           />
         </div>
         <Drawer opened={opened} onClose={close} size="100%" position='top' withCloseButton={false} transitionProps={{ transition: 'fade', duration: 150, timingFunction: 'easy' }}>
-          <Header height={56} className={classes.header} mb={120}>
+          <Header height={56} className={classes.header} mb={120} zIndex={999} mt={0}>
             <Container size='fluid'>
               <div className={classes.inner}>
                 <Link href='/'>
@@ -371,11 +379,10 @@ export function HeaderMenu() {
           </Header>
           <div className={classes.responsive_menu}>
             {items}
-            <Divider size='sm' w={'70%'} variant='solid' my='sm' color={theme.colors.gray[5]} />
+            <Divider size='sm' w={'70%'} variant='solid' my='xl' color={theme.colors.gray[5]} />
             <div style={{height: 30, display: 'flex', alignItems: 'center'}}>
               <SwitchToggle />
             </div>
-            <Divider size='sm' w={'70%'} variant='solid' my='sm' color={theme.colors.gray[5]} />
             <Text className={classes.link}>Language:</Text>
             <Link href="/" locale="pl" key={'Polish'} className={classes.language_label}>
               Polish
