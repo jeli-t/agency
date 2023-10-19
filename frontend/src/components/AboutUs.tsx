@@ -1,6 +1,6 @@
 import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon } from '@mantine/core';
 import { IconBrandInstagram, IconBrandFacebook } from '@tabler/icons-react';
-import people from './../assets/people.svg'
+import remote_work from './../assets/remote_work.svg'
 import Image from "next/image";
 import { useTranslation } from 'next-i18next';
 
@@ -156,7 +156,7 @@ export function AboutUs() {
                     </div>
                 </div>
                 <div className={classes.ilustration}>
-                    <Image src={people} alt='Our team' title='Our team' loading='lazy' fill={true} />
+                    <Image src={remote_work} alt='Our team' title='Our team' loading='lazy' fill={true} />
                 </div>
             </div>
         </div>

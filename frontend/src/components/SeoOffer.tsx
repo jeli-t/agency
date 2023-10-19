@@ -143,11 +143,6 @@ export function SeoOffer() {
                         {t("seo_offer.text2")}
                     </Text>
                     <div>
-                        <Link href='/get-started'>
-                            <Button className={classes.button} size='lg' radius='md'>
-                                {t("seo_offer.button1")}
-                            </Button>
-                        </Link>
                         <Link href='/contact'>
                             <Button className={classes.button} size='lg' radius='md'>
                                 {t("seo_offer.button2")}

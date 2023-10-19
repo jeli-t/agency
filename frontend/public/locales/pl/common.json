@@ -9,7 +9,7 @@
         "solutions": "Rozwiązania",
         "pricing": "Cennik",
         "blog": "Blog",
-        "about": "O nas",
+        "about": "O mnie",
         "contact": "Kontakt",
         "get_started": "Zaczynajmy"
     },
@@ -72,10 +72,8 @@
     },
     "call_to_action": {
         "title": "Nie wiesz od czego zacząć?",
-        "text1": "Zamów ",
-        "text_highlight": "darmową",
-        "text2": " spersonalizowaną strategię i ofertę",
-        "button": "Zaczynajmy"
+        "text": "Napisz do mnie. Pomogę Ci znaleźć rozwiązanie i przygotuję Twoją strategię marketingową za darmo",
+        "button": "Kontakt"
     },
     "contact_section": {
         "title": "Jesteśmy w kontakcie",
@@ -83,8 +81,8 @@
         "faq": "Sekcja FAQ poniżej"
     },
     "about_us": {
-        "title": "Kim jesteśmy?",
-        "text": "Jeli Digital Agency to nowoczesna, dynamicznie rozwijająca się firma z Polski. Jesteśmy niewielkim zespołem młodych ludzi z pasją, ale często podejmujemy współpracę z freelancerami z całego świata, dzięki czemu usługi, które dla Ciebie przygotowujemy, są zawsze najwyższej jakości. Uwielbiamy nowe wyzwania oraz dzielenie się wiedzą na naszym blogu i mediach społecznościowych."
+        "title": "Jednoosobowa Agencja",
+        "text": "Cześć, nazywam się Tomasz Jelito i jestem osobą stojącą za Jeli.pl! Swoją cyfrową podróż rozpocząłem w wieku 12 lat, ucząc się podstaw programowania i projektowania stron internetowych. Dziś pracuję jako freelancer w stale rozwijającym się świecie marketingu cyfrowego. Jeli.pl to jednoosobowa agencja, większość pracy wykonuję sam lub współpracuję z innymi freelancerami. Dlaczego Jeli.pl? To nie tylko biznes, to moja pasja. Sprawdź moje projekty, napisz wiadomość i zapraszam do Jeli.pl, gdzie jednoosobowa agencja nie oznacza pracy w pojedynkę!"
     },
     "our_process": {
         "title": "Nasz proces",
@@ -165,18 +163,21 @@
         "other": "Pozostałe"
     },
     "pricing_website": {
-        "product1": "Strona internetowa Wordpress",
-        "description1": "Prosta strona internetowa oparta na systemie wordpress. Łatwa do samodzielnej edycji, funkcja bloga, przyjazna dla urządzeń mobilnych, podstawowa optymalizacja SEO na stronie. Pomoc przy wyborze domeny i hostingu. Cena nie obejmuje obrazów stockowych, domeny, hostingu i dodatkowych płatnych wtyczek wordpress.",
-        "price1": "1200zł",
-        "product2": "Niestandardowa strona internetowa",
-        "description2": "Niestandardowy projekt strony internetowej lub aplikacji internetowej. Wszystko dostosowane do Twoich potrzeb. Profesjonalny design UI/UX, frontend oparty na React JS, szybki czas ładowania strony, przyjazna dla urządzeń mobilnych, optymalizacja SEO na stronie, bazy danych, system uwierzytelniania, backend i API w Python Django. Pomoc w wyborze domeny i hostingu. Cena nie obejmuje obrazów stockowych, domeny i hostingu.",
-        "price2": "3200zł",
-        "product3": "Hosting + SSL + kopia zapasowa + poczta",
-        "description3": "Szybki hosting dla Twojej strony. Certyfikat Let's Encrypt SSL (Twoja strona będzie miała zieloną kłódkę i 'https' w adresie URL). Kopia zapasowa witryny co tydzień. Poczta email w twojej domenie.",
-        "price3": "50zł/miesiąc",
-        "product4": "Dodatkowa konserwacja witryny",
-        "description4": "Dodatkowa pomoc przy stronie internetowej. Aktualizacje, ulepszenia wizualne, dodawanie nowych funkcjonalności i elementów.",
-        "price4": "50zł/godzina"
+        "product1": "Strona wizytówka",
+        "description1": "Prosta i czytelna strona reklamowa. Najważniejsze informacje o twojej działalności oraz dane kontaktowe. Łatwa do samodzielnej edycji, przyjazna dla urządzeń mobilnych, podstawowa optymalizacja SEO na stronie. Pomoc przy wyborze domeny i hostingu. Cena nie obejmuje obrazów stockowych, domeny i hostingu.",
+        "price1": "400zł",
+        "product2": "Strona internetowa Wordpress",
+        "description2": "Prosta strona internetowa oparta na systemie wordpress. Łatwa do samodzielnej edycji, funkcja bloga, przyjazna dla urządzeń mobilnych, podstawowa optymalizacja SEO na stronie. Pomoc przy wyborze domeny i hostingu. Cena nie obejmuje obrazów stockowych, domeny, hostingu i dodatkowych płatnych wtyczek wordpress.",
+        "price2": "1200zł",
+        "product3": "Niestandardowa strona internetowa",
+        "description3": "Niestandardowy projekt strony internetowej lub aplikacji internetowej. Wszystko dostosowane do Twoich potrzeb. Profesjonalny design UI/UX, frontend oparty na React JS, szybki czas ładowania strony, przyjazna dla urządzeń mobilnych, optymalizacja SEO na stronie, bazy danych, system uwierzytelniania, backend i API w Python Django. Pomoc w wyborze domeny i hostingu. Cena nie obejmuje obrazów stockowych, domeny i hostingu.",
+        "price3": "3200zł",
+        "product4": "Hosting + SSL + kopia zapasowa + poczta",
+        "description4": "Szybki hosting dla Twojej strony. Certyfikat Let's Encrypt SSL (Twoja strona będzie miała zieloną kłódkę i 'https' w adresie URL). Kopia zapasowa witryny co tydzień. Poczta email w twojej domenie.",
+        "price4": "50zł/miesiąc",
+        "product5": "Dodatkowa konserwacja witryny",
+        "description5": "Dodatkowa pomoc przy stronie internetowej. Aktualizacje, ulepszenia wizualne, dodawanie nowych funkcjonalności i elementów.",
+        "price5": "50zł/godzina"
     },
     "pricing_seo": {
         "product1": "Optymalizacja strony",
@@ -261,7 +262,7 @@
     "websites_offer": {
         "title": "Zostaw to profesjonalistom",
         "text1": "Projektowane przez nas strony internetowe mają nie tylko ładnie wyglądać, ale przede wszystkim dobrze działać i rozwijać Twój biznes. Tworzymy różne rodzaje stron internetowych, od stron wizytówek i stron biznesowych po małe sklepy internetowe. Wszystko dostosowane do potrzeb Twojej firmy. Zapewniamy pełną, kompleksową obsługę od projektu po hosting i utrzymanie.",
-        "text2": "Sprawdź sekcję Zaczynajmy, aby uzyskać bezpłatną spersonalizowaną strategię i wycenę, lub skontaktuj się z nami bezpośrednio, aby umówić się na konsultację wideo.",
+        "text2": "Zainteresowany? Napisz do mnie. Chętnie doradzę i odpowiem na wszystkie pytania.",
         "button1": "Zaczynajmy",
         "button2": "Kontakt"
     },
@@ -305,7 +306,7 @@
     "seo_offer": {
         "title": "Na księżyc",
         "text1": "Pozwól nam się tym zająć i przenieść Twoją witrynę na szczyt wyników wyszukiwania. Przygotujemy strategię dostosowaną do Twojej firmy i zoptymalizujemy Twoją stronę tak, aby obejmowała wszystkie kluczowe obszary optymalizacji pod kątem wyszukiwarek.",
-        "text2": "Sprawdź sekcję Zaczynajmy, aby uzyskać bezpłatną spersonalizowaną strategię i wycenę, lub skontaktuj się z nami bezpośrednio, aby umówić się na konsultację wideo.",
+        "text2": "Zainteresowany? Napisz do mnie. Chętnie doradzę i odpowiem na wszystkie pytania.",
         "button1": "Zaczynajmy",
         "button2": "Kontakt"
     },
@@ -349,7 +350,7 @@
     "social_media_offer": {
         "title": "Zaoszczędź swój czas",
         "text1": "Zajmiemy się Twoimi mediami społecznościowymi. Będziemy zarządzać Twoimi kontami i przygotowywać kampanie reklamowe dla Twojego biznesu. Na razie działamy tylko na Facebooku i Instagramie.",
-        "text2": "Sprawdź sekcję Zaczynajmy, aby uzyskać bezpłatną spersonalizowaną strategię i wycenę, lub skontaktuj się z nami bezpośrednio, aby umówić się na konsultację wideo.",
+        "text2": "Zainteresowany? Napisz do mnie. Chętnie doradzę i odpowiem na wszystkie pytania.",
         "button1": "Zaczynajmy",
         "button2": "Kontakt"
     },
@@ -385,7 +386,7 @@
     },
     "digital_marketing_offer": {
         "title": "Darmowa spersonalizowana strategia",
-        "text": "Jeśli chcesz otrzymać bezpłatną spersonalizowaną strategię i ofertę dla swojej firmy, sprawdź sekcję Zaczynajmy. Jeśli chcesz zapytać o cokolwiek związanego z marketingiem cyfrowym, napisz do nas wiadomość lub skontaktuj się z nami bezpośrednio, aby umówić się na bezpłatną konsultację wideo.",
+        "text": "Napisz do mnie i otrzymaj darmową strategię marketingową. Chętnie doradzę i odpowiem na wszystkie pytania.",
         "button1": "Zaczynajmy",
         "button2": "Kontakt"
     },

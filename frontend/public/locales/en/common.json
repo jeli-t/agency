@@ -29,7 +29,7 @@
         "solution4": "Digital marketing",
         "title3": "Other",
         "privacy": "Privacy policy",
-        "privacy_link": "/privacy-policy"
+        "privacy_link": "/en/privacy-policy"
     },
     "cookie_consent": {
         "text1": "This website uses cookies. By staying on the site, you accept the cookies and ",
@@ -72,10 +72,8 @@
     },
     "call_to_action": {
         "title": "Not sure where to start?",
-        "text1": "Get a ",
-        "text_highlight": "free",
-        "text2": " personalized strategy and offer",
-        "button": "Get started"
+        "text": "Text me. I will help you find a solution and prepare your marketing strategy for free",
+        "button": "Contact"
     },
     "contact_section": {
         "title": "Stay in touch",
@@ -83,8 +81,8 @@
         "faq": "Please check the FAQ section below."
     },
     "about_us": {
-        "title": "Who are we?",
-        "text": "Jeli Digital Agency is a modern, dynamically growing company from Poland. We are a small team of young people with passion, but we often cooperate with freelancers from all over the world, so that the services we prepare for you are always of the highest quality. We love new challenges and sharing our knowledge on our blog and social media."
+        "title": "One-man Agency",
+        "text": "Hey, my name is Tomasz Jelito and I'm the face behind Jeli.pl! I started my digital journey at the age of 12, learning the basics of programming and web design. Today, I'm working as a freelancer in the ever-evolving world of digital marketing. Jeli.pl is a one-person agency, I do most of the work myself, or collaborate with other freelancers. Why Jeli.pl? It's not just about business; it's my passion. Explore my projects, drop a message, and welcome to Jeli.pl, where a one-person agency doesn't mean going it alone!"
     },
     "our_process": {
         "title": "Our Process",
@@ -165,18 +163,21 @@
         "other": "Other"
     },
     "pricing_website": {
-        "product1": "Wordpress website",
-        "description1": "Simple website based on wordpress system. Easy to edit by yourself, blog functionality, mobile-friendly, basic on-page SEO optimization. Assistance with domain and hosting selection. Price does not include any stock images, domain, hosting and additional paid wordpress plugins.",
-        "price1": "300$",
-        "product2": "Custom website / Web app",
-        "description2": "Custom website project or simple web app. All tailored to your needs. Professional UI/UX design, React JS frontend, fast loading times, mobile-friendly, on-page SEO optimization, databases, authentication system, backend and API in Python Django. Assistance with domain and hosting selection. Price does not include any stock images, domain and hosting.",
-        "price2": "800$",
-        "product3": "Hosting + SSL + Backup + email",
-        "description3": "Fast hosting for your website. Let's Encrypt SSL certificate (your page will have a green padlock and 'https' in URL). Website backup each week. Email address in your domain.",
-        "price3": "12$/month",
-        "product4": "Additional maintenance",
-        "description4": "Additional help with your website. Updates, visual improvements, adding new functionality and elements.",
-        "price4": "12$/hour"
+        "product1": "Landing page",
+        "description1": "Simple and clear business website. Easy to edit by yourself, mobile-friendly, basic on-page SEO optimization. Assistance with domain and hosting selection. Price does not include any stock images, domain and hosting",
+        "price1": "100$",
+        "product2": "Wordpress website",
+        "description2": "Simple website based on wordpress system. Easy to edit by yourself, blog functionality, mobile-friendly, basic on-page SEO optimization. Assistance with domain and hosting selection. Price does not include any stock images, domain, hosting and additional paid wordpress plugins.",
+        "price2": "300$",
+        "product3": "Custom website / Web app",
+        "description3": "Custom website project or simple web app. All tailored to your needs. Professional UI/UX design, React JS frontend, fast loading times, mobile-friendly, on-page SEO optimization, databases, authentication system, backend and API in Python Django. Assistance with domain and hosting selection. Price does not include any stock images, domain and hosting.",
+        "price3": "800$",
+        "product4": "Hosting + SSL + Backup + email",
+        "description4": "Fast hosting for your website. Let's Encrypt SSL certificate (your page will have a green padlock and 'https' in URL). Website backup each week. Email address in your domain.",
+        "price4": "12$/month",
+        "product5": "Additional maintenance",
+        "description5": "Additional help with your website. Updates, visual improvements, adding new functionality and elements.",
+        "price5": "12$/hour"
     },
     "pricing_seo": {
         "product1": "On-Page Optimization",
@@ -261,7 +262,7 @@
     "websites_offer": {
         "title": "Leave it to the professionals",
         "text1": "The websites we design are not only supposed to look nice, but most importantly work well and grow your business. We develop different types of websites, from landing pages and business websites to small online stores. All tailored to your business needs. We provide a full, comprehensive service from design to hosting and maintenance.",
-        "text2": "Check out the Get started section for a free personalized strategy and pricing, or contact us directly to schedule a video consultation.",
+        "text2": "Interested? Write to me. I will be happy to advise you and answer all your questions.",
         "button1": "Get started",
         "button2": "Contact"
     },
@@ -305,7 +306,7 @@
     "seo_offer": {
         "title": "To the moon",
         "text1": "Let us do the work and move your website to the top of the search results. We will prepare a strategy tailored to your business and optimize your page to cover all the key areas of Search Engine Optimization.",
-        "text2": "Check out the Get started section for a free personalized strategy and pricing, or contact us directly to schedule a video consultation.",
+        "text2": "Interested? Write to me. I will be happy to advise you and answer all your questions.",
         "button1": "Get started",
         "button2": "Contact"
     },
@@ -349,7 +350,7 @@
     "social_media_offer": {
         "title": "Save your time",
         "text1": "We will take care of your social media. We will manage your accounts and prepare advertising campaigns for your business. For now, we operate only on Facebook and Instagram.",
-        "text2": "Check out the Get started section for a free personalized strategy and pricing, or contact us directly to schedule a video consultation.",
+        "text2": "Interested? Write to me. I will be happy to advise you and answer all your questions.",
         "button1": "Get started",
         "button2": "Contact"
     },
@@ -385,7 +386,7 @@
     },
     "digital_marketing_offer": {
         "title": "Free personalized strategy",
-        "text": "If you would like to receive a free personalized strategy and offer for your business, check out the Get started section. If you want to ask about anything related to digital marketing, write us a message or contact us directly to schedule a free video consultation.",
+        "text": "Write to me and get your free marketing strategy. I will be happy to advise you and answer all your questions.",
         "button1": "Get started",
         "button2": "Contact"
     },
