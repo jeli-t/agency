@@ -1,5 +1,5 @@
 import { Container, Title, Accordion, createStyles, rem } from '@mantine/core';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next'
 import { PricingWebsites } from './PricingWebsites';
 import { PricingSeo } from './PricingSeo';
 import { PricingSocialMedia } from './PricingSocialMedia';
@@ -16,7 +16,7 @@ const useStyles = createStyles((theme) => ({
     title: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(26),
+        fontSize: rem(30),
         fontWeight: 600,
 
         [theme.fn.smallerThan('lg')]: {

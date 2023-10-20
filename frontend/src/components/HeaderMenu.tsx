@@ -1,21 +1,27 @@
 import { createStyles, useMantineTheme, Header, Group, Burger, Container, rem, Title, useMantineColorScheme, Switch, Drawer, Text, Menu, Button, Divider } from '@mantine/core';
+import Image from 'next/image'
 import { useDisclosure } from '@mantine/hooks';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link'
 import { IconChevronDown, IconMoonStars, IconSun, IconMenu2 } from '@tabler/icons-react';
-import { useEffect } from 'react';
 import logoLight from './../assets/logoLight.png';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'next-i18next'
+import { useState } from 'react';
+
 
 const lngs = {
   en: { nativeName: 'English' },
-  pl: { nativeName: 'Polski' },
+  pl: { nativeName: 'Polish' },
 };
 
 
 const useStyles = createStyles((theme) => ({
   header: {
+    position: 'fixed',
+    top: 0,
     backgroundColor: theme.fn.variant({ variant: 'filled', color: theme.primaryColor }).background,
     borderBottom: 0,
+    margin: 0,
+    zIndex: 100,
   },
 
   header_container: {
@@ -133,6 +139,8 @@ const useStyles = createStyles((theme) => ({
 
   dropdown: {
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[8] : theme.colors.gray[2],
+    border: 'solid 2px',
+    borderColor: theme.primaryColor,
   },
 
   language_label: {
@@ -142,16 +150,22 @@ const useStyles = createStyles((theme) => ({
     padding: `${rem(8)} ${rem(12)}`,
     border: 'none',
     textDecoration: 'none',
+    textAlign: 'center',
     fontSize: theme.fontSizes.lg,
     fontFamily: `Roboto, ${theme.fontFamily}`,
     fontWeight: 500,
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[8] : theme.colors.gray[2],
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
 
+    '&:hover': {
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[7] : theme.colors.gray[3],
+    },
+
     [theme.fn.smallerThan('sm')]: {
       color: theme.colorScheme === 'dark' ? theme.white : theme.black,
       fontSize: rem(25),
       marginTop: 25,
+      width: 200,
     },
   },
 
@@ -226,17 +240,17 @@ const mockdata = [
     // "label": "Contact",
     "label": "header.contact",
   },
-  {
-    "link": "/get-started",
-    // "label": "Get started",
-    "label": "header.get_started",
-  },
+  // {
+  //   "link": "/get-started",
+  //   // "label": "Get started",
+  //   "label": "header.get_started",
+  // },
 ];
 
 export function LanguageMenu() {
   const theme = useMantineTheme();
   const { classes } = useStyles();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Menu
@@ -251,13 +265,16 @@ export function LanguageMenu() {
         </Button>
       </Menu.Target>
       <Menu.Dropdown className={classes.dropdown}>
-          {Object.keys(lngs).map((lng) => (
-            <Menu.Item>
-              <button key={lng} className={classes.language_label} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-                {lngs[lng as keyof typeof lngs].nativeName}
-              </button>
-            </Menu.Item>
-          ))}
+        <Menu.Item>
+          <Link href="/" locale="pl" key={'Polish'} className={classes.language_label}>
+            Polish
+          </Link>
+        </Menu.Item>
+        <Menu.Item>
+          <Link href="/" locale="en" key={'English'} className={classes.language_label}>
+            English
+          </Link>
+        </Menu.Item>
       </Menu.Dropdown>
     </Menu>
   );
@@ -266,7 +283,7 @@ export function LanguageMenu() {
 export function ButtonsMenu() {
   const theme = useMantineTheme();
   const { classes } = useStyles();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Menu
@@ -280,13 +297,16 @@ export function ButtonsMenu() {
       </Menu.Target>
       <Menu.Dropdown className={classes.dropdown}>
         <Text className={classes.language_label} style={{fontSize: theme.fontSizes.xl}}>Language:</Text>
-        {Object.keys(lngs).map((lng) => (
-          <Menu.Item>
-            <button key={lng} className={classes.language_label} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-              {lngs[lng as keyof typeof lngs].nativeName}
-            </button>
-          </Menu.Item>
-        ))}
+        <Menu.Item>
+          <Link href="/" locale="pl" key={'Polish'} className={classes.language_label}>
+            Polish
+          </Link>
+        </Menu.Item>
+        <Menu.Item>
+          <Link href="/" locale="en" key={'English'} className={classes.language_label}>
+            English
+          </Link>
+        </Menu.Item>
         <Divider size='md' color={theme.colors.gray[5]}></Divider>
         <Menu.Item>
           <SwitchToggle />
@@ -300,18 +320,14 @@ export function HeaderMenu() {
   const theme = useMantineTheme();
   const { classes } = useStyles();
   const [opened, { open, close }] = useDisclosure(false);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  const location = useLocation();
-  useEffect(() => {
-    close();
-  }, [location])
 
   const items = mockdata.map((link) => {
     return (
       <Link
         key={link.label}
-        to={link.link}
+        href={link.link}
         className={classes.link}
       >
         {t(link.label)}
@@ -320,12 +336,12 @@ export function HeaderMenu() {
   });
 
   return (
-    <Header height={56} className={classes.header} mb={120}>
+    <Header height={56} className={classes.header}>
       <Container size='fluid' className={classes.header_container}>
         <div className={classes.inner}>
           <div className={classes.logo}>
-            <Link to='/'>
-              <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89' />
+            <Link href='/'>
+              <Image src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89' />
             </Link>
           </div>
           <Group spacing={10} className={classes.links}>
@@ -347,11 +363,11 @@ export function HeaderMenu() {
           />
         </div>
         <Drawer opened={opened} onClose={close} size="100%" position='top' withCloseButton={false} transitionProps={{ transition: 'fade', duration: 150, timingFunction: 'easy' }}>
-          <Header height={56} className={classes.header} mb={120}>
+          <Header height={56} className={classes.header} mb={120} zIndex={999} mt={0}>
             <Container size='fluid'>
               <div className={classes.inner}>
-                <Link to='/'>
-                  <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89'/>
+                <Link href='/'>
+                  <Image src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' height='50' width='89'/>
                 </Link>
                 <Burger
                   opened={opened}
@@ -365,20 +381,20 @@ export function HeaderMenu() {
           </Header>
           <div className={classes.responsive_menu}>
             {items}
-            <Divider size='sm' w={'70%'} variant='solid' my='sm' color={theme.colors.gray[5]} />
+            <Divider size='sm' w={'70%'} variant='solid' my='xl' color={theme.colors.gray[5]} />
             <div style={{height: 30, display: 'flex', alignItems: 'center'}}>
               <SwitchToggle />
             </div>
-            <Divider size='sm' w={'70%'} variant='solid' my='sm' color={theme.colors.gray[5]} />
             <Text className={classes.link}>Language:</Text>
-            {Object.keys(lngs).map((lng) => (
-              <button key={lng} className={classes.language_label} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-                {lngs[lng as keyof typeof lngs].nativeName}
-              </button>
-            ))}
+            <Link href="/" locale="pl" key={'Polish'} className={classes.language_label}>
+              Polish
+            </Link>
+            <Link href="/" locale="en" key={'English'} className={classes.language_label}>
+              English
+            </Link>
           </div>
         </Drawer>
       </Container>
     </Header>
   );
-} 
+}

@@ -1,15 +1,15 @@
 import { createStyles, Title, Text, Button, Container, rem } from '@mantine/core';
 import { Dots } from '../assets/Dots';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
     position: 'relative',
-    marginTop: rem(80),
+    marginTop: rem(140),
     marginBottom: rem(80),
 
     [theme.fn.smallerThan('sm')]: {
-      marginTop: rem(60),
+      marginTop: rem(80),
       marginBottom: rem(60),
     },
   },

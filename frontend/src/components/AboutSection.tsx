@@ -9,8 +9,8 @@ import {
     rem,
 } from '@mantine/core';
 import { IconWorldWww, IconSearch, IconAd, IconBrandInstagram } from '@tabler/icons-react';
-import { HashLink } from 'react-router-hash-link';
-import { useTranslation, Trans } from 'react-i18next';
+import Link from 'next/link'
+import { useTranslation } from 'next-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -59,7 +59,7 @@ const useStyles = createStyles((theme) => ({
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
-        fontWeight: 600,
+        fontWeight: 400,
         padding: 5,
 
         [theme.fn.smallerThan('lg')]: {
@@ -114,16 +114,10 @@ const features = [
 
 export function AboutSection() {
     const { classes } = useStyles();
-    const { t, i18n } = useTranslation();
-
-    const scrollWithOffset = (el:any) => {
-        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-        const yOffset = -100; 
-        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
-    }
+    const { t } = useTranslation();
 
     const items = features.map((feature) => (
-        <HashLink to={feature.id} smooth scroll={scrollWithOffset} className={classes.link}>
+        <Link key={feature.title} href={feature.id} className={classes.link}>
             <div key={feature.title} className={classes.tile}>
                 <ThemeIcon
                     size={50}
@@ -140,7 +134,7 @@ export function AboutSection() {
                     {t(feature.description)}
                 </Text>
             </div>
-        </HashLink>
+        </Link>
     ));
 
     return (

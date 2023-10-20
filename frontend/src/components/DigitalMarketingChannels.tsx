@@ -1,6 +1,6 @@
 import { ThemeIcon, Text, Title, Container, SimpleGrid, createStyles, rem } from '@mantine/core';
 import { IconWorldWww , IconSearch, IconThumbUp, IconAd, IconArticle, IconPencil, IconHandClick, IconSchool, IconMail } from '@tabler/icons-react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -41,6 +41,8 @@ const useStyles = createStyles((theme) => ({
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
         fontWeight: 600,
+        marginTop: 10,
+        marginBottom: 10,
 
         [theme.fn.smallerThan('lg')]: {
             fontSize: rem(20),

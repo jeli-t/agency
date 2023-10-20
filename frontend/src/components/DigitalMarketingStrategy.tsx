@@ -1,6 +1,7 @@
 import { createStyles, useMantineTheme, Title, rem, Text } from '@mantine/core';
 import question_mark from './../assets/question_mark.svg'
-import { useTranslation } from 'react-i18next';
+import Image from "next/image";
+import { useTranslation } from 'next-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -13,7 +14,6 @@ const useStyles = createStyles((theme) => ({
         alignItems: 'center',
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[8] : theme.colors.gray[1],
 
-
         [theme.fn.smallerThan('xs')]: {
             justifyContent: 'flex-start',
         }
@@ -24,46 +24,51 @@ const useStyles = createStyles((theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        margin: 20,
+        marginTop: 80,
+        marginBottom: 80,
 
         [theme.fn.smallerThan('lg')]: {
             flexDirection: 'column',
             width: '90%',
-            margin: 40,
+            margin: 0,
+            marginBottom: 80,
         },
     },
 
     description: {
         height: '100%',
-        width: '45%',
+        width: '42%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         textAlign: 'left',
 
         [theme.fn.smallerThan('lg')]: {
-            width: '90%',
+            width: '50%',
+            margin: 10,
+        },
+
+        [theme.fn.smallerThan('xs')]: {
+            width: '100%',
+            height: 'auto',
+            marginTop: -20,
         },
     },
 
     ilustration: {
-        height: '100%',
-        width: '55%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
+        height: '700px',
+        width: '58%',
+        position: "relative",
 
         [theme.fn.smallerThan('lg')]: {
-            width: '90%',
+            width: '50%',
+            height: '300px',
         },
-    },
 
-    image: {
-        width: '110%',
-        height: 'auto',
-
-        [theme.fn.smallerThan('lg')]: {
-            maxWidth: '845px',
+        [theme.fn.smallerThan('xs')]: {
+            width: '120%',
+            marginTop: '40px',
         },
     },
 
@@ -86,6 +91,21 @@ const useStyles = createStyles((theme) => ({
     text: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
+        fontSize: rem(20),
+        fontWeight: 500,
+
+        [theme.fn.smallerThan('lg')]: {
+            fontSize: rem(18),
+        },
+
+        [theme.fn.smallerThan('xs')]: {
+            fontSize: rem(16),
+        },
+    },
+
+    itemTitle: {
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+        fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
         fontWeight: 600,
 
@@ -94,21 +114,16 @@ const useStyles = createStyles((theme) => ({
         },
 
         [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(16),
+            fontSize: rem(18),
         },
     },
 
-    button: {
-        marginTop: 20,
-        color: theme.white,
-        fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(24),
+    link: {
+        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontWeight: 600,
-    
-        [theme.fn.smallerThan('xs')]: {
-          fontSize: rem(16),
-        },
+        textDecoration: 'none',
     },
+
 }))
 
 export function DigitalMarketingStrategy() {
@@ -120,7 +135,7 @@ export function DigitalMarketingStrategy() {
         <div className={classes.wrapper}>
             <div className={classes.hero_section}>
                 <div className={classes.ilustration}>
-                    <img src={question_mark} alt='Question mark' title='What is the best strategy?' loading='lazy' width={845} height={800} className={classes.image} />
+                    <Image src={question_mark} alt='Question mark' title='hat is the best strategy?' loading='lazy' fill={true} />
                 </div>
                 <div className={classes.description}>
                     <Title order={2} className={classes.title}>

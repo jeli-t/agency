@@ -1,7 +1,8 @@
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
 import rocket from './../assets/rocket.svg'
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import Image from "next/image";
+import Link from "next/link";
+import { useTranslation } from 'next-i18next';
 
 
 const useStyles = createStyles((theme) => ({
@@ -23,47 +24,51 @@ const useStyles = createStyles((theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 40,
+        margin: 20,
+        marginTop: 80,
+        marginBottom: 80,
 
         [theme.fn.smallerThan('lg')]: {
             flexDirection: 'column',
             width: '90%',
-            margin: 40,
+            margin: 0,
+            marginBottom: 80,
         },
     },
 
     description: {
         height: '100%',
-        width: '45%',
+        width: '42%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         textAlign: 'left',
 
         [theme.fn.smallerThan('lg')]: {
-            width: '90%',
+            width: '50%',
+            margin: 10,
+        },
+
+        [theme.fn.smallerThan('xs')]: {
+            width: '100%',
+            height: 'auto',
+            marginTop: -20,
         },
     },
 
     ilustration: {
-        height: '100%',
-        width: '55%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
+        height: '700px',
+        width: '58%',
+        position: "relative",
 
         [theme.fn.smallerThan('lg')]: {
-            width: '90%',
+            width: '50%',
+            height: '300px',
         },
-    },
 
-    image: {
-        width: '100%',
-        height: 'auto',
-
-        [theme.fn.smallerThan('lg')]: {
-            maxWidth: '845px',
+        [theme.fn.smallerThan('xs')]: {
+            width: '120%',
+            marginTop: '40px',
         },
     },
 
@@ -87,7 +92,8 @@ const useStyles = createStyles((theme) => ({
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
-        fontWeight: 600,
+        fontWeight: 400,
+        marginBottom: 10,
 
         [theme.fn.smallerThan('lg')]: {
             fontSize: rem(20),
@@ -105,7 +111,7 @@ const useStyles = createStyles((theme) => ({
         color: theme.white,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
-        fontWeight: 600,
+        fontWeight: 400,
     
         [theme.fn.smallerThan('xs')]: {
             width: 140,
@@ -124,7 +130,7 @@ export function SeoOffer() {
         <div className={classes.wrapper}>
             <div className={classes.hero_section}>
                 <div className={classes.ilustration}>
-                    <img src={rocket} alt='Trust us' title='You can trust us' loading='lazy' width={845} height={800} className={classes.image} />
+                    <Image src={rocket} alt='Trust us' title='You can trust us' loading='lazy' fill={true} />
                 </div>
                 <div className={classes.description}>
                     <Title order={2} className={classes.title}>
@@ -137,12 +143,7 @@ export function SeoOffer() {
                         {t("seo_offer.text2")}
                     </Text>
                     <div>
-                        <Link to='/get-started'>
-                            <Button className={classes.button} size='lg' radius='md'>
-                                {t("seo_offer.button1")}
-                            </Button>
-                        </Link>
-                        <Link to='/contact'>
+                        <Link href='/contact'>
                             <Button className={classes.button} size='lg' radius='md'>
                                 {t("seo_offer.button2")}
                             </Button>

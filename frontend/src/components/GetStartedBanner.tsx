@@ -1,17 +1,17 @@
 import { createStyles, Title, Text, Container, rem } from '@mantine/core';
 import { Dots } from '../assets/Dots';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 
 const useStyles = createStyles((theme) => ({
     wrapper: {
         position: 'relative',
-        marginTop: rem(80),
+        marginTop: rem(140),
         marginBottom: rem(80),
 
         [theme.fn.smallerThan('sm')]: {
-            marginTop: rem(60),
-            marginBottom: rem(60),
+        marginTop: rem(80),
+        marginBottom: rem(60),
         },
     },
 
@@ -25,7 +25,7 @@ const useStyles = createStyles((theme) => ({
         color: theme.colorScheme === 'dark' ? theme.colors.gray[6] : theme.colors.gray[3],
 
         [theme.fn.smallerThan('sm')]: {
-            display: 'none',
+        display: 'none',
         },
     },
 
@@ -43,8 +43,8 @@ const useStyles = createStyles((theme) => ({
         fontFamily: `Roboto, ${theme.fontFamily}`,
 
         [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(28),
-            textAlign: 'left',
+        fontSize: rem(28),
+        textAlign: 'left',
         },
     },
 
@@ -56,8 +56,8 @@ const useStyles = createStyles((theme) => ({
         textAlign: 'left',
 
         [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(20),
-            textAlign: 'left',
+        fontSize: rem(20),
+        textAlign: 'left',
         },
     },
 }));

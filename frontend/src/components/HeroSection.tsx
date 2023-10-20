@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 import { createStyles, useMantineTheme, Title, rem, Text, Button } from '@mantine/core';
+import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
 import { IconSearch } from '@tabler/icons-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,8 +8,7 @@ import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import { useWindowScroll } from '@mantine/hooks';
 import logoDark from './../assets/logoDark.png';
 import logoLight from './../assets/logoLight.png';
-import { HashLink } from 'react-router-hash-link';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'next-i18next'
 
 
 const useStyles = createStyles((theme) => ({
@@ -19,22 +19,19 @@ const useStyles = createStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundImage: theme.colorScheme === 'dark' ? 'radial-gradient(#ff8700 1.7px, #000000 1.7px)' : 'radial-gradient(#ff8700 1.7px, #ffffff 1.7px)',
+        backgroundImage: theme.colorScheme === 'dark' ? 'radial-gradient(#ff8700 1px, #000000 1px)' : 'radial-gradient(#ff8700 1px, #ffffff 1px)',
         backgroundSize: '40px 40px',
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center center',
 
         [theme.fn.smallerThan('xs')]: {
-            backgroundImage: 'none',
-            backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[8] : theme.colors.gray[1],
             paddingBottom: '30vh',
         },
     },
 
     logo: {
-        width: '20rem',
+        width: '30rem',
         height: 'auto',
-        marginBottom: theme.spacing.lg,
 
         [theme.fn.smallerThan('xs')]: {
             width: '15rem',
@@ -47,6 +44,7 @@ const useStyles = createStyles((theme) => ({
         fontSize: rem(24),
         fontWeight: 600,
         padding: 5,
+        marginTop: 20,
         backgroundColor: theme.colorScheme === 'dark' ? theme.black : theme.white,
         maxWidth: '90%',
         textAlign: 'center',
@@ -72,7 +70,7 @@ const useStyles = createStyles((theme) => ({
         color: theme.black,
 
         [theme.fn.smallerThan('xs')]: {
-            paddingLeft: 10,
+            paddingLeft: 20,
             border: '2px solid',
         },
     },
@@ -122,12 +120,12 @@ const useStyles = createStyles((theme) => ({
     },
 
     button: {
-        margin: 10,
+        marginTop: 20,
         color: theme.white,
         fontFamily: `Roboto, ${theme.fontFamily}`,
         fontSize: rem(24),
         fontWeight: 600,
-    
+
         [theme.fn.smallerThan('xs')]: {
           fontSize: rem(16),
         },
@@ -148,7 +146,7 @@ export function HeroSection() {
 
     return (
         <div className={classes.container}>
-            {theme.colorScheme === 'light' ? <img src={logoDark} alt="Logo jeli.pl" title='jeli.pl' loading='eager' width='320' height='180' className={classes.logo} /> : <img src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' width='320' height='180' className={classes.logo} />}
+            {theme.colorScheme === 'light' ? <Image src={logoDark} alt="Logo jeli.pl" title='jeli.pl' loading='eager' width='320' height='180' className={classes.logo} /> : <Image src={logoLight} alt="Logo jeli.pl" title='jeli.pl' loading='eager' width='320' height='180' className={classes.logo} />}
             <div className={classes.search_bar}>
                 <TypeAnimation
                     sequence={[
@@ -179,15 +177,15 @@ export function HeroSection() {
             <Title className={classes.hero_title}>
                 {t("hero.title")}
             </Title>
-            <Link to='/contact'>
+            <Link href='/contact'>
                 <Button className={classes.button} size='lg' radius='md'>
                     {t("hero.button")}
                 </Button>
             </Link>
-            <HashLink to='/#Make-yourself-visible' smooth className={classes.link}>
+            <Link href='/#Make-yourself-visible'  className={classes.link}>
                 <FontAwesomeIcon icon={faAnglesDown} beat className={classes.scroll_icon_desktop} />
                 <FontAwesomeIcon icon={faAnglesDown} beat className={classes.scroll_icon_mobile} />
-            </HashLink>
+            </Link>
         </div>
     )
 }
