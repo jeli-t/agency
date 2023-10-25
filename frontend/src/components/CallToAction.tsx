@@ -14,6 +14,7 @@ const useStyles = createStyles((theme) => ({
         alignItems: 'center',
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[8] : '#f0f0f0',
         padding: 100,
+        overflowX: 'hidden',
 
         [theme.fn.smallerThan('xs')]: {
             height: 'auto',
