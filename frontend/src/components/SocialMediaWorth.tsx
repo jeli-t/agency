@@ -13,6 +13,7 @@ const useStyles = createStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.gray[8] : theme.colors.gray[1],
+        overflowX: 'hidden',
 
         [theme.fn.smallerThan('xs')]: {
             justifyContent: 'flex-start',
