@@ -13,6 +13,7 @@ const useStyles = createStyles((theme) => ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+        overflowX: 'hidden',
 
         [theme.fn.smallerThan('xs')]: {
             height: 'fit',
