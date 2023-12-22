@@ -1,5 +1,5 @@
 import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon } from '@mantine/core';
-import { IconBrandInstagram, IconBrandFacebook } from '@tabler/icons-react';
+import { IconWorldWww } from '@tabler/icons-react';
 import remote_work from './../assets/remote_work.svg'
 import Image from "next/image";
 import { useTranslation } from 'next-i18next';
@@ -131,26 +131,14 @@ export function AboutUs() {
                     </Text>
                     <div>
                         <div className={classes.icon}>
-                            <a href='https://www.instagram.com/jeli_agency/'>
+                            <a href='https://www.jeli.pl'>
                                 <ThemeIcon
                                     size={50}
                                     radius="md"
                                     variant="gradient"
                                     gradient={{ deg: 133, from: 'orange', to: 'red' }}
                                 >
-                                    <IconBrandInstagram size="2rem" stroke={2} />
-                                </ThemeIcon>
-                            </a>
-                        </div>
-                        <div className={classes.icon}>
-                            <a href='https://www.facebook.com/profile.php?id=100095023350168'>
-                                <ThemeIcon
-                                    size={50}
-                                    radius="md"
-                                    variant="gradient"
-                                    gradient={{ deg: 133, from: 'orange', to: 'red' }}
-                                >
-                                    <IconBrandFacebook size="2rem" stroke={2} />
+                                    <IconWorldWww size="2rem" stroke={2} />
                                 </ThemeIcon>
                             </a>
                         </div>

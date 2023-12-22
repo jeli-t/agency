@@ -39,7 +39,7 @@
         "button": "Accept all cookies"
     },
     "hero": {
-        "title": "Jeli Digital Agency - Your trusted partner in the digital world",
+        "title": "Digital Agency - Your trusted partner in the digital world",
         "button": "Contact",
         "search1": "Websites",
         "search2": "Search Engine Optimization",
@@ -77,12 +77,12 @@
     },
     "contact_section": {
         "title": "Stay in touch",
-        "text": "Write to us what you need. We are happy to answer all your questions. If you want, we can also arrange a video consultation and prepare your marketing strategy for free.",
+        "text": "This page is only a part of my portfolio. Check the link below to go to my main site and contact me.",
         "faq": "Please check the FAQ section below."
     },
     "about_us": {
-        "title": "One-man Agency",
-        "text": "Hey, my name is Tomasz Jelito and I'm the face behind Jeli.pl! I started my digital journey at the age of 12, learning the basics of programming and web design. Today, I'm working as a freelancer in the ever-evolving world of digital marketing. Jeli.pl is a one-person agency, I do most of the work myself, or collaborate with other freelancers. Why Jeli.pl? It's not just about business; it's my passion. Explore my projects, drop a message, and welcome to Jeli.pl, where a one-person agency doesn't mean going it alone!"
+        "title": "About",
+        "text": "This page is only a part of my portfolio. Click the link below to check out my other projects."
     },
     "our_process": {
         "title": "Our Process",

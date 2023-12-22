@@ -39,7 +39,7 @@
         "button": "Akceptuj wszystkie pliki cookie"
     },
     "hero": {
-        "title": "Jeli Digital Agency - Twój zaufany partner w świecie online",
+        "title": "Digital Agency - Twój zaufany partner w świecie online",
         "button": "Kontakt",
         "search1": "Strony internetowe",
         "search2": "Pozycjonowanie stron (SEO)",
@@ -77,12 +77,12 @@
     },
     "contact_section": {
         "title": "Jesteśmy w kontakcie",
-        "text": "Napisz do nas, czego potrzebujesz. Chętnie odpowiemy na wszystkie pytania. Jeśli chcesz, możemy zorganizować wideokonsultacje i przygotować Twoją strategię marketingową za darmo.",
+        "text": "Ta strona jest tylko częścią mojego portfolio. Sprawdź poniższy link, aby przejść do mojej głównej strony i skontaktować się ze mną.",
         "faq": "Sekcja FAQ poniżej"
     },
     "about_us": {
-        "title": "Jednoosobowa Agencja",
-        "text": "Cześć, nazywam się Tomasz Jelito i jestem osobą stojącą za Jeli.pl! Swoją cyfrową podróż rozpocząłem w wieku 12 lat, ucząc się podstaw programowania i projektowania stron internetowych. Dziś pracuję jako freelancer w stale rozwijającym się świecie marketingu cyfrowego. Jeli.pl to jednoosobowa agencja, większość pracy wykonuję sam lub współpracuję z innymi freelancerami. Dlaczego Jeli.pl? To nie tylko biznes, to moja pasja. Sprawdź moje projekty, napisz wiadomość i zapraszam do Jeli.pl, gdzie jednoosobowa agencja nie oznacza pracy w pojedynkę!"
+        "title": "O nas",
+        "text": "Ta strona jest tylko częścią mojego portfolio. Kliknij poniższy link, aby sprawdzić moje pozostałe projekty."
     },
     "our_process": {
         "title": "Nasz proces",

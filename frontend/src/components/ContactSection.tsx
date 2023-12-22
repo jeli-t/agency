@@ -1,7 +1,7 @@
 import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon } from '@mantine/core';
 import contact from './../assets/contact.svg'
 import Image from 'next/image';
-import { IconBrandInstagram, IconMail, IconBrandFacebook } from '@tabler/icons-react';
+import { IconWorldWww } from '@tabler/icons-react';
 import { useTranslation } from 'next-i18next';
 
 
@@ -148,7 +148,7 @@ export function ContactSection() {
                         {t("contact_section.text")}
                     </Text>
                     <div style={{marginTop: '40px'}}>
-                        <a href='mailto: agency@jeli.pl'>
+                        <a href='https://www.jeli.pl'>
                             <ThemeIcon
                                 size={50}
                                 radius="md"
@@ -156,42 +156,10 @@ export function ContactSection() {
                                 gradient={{ deg: 133, from: 'orange', to: 'red' }}
                                 className={classes.icon}
                             >
-                                <IconMail size="2rem" stroke={2} />
+                                <IconWorldWww size="2rem" stroke={2} />
                             </ThemeIcon>
                             <Text className={classes.contact_info}>
-                                agency@jeli.pl
-                            </Text>
-                        </a>
-                    </div>
-                    <div style={{marginTop: '40px'}}>
-                        <a href='https://www.instagram.com/jeli_agency/'>
-                            <ThemeIcon
-                                size={50}
-                                radius="md"
-                                variant="gradient"
-                                gradient={{ deg: 133, from: 'orange', to: 'red' }}
-                                className={classes.icon}
-                            >
-                                <IconBrandInstagram size="2rem" stroke={2} />
-                            </ThemeIcon>
-                            <Text className={classes.contact_info}>
-                                jeli_agency
-                            </Text>
-                        </a>
-                    </div>
-                    <div style={{marginTop: '40px'}}>
-                        <a href='https://www.facebook.com/profile.php?id=100095023350168'>
-                            <ThemeIcon
-                                size={50}
-                                radius="md"
-                                variant="gradient"
-                                gradient={{ deg: 133, from: 'orange', to: 'red' }}
-                                className={classes.icon}
-                            >
-                                <IconBrandFacebook size="2rem" stroke={2} />
-                            </ThemeIcon>
-                            <Text className={classes.contact_info}>
-                                Jeli Agency
+                                www.jeli.pl
                             </Text>
                         </a>
                     </div>

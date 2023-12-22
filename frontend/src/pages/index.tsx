@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Jeli Digital Agency | Websites | SEO | Social media</title>
+        <title>Digital Agency | Websites | SEO | Social media</title>
         <meta name='description' content='Comprehensive and tailored digital marketing for businesses. Profesional Websites, Search Engine Optimization, Social media' />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel='canonical' href='/' />
