@@ -1,5 +1,12 @@
-# [jeli-agency.vercel.app](https://jeli-agency.vercel.app/)
+# [jeli-agency.vercel.app](https://jeli-agency.vercel.app/) :point_left: (live demo)
 
-### A demo website for a Digital Marketing Agency. For the frontend, I used Next JS and Mantine UI. For the backend, I used Django and PostgreSQL. Everything connected through a REST API.
+## A sample page for a digital marketing agency.
 
 ![Prewiev](https://github.com/jeli-t/agency/blob/master/preview.png)
+
+## Stack
+ - Next JS
+ - Mantine UI
+ - Django
+ - PostgreSQL
+ - REST API
