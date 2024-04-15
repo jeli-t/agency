@@ -1,4 +1,4 @@
-import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon } from '@mantine/core';
+import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon, Button } from '@mantine/core';
 import contact from './../assets/contact.svg'
 import Image from 'next/image';
 import { IconWorldWww } from '@tabler/icons-react';
@@ -90,7 +90,7 @@ const useStyles = createStyles((theme) => ({
     text: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(24),
+        fontSize: rem(20),
         fontWeight: 400,
 
         [theme.fn.smallerThan('lg')]: {
@@ -113,17 +113,35 @@ const useStyles = createStyles((theme) => ({
     contact_info: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(30),
+        fontSize: rem(24),
         fontWeight: 400,
         display: 'inline-flex',
         marginLeft: 10,
 
         [theme.fn.smallerThan('lg')]: {
-            fontSize: rem(30),
+            fontSize: rem(20),
         },
     
         [theme.fn.smallerThan('xs')]: {
-            fontSize: rem(24),
+            fontSize: rem(20),
+        },
+    },
+
+    button: {
+        color: theme.white,
+        fontFamily: `Roboto, ${theme.fontFamily}`,
+        fontSize: rem(30),
+        fontWeight: 400,
+        backgroundImage: 'linear-gradient(133deg, #fd7e14 0%, #fa5252 100%)',
+        transition: '0.2s',
+        opacity: 1,
+
+        '&:hover': {
+            opacity: 0.7,
+        },
+    
+        [theme.fn.smallerThan('xs')]: {
+          fontSize: rem(24),
         },
     },
 
@@ -149,18 +167,12 @@ export function ContactSection() {
                     </Text>
                     <div style={{marginTop: '40px'}}>
                         <a href='https://www.jeli.pl'>
-                            <ThemeIcon
-                                size={50}
-                                radius="md"
-                                variant="gradient"
-                                gradient={{ deg: 133, from: 'orange', to: 'red' }}
-                                className={classes.icon}
-                            >
-                                <IconWorldWww size="2rem" stroke={2} />
-                            </ThemeIcon>
-                            <Text className={classes.contact_info}>
-                                www.jeli.pl
-                            </Text>
+                            <Button className={classes.button} size='lg' radius='md'>
+                                <IconWorldWww size="1.5rem" stroke={2} />
+                                <Text className={classes.contact_info} ml={20}>
+                                    jeli.pl
+                                </Text>
+                            </Button>
                         </a>
                     </div>
                 </div>

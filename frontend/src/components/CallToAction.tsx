@@ -26,8 +26,8 @@ const useStyles = createStyles((theme) => ({
 
     title: {
         textAlign: 'center',
-        fontWeight: 800,
-        fontSize: rem(40),
+        fontWeight: 600,
+        fontSize: rem(35),
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
     
@@ -38,10 +38,10 @@ const useStyles = createStyles((theme) => ({
       },
 
     text: {
-        maxWidth: '50%',
+        maxWidth: '40%',
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(34),
+        fontSize: rem(24),
         fontWeight: 400,
         textAlign: 'center',
 

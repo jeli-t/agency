@@ -124,7 +124,7 @@ const useStyles = createStyles((theme) => ({
     text: {
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         fontFamily: `Roboto, ${theme.fontFamily}`,
-        fontSize: rem(24),
+        fontSize: rem(20),
         fontWeight: 400,
         padding: 5,
 
