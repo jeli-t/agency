@@ -1,4 +1,4 @@
-import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon } from '@mantine/core';
+import { createStyles, useMantineTheme, Title, rem, Text, ThemeIcon, Button } from '@mantine/core';
 import { IconWorldWww } from '@tabler/icons-react';
 import remote_work from './../assets/remote_work.svg'
 import Image from "next/image";
@@ -103,13 +103,21 @@ const useStyles = createStyles((theme) => ({
         },
     },
 
-    icon: {
-        display: 'inline-block',
-        marginTop: 20,
-        marginRight: 20,
+    button: {
+        color: theme.white,
+        fontFamily: `Roboto, ${theme.fontFamily}`,
+        fontSize: rem(30),
+        fontWeight: 400,
+        backgroundImage: 'linear-gradient(133deg, #fd7e14 0%, #fa5252 100%)',
+        transition: '0.2s',
+        opacity: 1,
 
         '&:hover': {
-            transform: 'scale(1.1)',
+            opacity: 0.7,
+        },
+    
+        [theme.fn.smallerThan('xs')]: {
+          fontSize: rem(24),
         },
     },
 }))
@@ -130,16 +138,14 @@ export function AboutUs() {
                         {t("about_us.text")}
                     </Text>
                     <div>
-                        <div className={classes.icon}>
+                        <div style={{marginTop: '40px'}}>
                             <a href='https://www.jeli.pl'>
-                                <ThemeIcon
-                                    size={50}
-                                    radius="md"
-                                    variant="gradient"
-                                    gradient={{ deg: 133, from: 'orange', to: 'red' }}
-                                >
-                                    <IconWorldWww size="2rem" stroke={2} />
-                                </ThemeIcon>
+                                <Button className={classes.button} size='lg' radius='md'>
+                                    <IconWorldWww size="1.5rem" stroke={2} />
+                                    <Text ml={20}>
+                                        jeli.pl
+                                    </Text>
+                                </Button>
                             </a>
                         </div>
                     </div>

@@ -169,7 +169,7 @@ export function ContactSection() {
                         <a href='https://www.jeli.pl'>
                             <Button className={classes.button} size='lg' radius='md'>
                                 <IconWorldWww size="1.5rem" stroke={2} />
-                                <Text className={classes.contact_info} ml={20}>
+                                <Text ml={20}>
                                     jeli.pl
                                 </Text>
                             </Button>
